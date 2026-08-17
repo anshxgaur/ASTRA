@@ -1,0 +1,139 @@
+{
+  "run_timestamp": "2026-08-17T15:40:47",
+  "status": "ok",
+  "error": "",
+  "duration_seconds": 794.35,
+  "use_real_sources": true,
+  "stages": [
+    {
+      "name": "01 Ingestion",
+      "status": "ok",
+      "note": "real Phase-1 sources — 8 sources",
+      "seconds": 2.97,
+      "rows": 3859
+    },
+    {
+      "name": "02 Schema Discovery",
+      "status": "ok",
+      "seconds": 0.23,
+      "note": "102 fields profiled"
+    },
+    {
+      "name": "03 Schema Mapping",
+      "status": "ok",
+      "seconds": 0.04,
+      "rows": 3859,
+      "note": "8 sources mapped"
+    },
+    {
+      "name": "04 Standardization",
+      "status": "ok",
+      "seconds": 0.3,
+      "rows": 3859,
+      "note": "states / booleans / text normalized"
+    },
+    {
+      "name": "05 Normalization",
+      "status": "ok",
+      "seconds": 0.19,
+      "rows": 3859,
+      "note": "dtypes cast to canonical schema"
+    },
+    {
+      "name": "06 Entity Resolution",
+      "status": "ok",
+      "seconds": 2.9,
+      "rows": 3859,
+      "note": "3859 records -> 649 master entities"
+    },
+    {
+      "name": "07 Context Classification",
+      "status": "ok",
+      "seconds": 0.05,
+      "note": "contextual fields: ['eligibility', 'description']"
+    },
+    {
+      "name": "08 PostgreSQL Load",
+      "status": "ok",
+      "seconds": 34.75,
+      "rows": 7678,
+      "note": "institution/course/faculty/scholarship/approval/internship + lineage"
+    },
+    {
+      "name": "09 Embeddings",
+      "status": "ok",
+      "seconds": 752.42,
+      "rows": 3839,
+      "note": "fastembed all-MiniLM-L6-v2 (384-dim)"
+    },
+    {
+      "name": "10 pgvector Index",
+      "status": "ok",
+      "seconds": 0.16,
+      "rows": 7180,
+      "note": "7180 embeddings, 384-dim, HNSW=yes"
+    }
+  ],
+  "sources": {
+    "mysql_institutes": {
+      "rows": 518,
+      "system": "mysql",
+      "table": "institutes"
+    },
+    "postgres_courses": {
+      "rows": 1403,
+      "system": "postgres",
+      "table": "courses"
+    },
+    "postgres_faculty": {
+      "rows": 864,
+      "system": "postgres",
+      "table": "faculty"
+    },
+    "mongodb_scholarships": {
+      "rows": 151,
+      "system": "mongodb",
+      "table": "scholarships"
+    },
+    "legacy_nba": {
+      "rows": 80,
+      "system": "legacy_csv",
+      "table": "nba_autonomous_status.csv"
+    },
+    "legacy_closed": {
+      "rows": 98,
+      "system": "legacy_csv",
+      "table": "closed_institutes.csv"
+    },
+    "legacy_unapproved": {
+      "rows": 95,
+      "system": "legacy_csv",
+      "table": "unapproved_list.csv"
+    },
+    "internships_csv": {
+      "rows": 650,
+      "system": "internships",
+      "table": "internships.csv"
+    }
+  },
+  "phase3": {
+    "tables": {
+      "institution": 498,
+      "course": 1403,
+      "faculty": 864,
+      "scholarship": 151,
+      "approval": 273,
+      "internship": 650,
+      "entity_mapping": 3839
+    },
+    "context_document": {
+      "rows": 7180,
+      "dims": 384,
+      "hnsw_index": true
+    }
+  },
+  "entity_resolution": {
+    "records_in": 3859,
+    "entities_out": 649
+  }
+}

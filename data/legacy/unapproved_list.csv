@@ -1,44 +1,96 @@
-[Institute_Name,State,Flag_Reason,last_updated
-"Vaagdevi College Of Engineering And Technology, Kolkata",Kolkata,Staff qualification not verified,21 Feb 2023
-"Raghu Institute of Technology, Bikaner",Bikaner,Missing mandatory approvals,08 Apr 2023
-"Ideal Institute of Technology and Science, Davanagere",Davanagere,,05 Jul 2023
-  Government Polytechnic ,Vellore,Fee regulation violation,27 Jun 2023
-"Kakatiya Institute Of Technology And Science, Howrah",Howrah,AICTE code mismatch,12 Jul 2023
-"Government College of Engineering, Coimbatore",Coimbatore,Fee regulation violation,31 Mar 2023
-" Sree College of Engineering, Jodhpur ",Jodhpur,AICTE code mismatch,18 Sep 2023
-"Government Polytechnic, Kadapa",Kadapa,Pending NBA accreditation,09 Oct 2023
-Ujjain National Institute Of Technology,Ujjain,Missing mandatory approvals,22 Feb 2024
-"Bharat Institute of Technology, Bathinda",Bathinda,,17 Apr 2023
-  Lokmanya College Of Engineering And Technology ,Kadapa,Pending NBA accreditation,21 Jan 2024
-"  Amrita College of Engineering, Nizamabad. ",Nizamabad,Land documents pending,10 Apr 2023
-" National Institute of Technology, Belagavi ",Belagavi,Staff qualification not verified,26 Sep 2023
-"Government Engineering College, Vellore",Vellore,Staff qualification not verified,20 May 2023
-"Government College of Engineering, Warangal",Warangal,,25 Aug 2023
-"Kalasalingam College of Engineering and Technology, Karimnagar",Karimnagar,AICTE code mismatch,14 May 2023
-"Sardar Engineering College, Junagadh",Junagadh,Land documents pending,18 Aug 2023
-"Sreyas Engineering College, Vadodara",Vadodara,Staff qualification not verified,19 Aug 2023
-Sree Dattha Engineering College and Technology,Kolhapur,Staff qualification not verified,19 Feb 2023
-"National Institute of Technology, Udaipur",Udaipur,Pending NBA accreditation,28 Jan 2024
-"Raghu Institute of Technology, Coimbatore",Coimbatore,Missing mandatory approvals,03 Jun 2024
-"  NATIONAL INSTITUTE OF TECHNOLOGY, JABALPUR. ",Jabalpur,Pending NBA accreditation,01 Jan 2024
-  Junagadh Thapar Institute of Engineering and Technology ,Junagadh,Pending NBA accreditation,30 Mar 2024
-"National Institute of Technology, Siliguri",Siliguri,Missing mandatory approvals,26 Sep 2023
-"Andhra Engineering College, Nizamabad",Nizamabad,Staff qualification not verified,17 Dec 2023
-"Karunya Institute of Engineering and Technology, Bhopal",Bhopal,Pending NBA accreditation,30 May 2023
-"Anurag Institute of Technology, Salem",Salem,Land documents pending,28 Aug 2023
-"Thiagarajar Engineering College, Ujjain",Ujjain,AICTE code mismatch,25 Mar 2024
-"Sreyas College of Engineering and Technology, Karimnagar",Karimnagar,Land documents pending,07 Mar 2024
-"Lokmanya Engineering College, Meerut",Meerut,Land documents pending,20 Jul 2023
-"Mahatma Gandhi Institute of Technology and Science, Varanasi",Varanasi,Missing mandatory approvals,24 Sep 2023
-"Sri Venkateswara Institute of Technology and Science, Kolhapur",Kolhapur,Land documents pending,20 Aug 2023
-"Kongu Poly., Kurnool.",Kurnool,Fee regulation violation,11 Mar 2023
-"GOKARAJU INSTITUTE OF TECHNOLOGY AND SCIENCE, WARANGAL",Warangal,Pending NBA accreditation,18 Oct 2023
-"St. Mary's Colg. of Engg. & Tech., Kota.",Kota,Land documents pending,05 Oct 2023
-" Aditya Institute of Engineering and Technology, Salem ",Salem,,10 Jun 2023
-" Sinhgad Engineering College, Belagavi ",Belagavi,Fee regulation violation,05 Jan 2023
-"Raghu Polytechnic, Kota",Kota,Pending NBA accreditation,17 Feb 2023
-Kharagpur Old Polytechnic,,Pending NBA accreditation,16 Jul 2023
-"BIKANER TECHNICAL COLLEGE, BIKANER",Bikaner,Pending NBA accreditation,21 May 2024
-  Kolkata SRM Institute of Engineering and Technology ,Kolkata,Listed in unapproved register despite active approval,16 Dec 2023
-Vaagdevi College of Engineering and Technology,Sambalpur,Listed in unapproved register despite active approval,12 Jan 2024
-Belagavi Chaitanya Engineering College,Belagavi,AICTE code mismatch,22 Feb 2024
+Institute_Name,State,Flag_Reason,last_updated
+"Matrusri Institute Of Engineering And Technology, South Goa",South Goa,Staff qualification not verified,01 May 2023
+"G.L. Bajaj College of Pharmacy, Junagadh",Junagadh,Staff qualification not verified,28 Apr 2024
+"Aditya Inst. Of Pharmaceutical Sciences, Meerut.",Meerut,Land documents pending,24 Apr 2024
+Guru Nanak Institute Of Technology,Nizamabad,Missing mandatory approvals,02 Aug 2023
+"Geethanjali Institute of Pharmaceutical Sciences, Aurangabad ,",Aurangabad,Staff qualification not verified,21 Jan 2024
+"  Government Engineering College, Ludhiana ",Ludhiana,,04 Feb 2024
+"Sri Indu Pharmacy College, Cuttack",Cuttack,Fee regulation violation,08 Jul 2023
+"Chaitanya College of Engineering, Vijayawada.",Vijayawada,AICTE code mismatch,03 Oct 2023
+"Government Institute of Management, Anantapur",Anantapur,,05 Apr 2024
+" Bharath Institute of Pharmaceutical Sciences, Siddipet ",Siddipet,Staff qualification not verified,16 Mar 2023
+"Symbiosis College of Engineering and Technology, Jabalpur",Jabalpur,Pending NBA accreditation,07 Nov 2023
+" Government Institute of Management, Visakhapatnam ",Visakhapatnam,AICTE code mismatch,18 Mar 2023
+"Sri Sathya Sai Institute of Engineering and Management, Thrissur",Thrissur,Fee regulation violation,04 Feb 2023
+Sardar Engg. College,Hyderabad,Land documents pending,26 Sep 2023
+  North Delhi Ideal Business School ,North Delhi,Staff qualification not verified,07 Mar 2023
+"Matrusri Institute of Engineering and Management, Srinagar",Srinagar,Fee regulation violation,03 Jan 2024
+"K.S.R. Institute Of Technology, Visakhapatnam",Visakhapatnam,,16 Feb 2023
+"Shri College of Applied Arts, New Delhi",New Delhi,,08 Jul 2023
+"Bharat Institute of Engineering and Management, Varanasi",Varanasi,Fee regulation violation,11 Jun 2023
+" Government Polytechnic, Panipat ",Panipat,Pending NBA accreditation,20 Feb 2023
+"Nitte School of Applied Arts, Anantapur",Anantapur,Staff qualification not verified,15 Apr 2024
+"National Institute of Technology, Kolkata.",Kolkata,Land documents pending,08 Jun 2023
+"Government College of Engineering, Thrissur",Thrissur,Pending NBA accreditation,28 Jul 2023
+"Government Engineering College, Nashik",Nashik,Land documents pending,31 Oct 2023
+"Srm Inst. Of Tech., Durgapur",Durgapur,Fee regulation violation,09 Jan 2023
+"Siddhartha Inst. of Engg. & Poly., Lucknow",Lucknow,,06 Sep 2023
+"CVR Institute of Engineering and Technology, Howrah..",Howrah,AICTE code mismatch,25 Feb 2023
+" D.Y. Patil College of Engineering and Technology, Amravati ",Amravati,Missing mandatory approvals,17 Apr 2024
+"Karaikal Government  College of Engineering ,",Karaikal,,18 Jun 2024
+"G.L. Bajaj Institute of Management and Technology, Pune",Pune,AICTE code mismatch,22 Dec 2023
+"Government College of Engineering, Madurai",Madurai,Missing mandatory approvals,04 Sep 2023
+"KALINGA INSTITUTE OF ENGINEERING & MANAGEMENT, SOLAPUR",Solapur,Land documents pending,28 Feb 2024
+  Lokmanya Institute of Technology ,Jamshedpur,Missing mandatory approvals,30 Sep 2023
+"Kakatiya College of Engineering, Rourkela",Rourkela,,26 Mar 2024
+  Jorhat Matrusri Engg. College ,Jorhat,AICTE code mismatch,22 Apr 2024
+"Dayananda Sagar Institute of Engineering and Management, Kadapa",Kadapa,Land documents pending,06 Apr 2023
+"Geethanjali Institute Of Management Studies, Sagar",Sagar,Land documents pending,07 Jul 2023
+"Thiagarajar  Pharmacy College, Kolhapur",Kolhapur,Missing mandatory approvals,18 Feb 2024
+" Government School of Architecture, Ballari ",Ballari,Staff qualification not verified,09 Jul 2023
+" Velammal Institute of Engineering and Management, Vadodara ",Vadodara,AICTE code mismatch,09 Jan 2024
+"Government  Colg. of Engg., Salem",Salem,Staff qualification not verified,28 Apr 2023
+"Kalinga Institute Of Applied Arts And Crafts, Indore.",Indore,,02 Sep 2023
+Sinhgad Institute of Technology & Science,Anantapur,,12 Jan 2023
+Sri Sathya Sai Inst. of Science and Technology.,Muzaffarpur,Fee regulation violation,22 May 2024
+National Institute of Technology,Allahabad,Fee regulation violation,19 Jan 2023
+"Hindustan Institute Of Engineering And Management, Ballari",Ballari,Fee regulation violation,03 May 2023
+Velammal Colg. of Engg. & Tech.,Chennai,AICTE code mismatch,18 Mar 2024
+"Jain Institute of Technology and Science, Junagadh",Junagadh,Fee regulation violation,22 Jun 2023
+"Government Institute of Management, Darbhanga",Darbhanga,AICTE code mismatch,23 Mar 2024
+" Government College of Pharmacy, Sagar ",Sagar,Fee regulation violation,02 Mar 2024
+"KLE College of Engineering and Technology, Nashik",Nashik,AICTE code mismatch,13 Sep 2023
+"Symbiosis College Of Engineering And Technology, Belagavi",Belagavi,Land documents pending,16 Jan 2024
+Amravati Rajalakshmi Institute of Management and Technology,Amravati,Missing mandatory approvals,06 Nov 2023
+"Government Engineering College, Shimla",Shimla,Staff qualification not verified,02 Jan 2024
+"Vels Inst. of Tech. and Science, Solapur",Solapur,Missing mandatory approvals,10 Apr 2024
+Government Institute of Pharmaceutical Sciences,Jalandhar,Pending NBA accreditation,24 Mar 2023
+"Sardar Institute of Business Management, Kanpur",Kanpur,Land documents pending,11 Jul 2023
+West  Delhi Government Institute of Applied Arts,West Delhi,Fee regulation violation,06 May 2024
+"Government College of Applied Arts, Daman",Daman,Missing mandatory approvals,12 Jun 2024
+Bardhaman Guru  Nanak College of Engineering and Technology,Bardhaman,Missing mandatory approvals,05 Jun 2023
+"  MATRUSRI INSTITUTE OF TECHNOLOGY AND SCIENCE, ADILABAD ",Adilabad,Land documents pending,26 Oct 2023
+"Reva   College of Engineering & Technology, Siddipet",Siddipet,AICTE code mismatch,12 Jan 2023
+"Bapatla College of Pharmaceutical Sciences, North Delhi",North Delhi,Staff qualification not verified,02 Mar 2023
+"Gokaraju School of Architecture, Varanasi",Varanasi,AICTE code mismatch,28 Feb 2024
+"Government College of Engineering, Haldia",Haldia,Land documents pending,22 Sep 2023
+"Government Engineering College, Indore",Indore,Fee regulation violation,12 Sep 2023
+" Siddhartha Engineering College, Varanasi ",Varanasi,Missing mandatory approvals,28 Mar 2023
+"Shri Institute of Technology, Purnia",Purnia,AICTE code mismatch,25 Jun 2024
+"Kalinga Pharmacy College, Sagar",Sagar,Pending NBA accreditation,10 Jun 2024
+"  Hindustan  Inst. of Tech., Ballari ",Ballari,AICTE code mismatch,08 Nov 2023
+" Vasavi Institute of Business Management, Balasore ",Balasore,Land documents pending,04 Mar 2024
+"Vasavi Institute of Business Management, Coimbatore",Coimbatore,Land documents pending,30 May 2023
+  Government Engineering College ,Vizianagaram,Pending NBA accreditation,15 Jun 2023
+Warangal Government College of Engineering.,Warangal,AICTE code mismatch,10 Sep 2023
+"Government Institute of Management, Kota",Kota,Land documents pending,10 Feb 2024
+"Government Engineering College, Kolhapur",Kolhapur,Land documents pending,01 May 2023
+"Hindustan Institute of Technology and Science, Allahabad",Allahabad,Pending NBA accreditation,21 Mar 2023
+Amity Engineering College,Karimnagar,Staff qualification not verified,23 Mar 2024
+"CHRIST PHARMACY COLLEGE, ALLAHABAD.",Allahabad,Staff qualification not verified,29 Mar 2024
+"Government Polytechnic, Rourkela",Rourkela,Fee regulation violation,19 Sep 2023
+"  Andhra   Institute of Technology, Mohali ",Mohali,Staff qualification not verified,14 Aug 2023
+"Government College of Engineering, Alwar.",Alwar,Land documents pending,23 Jun 2024
+"Hindustan Business School, Gwalior",Gwalior,AICTE code mismatch,21 Aug 2023
+"Vels Institute of Engineering and Management, Kolhapur",Kolhapur,Fee regulation violation,03 Apr 2023
+"Geethanjali Institute of Engineering and Polytechnic, Panipat",Panipat,Land documents pending,30 Mar 2023
+"Bikaner Technical College, Bikaner",Bikaner,AICTE code mismatch,25 Apr 2023
+"Haldia Institute of Pharmacy, Haldia",Haldia,AICTE code mismatch,22 Mar 2024
+"Yamuna Engg. College, Etawah",Etawah,Pending NBA accreditation,29 Jun 2023
+"Pragati Polytechnic, Jhansi",Jhansi,Land documents pending,18 Feb 2024
+"NMAM INSTITUTE OF TECHNOLOGY AND SCIENCE, MANDI",Mandi,AICTE code mismatch,18 Jun 2023
+"Malla Reddy College of Architecture, Chennai",Chennai,Listed in unapproved register despite active approval,25 Feb 2023
+  Government Engg. College ,Ajmer,Listed in unapproved register despite active approval,16 Jul 2023
+"  Kongu Colg. of Engg. & Tech., Aurangabad. ",Aurangabad,AICTE code mismatch,04 Jul 2023
+"G.L.  Bajaj College of Engineering and Technology, Varanasi",Varanasi,Missing mandatory approvals,02 Jun 2024
+"  Dattha Institute Of Technology And Science, Durgapur ",Durgapur,Listed in unapproved register despite active approval,28 Jan 2024

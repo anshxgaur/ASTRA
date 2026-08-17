@@ -1,14 +1,15 @@
 # Custom PostgreSQL image for the AICTE mock environment.
 #
-# The Debian tzdata shipped in the upstream postgres:16 image omits legacy
-# backward-compatibility aliases: only /usr/share/zoneinfo/Asia/Kolkata exists,
-# not Asia/Calcutta. Java clients such as DBeaver on Windows send their system
-# timezone name ("Asia/Calcutta") as the TimeZone startup parameter, and the
-# server rejects it with:
+# Based on pgvector/pgvector:pg16 (postgres:16 + the `vector` extension),
+# needed for Phase 3 semantic search.
+#
+# Java clients such as DBeaver on Windows send their system timezone name
+# ("Asia/Calcutta") as the TimeZone startup parameter, and the server rejects
+# it unless the legacy alias exists:
 #   FATAL: invalid value for parameter "TimeZone": "Asia/Calcutta"
 #
-# PostgreSQL is built with --with-system-tzdata=/usr/share/zoneinfo, so
-# restoring the alias as a symlink makes those connections work.
-FROM postgres:16
+# pgvector/pgvector:pg16 normally ships Asia/Calcutta -> Asia/Kolkata already;
+# the -f flag makes this a no-op in that case and fixes it if it ever isn't.
+FROM pgvector/pgvector:pg16
 
-RUN ln -s /usr/share/zoneinfo/Asia/Kolkata /usr/share/zoneinfo/Asia/Calcutta
+RUN ln -sf /usr/share/zoneinfo/Asia/Kolkata /usr/share/zoneinfo/Asia/Calcutta

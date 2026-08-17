@@ -62,7 +62,7 @@ cmd_logs() {
 }
 
 cmd_seed() {
-  echo ">> Seeding all 5 sources (registry -> legacy CSVs -> MySQL -> Postgres -> Mongo) ..."
+  echo ">> Seeding all 6 sources (registry -> legacy CSVs -> internships -> MySQL -> Postgres -> Mongo) ..."
   "$PY" seed_all.py
 }
 
@@ -98,7 +98,7 @@ cmd_fresh() {
 
 cmd_counts() {
   echo "=================================================================="
-  echo " ROW COUNTS — all 5 sources"
+  echo " ROW COUNTS — all 6 sources"
   echo "=================================================================="
   echo ""
   echo "--- 1. MySQL  aicte_institutes.institutes (port 3307) ---"
@@ -127,6 +127,13 @@ import pandas as pd
 for f in ["nba_autonomous_status.csv", "closed_institutes.csv", "unapproved_list.csv"]:
     df = pd.read_csv("data/legacy/" + f, dtype=str)
     print(f"{f:32s} -> {len(df)} rows")
+PY
+  echo ""
+  echo "--- 6. Internships CSV  data/internships.csv ---"
+  "$PY" - <<'PY'
+import pandas as pd
+df = pd.read_csv("data/internships.csv", dtype=str)
+print(f"internships.csv              -> {len(df)} rows  ({df['domain'].nunique()} domains)")
 PY
   echo ""
   echo "--- Planted issues (ground truth: conflicts_seeded.json) ---"
@@ -184,7 +191,7 @@ confirm() {
 
 usage() {
   cat <<'EOF'
-manage.sh — control the AICTE mock DB stack (5 fragmented sources)
+manage.sh — control the AICTE mock DB stack (6 fragmented sources)
 
 USAGE
   bash manage.sh <command>
@@ -199,13 +206,13 @@ START / STOP
   wipe              Remove containers AND delete all seeded data  [asks for confirmation]
 
 SEEDING
-  seed | reseed     Seed / re-seed all 5 sources (idempotent — safe to re-run)
+  seed | reseed     Seed / re-seed all 6 sources (idempotent — safe to re-run)
   deps              Install Python dependencies into internalenv/
 
 INSPECT
   status | ps       Show container health
   logs [service]    Tail logs (e.g. bash manage.sh logs mysql)
-  counts            Row counts for all 5 sources + planted-issue counts
+  counts            Row counts for all 6 sources + planted-issue counts
   samples           Peek at sample rows from each source
   adminer | ui      Open the Adminer web UI (http://localhost:8080)
 

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "IITD001",
+    "institute": "Indian Institute of Technology, Delhi",
+    "state": "uttar pradesh's neighbor - Delhi",
+    "approved": "Approved",
+    "faculty": [
+      {"faculty_id": "F1", "faculty_name": "Dr. A. Verma", "research_interests": "Machine learning, robotics and computer vision"}
+    ]
+  },
+  {
+    "id": "IITB001",
+    "institute": "IIT-Bombay",
+    "state": "Maharashtra",
+    "approved": "Approved",
+    "faculty": [
+      {"faculty_id": "F2", "faculty_name": "Dr. S. Rao", "research_interests": "Distributed systems and cloud computing"}
+    ]
+  }
+]

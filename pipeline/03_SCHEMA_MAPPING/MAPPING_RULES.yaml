@@ -1,0 +1,103 @@
+# Explicit source-field -> canonical-field mapping.
+# Extend this as new sources / fields are discovered in 02_SCHEMA_DISCOVERY.
+
+# --- sample-data sources (used by the test suite / offline demos) ---------
+institution_db:      # source name -> canonical name
+  college_id: institution_id
+  college_name: institution_name
+  state: state
+  approval: approval_status
+  nirf_rank: nirf_rank
+  internship_student: student_name
+
+course_db:
+  inst_code: institution_id
+  institution_name: institution_name
+  state_name: state
+  approval_status: approval_status
+  naac_grade: naac_grade
+  internship_student: student_name
+
+faculty_db:
+  id: institution_id
+  institute: institution_name
+  state: state
+  approved: approval_status
+
+# --- real Phase-1 sources (project) ---------------------------------------
+mysql_institutes:            # MySQL aicte_institutes.institutes
+  AICTE_Code: aicte_code
+  Institute_Name: institution_name
+  State: state
+  District: district
+  City: city
+  Institute_Type: institute_type
+  Ownership: ownership
+  Approval_Status: approval_status
+  Current_Status: current_status
+  Year_Established: year_established
+  Is_Autonomous: is_autonomous
+  NBA_Accredited: nba_accredited
+  Accreditation_Valid_Until: accreditation_valid_until
+  Last_Updated: last_updated
+
+postgres_courses:            # PostgreSQL courses_db.courses
+  course_id: course_id
+  college_name: institution_name
+  course_name: course_name
+  department: department
+  duration_years: duration_years
+  intake_capacity: intake_capacity
+  fee_per_year: fee_per_year
+  course_status: course_status
+  last_synced: last_updated
+
+postgres_faculty:            # PostgreSQL faculty_db.faculty
+  faculty_id: faculty_id
+  full_name: faculty_name
+  institute_ref: institution_name
+  designation: designation
+  qualification: qualification
+  specialization: specialization
+  department: department
+  years_of_experience: years_of_experience
+  date_joined: date_joined
+  updated_on: last_updated
+
+internships_csv:             # data/internships.csv (clean portal source)
+  institution_name: institution_name
+  domain: domain
+  organization_name: organization_name
+  duration_weeks: duration_weeks
+  stipend_amount: stipend_amount
+  mode: mode
+  is_ppo_linked: is_ppo_linked
+  program_source: program_source
+  description: description
+
+mongodb_scholarships:        # MongoDB aicte_scholarships.scholarships
+  scheme_name: scheme_name
+  administering_body: administering_body
+  eligibility: eligibility
+  applicable_states: applicable_states
+  applicable_institutes: applicable_institutes
+  amount: amount
+  last_updated: last_updated
+
+legacy_nba:                  # data/legacy/nba_autonomous_status.csv
+  Institute_Name: institution_name
+  NBA_Status: nba_status
+  Valid_Until: valid_until
+  last_updated: last_updated
+
+legacy_closed:               # data/legacy/closed_institutes.csv
+  Institute_Name: institution_name
+  Closure_Year: closure_year
+  Reason: reason
+  last_updated: last_updated
+
+legacy_unapproved:           # data/legacy/unapproved_list.csv
+  Institute_Name: institution_name
+  State: state
+  Flag_Reason: flag_reason
+  last_updated: last_updated

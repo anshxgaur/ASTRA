@@ -26,7 +26,7 @@ db_utils.load_env()
 
 NOW = date(2026, 8, 16)
 CONFLICTS_PATH = PROJECT_ROOT / "conflicts_seeded.json"
-DUPLICATE_COUNT = 9  # within-source duplicates to plant
+DUPLICATE_COUNT = 18  # within-source duplicates to plant (was 9)
 
 CREATE_SQL = """
 CREATE TABLE institutes (
@@ -35,9 +35,15 @@ CREATE TABLE institutes (
   Institute_Name VARCHAR(255) NOT NULL,
   State VARCHAR(60),
   District VARCHAR(60),
-  Institute_Type VARCHAR(20),
+  City VARCHAR(60),
+  Institute_Type VARCHAR(40),
+  Ownership VARCHAR(20),
   Approval_Status VARCHAR(20),
+  Current_Status VARCHAR(20),
   Year_Established INT,
+  Is_Autonomous TINYINT(1),
+  NBA_Accredited TINYINT(1),
+  Accreditation_Valid_Until DATE,
   Last_Updated DATE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
 """
@@ -56,50 +62,54 @@ def _connect():
     )
 
 
+def _insert(cur, row: dict) -> None:
+    cur.execute(
+        "INSERT INTO institutes (AICTE_Code, Institute_Name, State, District, City, "
+        "Institute_Type, Ownership, Approval_Status, Current_Status, Year_Established, "
+        "Is_Autonomous, NBA_Accredited, Accreditation_Valid_Until, Last_Updated) "
+        "VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+        (row["aicte_code"], row["name"], row["state"], row["district"], row["city"],
+         row["institution_type"], row["ownership"], row["approval_status"], row["current_status"],
+         row["established_year"], int(bool(row["is_autonomous"])), int(bool(row["nba_accredited"])),
+         row["accreditation_valid_until"] or None, row["last_updated"]),
+    )
+
+
 def _plant_duplicates(cur, institutes, rng) -> list[dict]:
-    """Plant 9 within-source duplicates and log each one."""
+    """Plant 18 within-source duplicates and log each one."""
     planted = []
     for k in range(DUPLICATE_COUNT):
         src = institutes[rng.randrange(len(institutes))]
-        code = src["aicte_code"]
         dup_id = f"mysql_dup_{k + 1:02d}"
+        base = {
+            "aicte_code": src["aicte_code"], "state": src["state"], "district": src["district"],
+            "city": src["city"], "institution_type": src["institution_type"],
+            "ownership": src["ownership"], "approval_status": src["approval_status"],
+            "current_status": src["current_status"], "established_year": src["established_year"],
+            "is_autonomous": src["is_autonomous"], "nba_accredited": src["nba_accredited"],
+            "accreditation_valid_until": src["accreditation_valid_until"],
+            "last_updated": NOW - timedelta(days=rng.randint(0, 90)),
+        }
         if k % 3 == 0:
             # same AICTE_Code reused, name spelled differently
-            name_b = noisy_variant(src["name"], rng, min_transforms=2, max_transforms=3)
-            cur.execute(
-                "INSERT INTO institutes (AICTE_Code, Institute_Name, State, District, Institute_Type, Approval_Status, Year_Established, Last_Updated) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",
-                (code, name_b, src["state"], src["district"], src["type"], src["approval_status"], src["year_established"], NOW - timedelta(days=rng.randint(0, 90))),
-            )
-            log_conflict(CONFLICTS_PATH, {
-                "type": "within_source_duplicate", "source": "mysql", "id": dup_id,
-                "description": "Same AICTE_Code reused for a second row with a differently-spelled name (copy-paste error)",
-                "institutes": [src["name"]],
-                "detail": {"aicte_code": code, "name_a": src["name"], "name_b": name_b},
-            })
+            row = dict(base, name=noisy_variant(src["name"], rng, min_transforms=2, max_transforms=3))
+            desc = "Same AICTE_Code reused for a second row with a differently-spelled name (copy-paste error)"
+            detail = {"aicte_code": src["aicte_code"], "name_a": src["name"], "name_b": row["name"]}
         elif k % 3 == 1:
             # copy-paste row: identical except Last_Updated differs
-            cur.execute(
-                "INSERT INTO institutes (AICTE_Code, Institute_Name, State, District, Institute_Type, Approval_Status, Year_Established, Last_Updated) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",
-                (code, src["name"], src["state"], src["district"], src["type"], src["approval_status"], src["year_established"], NOW - timedelta(days=rng.randint(1, 14))),
-            )
-            log_conflict(CONFLICTS_PATH, {
-                "type": "within_source_duplicate", "source": "mysql", "id": dup_id,
-                "description": "Copy-paste duplicate row; only Last_Updated differs",
-                "institutes": [src["name"]],
-                "detail": {"aicte_code": code, "name": src["name"]},
-            })
+            row = dict(base, name=src["name"], last_updated=NOW - timedelta(days=rng.randint(1, 14)))
+            desc = "Copy-paste duplicate row; only Last_Updated differs"
+            detail = {"aicte_code": src["aicte_code"], "name": src["name"]}
         else:
             # exact duplicate row
-            cur.execute(
-                "INSERT INTO institutes (AICTE_Code, Institute_Name, State, District, Institute_Type, Approval_Status, Year_Established, Last_Updated) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",
-                (code, src["name"], src["state"], src["district"], src["type"], src["approval_status"], src["year_established"], NOW - timedelta(days=rng.randint(0, 90))),
-            )
-            log_conflict(CONFLICTS_PATH, {
-                "type": "within_source_duplicate", "source": "mysql", "id": dup_id,
-                "description": "Exact duplicate row (identical field values)",
-                "institutes": [src["name"]],
-                "detail": {"aicte_code": code, "name": src["name"]},
-            })
+            row = dict(base, name=src["name"])
+            desc = "Exact duplicate row (identical field values)"
+            detail = {"aicte_code": src["aicte_code"], "name": src["name"]}
+        _insert(cur, row)
+        log_conflict(CONFLICTS_PATH, {
+            "type": "within_source_duplicate", "source": "mysql", "id": dup_id,
+            "description": desc, "institutes": [src["name"]], "detail": detail,
+        })
         planted.append(dup_id)
     return planted
 
@@ -130,10 +140,17 @@ def main() -> None:
                 if inst["name"] not in plan_carriers and rng.random() < 0.15:
                     name = noisy_variant(name, rng)
                     noisy_count += 1
-                cur.execute(
-                    "INSERT INTO institutes (AICTE_Code, Institute_Name, State, District, Institute_Type, Approval_Status, Year_Established, Last_Updated) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",
-                    (inst["aicte_code"], name, inst["state"], inst["district"], inst["type"], inst["approval_status"], inst["year_established"], NOW - timedelta(days=rng.randint(0, 90))),
-                )
+                row = {
+                    "aicte_code": inst["aicte_code"], "name": name, "state": inst["state"],
+                    "district": inst["district"], "city": inst["city"],
+                    "institution_type": inst["institution_type"], "ownership": inst["ownership"],
+                    "approval_status": inst["approval_status"], "current_status": inst["current_status"],
+                    "established_year": inst["established_year"], "is_autonomous": inst["is_autonomous"],
+                    "nba_accredited": inst["nba_accredited"],
+                    "accreditation_valid_until": inst["accreditation_valid_until"],
+                    "last_updated": NOW - timedelta(days=rng.randint(0, 90)),
+                }
+                _insert(cur, row)
                 inserted += 1
 
             planted = _plant_duplicates(cur, institutes, rng)

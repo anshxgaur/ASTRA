@@ -1,0 +1,33 @@
+# Central pipeline configuration
+pipeline:
+  use_sample_data: false   # MAIN.py prefers the real Phase-1 sources; falls
+                           # back to DATA/SAMPLE when they are unreachable.
+  log_level: INFO
+
+sources:
+  - name: mysql_institutes      # Phase-1 source 1: MySQL aicte_institutes.institutes
+    type: mysql
+    sample_file: DATA/SAMPLE/SOURCE_A_INSTITUTION.csv
+  - name: postgres_courses      # Phase-1 source 2: PostgreSQL courses_db.courses
+    type: postgres
+    sample_file: DATA/SAMPLE/SOURCE_B_INSTITUTION.csv
+  - name: postgres_faculty      # Phase-1 source 3: PostgreSQL faculty_db.faculty
+    type: postgres
+    sample_file: DATA/SAMPLE/SOURCE_C_INSTITUTION.json
+  - name: mongodb_scholarships  # Phase-1 source 4: MongoDB aicte_scholarships.scholarships
+    type: mongo
+  - name: legacy_csv            # Phase-1 source 5: data/legacy/*.csv (nba/closed/unapproved)
+
+entity_resolution:
+  match_threshold: 0.90
+  blocking_fields: [state]
+
+embedding:
+  model: sentence-transformers/all-MiniLM-L6-v2   # fastembed ONNX, 384 dims
+  dimension: 384
+  batch_size: 32
+
+retrieval:
+  top_k: 5
+  hybrid_weight_structured: 0.5
+  hybrid_weight_vector: 0.5

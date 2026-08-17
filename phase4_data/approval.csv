@@ -1,0 +1,274 @@
+﻿approval_id,institution_id,approval_type,nba_status,valid_until,closure_year,reason,state,last_updated
+APR_00001,INST_0431,nba,Not Accredited,11-08-2025,,,,16-06-2024
+APR_00002,INST_0040,nba,Accredited,22-10-2025,,,,05-09-2023
+APR_00003,INST_0012,nba,Not Accredited,06-09-2026,,,,11-12-2023
+APR_00004,INST_0219,nba,ACCREDITED,21-11-2026,,,,01-05-2024
+APR_00005,INST_0140,nba,accredited,28-06-2025,,,,01-03-2023
+APR_00006,INST_0433,nba,Accredited,12-11-2025,,,,10-05-2023
+APR_00007,INST_0218,nba,Not Accredited,13-07-2025,,,,11-05-2024
+APR_00008,INST_0269,nba,not accredited,09-07-2025,,,,12-02-2024
+APR_00009,INST_0149,nba,Not accredited,01-08-2026,,,,04-07-2023
+APR_00010,INST_0453,nba,ACCREDITED,15-11-2025,,,,23-03-2023
+APR_00011,INST_0133,nba,not accredited,12-09-2026,,,,26-03-2024
+APR_00012,INST_0317,nba,accredited,03-07-2025,,,,31-05-2023
+APR_00013,INST_0094,nba,ACCREDITED,12-03-2026,,,,17-04-2023
+APR_00014,INST_0342,nba,Not Accredited,17-12-2025,,,,03-03-2024
+APR_00015,INST_0136,nba,not accredited,21-11-2025,,,,18-05-2023
+APR_00016,INST_0202,nba,not accredited,21-03-2026,,,,12-07-2023
+APR_00017,INST_0345,nba,Accredited,01-12-2026,,,,31-01-2023
+APR_00018,INST_0164,nba,accredited,01-03-2026,,,,20-06-2024
+APR_00019,INST_0090,nba,not accredited,,,,,31-03-2023
+APR_00020,INST_0054,nba,Not Accredited,31-10-2025,,,,26-03-2023
+APR_00021,INST_0365,nba,accredited,07-01-2026,,,,03-01-2023
+APR_00022,INST_0236,nba,not accredited,20-11-2025,,,,06-01-2023
+APR_00023,INST_0174,nba,accredited,01-06-2026,,,,02-10-2023
+APR_00024,INST_0205,nba,Not accredited,27-12-2025,,,,30-07-2023
+APR_00025,INST_0058,nba,Not Accredited,14-10-2025,,,,20-03-2023
+APR_00026,INST_0228,nba,accredited,07-02-2026,,,,14-02-2024
+APR_00027,INST_0291,nba,not accredited,,,,,19-06-2024
+APR_00028,INST_0395,nba,not accredited,02-03-2026,,,,20-06-2023
+APR_00029,INST_0366,nba,not accredited,16-11-2025,,,,09-03-2024
+APR_00030,INST_0161,nba,Not Accredited,,,,,13-05-2023
+APR_00031,INST_0488,nba,not accredited,31-10-2026,,,,28-09-2023
+APR_00032,INST_0037,nba,Not Accredited,,,,,17-03-2023
+APR_00033,INST_0015,nba,Not Accredited,,,,,07-04-2024
+APR_00034,INST_0026,nba,not accredited,02-11-2025,,,,30-05-2024
+APR_00035,INST_0257,nba,Not Accredited,10-09-2026,,,,27-06-2023
+APR_00036,INST_0298,nba,ACCREDITED,19-01-2026,,,,21-03-2024
+APR_00037,INST_0391,nba,accredited,18-10-2026,,,,13-05-2024
+APR_00038,INST_0374,nba,Accredited,01-10-2026,,,,24-07-2023
+APR_00039,INST_0015,nba,accredited,15-08-2025,,,,16-07-2023
+APR_00040,INST_0041,nba,accredited,03-10-2025,,,,12-05-2023
+APR_00041,INST_0336,nba,not accredited,21-10-2026,,,,15-05-2023
+APR_00042,INST_0331,nba,Accredited,12-08-2025,,,,30-06-2023
+APR_00043,INST_0035,nba,ACCREDITED,21-04-2026,,,,29-01-2023
+APR_00044,INST_0335,nba,accredited,17-05-2026,,,,19-04-2024
+APR_00045,INST_0029,nba,accredited,22-04-2026,,,,16-05-2023
+APR_00046,INST_0441,nba,Not Accredited,15-03-2026,,,,21-10-2023
+APR_00047,INST_0389,nba,not accredited,,,,,26-02-2024
+APR_00048,INST_0132,nba,not accredited,14-11-2026,,,,03-08-2023
+APR_00049,INST_0392,nba,Not Accredited,13-03-2026,,,,22-05-2023
+APR_00050,INST_0011,nba,not accredited,29-10-2026,,,,07-08-2023
+APR_00051,INST_0014,nba,Not Accredited,,,,,17-01-2023
+APR_00052,INST_0017,nba,not accredited,16-11-2025,,,,23-06-2024
+APR_00053,INST_0305,nba,not accredited,28-06-2026,,,,30-06-2023
+APR_00054,INST_0032,nba,Not Accredited,08-10-2025,,,,06-03-2023
+APR_00055,INST_0041,nba,not accredited,07-01-2026,,,,06-05-2024
+APR_00056,INST_0095,nba,ACCREDITED,17-11-2026,,,,17-06-2023
+APR_00057,INST_0106,nba,Not accredited,18-12-2025,,,,12-08-2023
+APR_00058,INST_0152,nba,accredited,20-11-2025,,,,13-10-2023
+APR_00059,INST_0424,nba,accredited,31-08-2026,,,,01-02-2023
+APR_00060,INST_0267,nba,ACCREDITED,15-09-2025,,,,18-05-2024
+APR_00061,INST_0059,nba,ACCREDITED,02-04-2026,,,,29-10-2023
+APR_00062,INST_0415,nba,Accredited,,,,,13-01-2023
+APR_00063,INST_0249,nba,ACCREDITED,13-09-2025,,,,21-06-2024
+APR_00064,INST_0092,nba,ACCREDITED,01-03-2026,,,,25-09-2023
+APR_00065,INST_0312,nba,Accredited,19-01-2026,,,,17-02-2024
+APR_00066,INST_0200,nba,Not Accredited,,,,,30-07-2023
+APR_00067,INST_0256,nba,accredited,05-12-2026,,,,01-02-2023
+APR_00068,INST_0304,nba,ACCREDITED,15-06-2026,,,,05-07-2023
+APR_00069,INST_0249,nba,ACCREDITED,13-11-2026,,,,09-10-2023
+APR_00070,INST_0368,nba,ACCREDITED,,,,,17-12-2023
+APR_00071,INST_0022,nba,accredited,29-06-2026,,,,09-01-2024
+APR_00072,INST_0033,nba,Not Accredited,11-02-2026,,,,14-02-2023
+APR_00073,INST_0489,nba,accredited,16-03-2026,,,,25-04-2023
+APR_00074,INST_0490,nba,accredited,18-05-2026,,,,10-05-2024
+APR_00075,INST_0491,nba,not accredited,22-12-2025,,,,06-06-2023
+APR_00076,INST_0492,nba,accredited,25-09-2025,,,,01-01-2023
+APR_00077,INST_0008,nba,Accredited,26-09-2026,,,,16-03-2023
+APR_00078,INST_0088,nba,Accredited,27-11-2026,,,,16-02-2023
+APR_00079,INST_0169,nba,Accredited,24-02-2026,,,,26-09-2023
+APR_00080,INST_0243,nba,Accredited,23-10-2025,,,,07-03-2024
+APR_00081,INST_0163,closed,,,2021,Infrastructure non-compliance,,2023/02/07
+APR_00082,INST_0319,closed,,,2019,affiliation revoked,,2023/07/05
+APR_00083,INST_0161,closed,,,2024,Merged with another institute,,2023/06/27
+APR_00084,INST_0116,closed,,,2023,No admission for 3 consecutive years,,2023/10/09
+APR_00085,INST_0073,closed,,,2019,voluntarily closed,,2023/06/02
+APR_00086,INST_0096,closed,,,2022,affiliation revoked,,2023/11/27
+APR_00087,INST_0454,closed,,,2023,Infrastructure non-compliance,,2024/05/27
+APR_00088,INST_0463,closed,,,2022,,,2024/06/18
+APR_00089,INST_0085,closed,,,2018,No admission for 3 consecutive years,,2024/02/08
+APR_00090,INST_0358,closed,,,2021,affiliation revoked,,2023/06/03
+APR_00091,INST_0049,closed,,,2022,voluntarily closed,,2023/08/07
+APR_00092,INST_0248,closed,,,2018,Infrastructure non-compliance,,2023/03/24
+APR_00093,INST_0355,closed,,,2020,No admission for 3 consecutive years,,2023/08/25
+APR_00094,INST_0300,closed,,,2018,affiliation revoked,,2023/10/14
+APR_00095,INST_0169,closed,,,2023,voluntarily closed,,2024/06/04
+APR_00096,INST_0133,closed,,,2018,Merged with another institute,,2023/08/28
+APR_00097,INST_0236,closed,,,2023,No admission for 3 consecutive years,,2023/11/12
+APR_00098,INST_0493,closed,,,2018,affiliation revoked,,2024/03/04
+APR_00099,INST_0432,closed,,,2022,No admission for 3 consecutive years,,2023/12/12
+APR_00100,INST_0234,closed,,,2021,voluntarily closed,,2024/04/24
+APR_00101,INST_0408,closed,,,2024,Poor placement record,,2023/03/28
+APR_00102,INST_0014,closed,,,2022,Poor placement record,,2023/12/17
+APR_00103,INST_0077,closed,,,2022,affiliation revoked,,2024/05/28
+APR_00104,INST_0367,closed,,,2022,Poor placement record,,2023/08/28
+APR_00105,INST_0316,closed,,,2023,Poor placement record,,2024/03/25
+APR_00106,INST_0120,closed,,,2021,Merged with another institute,,2024/03/07
+APR_00107,INST_0166,closed,,,2022,affiliation revoked,,2024/06/27
+APR_00108,INST_0070,closed,,,2021,Infrastructure non-compliance,,2023/04/01
+APR_00109,INST_0291,closed,,,2023,voluntarily closed,,2024/03/12
+APR_00110,INST_0142,closed,,,2021,Merged with another institute,,2023/08/05
+APR_00111,INST_0090,closed,,,2018,Poor placement record,,2023/07/23
+APR_00112,INST_0220,closed,,,2020,affiliation revoked,,2023/03/30
+APR_00113,INST_0101,closed,,,2021,No admission for 3 consecutive years,,2023/06/10
+APR_00114,INST_0088,closed,,,2021,,,2023/10/15
+APR_00115,INST_0207,closed,,,2019,Merged with another institute,,2023/09/30
+APR_00116,INST_0005,closed,,,2018,affiliation revoked,,2023/05/27
+APR_00117,INST_0400,closed,,,2022,Infrastructure non-compliance,,2023/12/16
+APR_00118,INST_0422,closed,,,2018,voluntarily closed,,2023/12/11
+APR_00119,INST_0455,closed,,,2021,voluntarily closed,,2023/09/06
+APR_00120,INST_0363,closed,,,2023,Merged with another institute,,2024/04/02
+APR_00121,INST_0435,closed,,,2018,Merged with another institute,,2023/12/19
+APR_00122,INST_0383,closed,,,2023,Merged with another institute,,2023/09/21
+APR_00123,INST_0080,closed,,,2018,voluntarily closed,,2023/09/14
+APR_00124,INST_0233,closed,,,2022,No admission for 3 consecutive years,,2024/06/14
+APR_00125,INST_0382,closed,,,2021,voluntarily closed,,2023/01/28
+APR_00126,INST_0106,closed,,,2020,affiliation revoked,,2023/06/04
+APR_00127,INST_0401,closed,,,2024,voluntarily closed,,2023/03/02
+APR_00128,INST_0183,closed,,,2018,affiliation revoked,,2023/11/10
+APR_00129,INST_0115,closed,,,2020,Infrastructure non-compliance,,2024/05/25
+APR_00130,INST_0254,closed,,,2020,Poor placement record,,2023/09/04
+APR_00131,INST_0436,closed,,,2020,No admission for 3 consecutive years,,2023/04/03
+APR_00132,INST_0056,closed,,,2024,,,2023/10/28
+APR_00133,INST_0012,closed,,,2020,Merged with another institute,,2024/05/11
+APR_00134,INST_0227,closed,,,2022,affiliation revoked,,2023/08/14
+APR_00135,INST_0112,closed,,,2024,Poor placement record,,2024/04/19
+APR_00136,INST_0437,closed,,,2022,Infrastructure non-compliance,,2023/10/22
+APR_00137,INST_0007,closed,,,2021,No admission for 3 consecutive years,,2024/01/28
+APR_00138,INST_0048,closed,,,2018,,,2024/04/25
+APR_00139,INST_0194,closed,,,2023,,,2023/02/04
+APR_00140,INST_0289,closed,,,2020,voluntarily closed,,2023/03/05
+APR_00141,INST_0339,closed,,,2023,Merged with another institute,,2023/11/12
+APR_00142,INST_0061,closed,,,2019,No admission for 3 consecutive years,,2024/03/26
+APR_00143,INST_0407,closed,,,2024,,,2024/04/29
+APR_00144,INST_0033,closed,,,2020,Poor placement record,,2024/05/27
+APR_00145,INST_0001,closed,,,2018,affiliation revoked,,2023/07/23
+APR_00146,INST_0245,closed,,,2018,No admission for 3 consecutive years,,2024/04/14
+APR_00147,INST_0156,closed,,,2019,Merged with another institute,,2023/08/08
+APR_00148,INST_0045,closed,,,2022,Infrastructure non-compliance,,2023/02/15
+APR_00149,INST_0052,closed,,,2020,voluntarily closed,,2023/10/08
+APR_00150,INST_0146,closed,,,2023,Merged with another institute,,2023/11/16
+APR_00151,INST_0333,closed,,,2018,Infrastructure non-compliance,,2023/01/27
+APR_00152,INST_0280,closed,,,2024,No admission for 3 consecutive years,,2024/04/30
+APR_00153,INST_0213,closed,,,2019,Merged with another institute,,2023/04/02
+APR_00154,INST_0008,closed,,,2018,voluntarily closed,,2023/01/23
+APR_00155,INST_0177,closed,,,2019,voluntarily closed,,2023/05/06
+APR_00156,INST_0285,closed,,,2019,affiliation revoked,,2024/04/17
+APR_00157,INST_0003,closed,,,2024,Poor placement record,,2024/01/27
+APR_00158,INST_0021,closed,,,2021,No admission for 3 consecutive years,,2023/09/07
+APR_00159,INST_0123,closed,,,2021,Poor placement record,,2023/01/04
+APR_00160,INST_0032,closed,,,2019,voluntarily closed,,2023/05/02
+APR_00161,INST_0149,closed,,,2023,Merged with another institute,,2023/08/03
+APR_00162,INST_0043,closed,,,2024,voluntarily closed,,2024/01/06
+APR_00163,INST_0182,closed,,,2023,Infrastructure non-compliance,,2024/02/07
+APR_00164,INST_0243,closed,,,2024,No admission for 3 consecutive years,,2023/06/14
+APR_00165,INST_0205,closed,,,2024,Merged with another institute,,2024/04/30
+APR_00166,INST_0491,closed,,,2023,Poor placement record,,2023/12/24
+APR_00167,INST_0492,closed,,,2018,Merged with another institute,,2023/11/07
+APR_00168,INST_0494,closed,,,2021,Merged with another institute,,2023/07/22
+APR_00169,INST_0004,closed,,,2019,Infrastructure non-compliance,,2023/03/18
+APR_00170,INST_0042,closed,,,2019,closed by regulatory order,,2023/03/15
+APR_00171,INST_0027,closed,,,2022,closed by regulatory order,,2023/03/01
+APR_00172,INST_0155,closed,,,2020,closed by regulatory order,,2023/04/01
+APR_00173,INST_0203,closed,,,2022,affiliation revoked,,2023/07/02
+APR_00174,INST_0258,closed,,,2019,closed by regulatory order,,2023/05/17
+APR_00175,INST_0301,closed,,,2019,closed by regulatory order,,2023/04/01
+APR_00176,INST_0361,closed,,,2021,voluntarily closed,,2023/06/28
+APR_00177,INST_0027,closed,,,2023,closed by regulatory order,,2023/02/11
+APR_00178,INST_0449,closed,,,2021,voluntarily closed,,2023/03/28
+APR_00179,INST_0142,unapproved,,,,,South Goa,01 May 2023
+APR_00180,INST_0234,unapproved,,,,,Junagadh,28 Apr 2024
+APR_00181,INST_0169,unapproved,,,,,Meerut,24 Apr 2024
+APR_00182,INST_0045,unapproved,,,,,Nizamabad,02 Aug 2023
+APR_00183,INST_0123,unapproved,,,,,Aurangabad,21 Jan 2024
+APR_00184,INST_0437,unapproved,,,,,Ludhiana,04 Feb 2024
+APR_00185,INST_0182,unapproved,,,,,Cuttack,08 Jul 2023
+APR_00186,INST_0213,unapproved,,,,,Vijayawada,03 Oct 2023
+APR_00187,INST_0012,unapproved,,,,,Anantapur,05 Apr 2024
+APR_00188,INST_0367,unapproved,,,,,Siddipet,16 Mar 2023
+APR_00189,INST_0008,unapproved,,,,,Jabalpur,07 Nov 2023
+APR_00190,INST_0077,unapproved,,,,,Visakhapatnam,18 Mar 2023
+APR_00191,INST_0005,unapproved,,,,,Thrissur,04 Feb 2023
+APR_00192,INST_0432,unapproved,,,,,Hyderabad,26 Sep 2023
+APR_00193,INST_0101,unapproved,,,,,Delhi,07 Mar 2023
+APR_00194,INST_0280,unapproved,,,,,Srinagar,03 Jan 2024
+APR_00195,INST_0254,unapproved,,,,,Visakhapatnam,16 Feb 2023
+APR_00196,INST_0319,unapproved,,,,,Delhi,08 Jul 2023
+APR_00197,INST_0177,unapproved,,,,,Varanasi,11 Jun 2023
+APR_00198,INST_0220,unapproved,,,,,Panipat,20 Feb 2023
+APR_00199,INST_0116,unapproved,,,,,Anantapur,15 Apr 2024
+APR_00200,INST_0056,unapproved,,,,,Kolkata,08 Jun 2023
+APR_00201,INST_0407,unapproved,,,,,Thrissur,28 Jul 2023
+APR_00202,INST_0120,unapproved,,,,,Nashik,31 Oct 2023
+APR_00203,INST_0007,unapproved,,,,,Durgapur,09 Jan 2023
+APR_00204,INST_0243,unapproved,,,,,Lucknow,06 Sep 2023
+APR_00205,INST_0463,unapproved,,,,,Howrah,25 Feb 2023
+APR_00206,INST_0422,unapproved,,,,,Amravati,17 Apr 2024
+APR_00207,INST_0227,unapproved,,,,,Karaikal,18 Jun 2024
+APR_00208,INST_0133,unapproved,,,,,Pune,22 Dec 2023
+APR_00209,INST_0033,unapproved,,,,,Madurai,04 Sep 2023
+APR_00210,INST_0382,unapproved,,,,,Solapur,28 Feb 2024
+APR_00211,INST_0454,unapproved,,,,,Jamshedpur,30 Sep 2023
+APR_00212,INST_0070,unapproved,,,,,Rourkela,26 Mar 2024
+APR_00213,INST_0316,unapproved,,,,,Jorhat,22 Apr 2024
+APR_00214,INST_0333,unapproved,,,,,Kadapa,06 Apr 2023
+APR_00215,INST_0233,unapproved,,,,,Sagar,07 Jul 2023
+APR_00216,INST_0236,unapproved,,,,,Kolhapur,18 Feb 2024
+APR_00217,INST_0248,unapproved,,,,,Ballari,09 Jul 2023
+APR_00218,INST_0088,unapproved,,,,,Vadodara,09 Jan 2024
+APR_00219,INST_0146,unapproved,,,,,Salem,28 Apr 2023
+APR_00220,INST_0014,unapproved,,,,,Indore,02 Sep 2023
+APR_00221,INST_0015,unapproved,,,,,Anantapur,12 Jan 2023
+APR_00222,INST_0183,unapproved,,,,,Muzaffarpur,22 May 2024
+APR_00223,INST_0056,unapproved,,,,,Allahabad,19 Jan 2023
+APR_00224,INST_0455,unapproved,,,,,Ballari,03 May 2023
+APR_00225,INST_0205,unapproved,,,,,Chennai,18 Mar 2024
+APR_00226,INST_0048,unapproved,,,,,Junagadh,22 Jun 2023
+APR_00227,INST_0401,unapproved,,,,,Darbhanga,23 Mar 2024
+APR_00228,INST_0032,unapproved,,,,,Sagar,02 Mar 2024
+APR_00229,INST_0363,unapproved,,,,,Nashik,13 Sep 2023
+APR_00230,INST_0085,unapproved,,,,,Belagavi,16 Jan 2024
+APR_00231,INST_0124,unapproved,,,,,Amravati,06 Nov 2023
+APR_00232,INST_0115,unapproved,,,,,Shimla,02 Jan 2024
+APR_00233,INST_0073,unapproved,,,,,Solapur,10 Apr 2024
+APR_00234,INST_0055,unapproved,,,,,Jalandhar,24 Mar 2023
+APR_00235,INST_0289,unapproved,,,,,Kanpur,11 Jul 2023
+APR_00236,INST_0285,unapproved,,,,,Delhi,06 May 2024
+APR_00237,INST_0194,unapproved,,,,,Daman,12 Jun 2024
+APR_00238,INST_0096,unapproved,,,,,Bardhaman,05 Jun 2023
+APR_00239,INST_0161,unapproved,,,,,Adilabad,26 Oct 2023
+APR_00240,INST_0049,unapproved,,,,,Siddipet,12 Jan 2023
+APR_00241,INST_0163,unapproved,,,,,Delhi,02 Mar 2023
+APR_00242,INST_0090,unapproved,,,,,Varanasi,28 Feb 2024
+APR_00243,INST_0052,unapproved,,,,,Haldia,22 Sep 2023
+APR_00244,INST_0400,unapproved,,,,,Indore,12 Sep 2023
+APR_00245,INST_0358,unapproved,,,,,Varanasi,28 Mar 2023
+APR_00246,INST_0061,unapproved,,,,,Purnia,25 Jun 2024
+APR_00247,INST_0291,unapproved,,,,,Sagar,10 Jun 2024
+APR_00248,INST_0021,unapproved,,,,,Ballari,08 Nov 2023
+APR_00249,INST_0245,unapproved,,,,,Balasore,04 Mar 2024
+APR_00250,INST_0043,unapproved,,,,,Coimbatore,30 May 2023
+APR_00251,INST_0001,unapproved,,,,,Vizianagaram,15 Jun 2023
+APR_00252,INST_0383,unapproved,,,,,Warangal,10 Sep 2023
+APR_00253,INST_0106,unapproved,,,,,Kota,10 Feb 2024
+APR_00254,INST_0435,unapproved,,,,,Kolhapur,01 May 2023
+APR_00255,INST_0300,unapproved,,,,,Allahabad,21 Mar 2023
+APR_00256,INST_0076,unapproved,,,,,Karimnagar,23 Mar 2024
+APR_00257,INST_0408,unapproved,,,,,Allahabad,29 Mar 2024
+APR_00258,INST_0436,unapproved,,,,,Rourkela,19 Sep 2023
+APR_00259,INST_0003,unapproved,,,,,Mohali,14 Aug 2023
+APR_00260,INST_0112,unapproved,,,,,Alwar,23 Jun 2024
+APR_00261,INST_0339,unapproved,,,,,Gwalior,21 Aug 2023
+APR_00262,INST_0207,unapproved,,,,,Kolhapur,03 Apr 2023
+APR_00263,INST_0166,unapproved,,,,,Panipat,30 Mar 2023
+APR_00264,INST_0495,unapproved,,,,,Bikaner,25 Apr 2023
+APR_00265,INST_0496,unapproved,,,,,Haldia,22 Mar 2024
+APR_00266,INST_0497,unapproved,,,,,Etawah,29 Jun 2023
+APR_00267,INST_0498,unapproved,,,,,Jhansi,18 Feb 2024
+APR_00268,INST_0010,unapproved,,,,,Mandi,18 Jun 2023
+APR_00269,INST_0066,unapproved,,,,,Chennai,25 Feb 2023
+APR_00270,INST_0001,unapproved,,,,,Ajmer,16 Jul 2023
+APR_00271,INST_0191,unapproved,,,,,Aurangabad,04 Jul 2023
+APR_00272,INST_0252,unapproved,,,,,Varanasi,02 Jun 2024
+APR_00273,INST_0327,unapproved,,,,,Durgapur,28 Jan 2024

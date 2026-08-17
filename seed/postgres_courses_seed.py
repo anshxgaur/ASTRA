@@ -26,8 +26,10 @@ db_utils.load_env()
 
 NOW = datetime(2026, 8, 16, 12, 0, 0)
 CONFLICTS_PATH = PROJECT_ROOT / "conflicts_seeded.json"
-DUPLICATE_COUNT = 12  # within-source duplicates to plant
-ORPHAN_COURSES = 3    # courses for institutes that don't exist in MySQL
+DUPLICATE_COUNT = 24    # within-source duplicates to plant (was 12)
+ORPHAN_COURSES = 6      # courses for institutes that don't exist in MySQL (was 3)
+COVERAGE = 0.92         # share of institutes offering courses
+COURSES_PER = (2, 4)    # courses per covered institute
 
 CREATE_SQL = """
 CREATE TABLE courses (
@@ -38,10 +40,13 @@ CREATE TABLE courses (
   duration_years INT,
   intake_capacity INT,
   fee_per_year NUMERIC(12,2),
+  course_status VARCHAR(20),
   last_synced TIMESTAMP
 )
 """
 
+# Traditional + emerging-tech catalog (AI/ML, Data Science, IoT, Cybersecurity,
+# Robotics ...) so semantic-search demo queries find real matching content.
 COURSE_CATALOG = [
     ("B.Tech Computer Science and Engineering", "CSE", 4),
     ("B.Tech Electronics and Communication Engineering", "ECE", 4),
@@ -49,13 +54,32 @@ COURSE_CATALOG = [
     ("B.Tech Civil Engineering", "CIVIL", 4),
     ("B.Tech Information Technology", "IT", 4),
     ("B.Tech Artificial Intelligence and Data Science", "AIDS", 4),
+    ("B.Tech Artificial Intelligence and Machine Learning", "AIML", 4),
+    ("B.Tech Data Science", "DS", 4),
+    ("B.Tech Internet of Things", "IOT", 4),
+    ("B.Tech Cybersecurity and Digital Forensics", "CYS", 4),
+    ("B.Tech Robotics and Automation", "ROB", 4),
+    ("B.Tech Computer Science and Business Systems", "CSBS", 4),
     ("B.Tech Electrical and Electronics Engineering", "EEE", 4),
     ("B.Tech Chemical Engineering", "CHEM", 4),
+    ("B.Tech Biotechnology", "BT", 4),
+    ("B.Tech Aerospace Engineering", "AE", 4),
+    ("B.Tech Automobile Engineering", "AUTO", 4),
     ("Diploma in Computer Engineering", "DIP-CSE", 3),
     ("Diploma in Mechanical Engineering", "DIP-MECH", 3),
+    ("Diploma in Electrical Engineering", "DIP-EEE", 3),
+    ("Diploma in Civil Engineering", "DIP-CIVIL", 3),
+    ("Diploma in Artificial Intelligence", "DIP-AI", 3),
     ("M.Tech Computer Science", "PG-CSE", 2),
+    ("M.Tech Artificial Intelligence", "PG-AI", 2),
+    ("M.Tech Data Science", "PG-DS", 2),
+    ("M.Tech VLSI Design", "PG-ECE", 2),
     ("M.Tech Power Systems", "PG-EEE", 2),
     ("MBA", "MBA", 2),
+    ("MBA Business Analytics", "MBA-BA", 2),
+    ("MCA", "MCA", 3),
+    ("B.Pharm", "PHARM", 4),
+    ("B.Arch", "ARCH", 5),
 ]
 
 # College names that exist ONLY in this source (legacy/orphaned records)
@@ -63,6 +87,9 @@ ORPHAN_COLLEGES = [
     "Saraswati Vidya Niketan College of Engineering, Patna",
     "Bihar Institute of Engineering, Muzaffarpur",
     "Dakshina Kannada Polytechnic, Mangaluru",
+    "Shivam Institute of Technology, Gorakhpur",
+    "Utkarsh College of Engineering, Bareilly",
+    "Navjeewan Polytechnic, Darbhanga",
 ]
 
 
@@ -78,17 +105,17 @@ def _connect():
 
 
 def _build_rows(institutes, plan, rng):
-    """~300 rows over ~80% of institutes (coverage asymmetry), ~20% noisy names."""
+    """~1,400 rows over ~92% of institutes (coverage asymmetry), ~20% noisy names."""
     all_names = [i["name"] for i in institutes]
-    excluded = set(rng.sample(all_names, 30))
+    excluded = set(rng.sample(all_names, int(len(all_names) * (1 - COVERAGE))))
     for name in plan["rejected_with_courses"]:  # rejected institutes MUST have courses (conflict)
         excluded.discard(name)
     covered = [n for n in all_names if n not in excluded]
 
     rows = []
     for name in covered:
-        n_courses = rng.randint(2, 4)
-        chosen = rng.sample(COURSE_CATALOG, n_courses)
+        n_courses = rng.randint(*COURSES_PER)
+        chosen = rng.sample(COURSE_CATALOG, min(n_courses, len(COURSE_CATALOG)))
         for cname, dept, dur in chosen:
             college = name
             if rng.random() < 0.20:
@@ -101,13 +128,14 @@ def _build_rows(institutes, plan, rng):
                 "duration_years": dur,
                 "intake_capacity": rng.randint(30, 180),
                 "fee_per_year": rng.randint(25_000, 250_000),
+                "course_status": "closed" if rng.random() < 0.10 else "active",
                 "last_synced": synced,
             })
     return rows
 
 
 def _plant_duplicates(cur, rows, rng) -> list[dict]:
-    """Duplicate 12 existing rows: 6 exact, 6 near (fee/sync drift). Log each."""
+    """Duplicate 24 existing rows: 12 exact, 12 near (fee/sync drift). Log each."""
     planted = []
     chosen = rng.sample(range(len(rows)), DUPLICATE_COUNT)
     for k, idx in enumerate(chosen):
@@ -134,8 +162,11 @@ def _plant_duplicates(cur, rows, rng) -> list[dict]:
 
 def _insert(cur, row) -> None:
     cur.execute(
-        "INSERT INTO courses (college_name, course_name, department, duration_years, intake_capacity, fee_per_year, last_synced) VALUES (%s,%s,%s,%s,%s,%s,%s)",
-        (row["college_name"], row["course_name"], row["department"], row["duration_years"], row["intake_capacity"], row["fee_per_year"], row["last_synced"]),
+        "INSERT INTO courses (college_name, course_name, department, duration_years, "
+        "intake_capacity, fee_per_year, course_status, last_synced) "
+        "VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",
+        (row["college_name"], row["course_name"], row["department"], row["duration_years"],
+         row["intake_capacity"], row["fee_per_year"], row["course_status"], row["last_synced"]),
     )
 
 
@@ -167,7 +198,7 @@ def main() -> None:
                 "college_name": college, "course_name": cname, "department": dept,
                 "duration_years": dur, "intake_capacity": rng.randint(30, 120),
                 "fee_per_year": rng.randint(25_000, 150_000),
-                "last_synced": NOW - timedelta(days=rng.randint(400, 1900)),
+                "course_status": "active", "last_synced": NOW - timedelta(days=rng.randint(400, 1900)),
             })
             log_conflict(CONFLICTS_PATH, {
                 "type": "orphaned_record", "source": "postgres:courses_db", "id": f"pg_courses_orphan_{k + 1:02d}",
@@ -182,7 +213,7 @@ def main() -> None:
                 "college_name": name, "course_name": cname, "department": dept,
                 "duration_years": dur, "intake_capacity": rng.randint(30, 180),
                 "fee_per_year": rng.randint(25_000, 250_000),
-                "last_synced": NOW - timedelta(days=rng.randint(0, 120)),
+                "course_status": "active", "last_synced": NOW - timedelta(days=rng.randint(0, 120)),
             })
             log_conflict(CONFLICTS_PATH, {
                 "type": "cross_source_conflict", "source": "postgres:courses_db", "id": f"cs_rejected_courses_{k + 1:02d}",
@@ -197,6 +228,8 @@ def main() -> None:
             total = cur.fetchone()[0]
             cur.execute("SELECT COUNT(DISTINCT college_name) FROM courses")
             distinct = cur.fetchone()[0]
+            cur.execute("SELECT course_status, COUNT(*) FROM courses GROUP BY 1 ORDER BY 1")
+            by_status = dict(cur.fetchall())
 
         print("=" * 60)
         print(f"[postgres_courses] source: courses_db.courses ({os.environ['POSTGRES_HOST']}:{os.environ['POSTGRES_PORT']})")
@@ -205,6 +238,7 @@ def main() -> None:
         print(f"[postgres_courses] orphaned rows        : {len(ORPHAN_COLLEGES)}")
         print(f"[postgres_courses] cross-source conflicts logged: {len(plan['rejected_with_courses'])}")
         print(f"[postgres_courses] total rows in table  : {total}  (distinct colleges: {distinct})")
+        print(f"[postgres_courses] by status            : {by_status}")
     finally:
         conn.close()
 

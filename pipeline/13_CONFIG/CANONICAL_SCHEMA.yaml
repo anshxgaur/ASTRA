@@ -1,0 +1,86 @@
+# CANONICAL AICTE DATA MODEL
+# Every source field must eventually map to one of these canonical fields.
+# type: structured | relational | contextual
+
+institution:
+  institution_id:      { type: structured, dtype: string, pk: true }
+  institution_name:    { type: structured, dtype: string }
+  state:                { type: structured, dtype: string }
+  district:             { type: structured, dtype: string }
+  city:                 { type: structured, dtype: string }
+  institute_type:       { type: structured, dtype: string }
+  ownership:            { type: structured, dtype: string }
+  approval_status:     { type: structured, dtype: boolean }
+  current_status:       { type: structured, dtype: string }
+  is_autonomous:       { type: structured, dtype: boolean }
+  nba_accredited:      { type: structured, dtype: boolean }
+  accreditation_valid_until: { type: structured, dtype: string }
+  year_established:    { type: structured, dtype: integer }
+  aicte_code:           { type: structured, dtype: string }
+  last_updated:         { type: structured, dtype: string }
+  nirf_rank:            { type: structured, dtype: integer }
+  naac_grade:           { type: structured, dtype: string }
+
+course:
+  course_id:            { type: structured, dtype: string, pk: true }
+  institution_id:       { type: relational, references: institution.institution_id }
+  course_name:          { type: structured, dtype: string }
+  department:           { type: structured, dtype: string }
+  duration_years:       { type: structured, dtype: integer }
+  intake_capacity:      { type: structured, dtype: integer }
+  fee_per_year:         { type: structured, dtype: number }
+  course_status:        { type: structured, dtype: string }
+  last_updated:         { type: structured, dtype: string }
+
+faculty:
+  faculty_id:           { type: structured, dtype: string, pk: true }
+  institution_id:       { type: relational, references: institution.institution_id }
+  faculty_name:         { type: structured, dtype: string }
+  designation:          { type: structured, dtype: string }
+  qualification:        { type: structured, dtype: string }
+  specialization:       { type: structured, dtype: string }
+  department:           { type: structured, dtype: string }
+  years_of_experience: { type: structured, dtype: integer }
+  date_joined:          { type: structured, dtype: string }
+  last_updated:         { type: structured, dtype: string }
+  research_interests:   { type: contextual }
+
+scholarship:
+  scholarship_id:       { type: structured, dtype: string, pk: true }
+  scheme_name:          { type: structured, dtype: string }
+  administering_body:   { type: structured, dtype: string }
+  amount:               { type: structured, dtype: string }
+  applicable_states:    { type: structured, dtype: string }
+  eligibility:          { type: contextual }
+  last_updated:         { type: structured, dtype: string }
+
+approval:
+  approval_id:          { type: structured, dtype: string, pk: true }
+  institution_id:       { type: relational, references: institution.institution_id }
+  approval_type:        { type: structured, dtype: string }   # nba | closed | unapproved
+  nba_status:           { type: structured, dtype: string }
+  valid_until:          { type: structured, dtype: string }
+  closure_year:         { type: structured, dtype: string }
+  reason:               { type: structured, dtype: string }
+  state:                { type: structured, dtype: string }
+  last_updated:         { type: structured, dtype: string }
+
+student:
+  student_id:           { type: structured, dtype: string, pk: true }
+  institution_id:       { type: relational, references: institution.institution_id }
+  student_name:         { type: structured, dtype: string }
+
+internship:
+  internship_id:        { type: structured, dtype: string, pk: true }
+  institution_id:       { type: relational, references: institution.institution_id }
+  domain:               { type: structured, dtype: string }
+  organization_name:    { type: structured, dtype: string }
+  duration_weeks:       { type: structured, dtype: integer }
+  stipend_amount:       { type: structured, dtype: number }
+  mode:                 { type: structured, dtype: string }
+  is_ppo_linked:       { type: structured, dtype: boolean }
+  program_source:       { type: structured, dtype: string }
+  description:          { type: contextual }
+
+# Fields that don't cleanly match a known name fall back to the
+# classifier in 07_CONTEXT_CLASSIFICATION.

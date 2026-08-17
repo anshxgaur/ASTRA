@@ -27,9 +27,8 @@ db_utils.load_env()
 
 NOW = datetime(2026, 8, 16, 12, 0, 0)
 CONFLICTS_PATH = PROJECT_ROOT / "conflicts_seeded.json"
-TARGET_DOCS = 50
-DUPLICATE_COUNT = 6  # within-source duplicate documents to plant
-INSTITUTE_COVERAGE = 60  # ~40% of 150 institutes referenced by scholarships
+TARGET_DOCS = 135        # was 50
+DUPLICATE_COUNT = 12     # within-source duplicate documents to plant (was 6)
 
 SCHEMES = [
     ("Post Matric Scholarship for SC Students", "Ministry of Social Justice & Empowerment"),
@@ -67,6 +66,47 @@ SCHEMES = [
     ("Incentive to Girl Students for Technical Education", "AICTE"),
     ("Special Scholarship for J&K Students", "Ministry of Home Affairs"),
     ("Rural Engineering Talent Scholarship", "NGO / Corporate"),
+    ("AICTE Saraswati Scholarship", "AICTE"),
+    ("AICTE Yashasvi Scholarship", "AICTE"),
+    ("AICTE Pragati Scholarship for Girl Students", "AICTE"),
+    ("AICTE Saksham Scholarship for Persons with Disability", "AICTE"),
+    ("AICTE Swanath Scholarship for Technical Education", "AICTE"),
+    ("AICTE Pragati and Saksham Scheme for PG", "AICTE"),
+    ("AICTE Doctoral Fellowship (ADF)", "AICTE"),
+    ("AICTE National Doctoral Fellowship", "AICTE"),
+    ("AICTE Junior Research Fellowship", "AICTE"),
+    ("AICTE Tuition Fee Waiver for Economically Weaker Sections", "AICTE"),
+    ("Central Sector Scheme for SC Students (Top Class)", "Ministry of Social Justice & Empowerment"),
+    ("Post-Matric Scholarship for OBC Students", "Ministry of Social Justice & Empowerment"),
+    ("Pre-Matric Scholarship for SC Students", "Ministry of Social Justice & Empowerment"),
+    ("Maulana Azad National Scholarship for Minority Girls", "Ministry of Minority Affairs"),
+    ("Begum Hazrat Mahal National Scholarship", "Ministry of Minority Affairs"),
+    ("Padho Pardesh — Interest Subsidy for Abroad Studies", "Ministry of Minority Affairs"),
+    ("National Scholarship for Persons with Disability", "Department of Empowerment of Persons with Disabilities"),
+    ("NTA Pragati Scholarship for Girls (Diploma)", "National Scholarship Portal"),
+    ("Vidyadhan Scholarship for Engineering", "Private Foundation / CSR"),
+    ("Tata Trusts Merit-cum-Means Scholarship", "Private Foundation / CSR"),
+    ("Reliance Foundation Undergraduate Scholarship", "Private Foundation / CSR"),
+    ("Aditya Birla Scholarship for Engineers", "Private Foundation / CSR"),
+    ("Infosys Foundation Merit Scholarship", "NGO / Corporate"),
+    ("L'Oréal India For Young Women in Science", "NGO / Corporate"),
+    ("Anant Ambani Women's Scholarship", "NGO / Corporate"),
+    ("Kishore Vaigyanik Protsahan Yojana (KVPY) SX", "Department of Science & Technology"),
+    ("INSPIRE Scholarship for Higher Education (SHE)", "Department of Science & Technology"),
+    ("Vigyan Dharam Scholarship for STEM", "Department of Science & Technology"),
+    ("National Scheme for Incentive to Girl Child", "Ministry of Women and Child Development"),
+    ("NDF Scholarship for Minority Students", "National Minorities Development & Finance Corporation"),
+    ("NMDFC Merit-cum-Means Scholarship", "National Minorities Development & Finance Corporation"),
+    ("Chief Minister's Yuva Udyam Scholarship", "State Government"),
+    ("State Backward Classes Pre-Matric Scholarship", "BC Welfare Department"),
+    ("Mukhyamantri Medhavi Vidyarthi Yojana", "State Government"),
+    ("Jagadguru Rambhadracharya Handicapped Scholarship", "State Government"),
+    ("Dr. Panjabrao Deshmukh Post-Matric Scholarship", "State Government"),
+    ("E-Kalyan Post-Matric Scholarship", "State Government"),
+    ("State Tribal Development Scholarship", "Tribal Welfare Department"),
+    ("Aadhaar-linked Direct Benefit Scholarship (DBT)", "State Government"),
+    ("Vidyasiri Scholarship for Minority Students", "State Government"),
+    ("Pratibha Puraskara Scholarship", "State Government"),
 ]
 
 ELIGIBILITY_TEMPLATES = [
@@ -159,8 +199,9 @@ def main() -> None:
     coll = db["scholarships"]
     coll.drop()
 
-    # ~40% institute coverage, always including the rejected-conflict institutes
-    pool = set(rng.sample(all_names, INSTITUTE_COVERAGE))
+    # ~40% institute coverage (scales with registry size), always including
+    # the rejected-conflict institutes
+    pool = set(rng.sample(all_names, int(len(all_names) * 0.40)))
     pool.update(plan["rejected_with_courses"])
     pool = list(pool)
 

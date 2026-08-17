@@ -1,0 +1,306 @@
+"""
+Dashboard — live visualization of the AICTE pipeline (Phases 1-3).
+
+Run:
+    internalenv/Scripts/python.exe -m uvicorn dashboard.app:app --port 8000
+Then open http://localhost:8000
+
+/api/status returns:
+  - Phase 1: live row counts per source + ground-truth planted issues
+  - Phase 2: the last pipeline run report (per-stage status/timing/rows/errors)
+  - Phase 3: live aicte_canonical table + pgvector counts
+"""
+from __future__ import annotations
+
+import json
+import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]  # Internal_Matte/
+PIPELINE_ROOT = PROJECT_ROOT / "pipeline"
+REPORT_PATH = PIPELINE_ROOT / "run_reports" / "last_run.json"
+
+load_dotenv(PROJECT_ROOT / ".env")
+load_dotenv(PIPELINE_ROOT / ".env")
+
+app = FastAPI(title="AICTE Unified Search — Pipeline Dashboard")
+
+CORE_TABLES = ["institution", "course", "faculty", "scholarship", "approval", "internship"]
+
+
+# ---------------------------------------------------------------------------
+# Live data collectors (each one degrades gracefully to ok=False)
+# ---------------------------------------------------------------------------
+
+def _pg_canonical_counts() -> dict:
+    import psycopg
+    with psycopg.connect(
+        host=os.environ["POSTGRES_HOST"], port=int(os.environ["POSTGRES_PORT"]),
+        user=os.environ["POSTGRES_USER"], password=os.environ["POSTGRES_PASSWORD"],
+        dbname=os.environ.get("POSTGRES_DB", "aicte_canonical"),
+    ) as conn:
+        with conn.cursor() as cur:
+            out = {"tables": {}}
+            for t in CORE_TABLES:
+                cur.execute(f'SELECT COUNT(*) FROM "{t}"')
+                out["tables"][t] = cur.fetchone()[0]
+            cur.execute("SELECT COUNT(*), COALESCE(vector_dims(embedding), 0) "
+                        "FROM context_document GROUP BY 2")
+            row = cur.fetchone()
+            out["context_document"] = {"rows": row[0] if row else 0,
+                                       "dims": row[1] if row else 0}
+            cur.execute("""
+                SELECT 1 FROM pg_indexes
+                WHERE tablename = 'context_document' AND indexname = 'idx_context_embedding'
+            """)
+            out["hnsw_index"] = cur.fetchone() is not None
+            return out
+
+
+def _phase1_sources() -> list[dict]:
+    import pandas as pd
+    import psycopg
+    import pymysql
+    from pymongo import MongoClient
+
+    sources = []
+
+    def mysql_count() -> int:
+        conn = pymysql.connect(
+            host=os.environ["MYSQL_HOST"], port=int(os.environ["MYSQL_PORT"]),
+            user=os.environ["MYSQL_USER"], password=os.environ["MYSQL_PASSWORD"],
+            database=os.environ["MYSQL_DATABASE"], connect_timeout=4)
+        try:
+            with conn.cursor() as cur:
+                cur.execute("SELECT COUNT(*) FROM institutes")
+                return cur.fetchone()[0]
+        finally:
+            conn.close()
+
+    def pg_count(table: str, db: str) -> int:
+        with psycopg.connect(
+            host=os.environ["POSTGRES_HOST"], port=int(os.environ["POSTGRES_PORT"]),
+            user=os.environ["POSTGRES_USER"], password=os.environ["POSTGRES_PASSWORD"],
+            dbname=db, connect_timeout=4,
+        ) as conn:
+            with conn.cursor() as cur:
+                cur.execute(f'SELECT COUNT(*) FROM "{table}"')
+                return cur.fetchone()[0]
+
+    def mongo_count() -> int:
+        client = MongoClient(os.environ["MONGO_HOST"], int(os.environ["MONGO_PORT"]),
+                             serverSelectionTimeoutMS=4000)
+        try:
+            return client[os.environ["MONGO_DB"]]["scholarships"].count_documents({})
+        finally:
+            client.close()
+
+    def csv_count(fname: str) -> int:
+        return len(pd.read_csv(PROJECT_ROOT / "data" / "legacy" / fname, dtype=str))
+
+    specs = [
+        ("MySQL institutes", "MySQL 8", ":3307", lambda: mysql_count()),
+        ("PG courses", "PostgreSQL 16", ":5433", lambda: pg_count("courses", os.environ["COURSES_DB"])),
+        ("PG faculty", "PostgreSQL 16", ":5433", lambda: pg_count("faculty", os.environ["FACULTY_DB"])),
+        ("Mongo scholarships", "MongoDB 7", ":27017", lambda: mongo_count()),
+        ("Legacy CSVs (3 files)", "Flat files", "data/legacy/",
+         lambda: sum(csv_count(f) for f in
+                     ["nba_autonomous_status.csv", "closed_institutes.csv", "unapproved_list.csv"])),
+    ]
+    for name, tech, where, fn in specs:
+        try:
+            sources.append({"name": name, "tech": tech, "where": where,
+                            "rows": fn(), "ok": True, "error": ""})
+        except Exception as exc:  # noqa: BLE001
+            sources.append({"name": name, "tech": tech, "where": where,
+                            "rows": None, "ok": False, "error": f"{type(exc).__name__}: {exc}"})
+    return sources
+
+
+def _ground_truth() -> dict:
+    gt = json.loads((PROJECT_ROOT / "conflicts_seeded.json").read_text(encoding="utf-8"))
+    return {
+        "conflicts": len(gt.get("cross_source_conflicts", [])),
+        "duplicates": len(gt.get("within_source_duplicates", [])),
+        "orphans": len(gt.get("orphaned_records", [])),
+    }
+
+
+def _registry_count() -> int:
+    reg = json.loads((PROJECT_ROOT / "institute_registry.json").read_text(encoding="utf-8"))
+    return len(reg.get("institutes", []))
+
+
+def _last_run_report() -> dict | None:
+    if REPORT_PATH.exists():
+        return json.loads(REPORT_PATH.read_text(encoding="utf-8"))
+    return None
+
+
+# ---------------------------------------------------------------------------
+# Routes
+# ---------------------------------------------------------------------------
+
+@app.get("/api/status")
+def api_status() -> dict:
+    report = _last_run_report()
+    phase3 = {"ok": False, "error": "", **({} or {"tables": {}})}
+    try:
+        phase3 = _pg_canonical_counts()
+        phase3["ok"] = True
+    except Exception as exc:  # noqa: BLE001
+        phase3["error"] = f"{type(exc).__name__}: {exc}"
+
+    return {
+        "phase1": {
+            "registry": _registry_count(),
+            "ground_truth": _ground_truth(),
+            "sources": _phase1_sources(),
+        },
+        "phase2": report,
+        "phase3": phase3,
+    }
+
+
+@app.get("/", response_class=HTMLResponse)
+def dashboard() -> str:
+    return HTML
+
+
+HTML = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AICTE Pipeline Dashboard</title>
+<style>
+  :root { --ok:#22c55e; --err:#ef4444; --warn:#f59e0b; --bg:#0f172a; --card:#1e293b;
+          --line:#334155; --txt:#e2e8f0; --dim:#94a3b8; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--txt); font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif; padding:24px; }
+  h1 { font-size:20px; }
+  h2 { font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim); margin:28px 0 12px; }
+  .top { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .pill { padding:4px 12px; border-radius:999px; font-size:13px; font-weight:600; }
+  .pill.ok { background:#052e16; color:var(--ok); border:1px solid var(--ok); }
+  .pill.err { background:#450a0a; color:var(--err); border:1px solid var(--err); }
+  .pill.warn { background:#451a03; color:var(--warn); border:1px solid var(--warn); }
+  .meta { color:var(--dim); font-size:12px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; }
+  .card .name { font-size:13px; color:var(--dim); }
+  .card .big { font-size:26px; font-weight:700; margin-top:4px; }
+  .card .sub { font-size:11px; color:var(--dim); margin-top:4px; }
+  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px; }
+  .dot.ok { background:var(--ok); } .dot.err { background:var(--err); } .dot.warn { background:var(--warn); }
+  .flow { display:flex; gap:6px; flex-wrap:wrap; align-items:stretch; }
+  .stage { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 12px; min-width:130px; }
+  .stage .sname { font-size:12px; font-weight:600; }
+  .stage .sinfo { font-size:11px; color:var(--dim); margin-top:4px; line-height:1.45; }
+  .stage.ok { border-top:3px solid var(--ok); } .stage.err { border-top:3px solid var(--err); }
+  .stage.degraded { border-top:3px solid var(--warn); }
+  .arrow { align-self:center; color:var(--dim); font-size:18px; }
+  .issue { background:#3b0d0d; border:1px solid #7f1d1d; border-radius:8px; padding:10px 14px; font-size:13px; margin-top:10px; }
+  .chip { display:inline-block; background:var(--card); border:1px solid var(--line); border-radius:999px;
+          padding:3px 10px; font-size:12px; margin:2px 4px 2px 0; }
+  .err { color:var(--err); font-size:12px; }
+  footer { margin-top:32px; color:var(--dim); font-size:12px; }
+  code { background:#0b1220; padding:1px 5px; border-radius:4px; font-size:11px; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <h1>AICTE Unified Search — Pipeline Dashboard</h1>
+    <span id="statusPill" class="pill warn">loading…</span>
+    <span class="meta" id="meta"></span>
+  </div>
+
+  <h2>Phase 1 — Fragmented sources (live)</h2>
+  <div class="grid" id="phase1"></div>
+  <div id="groundTruth"></div>
+
+  <h2>Phase 2 — Pipeline run (last execution)</h2>
+  <div id="phase2"></div>
+
+  <h2>Phase 3 — Canonical store (live)</h2>
+  <div class="grid" id="phase3"></div>
+
+  <footer>Auto-refreshes every 5 s &nbsp;·&nbsp; run pipeline with <code>internalenv/Scripts/python.exe pipeline/MAIN.py</code>
+  &nbsp;·&nbsp; dashboard: <code>internalenv/Scripts/python.exe -m uvicorn dashboard.app:app --port 8000</code></footer>
+
+<script>
+const $ = id => document.getElementById(id);
+function esc(s){ const d=document.createElement('div'); d.textContent=(s??'').toString(); return d.innerHTML; }
+
+function card(name, big, sub, cls){ return `<div class="card"><div class="name">${esc(name)}</div>
+  <div class="big" style="color:${cls==='err'?'var(--err)':'inherit'}">${big}</div>
+  <div class="sub">${esc(sub)}</div></div>`; }
+
+function renderPhase1(p1){
+  let html = p1.sources.map(s =>
+    card(`${s.ok?'':'⚠ '}${s.name}`, s.ok ? s.rows.toLocaleString() : '—',
+         `${s.tech} · ${s.where}${s.ok?'': ' · '+s.error}`, s.ok?'ok':'err')).join('');
+  $('phase1').innerHTML = html;
+  const gt = p1.ground_truth;
+  $('groundTruth').innerHTML = `<div style="margin-top:10px">
+    <span class="chip">Registry: <b>${p1.registry}</b> canonical institutes</span>
+    <span class="chip">Planted conflicts: <b>${gt.conflicts}</b></span>
+    <span class="chip">Planted duplicates: <b>${gt.duplicates}</b></span>
+    <span class="chip">Orphaned records: <b>${gt.orphans}</b></span>
+  </div>`;
+}
+
+function renderPhase2(p2){
+  if(!p2){ $('phase2').innerHTML = `<div class="issue">No pipeline run yet — run <code>pipeline/MAIN.py</code> first.</div>`; return; }
+  const stages = (p2.stages||[]).map(s =>
+    `<div class="stage ${esc(s.status)}">
+       <div class="sname"><span class="dot ${esc(s.status)}"></span>${esc(s.name)}</div>
+       <div class="sinfo">${esc(s.note||'')}<br>${s.seconds.toFixed(1)} s · ${s.rows!=null?'rows: '+s.rows.toLocaleString():''}</div>
+     </div>`).join('<div class="arrow">→</div>');
+  const er = p2.entity_resolution;
+  const erLine = er ? ` <span class="chip">records in: <b>${er.records_in.toLocaleString()}</b></span>
+    <span class="chip">master entities: <b>${er.entities_out.toLocaleString()}</b></span>` : '';
+  const ctx = p2.phase3 && p2.phase3.context_document ? `<span class="chip">embeddings: <b>${p2.phase3.context_document.rows.toLocaleString()}</b></span>` : '';
+  let issues = '';
+  if(p2.status !== 'ok') issues = `<div class="issue"><b>${esc(p2.status.toUpperCase())}:</b> ${esc(p2.error)}</div>`;
+  if(!p2.use_real_sources) issues += `<div class="issue"><b>WARNING:</b> sample-data mode — no DB load happened.</div>`;
+  $('phase2').innerHTML = `<div class="flow">${stages}</div>
+    <div style="margin-top:10px">${erLine}${ctx}</div>${issues}`;
+}
+
+function renderPhase3(p3){
+  if(!p3.ok){ $('phase3').innerHTML = `<div class="issue">Canonical store unreachable: ${esc(p3.error)}</div>`; return; }
+  const rows = p3.tables||{};
+  let html = Object.entries(rows).map(([t,n]) => card(t, n.toLocaleString(), 'aicte_canonical')).join('');
+  const cd = p3.context_document||{};
+  html += card('pgvector context_document', (cd.rows||0).toLocaleString(),
+    `${cd.dims} dims · HNSW index: ${p3.hnsw_index?'yes':'no'}`, 'ok');
+  $('phase3').innerHTML = html;
+}
+
+function overallStatus(data){
+  const p1down = (data.phase1.sources||[]).some(s=>!s.ok);
+  if(data.phase2 && data.phase2.status==='error') return ['err','PIPELINE ERROR'];
+  if(data.phase2 && data.phase2.status!=='ok') return ['warn','DEGRADED'];
+  if(!data.phase3.ok) return ['warn','STORE UNREACHABLE'];
+  if(p1down) return ['warn','SOURCE DOWN'];
+  return ['ok','ALL SYSTEMS OK'];
+}
+
+async function refresh(){
+  try{
+    const r = await fetch('/api/status'); const data = await r.json();
+    const [cls,label] = overallStatus(data);
+    $('statusPill').className = 'pill '+cls; $('statusPill').textContent = label;
+    $('meta').textContent = data.phase2 ? `last pipeline run: ${data.phase2.run_timestamp} (${data.phase2.duration_seconds}s)` : 'no pipeline run yet';
+    renderPhase1(data.phase1); renderPhase2(data.phase2); renderPhase3(data.phase3);
+  }catch(e){ $('statusPill').className='pill err'; $('statusPill').textContent='DASHBOARD ERROR'; $('meta').textContent=String(e); }
+}
+refresh(); setInterval(refresh, 5000);
+</script>
+</body>
+</html>
+"""

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-15T20:33:38.654607+00:00",
+    "generated_at": "2026-08-17T09:40:25.846784+00:00",
     "note": "ground truth of deliberately planted issues"
   },
   "cross_source_conflicts": [
@@ -10,7 +10,7 @@
       "id": "cs_nba_01",
       "description": "Institute is Under Review in MySQL but NBA CSV lists it as Accredited",
       "institutes": [
-        "Raghu Institute of Technology, Bikaner"
+        "Symbiosis College of Engineering and Technology, Jabalpur"
       ],
       "sources": [
         "mysql",
@@ -27,7 +27,41 @@
       "id": "cs_nba_02",
       "description": "Institute is Under Review in MySQL but NBA CSV lists it as Accredited",
       "institutes": [
-        "National Institute of Technology, Siliguri"
+        "Velammal Institute of Engineering and Management, Vadodara"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:nba_autonomous_status.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Under Review",
+        "legacy_csv.nba_status": "Accredited"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "legacy_csv:nba_autonomous_status.csv",
+      "id": "cs_nba_03",
+      "description": "Institute is Under Review in MySQL but NBA CSV lists it as Accredited",
+      "institutes": [
+        "Aditya Institute of Pharmaceutical Sciences, Meerut"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:nba_autonomous_status.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Under Review",
+        "legacy_csv.nba_status": "Accredited"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "legacy_csv:nba_autonomous_status.csv",
+      "id": "cs_nba_04",
+      "description": "Institute is Under Review in MySQL but NBA CSV lists it as Accredited",
+      "institutes": [
+        "Siddhartha Institute of Engineering and Polytechnic, Lucknow"
       ],
       "sources": [
         "mysql",
@@ -44,7 +78,7 @@
       "id": "cs_closed_01",
       "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
       "institutes": [
-        "Lendi College of Engineering and Technology, Hubballi"
+        "PES College of Engineering, Surat"
       ],
       "sources": [
         "mysql",
@@ -61,7 +95,7 @@
       "id": "cs_closed_02",
       "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
       "institutes": [
-        "National Institute of Technology, Junagadh"
+        "Sri Venkateswara Institute of Technology, Meerut"
       ],
       "sources": [
         "mysql",
@@ -69,7 +103,7 @@
       ],
       "fields_involved": {
         "mysql.approval_status": "Approved",
-        "legacy_csv.closed_institutes": "closure_year=2021"
+        "legacy_csv.closed_institutes": "closure_year=2019"
       }
     },
     {
@@ -78,24 +112,7 @@
       "id": "cs_closed_03",
       "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
       "institutes": [
-        "BMS Polytechnic, Bhavnagar"
-      ],
-      "sources": [
-        "mysql",
-        "legacy_csv:closed_institutes.csv"
-      ],
-      "fields_involved": {
-        "mysql.approval_status": "Approved",
-        "legacy_csv.closed_institutes": "closure_year=2021"
-      }
-    },
-    {
-      "type": "cross_source_conflict",
-      "source": "legacy_csv:closed_institutes.csv",
-      "id": "cs_closed_04",
-      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
-      "institutes": [
-        "Government College of Engineering, Indore"
+        "Government College of Management Studies, Chandigarh"
       ],
       "sources": [
         "mysql",
@@ -109,10 +126,44 @@
     {
       "type": "cross_source_conflict",
       "source": "legacy_csv:closed_institutes.csv",
+      "id": "cs_closed_04",
+      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
+      "institutes": [
+        "PES Polytechnic College, Panipat"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:closed_institutes.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Approved",
+        "legacy_csv.closed_institutes": "closure_year=2020"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "legacy_csv:closed_institutes.csv",
       "id": "cs_closed_05",
       "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
       "institutes": [
-        "Government Engineering College, Warangal"
+        "Vignan College of Engineering and Technology, Amritsar"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:closed_institutes.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Approved",
+        "legacy_csv.closed_institutes": "closure_year=2022"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "legacy_csv:closed_institutes.csv",
+      "id": "cs_closed_06",
+      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
+      "institutes": [
+        "Ideal Business School, Gurugram"
       ],
       "sources": [
         "mysql",
@@ -125,11 +176,79 @@
     },
     {
       "type": "cross_source_conflict",
+      "source": "legacy_csv:closed_institutes.csv",
+      "id": "cs_closed_07",
+      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
+      "institutes": [
+        "BMS Engineering College, Thrissur"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:closed_institutes.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Approved",
+        "legacy_csv.closed_institutes": "closure_year=2019"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "legacy_csv:closed_institutes.csv",
+      "id": "cs_closed_08",
+      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
+      "institutes": [
+        "Government Polytechnic, North Delhi"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:closed_institutes.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Approved",
+        "legacy_csv.closed_institutes": "closure_year=2021"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "legacy_csv:closed_institutes.csv",
+      "id": "cs_closed_09",
+      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
+      "institutes": [
+        "Government College of Management Studies, Mohali"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:closed_institutes.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Approved",
+        "legacy_csv.closed_institutes": "closure_year=2023"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "legacy_csv:closed_institutes.csv",
+      "id": "cs_closed_10",
+      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
+      "institutes": [
+        "Chaitanya Institute of Polytechnic, Guntur"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:closed_institutes.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Approved",
+        "legacy_csv.closed_institutes": "closure_year=2021"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
       "source": "legacy_csv:unapproved_list.csv",
       "id": "cs_unapproved_01",
       "description": "Institute is Approved in MySQL but appears in unapproved_list.csv",
       "institutes": [
-        "SRM Institute of Engineering and Technology, Kolkata"
+        "NMAM Institute of Technology and Science, Mandi"
       ],
       "sources": [
         "mysql",
@@ -146,7 +265,7 @@
       "id": "cs_unapproved_02",
       "description": "Institute is Approved in MySQL but appears in unapproved_list.csv",
       "institutes": [
-        "Vaagdevi College of Engineering and Technology, Sambalpur"
+        "Malla Reddy College of Architecture, Chennai"
       ],
       "sources": [
         "mysql",
@@ -163,7 +282,58 @@
       "id": "cs_unapproved_03",
       "description": "Institute is Approved in MySQL but appears in unapproved_list.csv",
       "institutes": [
-        "Chaitanya College of Engineering, Belagavi"
+        "Government Engineering College, Ajmer"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:unapproved_list.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Approved",
+        "legacy_csv.unapproved_list": "flagged"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "legacy_csv:unapproved_list.csv",
+      "id": "cs_unapproved_04",
+      "description": "Institute is Approved in MySQL but appears in unapproved_list.csv",
+      "institutes": [
+        "Kongu College of Engineering and Technology, Aurangabad"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:unapproved_list.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Approved",
+        "legacy_csv.unapproved_list": "flagged"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "legacy_csv:unapproved_list.csv",
+      "id": "cs_unapproved_05",
+      "description": "Institute is Approved in MySQL but appears in unapproved_list.csv",
+      "institutes": [
+        "G.L. Bajaj College of Engineering and Technology, Varanasi"
+      ],
+      "sources": [
+        "mysql",
+        "legacy_csv:unapproved_list.csv"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Approved",
+        "legacy_csv.unapproved_list": "flagged"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "legacy_csv:unapproved_list.csv",
+      "id": "cs_unapproved_06",
+      "description": "Institute is Approved in MySQL but appears in unapproved_list.csv",
+      "institutes": [
+        "Sree Dattha Institute of Technology and Science, Durgapur"
       ],
       "sources": [
         "mysql",
@@ -180,7 +350,7 @@
       "id": "cs_rejected_courses_01",
       "description": "Institute is Rejected in MySQL but still offers courses in the courses DB",
       "institutes": [
-        "Kalasalingam College of Engineering and Technology, Karimnagar"
+        "Kalinga Institute of Applied Arts and Crafts, Indore"
       ],
       "sources": [
         "mysql",
@@ -188,7 +358,7 @@
       ],
       "fields_involved": {
         "mysql.approval_status": "Rejected",
-        "postgres.courses.college_name": "Kalasalingam College of Engineering and Technology, Karimnagar"
+        "postgres.courses.college_name": "Kalinga Institute of Applied Arts and Crafts, Indore"
       }
     },
     {
@@ -197,7 +367,7 @@
       "id": "cs_rejected_courses_02",
       "description": "Institute is Rejected in MySQL but still offers courses in the courses DB",
       "institutes": [
-        "Amrita College of Engineering, Nizamabad"
+        "Government College of Engineering, Alwar"
       ],
       "sources": [
         "mysql",
@@ -205,7 +375,41 @@
       ],
       "fields_involved": {
         "mysql.approval_status": "Rejected",
-        "postgres.courses.college_name": "Amrita College of Engineering, Nizamabad"
+        "postgres.courses.college_name": "Government College of Engineering, Alwar"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "postgres:courses_db",
+      "id": "cs_rejected_courses_03",
+      "description": "Institute is Rejected in MySQL but still offers courses in the courses DB",
+      "institutes": [
+        "Government Polytechnic, Panipat"
+      ],
+      "sources": [
+        "mysql",
+        "postgres:courses_db"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Rejected",
+        "postgres.courses.college_name": "Government Polytechnic, Panipat"
+      }
+    },
+    {
+      "type": "cross_source_conflict",
+      "source": "postgres:courses_db",
+      "id": "cs_rejected_courses_04",
+      "description": "Institute is Rejected in MySQL but still offers courses in the courses DB",
+      "institutes": [
+        "Matrusri Institute of Engineering and Management, Srinagar"
+      ],
+      "sources": [
+        "mysql",
+        "postgres:courses_db"
+      ],
+      "fields_involved": {
+        "mysql.approval_status": "Rejected",
+        "postgres.courses.college_name": "Matrusri Institute of Engineering and Management, Srinagar"
       }
     },
     {
@@ -214,7 +418,7 @@
       "id": "cs_rejected_scholarship_01",
       "description": "Scholarship document is applicable to an institute that MySQL marks Rejected",
       "institutes": [
-        "Kalasalingam College of Engineering and Technology, Karimnagar"
+        "Kalinga Institute of Applied Arts and Crafts, Indore"
       ],
       "sources": [
         "mysql",
@@ -223,7 +427,7 @@
       "fields_involved": {
         "mysql.approval_status": "Rejected",
         "mongodb.scholarships.applicable_institutes": [
-          "Kalasalingam College of Engineering and Technology, Karimnagar"
+          "Kalinga Institute of Applied Arts and Crafts, Indore"
         ]
       }
     },
@@ -233,7 +437,7 @@
       "id": "cs_rejected_scholarship_02",
       "description": "Scholarship document is applicable to an institute that MySQL marks Rejected",
       "institutes": [
-        "Amrita College of Engineering, Nizamabad"
+        "Government College of Engineering, Alwar"
       ],
       "sources": [
         "mysql",
@@ -242,178 +446,46 @@
       "fields_involved": {
         "mysql.approval_status": "Rejected",
         "mongodb.scholarships.applicable_institutes": [
-          "Amrita College of Engineering, Nizamabad"
+          "Government College of Engineering, Alwar"
         ]
       }
     },
     {
       "type": "cross_source_conflict",
-      "source": "legacy_csv:nba_autonomous_status.csv",
-      "id": "cs_nba_01",
-      "description": "Institute is Under Review in MySQL but NBA CSV lists it as Accredited",
+      "source": "mongodb",
+      "id": "cs_rejected_scholarship_03",
+      "description": "Scholarship document is applicable to an institute that MySQL marks Rejected",
       "institutes": [
-        "Raghu Institute of Technology, Bikaner"
+        "Government Polytechnic, Panipat"
       ],
       "sources": [
         "mysql",
-        "legacy_csv:nba_autonomous_status.csv"
+        "mongodb"
       ],
       "fields_involved": {
-        "mysql.approval_status": "Under Review",
-        "legacy_csv.nba_status": "Accredited"
+        "mysql.approval_status": "Rejected",
+        "mongodb.scholarships.applicable_institutes": [
+          "Government Polytechnic, Panipat"
+        ]
       }
     },
     {
       "type": "cross_source_conflict",
-      "source": "legacy_csv:nba_autonomous_status.csv",
-      "id": "cs_nba_02",
-      "description": "Institute is Under Review in MySQL but NBA CSV lists it as Accredited",
+      "source": "mongodb",
+      "id": "cs_rejected_scholarship_04",
+      "description": "Scholarship document is applicable to an institute that MySQL marks Rejected",
       "institutes": [
-        "National Institute of Technology, Siliguri"
+        "Matrusri Institute of Engineering and Management, Srinagar"
       ],
       "sources": [
         "mysql",
-        "legacy_csv:nba_autonomous_status.csv"
+        "mongodb"
       ],
       "fields_involved": {
-        "mysql.approval_status": "Under Review",
-        "legacy_csv.nba_status": "Accredited"
-      }
-    },
-    {
-      "type": "cross_source_conflict",
-      "source": "legacy_csv:closed_institutes.csv",
-      "id": "cs_closed_01",
-      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
-      "institutes": [
-        "Lendi College of Engineering and Technology, Hubballi"
-      ],
-      "sources": [
-        "mysql",
-        "legacy_csv:closed_institutes.csv"
-      ],
-      "fields_involved": {
-        "mysql.approval_status": "Approved",
-        "legacy_csv.closed_institutes": "closure_year=2019"
-      }
-    },
-    {
-      "type": "cross_source_conflict",
-      "source": "legacy_csv:closed_institutes.csv",
-      "id": "cs_closed_02",
-      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
-      "institutes": [
-        "National Institute of Technology, Junagadh"
-      ],
-      "sources": [
-        "mysql",
-        "legacy_csv:closed_institutes.csv"
-      ],
-      "fields_involved": {
-        "mysql.approval_status": "Approved",
-        "legacy_csv.closed_institutes": "closure_year=2021"
-      }
-    },
-    {
-      "type": "cross_source_conflict",
-      "source": "legacy_csv:closed_institutes.csv",
-      "id": "cs_closed_03",
-      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
-      "institutes": [
-        "BMS Polytechnic, Bhavnagar"
-      ],
-      "sources": [
-        "mysql",
-        "legacy_csv:closed_institutes.csv"
-      ],
-      "fields_involved": {
-        "mysql.approval_status": "Approved",
-        "legacy_csv.closed_institutes": "closure_year=2021"
-      }
-    },
-    {
-      "type": "cross_source_conflict",
-      "source": "legacy_csv:closed_institutes.csv",
-      "id": "cs_closed_04",
-      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
-      "institutes": [
-        "Government College of Engineering, Indore"
-      ],
-      "sources": [
-        "mysql",
-        "legacy_csv:closed_institutes.csv"
-      ],
-      "fields_involved": {
-        "mysql.approval_status": "Approved",
-        "legacy_csv.closed_institutes": "closure_year=2022"
-      }
-    },
-    {
-      "type": "cross_source_conflict",
-      "source": "legacy_csv:closed_institutes.csv",
-      "id": "cs_closed_05",
-      "description": "Institute is Approved in MySQL but appears in closed_institutes.csv",
-      "institutes": [
-        "Government Engineering College, Warangal"
-      ],
-      "sources": [
-        "mysql",
-        "legacy_csv:closed_institutes.csv"
-      ],
-      "fields_involved": {
-        "mysql.approval_status": "Approved",
-        "legacy_csv.closed_institutes": "closure_year=2019"
-      }
-    },
-    {
-      "type": "cross_source_conflict",
-      "source": "legacy_csv:unapproved_list.csv",
-      "id": "cs_unapproved_01",
-      "description": "Institute is Approved in MySQL but appears in unapproved_list.csv",
-      "institutes": [
-        "SRM Institute of Engineering and Technology, Kolkata"
-      ],
-      "sources": [
-        "mysql",
-        "legacy_csv:unapproved_list.csv"
-      ],
-      "fields_involved": {
-        "mysql.approval_status": "Approved",
-        "legacy_csv.unapproved_list": "flagged"
-      }
-    },
-    {
-      "type": "cross_source_conflict",
-      "source": "legacy_csv:unapproved_list.csv",
-      "id": "cs_unapproved_02",
-      "description": "Institute is Approved in MySQL but appears in unapproved_list.csv",
-      "institutes": [
-        "Vaagdevi College of Engineering and Technology, Sambalpur"
-      ],
-      "sources": [
-        "mysql",
-        "legacy_csv:unapproved_list.csv"
-      ],
-      "fields_involved": {
-        "mysql.approval_status": "Approved",
-        "legacy_csv.unapproved_list": "flagged"
-      }
-    },
-    {
-      "type": "cross_source_conflict",
-      "source": "legacy_csv:unapproved_list.csv",
-      "id": "cs_unapproved_03",
-      "description": "Institute is Approved in MySQL but appears in unapproved_list.csv",
-      "institutes": [
-        "Chaitanya College of Engineering, Belagavi"
-      ],
-      "sources": [
-        "mysql",
-        "legacy_csv:unapproved_list.csv"
-      ],
-      "fields_involved": {
-        "mysql.approval_status": "Approved",
-        "legacy_csv.unapproved_list": "flagged"
+        "mysql.approval_status": "Rejected",
+        "mongodb.scholarships.applicable_institutes": [
+          "Matrusri Institute of Engineering and Management, Srinagar"
+        ]
       }
     }
   ],
@@ -424,12 +496,12 @@
       "id": "mysql_dup_01",
       "description": "Same AICTE_Code reused for a second row with a differently-spelled name (copy-paste error)",
       "institutes": [
-        "Geethanjali Engineering College, Amritsar"
+        "Vaagdevi College of Engineering, Karimnagar"
       ],
       "detail": {
-        "aicte_code": "8-7211110653",
-        "name_a": "Geethanjali Engineering College, Amritsar",
-        "name_b": "GEETHANJALI ENGINEERING COLLEGE"
+        "aicte_code": "7-1727946119",
+        "name_a": "Vaagdevi College of Engineering, Karimnagar",
+        "name_b": "Karimnagar Vaagdevi College of Engineering."
       }
     },
     {
@@ -438,11 +510,11 @@
       "id": "mysql_dup_02",
       "description": "Copy-paste duplicate row; only Last_Updated differs",
       "institutes": [
-        "Kumaraguru Engineering College, Kanpur"
+        "NMAM Institute of Engineering and Management, Bengaluru"
       ],
       "detail": {
-        "aicte_code": "8-5499287720",
-        "name": "Kumaraguru Engineering College, Kanpur"
+        "aicte_code": "3-3911257572",
+        "name": "NMAM Institute of Engineering and Management, Bengaluru"
       }
     },
     {
@@ -451,11 +523,11 @@
       "id": "mysql_dup_03",
       "description": "Exact duplicate row (identical field values)",
       "institutes": [
-        "Government Polytechnic, Vellore"
+        "Karunya Engineering College, Siddipet"
       ],
       "detail": {
-        "aicte_code": "2-9831444830",
-        "name": "Government Polytechnic, Vellore"
+        "aicte_code": "1-9206776155",
+        "name": "Karunya Engineering College, Siddipet"
       }
     },
     {
@@ -464,12 +536,12 @@
       "id": "mysql_dup_04",
       "description": "Same AICTE_Code reused for a second row with a differently-spelled name (copy-paste error)",
       "institutes": [
-        "Karunya Institute of Engineering and Technology, Bhopal"
+        "Sardar Engineering College, Hyderabad"
       ],
       "detail": {
-        "aicte_code": "6-6742833836",
-        "name_a": "Karunya Institute of Engineering and Technology, Bhopal",
-        "name_b": "Karunya Institute Of Engineering & Technology, Bhopal"
+        "aicte_code": "1-3841278551",
+        "name_a": "Sardar Engineering College, Hyderabad",
+        "name_b": "Sardar  Engineering College, Hyderabad"
       }
     },
     {
@@ -478,11 +550,11 @@
       "id": "mysql_dup_05",
       "description": "Copy-paste duplicate row; only Last_Updated differs",
       "institutes": [
-        "Galgotias Institute of Engineering and Technology, Adilabad"
+        "Government Institute of Management, Pune"
       ],
       "detail": {
-        "aicte_code": "6-5881105470",
-        "name": "Galgotias Institute of Engineering and Technology, Adilabad"
+        "aicte_code": "2-9136946082",
+        "name": "Government Institute of Management, Pune"
       }
     },
     {
@@ -491,11 +563,11 @@
       "id": "mysql_dup_06",
       "description": "Exact duplicate row (identical field values)",
       "institutes": [
-        "Vignan Polytechnic, Jaipur"
+        "Bharath College of Engineering, Coimbatore"
       ],
       "detail": {
-        "aicte_code": "3-4818632713",
-        "name": "Vignan Polytechnic, Jaipur"
+        "aicte_code": "2-4268340698",
+        "name": "Bharath College of Engineering, Coimbatore"
       }
     },
     {
@@ -504,12 +576,12 @@
       "id": "mysql_dup_07",
       "description": "Same AICTE_Code reused for a second row with a differently-spelled name (copy-paste error)",
       "institutes": [
-        "Siddhartha Polytechnic, Lucknow"
+        "Chaitanya Institute of Science and Technology, Kozhikode"
       ],
       "detail": {
-        "aicte_code": "3-1363756576",
-        "name_a": "Siddhartha Polytechnic, Lucknow",
-        "name_b": "Siddhartha  Poly., Lucknow"
+        "aicte_code": "1-9269575739",
+        "name_a": "Chaitanya Institute of Science and Technology, Kozhikode",
+        "name_b": "Kozhikode Chaitanya Inst. of Science & Technology"
       }
     },
     {
@@ -518,11 +590,11 @@
       "id": "mysql_dup_08",
       "description": "Copy-paste duplicate row; only Last_Updated differs",
       "institutes": [
-        "Kakatiya Institute of Technology and Science, Howrah"
+        "Government College of Engineering, Mohali"
       ],
       "detail": {
-        "aicte_code": "8-1013785466",
-        "name": "Kakatiya Institute of Technology and Science, Howrah"
+        "aicte_code": "6-1485228254",
+        "name": "Government College of Engineering, Mohali"
       }
     },
     {
@@ -531,11 +603,131 @@
       "id": "mysql_dup_09",
       "description": "Exact duplicate row (identical field values)",
       "institutes": [
-        "National Institute of Technology, Siliguri"
+        "Sri Indu Pharmacy College, Cuttack"
       ],
       "detail": {
-        "aicte_code": "6-6927971721",
-        "name": "National Institute of Technology, Siliguri"
+        "aicte_code": "1-8283457280",
+        "name": "Sri Indu Pharmacy College, Cuttack"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mysql",
+      "id": "mysql_dup_10",
+      "description": "Same AICTE_Code reused for a second row with a differently-spelled name (copy-paste error)",
+      "institutes": [
+        "NMAM School of Business Administration, Jalandhar"
+      ],
+      "detail": {
+        "aicte_code": "1-9776458812",
+        "name_a": "NMAM School of Business Administration, Jalandhar",
+        "name_b": "NMAM School of Business Administration, Jalandhar."
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mysql",
+      "id": "mysql_dup_11",
+      "description": "Copy-paste duplicate row; only Last_Updated differs",
+      "institutes": [
+        "Karunya Engineering College, Siddipet"
+      ],
+      "detail": {
+        "aicte_code": "1-9206776155",
+        "name": "Karunya Engineering College, Siddipet"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mysql",
+      "id": "mysql_dup_12",
+      "description": "Exact duplicate row (identical field values)",
+      "institutes": [
+        "G.L. Bajaj Polytechnic College, Nashik"
+      ],
+      "detail": {
+        "aicte_code": "2-5606603084",
+        "name": "G.L. Bajaj Polytechnic College, Nashik"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mysql",
+      "id": "mysql_dup_13",
+      "description": "Same AICTE_Code reused for a second row with a differently-spelled name (copy-paste error)",
+      "institutes": [
+        "Anurag Engineering College, Madurai"
+      ],
+      "detail": {
+        "aicte_code": "2-5624865207",
+        "name_a": "Anurag Engineering College, Madurai",
+        "name_b": "Anurag Colg. of Engg."
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mysql",
+      "id": "mysql_dup_14",
+      "description": "Copy-paste duplicate row; only Last_Updated differs",
+      "institutes": [
+        "Government College of Engineering, Siliguri"
+      ],
+      "detail": {
+        "aicte_code": "8-6626969843",
+        "name": "Government College of Engineering, Siliguri"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mysql",
+      "id": "mysql_dup_15",
+      "description": "Exact duplicate row (identical field values)",
+      "institutes": [
+        "Amity Institute of Polytechnic Studies, Lucknow"
+      ],
+      "detail": {
+        "aicte_code": "4-5379733424",
+        "name": "Amity Institute of Polytechnic Studies, Lucknow"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mysql",
+      "id": "mysql_dup_16",
+      "description": "Same AICTE_Code reused for a second row with a differently-spelled name (copy-paste error)",
+      "institutes": [
+        "Bharath College of Engineering, Vizianagaram"
+      ],
+      "detail": {
+        "aicte_code": "3-8060818839",
+        "name_a": "Bharath College of Engineering, Vizianagaram",
+        "name_b": "Bharath Colg. of Engg."
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mysql",
+      "id": "mysql_dup_17",
+      "description": "Copy-paste duplicate row; only Last_Updated differs",
+      "institutes": [
+        "Girijananda Chowdhury College of Engineering and Technology, Vizianagaram"
+      ],
+      "detail": {
+        "aicte_code": "7-5747665867",
+        "name": "Girijananda Chowdhury College of Engineering and Technology, Vizianagaram"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mysql",
+      "id": "mysql_dup_18",
+      "description": "Exact duplicate row (identical field values)",
+      "institutes": [
+        "Chaitanya Institute of Science and Technology, Kozhikode"
+      ],
+      "detail": {
+        "aicte_code": "1-9269575739",
+        "name": "Chaitanya Institute of Science and Technology, Kozhikode"
       }
     },
     {
@@ -544,11 +736,11 @@
       "id": "pg_courses_dup_01",
       "description": "Exact duplicate course row",
       "institutes": [
-        "Galgotias Institute of Engineering and Technology, Adilabad"
+        "Kalasalingam Institute of Engineering and Technology, Belagavi"
       ],
       "detail": {
-        "course_name": "B.Tech Information Technology",
-        "college_name": "Galgotias Institute of Engineering and Technology, Adilabad"
+        "course_name": "B.Arch",
+        "college_name": "Kalasalingam Institute of Engineering and Technology, Belagavi"
       }
     },
     {
@@ -557,11 +749,11 @@
       "id": "pg_courses_dup_02",
       "description": "Near-duplicate course row (fee and last_synced drift)",
       "institutes": [
-        "Srinivasa Engineering College, Kolhapur"
+        "Sharda Business School, Mysuru"
       ],
       "detail": {
-        "course_name": "B.Tech Information Technology",
-        "college_name": "Srinivasa Engineering College, Kolhapur"
+        "course_name": "B.Tech Electrical and Electronics Engineering",
+        "college_name": "Sharda Business School, Mysuru"
       }
     },
     {
@@ -570,11 +762,11 @@
       "id": "pg_courses_dup_03",
       "description": "Exact duplicate course row",
       "institutes": [
-        "Guru Nanak College of Engineering and Technology, Aurangabad"
+        "Vels Institute of Technology, Junagadh"
       ],
       "detail": {
-        "course_name": "B.Tech Civil Engineering",
-        "college_name": "Guru Nanak College of Engineering and Technology, Aurangabad"
+        "course_name": "B.Tech Internet of Things",
+        "college_name": "Vels Institute of Technology, Junagadh"
       }
     },
     {
@@ -583,11 +775,11 @@
       "id": "pg_courses_dup_04",
       "description": "Near-duplicate course row (fee and last_synced drift)",
       "institutes": [
-        "Aditya Institute of Engineering and Technology, Salem"
+        "Geethanjali Institute of Technology, Kanpur"
       ],
       "detail": {
-        "course_name": "Diploma in Computer Engineering",
-        "college_name": "Aditya Institute of Engineering and Technology, Salem"
+        "course_name": "B.Tech Electronics and Communication Engineering",
+        "college_name": "Geethanjali Institute of Technology, Kanpur"
       }
     },
     {
@@ -596,11 +788,11 @@
       "id": "pg_courses_dup_05",
       "description": "Exact duplicate course row",
       "institutes": [
-        "Government Poly., Rourkela"
+        "Symbiosis Institute of Technology and Science, Pune"
       ],
       "detail": {
-        "course_name": "MBA",
-        "college_name": "Government Poly., Rourkela"
+        "course_name": "B.Tech Artificial Intelligence and Data Science",
+        "college_name": "Symbiosis Institute of Technology and Science, Pune"
       }
     },
     {
@@ -609,11 +801,11 @@
       "id": "pg_courses_dup_06",
       "description": "Near-duplicate course row (fee and last_synced drift)",
       "institutes": [
-        "Anurag Institute of Engineering and Technology, Aurangabad"
+        "Government College of Architecture, Indore"
       ],
       "detail": {
-        "course_name": "B.Tech Information Technology",
-        "college_name": "Anurag Institute of Engineering and Technology, Aurangabad"
+        "course_name": "B.Tech Mechanical Engineering",
+        "college_name": "Government College of Architecture, Indore"
       }
     },
     {
@@ -622,11 +814,11 @@
       "id": "pg_courses_dup_07",
       "description": "Exact duplicate course row",
       "institutes": [
-        "National Institute of Technology, Berhampur"
+        "NMAM Institute of Engineering and Management, Bengaluru"
       ],
       "detail": {
-        "course_name": "B.Tech Computer Science and Engineering",
-        "college_name": "National Institute of Technology, Berhampur"
+        "course_name": "MBA Business Analytics",
+        "college_name": "NMAM Institute of Engineering and Management, Bengaluru"
       }
     },
     {
@@ -635,11 +827,11 @@
       "id": "pg_courses_dup_08",
       "description": "Near-duplicate course row (fee and last_synced drift)",
       "institutes": [
-        "NMAM Polytechnic, Belagavi"
+        "Government College of Management Studies, Tezpur"
       ],
       "detail": {
-        "course_name": "Diploma in Mechanical Engineering",
-        "college_name": "NMAM Polytechnic, Belagavi"
+        "course_name": "Diploma in Artificial Intelligence",
+        "college_name": "Government College of Management Studies, Tezpur"
       }
     },
     {
@@ -648,11 +840,11 @@
       "id": "pg_courses_dup_09",
       "description": "Exact duplicate course row",
       "institutes": [
-        "Government College of Engineering, Coimbatore"
+        "Government Engineering College, Bengaluru"
       ],
       "detail": {
-        "course_name": "Diploma in Mechanical Engineering",
-        "college_name": "Government College of Engineering, Coimbatore"
+        "course_name": "B.Arch",
+        "college_name": "Government Engineering College, Bengaluru"
       }
     },
     {
@@ -661,11 +853,11 @@
       "id": "pg_courses_dup_10",
       "description": "Near-duplicate course row (fee and last_synced drift)",
       "institutes": [
-        "National Institute of Technology, Kharagpur"
+        "Vishwakarma Institute of Science and Technology, Nizamabad"
       ],
       "detail": {
-        "course_name": "Diploma in Computer Engineering",
-        "college_name": "National Institute of Technology, Kharagpur"
+        "course_name": "M.Tech Artificial Intelligence",
+        "college_name": "Vishwakarma Institute of Science and Technology, Nizamabad"
       }
     },
     {
@@ -674,11 +866,11 @@
       "id": "pg_courses_dup_11",
       "description": "Exact duplicate course row",
       "institutes": [
-        "RV Engineering College, Vellore"
+        "Christ Institute of Management Studies, Imphal"
       ],
       "detail": {
-        "course_name": "M.Tech Power Systems",
-        "college_name": "RV Engineering College, Vellore"
+        "course_name": "B.Tech Computer Science and Business Systems",
+        "college_name": "Christ Institute of Management Studies, Imphal"
       }
     },
     {
@@ -687,11 +879,167 @@
       "id": "pg_courses_dup_12",
       "description": "Near-duplicate course row (fee and last_synced drift)",
       "institutes": [
-        "Gokaraju Institute of Technology and Science, Warangal"
+        "RV Institute of Management and Technology, Chennai"
       ],
       "detail": {
-        "course_name": "B.Tech Information Technology",
-        "college_name": "Gokaraju Institute of Technology and Science, Warangal"
+        "course_name": "B.Tech Aerospace Engineering",
+        "college_name": "RV Institute of Management and Technology, Chennai"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_13",
+      "description": "Exact duplicate course row",
+      "institutes": [
+        "Lokmanya Institute of Technology, Jamshedpur"
+      ],
+      "detail": {
+        "course_name": "Diploma in Artificial Intelligence",
+        "college_name": "Lokmanya Institute of Technology, Jamshedpur"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_14",
+      "description": "Near-duplicate course row (fee and last_synced drift)",
+      "institutes": [
+        "Government Institute of Management"
+      ],
+      "detail": {
+        "course_name": "B.Tech Chemical Engineering",
+        "college_name": "Government Institute of Management"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_15",
+      "description": "Exact duplicate course row",
+      "institutes": [
+        "Lendi Institute of Technology, Kanpur"
+      ],
+      "detail": {
+        "course_name": "M.Tech Artificial Intelligence",
+        "college_name": "Lendi Institute of Technology, Kanpur"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_16",
+      "description": "Near-duplicate course row (fee and last_synced drift)",
+      "institutes": [
+        "Sardar Engineering College, Hyderabad"
+      ],
+      "detail": {
+        "course_name": "B.Tech Chemical Engineering",
+        "college_name": "Sardar Engineering College, Hyderabad"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_17",
+      "description": "Exact duplicate course row",
+      "institutes": [
+        "Raghu Institute of Technology and Science, Bokaro"
+      ],
+      "detail": {
+        "course_name": "Diploma in Artificial Intelligence",
+        "college_name": "Raghu Institute of Technology and Science, Bokaro"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_18",
+      "description": "Near-duplicate course row (fee and last_synced drift)",
+      "institutes": [
+        "Government Engineering College, Berhampur"
+      ],
+      "detail": {
+        "course_name": "B.Tech Chemical Engineering",
+        "college_name": "Government Engineering College, Berhampur"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_19",
+      "description": "Exact duplicate course row",
+      "institutes": [
+        "NMAM School of Business Administration, Jalandhar"
+      ],
+      "detail": {
+        "course_name": "B.Tech Chemical Engineering",
+        "college_name": "NMAM School of Business Administration, Jalandhar"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_20",
+      "description": "Near-duplicate course row (fee and last_synced drift)",
+      "institutes": [
+        "D.Y. Patil College of Engineering, Madurai"
+      ],
+      "detail": {
+        "course_name": "B.Tech Civil Engineering",
+        "college_name": "D.Y. Patil College of Engineering, Madurai"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_21",
+      "description": "Exact duplicate course row",
+      "institutes": [
+        "Amity Institute of Technology and Science, Salem"
+      ],
+      "detail": {
+        "course_name": "B.Tech Aerospace Engineering",
+        "college_name": "Amity Institute of Technology and Science, Salem"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_22",
+      "description": "Near-duplicate course row (fee and last_synced drift)",
+      "institutes": [
+        "Dr. B.R. Ambedkar Institute of Science and Technology, Salem"
+      ],
+      "detail": {
+        "course_name": "B.Tech Internet of Things",
+        "college_name": "Dr. B.R. Ambedkar Institute of Science and Technology, Salem"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_23",
+      "description": "Exact duplicate course row",
+      "institutes": [
+        "Sreenidhi College of Engineering, Amravati"
+      ],
+      "detail": {
+        "course_name": "MBA Business Analytics",
+        "college_name": "Sreenidhi College of Engineering, Amravati"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_dup_24",
+      "description": "Near-duplicate course row (fee and last_synced drift)",
+      "institutes": [
+        "Sinhgad Institute of Technology, Aurangabad"
+      ],
+      "detail": {
+        "course_name": "M.Tech Computer Science",
+        "college_name": "Sinhgad Institute of Technology, Aurangabad"
       }
     },
     {
@@ -700,10 +1048,10 @@
       "id": "mongo_dup_01",
       "description": "Exact duplicate scholarship document",
       "institutes": [
-        "Government Polytechnic, Agra"
+        "Government School of Architecture, Kozhikode"
       ],
       "detail": {
-        "scheme_name": "Gujarat Yuva Kaushal Scholarship"
+        "scheme_name": "Punjab Scholarship for Scheduled Castes"
       }
     },
     {
@@ -711,11 +1059,9 @@
       "source": "mongodb",
       "id": "mongo_dup_02",
       "description": "Near-duplicate scholarship document (amount/date drift)",
-      "institutes": [
-        "Andhra Engineering College, Nizamabad"
-      ],
+      "institutes": [],
       "detail": {
-        "scheme_name": "Minority Community Scholarship (MOMA)"
+        "scheme_name": "CSR-funded Engineering Scholarship"
       }
     },
     {
@@ -723,11 +1069,9 @@
       "source": "mongodb",
       "id": "mongo_dup_03",
       "description": "Exact duplicate scholarship document",
-      "institutes": [
-        "RV Engineering College, Vellore"
-      ],
+      "institutes": [],
       "detail": {
-        "scheme_name": "EBC Post-Matric Scholarship"
+        "scheme_name": "CSR-funded Engineering Scholarship"
       }
     },
     {
@@ -735,9 +1079,11 @@
       "source": "mongodb",
       "id": "mongo_dup_04",
       "description": "Near-duplicate scholarship document (amount/date drift)",
-      "institutes": [],
+      "institutes": [
+        "Sardar Institute of Business Management, Kanpur"
+      ],
       "detail": {
-        "scheme_name": "Merit-cum-Means Scholarship"
+        "scheme_name": "AICTE Tuition Fee Waiver for Economically Weaker Sections"
       }
     },
     {
@@ -747,7 +1093,7 @@
       "description": "Exact duplicate scholarship document",
       "institutes": [],
       "detail": {
-        "scheme_name": "UP Pre-Matric Scholarship"
+        "scheme_name": "Central Sector Scheme of Scholarships for College and University Students"
       }
     },
     {
@@ -756,10 +1102,82 @@
       "id": "mongo_dup_06",
       "description": "Near-duplicate scholarship document (amount/date drift)",
       "institutes": [
-        "Vignan Polytechnic, Ludhiana"
+        "Government College of Engineering, Karimnagar"
       ],
       "detail": {
-        "scheme_name": "National Means-cum-Merit Scholarship"
+        "scheme_name": "Nirali Vidyarthini Scholarship"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mongodb",
+      "id": "mongo_dup_07",
+      "description": "Exact duplicate scholarship document",
+      "institutes": [
+        "Government College of Pharmacy, Salem"
+      ],
+      "detail": {
+        "scheme_name": "Post-Matric Scholarship for OBC Students"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mongodb",
+      "id": "mongo_dup_08",
+      "description": "Near-duplicate scholarship document (amount/date drift)",
+      "institutes": [
+        "Bapatla Institute of Science and Technology, Guwahati"
+      ],
+      "detail": {
+        "scheme_name": "Vidyasiri Scholarship for Minority Students"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mongodb",
+      "id": "mongo_dup_09",
+      "description": "Exact duplicate scholarship document",
+      "institutes": [
+        "K.S.R. Institute of Science and Technology, Ajmer"
+      ],
+      "detail": {
+        "scheme_name": "Central Sector Scheme of Scholarships for College and University Students"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mongodb",
+      "id": "mongo_dup_10",
+      "description": "Near-duplicate scholarship document (amount/date drift)",
+      "institutes": [
+        "Madurai. Anurag Engineering College"
+      ],
+      "detail": {
+        "scheme_name": "National Fellowship for OBC Students"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mongodb",
+      "id": "mongo_dup_11",
+      "description": "Exact duplicate scholarship document",
+      "institutes": [
+        "Reva  Engg. College, Tezpur"
+      ],
+      "detail": {
+        "scheme_name": "Women in STEM Scholarship"
+      }
+    },
+    {
+      "type": "within_source_duplicate",
+      "source": "mongodb",
+      "id": "mongo_dup_12",
+      "description": "Near-duplicate scholarship document (amount/date drift)",
+      "institutes": [
+        "Sinhgad Institute of Technology, Aurangabad"
+      ],
+      "detail": {
+        "scheme_name": "AICTE Yashasvi Scholarship"
       }
     }
   ],
@@ -820,6 +1238,60 @@
     },
     {
       "type": "orphaned_record",
+      "source": "legacy_csv",
+      "id": "csv_legacy_only_07",
+      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "institutes": [
+        "Haldia Institute of Pharmacy, Haldia"
+      ]
+    },
+    {
+      "type": "orphaned_record",
+      "source": "legacy_csv",
+      "id": "csv_legacy_only_08",
+      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "institutes": [
+        "Yamuna Engineering College, Etawah"
+      ]
+    },
+    {
+      "type": "orphaned_record",
+      "source": "legacy_csv",
+      "id": "csv_legacy_only_09",
+      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "institutes": [
+        "Pragati Polytechnic, Jhansi"
+      ]
+    },
+    {
+      "type": "orphaned_record",
+      "source": "legacy_csv",
+      "id": "csv_legacy_only_10",
+      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "institutes": [
+        "Saurashtra Institute of Management, Porbandar"
+      ]
+    },
+    {
+      "type": "orphaned_record",
+      "source": "legacy_csv",
+      "id": "csv_legacy_only_11",
+      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "institutes": [
+        "Girna College of Applied Arts, Malegaon"
+      ]
+    },
+    {
+      "type": "orphaned_record",
+      "source": "legacy_csv",
+      "id": "csv_legacy_only_12",
+      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "institutes": [
+        "Sundarban Institute of Technology, Canning"
+      ]
+    },
+    {
+      "type": "orphaned_record",
       "source": "postgres:courses_db",
       "id": "pg_courses_orphan_01",
       "description": "Course row references a college that does not exist in the MySQL institutes table",
@@ -843,6 +1315,33 @@
       "description": "Course row references a college that does not exist in the MySQL institutes table",
       "institutes": [
         "Dakshina Kannada Polytechnic, Mangaluru"
+      ]
+    },
+    {
+      "type": "orphaned_record",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_orphan_04",
+      "description": "Course row references a college that does not exist in the MySQL institutes table",
+      "institutes": [
+        "Shivam Institute of Technology, Gorakhpur"
+      ]
+    },
+    {
+      "type": "orphaned_record",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_orphan_05",
+      "description": "Course row references a college that does not exist in the MySQL institutes table",
+      "institutes": [
+        "Utkarsh College of Engineering, Bareilly"
+      ]
+    },
+    {
+      "type": "orphaned_record",
+      "source": "postgres:courses_db",
+      "id": "pg_courses_orphan_06",
+      "description": "Course row references a college that does not exist in the MySQL institutes table",
+      "institutes": [
+        "Navjeewan Polytechnic, Darbhanga"
       ]
     },
     {
@@ -910,56 +1409,65 @@
     },
     {
       "type": "orphaned_record",
-      "source": "legacy_csv",
-      "id": "csv_legacy_only_01",
-      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "source": "postgres:faculty_db",
+      "id": "pg_faculty_orphan_08",
+      "description": "Faculty row references an institute that does not exist in the MySQL institutes table",
       "institutes": [
-        "Ratnagiri Institute of Technology, Ratnagiri"
+        "Netaji Subhas Institute of Technology, Kalyani"
       ]
     },
     {
       "type": "orphaned_record",
-      "source": "legacy_csv",
-      "id": "csv_legacy_only_02",
-      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "source": "postgres:faculty_db",
+      "id": "pg_faculty_orphan_09",
+      "description": "Faculty row references an institute that does not exist in the MySQL institutes table",
       "institutes": [
-        "Nanded Engineering College"
+        "Parampara College of Engineering, Jharsuguda"
       ]
     },
     {
       "type": "orphaned_record",
-      "source": "legacy_csv",
-      "id": "csv_legacy_only_03",
-      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "source": "postgres:faculty_db",
+      "id": "pg_faculty_orphan_10",
+      "description": "Faculty row references an institute that does not exist in the MySQL institutes table",
       "institutes": [
-        "Shri Ganesh Polytechnic, Bhopal"
+        "Bhavani Institute of Pharmacy, Tirupati"
       ]
     },
     {
       "type": "orphaned_record",
-      "source": "legacy_csv",
-      "id": "csv_legacy_only_04",
-      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "source": "postgres:faculty_db",
+      "id": "pg_faculty_orphan_11",
+      "description": "Faculty row references an institute that does not exist in the MySQL institutes table",
       "institutes": [
-        "Coastal Engineering Institute, Visakhapatnam"
+        "Kumarappa College of Architecture, Rajkot"
       ]
     },
     {
       "type": "orphaned_record",
-      "source": "legacy_csv",
-      "id": "csv_legacy_only_05",
-      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "source": "postgres:faculty_db",
+      "id": "pg_faculty_orphan_12",
+      "description": "Faculty row references an institute that does not exist in the MySQL institutes table",
       "institutes": [
-        "Kharagpur Old Polytechnic"
+        "Durgadevi Institute of Management, Gandhinagar"
       ]
     },
     {
       "type": "orphaned_record",
-      "source": "legacy_csv",
-      "id": "csv_legacy_only_06",
-      "description": "Institute appears only in legacy CSV files, nowhere else",
+      "source": "postgres:faculty_db",
+      "id": "pg_faculty_orphan_13",
+      "description": "Faculty row references an institute that does not exist in the MySQL institutes table",
       "institutes": [
-        "Bikaner Technical College, Bikaner"
+        "Vivekananda Institute of Technology, Vrindavan"
+      ]
+    },
+    {
+      "type": "orphaned_record",
+      "source": "postgres:faculty_db",
+      "id": "pg_faculty_orphan_14",
+      "description": "Faculty row references an institute that does not exist in the MySQL institutes table",
+      "institutes": [
+        "Aurobindo College of Engineering, Puducherry"
       ]
     }
   ]

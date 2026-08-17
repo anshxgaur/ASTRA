@@ -27,6 +27,7 @@ CONFLICTS_PATH = PROJECT_ROOT / "conflicts_seeded.json"
 STEPS = [
     ("registry  ", ["-m", "seed.generate_registry"]),
     ("legacy_csv", ["-m", "seed.generate_legacy_csv"]),
+    ("internships", ["-m", "seed.generate_internships"]),
     ("mysql     ", ["-m", "seed.mysql_seed"]),
     ("pg_courses", ["-m", "seed.postgres_courses_seed"]),
     ("pg_faculty", ["-m", "seed.postgres_faculty_seed"]),
@@ -134,6 +135,12 @@ def _summary() -> None:
         col = "Institute_Name" if "Institute_Name" in df.columns else df.columns[0]
         csv_names += [str(x) for x in df[col].dropna().tolist()]
 
+    # Internships CSV (clean 6th source)
+    int_df = pd.read_csv(PROJECT_ROOT / "data" / "internships.csv", dtype=str)
+    internships_rows = len(int_df)
+    internships_distinct = int_df["institution_name"].nunique()
+    internships_names = [str(x) for x in int_df["institution_name"].dropna().tolist()]
+
     # --- planted-issue counts from ground truth ---
     conflicts = json.loads(CONFLICTS_PATH.read_text(encoding="utf-8"))
     cc = len(conflicts["cross_source_conflicts"])
@@ -149,13 +156,14 @@ def _summary() -> None:
     print(f" {'2. courses (Postgres)':<28}{'PG 16':<12}{courses_rows:>7}{courses_distinct:>16}{overlap(courses_names):>16}")
     print(f" {'3. faculty (Postgres)':<28}{'PG 16':<12}{faculty_rows:>7}{faculty_distinct:>16}{overlap(faculty_names):>16}")
     print(f" {'4. scholarships (Mongo)':<28}{'Mongo 7':<12}{mongo_docs:>7}{len(set(mongo_names)):>16}{overlap(mongo_names):>16}")
+    print(f" {'6. internships (CSV)':<28}{'clean':<12}{internships_rows:>7}{internships_distinct:>16}{overlap(internships_names):>16}")
     for f, c in csv_counts.items():
         print(f" {'5. ' + f:<28}{'CSV':<12}{c:>7}{'':>16}{'':>16}")
     print("-" * 72)
     print(f" Planted issues (ground truth in conflicts_seeded.json):")
     print(f"   cross_source_conflicts   : {cc}")
-    print(f"   within_source_duplicates : {wd}   (mysql 9, pg_courses 12, mongo 6)")
-    print(f"   orphaned_records         : {orp}   (faculty 7, pg_courses 3, legacy-only 6)")
+    print(f"   within_source_duplicates : {wd}   (mysql 18, pg_courses 24, mongo 12)")
+    print(f"   orphaned_records         : {orp}   (faculty 14, pg_courses 6, legacy-only 12)")
     print("=" * 72)
 
 
@@ -166,7 +174,7 @@ def main() -> int:
     if not ok:
         return 1
     _summary()
-    print("\nAll 5 sources seeded. See README.md for how to manage each database.")
+    print("\nAll 6 sources seeded. See README.md for how to manage each database.")
     return 0
 
 

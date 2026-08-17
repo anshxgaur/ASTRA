@@ -32,7 +32,7 @@ db_utils.load_env()
 OUT_DIR = PROJECT_ROOT / "data" / "legacy"
 CONFLICTS_PATH = PROJECT_ROOT / "conflicts_seeded.json"
 
-# Institutes that exist only in these CSVs (legacy-only records)
+# Institutes that exist only in these CSVs (legacy-only records) — 12 of them
 LEGACY_ONLY = [
     "Ratnagiri Institute of Technology, Ratnagiri",
     "Nanded Engineering College",
@@ -40,6 +40,12 @@ LEGACY_ONLY = [
     "Coastal Engineering Institute, Visakhapatnam",
     "Kharagpur Old Polytechnic",
     "Bikaner Technical College, Bikaner",
+    "Haldia Institute of Pharmacy, Haldia",
+    "Yamuna Engineering College, Etawah",
+    "Pragati Polytechnic, Jhansi",
+    "Saurashtra Institute of Management, Porbandar",
+    "Girna College of Applied Arts, Malegaon",
+    "Sundarban Institute of Technology, Canning",
 ]
 
 STALE_RANGE = (date(2023, 1, 1), date(2024, 6, 30))
@@ -81,8 +87,8 @@ def _pick_name(rng, registry_names, messy_p, pad_p):
 def _gen_nba(rng, registry_names, registry_by_name, plan) -> pd.DataFrame:
     rows = []
     nba_conflict = plan["under_review_but_nba_accredited"]
-    # ~35 registry institutes + legacy-only names
-    names = rng.sample(registry_names, 35) + LEGACY_ONLY[:2]
+    # ~72 registry institutes + legacy-only names
+    names = rng.sample(registry_names, 72) + LEGACY_ONLY[:4]
     for name in names:
         if name in registry_by_name:
             # non-conflict rows must not contradict MySQL: only Approved institutes
@@ -130,7 +136,7 @@ def _gen_closed(rng, registry_names, registry_by_name, plan) -> pd.DataFrame:
     candidates = [n for n in registry_names
                   if registry_by_name[n]["approval_status"] != "Approved"
                   and n not in plan["approved_but_closed"]]
-    names = rng.sample(candidates, min(33, len(candidates))) + LEGACY_ONLY[2:4]
+    names = rng.sample(candidates, min(88, len(candidates))) + LEGACY_ONLY[2:5]
     for name in names:
         rows.append({
             "Institute_Name": _pick_name(rng, [name], 0.5, 0.15),
@@ -163,7 +169,7 @@ def _gen_unapproved(rng, registry_names, registry_by_name, plan) -> pd.DataFrame
     candidates = [n for n in registry_names
                   if registry_by_name[n]["approval_status"] != "Approved"
                   and n not in plan["approved_but_unapproved_listed"]]
-    names = rng.sample(candidates, min(40, len(candidates))) + LEGACY_ONLY[4:]
+    names = rng.sample(candidates, min(95, len(candidates))) + LEGACY_ONLY[5:9]
     for name in names:
         rows.append({
             "Institute_Name": _pick_name(rng, [name], 0.5, 0.15),

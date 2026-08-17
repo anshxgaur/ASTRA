@@ -28,8 +28,9 @@ db_utils.load_env()
 
 NOW = datetime(2026, 8, 16, 12, 0, 0)
 CONFLICTS_PATH = PROJECT_ROOT / "conflicts_seeded.json"
-TARGET_ROWS = 400
-ORPHAN_FACULTY = 7  # faculty rows referencing institutes that don't exist in MySQL
+TARGET_ROWS = 850        # was 400
+COVERAGE = 0.75          # share of institutes that have faculty records
+ORPHAN_FACULTY = 14      # faculty rows referencing institutes that don't exist in MySQL (was 7)
 
 CREATE_SQL = """
 CREATE TABLE faculty (
@@ -38,15 +39,34 @@ CREATE TABLE faculty (
   institute_ref VARCHAR(255),
   designation VARCHAR(40),
   qualification VARCHAR(20),
+  specialization VARCHAR(120),
   department VARCHAR(80),
+  years_of_experience INT,
   date_joined DATE,
   updated_on TIMESTAMP
 )
 """
 
 DESIGNATIONS = ["Professor", "Assoc. Professor", "Asst. Professor"]
-QUALIFICATIONS = ["PhD", "M.Tech", "M.E."]
-DEPARTMENTS = ["CSE", "ECE", "MECH", "CIVIL", "IT", "EEE", "CHEM", "AIDS", "MBA", "Physics", "Mathematics"]
+QUALIFICATIONS = ["PhD", "M.Tech", "M.E.", "M.Sc."]
+DEPARTMENTS = ["CSE", "ECE", "MECH", "CIVIL", "IT", "EEE", "CHEM", "AIDS", "AIML",
+               "MBA", "Physics", "Mathematics", "Architecture", "Pharmacy"]
+
+# free-text specialization (embedded later — semantic search finds these)
+SPECIALIZATIONS = [
+    "Machine Learning", "Computer Vision", "Natural Language Processing",
+    "Deep Learning", "Data Mining", "Big Data Analytics", "Cloud Computing",
+    "Distributed Systems", "Cybersecurity", "Cryptography", "Network Security",
+    "Internet of Things", "Embedded Systems", "Robotics", "Control Systems",
+    "Power Electronics", "Renewable Energy Systems", "Power Systems",
+    "VLSI Design", "Signal Processing", "Wireless Communications",
+    "Structural Engineering", "Geotechnical Engineering", "Transportation Engineering",
+    "Environmental Engineering", "Computational Fluid Dynamics", "Thermal Engineering",
+    "Design Engineering", "Manufacturing Technology", "Mechatronics",
+    "Biotechnology", "Pharmaceutical Chemistry", "Pharmacology", "Drug Delivery",
+    "Corporate Finance", "Marketing Analytics", "Operations Research",
+    "Human Resource Management", "Business Analytics", "Supply Chain Management",
+]
 
 # Institutes that exist ONLY in this source (orphaned/legacy faculty records)
 ORPHAN_INSTITUTES = [
@@ -57,6 +77,13 @@ ORPHAN_INSTITUTES = [
     "Old Staff College of Engineering, Nagpur",
     "Dakshin Gujarat Institute, Surat East",
     "Jhansi Technical Institute, Jhansi",
+    "Netaji Subhas Institute of Technology, Kalyani",
+    "Parampara College of Engineering, Jharsuguda",
+    "Bhavani Institute of Pharmacy, Tirupati",
+    "Kumarappa College of Architecture, Rajkot",
+    "Durgadevi Institute of Management, Gandhinagar",
+    "Vivekananda Institute of Technology, Vrindavan",
+    "Aurobindo College of Engineering, Puducherry",
 ]
 
 
@@ -88,8 +115,8 @@ def main() -> None:
         conn.execute("DROP TABLE IF EXISTS faculty")
         conn.execute(CREATE_SQL)
 
-        # coverage asymmetry: only ~70% of institutes have faculty records
-        covered = set(rng.sample(all_names, 105))
+        # coverage asymmetry: only ~75% of institutes have faculty records
+        covered = set(rng.sample(all_names, int(len(all_names) * COVERAGE)))
         inserted = 0
         while inserted < TARGET_ROWS:
             name = rng.choice(list(covered))
@@ -98,9 +125,13 @@ def main() -> None:
                 ref = noisy_variant(name, rng)
             joined = datetime(2004, 1, 1) + timedelta(days=rng.randint(0, 365 * 20))
             updated = NOW - timedelta(days=rng.randint(400, 1900)) if rng.random() < 0.40 else NOW - timedelta(days=rng.randint(0, 120))
+            experience = max(1, (joined.year - 2000))
             conn.execute(
-                "INSERT INTO faculty (full_name, institute_ref, designation, qualification, department, date_joined, updated_on) VALUES (%s,%s,%s,%s,%s,%s,%s)",
-                (fake.name(), ref, rng.choice(DESIGNATIONS), rng.choice(QUALIFICATIONS), rng.choice(DEPARTMENTS), joined, updated),
+                "INSERT INTO faculty (full_name, institute_ref, designation, qualification, "
+                "specialization, department, years_of_experience, date_joined, updated_on) "
+                "VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+                (fake.name(), ref, rng.choice(DESIGNATIONS), rng.choice(QUALIFICATIONS),
+                 rng.choice(SPECIALIZATIONS), rng.choice(DEPARTMENTS), experience, joined, updated),
             )
             inserted += 1
 
@@ -108,8 +139,12 @@ def main() -> None:
         for k, inst_name in enumerate(ORPHAN_INSTITUTES):
             joined = datetime(2004, 1, 1) + timedelta(days=rng.randint(0, 365 * 20))
             conn.execute(
-                "INSERT INTO faculty (full_name, institute_ref, designation, qualification, department, date_joined, updated_on) VALUES (%s,%s,%s,%s,%s,%s,%s)",
-                (fake.name(), inst_name, rng.choice(DESIGNATIONS), rng.choice(QUALIFICATIONS), rng.choice(DEPARTMENTS), joined, NOW - timedelta(days=rng.randint(400, 1900))),
+                "INSERT INTO faculty (full_name, institute_ref, designation, qualification, "
+                "specialization, department, years_of_experience, date_joined, updated_on) "
+                "VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+                (fake.name(), inst_name, rng.choice(DESIGNATIONS), rng.choice(QUALIFICATIONS),
+                 rng.choice(SPECIALIZATIONS), rng.choice(DEPARTMENTS),
+                 max(1, joined.year - 2000), joined, NOW - timedelta(days=rng.randint(400, 1900))),
             )
             log_conflict(CONFLICTS_PATH, {
                 "type": "orphaned_record", "source": "postgres:faculty_db", "id": f"pg_faculty_orphan_{k + 1:02d}",
