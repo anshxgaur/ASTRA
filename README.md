@@ -7,10 +7,32 @@
 </p>
 </div>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white" height="40"/>
+  <img src="https://img.shields.io/badge/FastAPI-0.104+-009688?style=for-the-badge&logo=fastapi&logoColor=white" height="40"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" height="40"/>
+  <img src="https://img.shields.io/badge/pgvector-Embeddings-0B6E4F?style=for-the-badge&logo=postgresql&logoColor=white" height="40"/>
+  <img src="https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white" height="40"/>
+  <img src="https://img.shields.io/badge/MongoDB-7-47A248?style=for-the-badge&logo=mongodb&logoColor=white" height="40"/>
+</p>
 
 <p align="center">
   <img src="assets/Pixel Loop GIF by Axel Oil.gif" width="100%" alt="Demo of the memory-compounds loop" />
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/pandas-Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white" height="40"/>
+  <img src="https://img.shields.io/badge/RapidFuzz-Dedupe-6C5CE7?style=for-the-badge" height="40"/>
+  <img src="https://img.shields.io/badge/FastEmbed-Embeddings-00A67E?style=for-the-badge" height="40"/>
+  <img src="https://img.shields.io/badge/all--MiniLM--L6--v2-Model-FFCC00?style=for-the-badge&logo=huggingface&logoColor=black" height="40"/>
+  <img src="https://img.shields.io/badge/Adminer-UI-34567C?style=for-the-badge" height="40"/>
+  <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" height="40"/>
+  <img src="https://img.shields.io/badge/Groq-LLM-F55036?style=for-the-badge" height="40"/>
+  <img src="https://img.shields.io/badge/Faker-Data-8A2BE2?style=for-the-badge&logo=python&logoColor=white" height="40"/>
+
+</p>
+
+
 
 # AICTE Unified Search System — 6 Fragmented Mock Data Sources → One Clean Store
 
