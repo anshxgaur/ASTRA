@@ -71,7 +71,9 @@ Optional: set `GROQ_API_KEY=gsk_...` in `.env` to enable the real LLM
 (Groq text-to-SQL + grounded answer synthesis); without it the API runs in
 mock-fallback mode and everything else still works.
 
+
 ---
+
 
 ## Progress — work done vs. work left
 
@@ -99,151 +101,107 @@ mock-fallback mode and everything else still works.
 the working retriever is exposed as an HTTP API (`api/app.py`) with a Groq
 LLM for text-to-SQL and grounded answer synthesis.**
 
+
 ---
+
 
 ## Architecture
 
 ```mermaid
+
+
+
 flowchart LR
-    subgraph P1["PHASE 1 — SEED THE MESS (seed_all.py, deterministic)"]
-        REG["institute_registry.json<br/>(500 canonical institutes)"]
-        REG --> MYSQL["MySQL · institutes<br/>518 rows · :3307"]
-        REG --> PGC["PostgreSQL · courses_db.courses<br/>1,403 rows · :5433"]
-        REG --> PGF["PostgreSQL · faculty_db.faculty<br/>864 rows · :5433"]
-        REG --> MONGO["MongoDB · scholarships<br/>151 docs · :27017"]
-        REG --> CSV["Legacy CSVs · data/legacy/<br/>273 rows, 3 date formats"]
-        REG --> INT["Internships CSV · data/internships.csv<br/>650 rows (clean)"]
+
+    %% =========================
+    %% PHASE 1 — DATA SOURCES
+    %% =========================
+    subgraph P1["PHASE 1 — Fragmented Data Sources"]
+        A1["MySQL<br/>Institutes"]
+        A2["PostgreSQL<br/>Courses"]
+        A3["PostgreSQL<br/>Faculty"]
+        A4["MongoDB<br/>Scholarships"]
+        A5["Legacy CSV<br/>Student Data"]
+        A6["CSV<br/>Internships"]
     end
 
-    subgraph P2["PHASE 2 — INTEGRATED PIPELINE (pipeline/MAIN.py, 13 stages)"]
-        ING["01 INGEST<br/>real sources"]
-        ING --> DIS["02 DISCOVER"]
-        DIS --> MAP["03 MAP<br/>MAPPING_RULES.yaml"]
-        MAP --> STD["04 STANDARDIZE"]
-        STD --> NOR["05 NORMALIZE"]
-        NOR --> ER["06 ENTITY RESOLVE<br/>3,859 rows → 649 entities"]
-        ER --> CLS["07 CLASSIFY<br/>structured vs contextual"]
+    %% =========================
+    %% PHASE 2 — PIPELINE
+    %% =========================
+    subgraph P2["PHASE 2 — Data Harmonization Pipeline"]
+        B1["01 · INGEST<br/>Load all sources"]
+        B2["02 · DISCOVER<br/>Detect structure & fields"]
+        B3["03 · MAP<br/>Apply mapping rules"]
+        B4["04 · STANDARDIZE<br/>Normalize values"]
+        B5["05 · NORMALIZE<br/>Clean names & formats"]
+        B6["06 · ENTITY RESOLUTION<br/>Match duplicate entities"]
     end
 
-    subgraph P3["PHASE 3 — CANONICAL STORE (aicte_canonical)"]
-        DB["08 POSTGRESQL<br/>institution 498 · course 1,403 · faculty 864<br/>scholarship 151 · approval 273 · internship 650 · lineage 3,839"]
-        EMB["09 CONTEXT + EMBED<br/>fastembed all-MiniLM-L6-v2 (384-dim)"]
-        VEC["10 PGVECTOR<br/>context_document 3,839 · HNSW"]
+    %% =========================
+    %% PHASE 3 — CANONICAL STORE
+    %% =========================
+    subgraph P3["PHASE 3 — Canonical Knowledge Store"]
+        C1["07 · CANONICAL STORE<br/>Unified PostgreSQL"]
+        C2["08 · PGVECTOR<br/>Generate embeddings"]
+        C3["09 · CONTEXT + EMBED<br/>Semantic representation"]
     end
 
-    MYSQL --> ING
-    PGC --> ING
-    PGF --> ING
-    MONGO --> ING
-    CSV --> ING
-    INT --> ING
-    ER --> DB
-    ER --> EMB
-    EMB --> VEC
-
-    subgraph P4["PHASE 4 — UNIFIED SEARCH API"]
-        RET["11 HYBRID RETRIEVAL<br/>structured SQL + vector similarity + LLM synthesis"]
+    %% =========================
+    %% PHASE 4 — SEARCH
+    %% =========================
+    subgraph P4["PHASE 4 — Unified Search"]
+        D1["User Query"]
+        D2["FastAPI Search API"]
+        D3["Groq LLM<br/>Text → SQL / Reasoning"]
+        D4["Hybrid Retrieval<br/>SQL + Vector Search"]
+        D5["Search UI"]
+        D6["Grounded Answer"]
     end
-    DB --> RET
-    VEC --> RET
-```
 
-Simplified, the whole flow is:
+    %% SOURCE → INGEST
+    A1 --> B1
+    A2 --> B1
+    A3 --> B1
+    A4 --> B1
+    A5 --> B1
+    A6 --> B1
 
-```
-5 messy sources ──► INGEST ─► DISCOVER ─► MAP ─► STANDARDIZE ─► NORMALIZE
-                        ─► ENTITY RESOLVE ─► CLASSIFY
-                              │
-                    ┌─────────┴──────────┐
-                    ▼                    ▼
-       08 PostgreSQL (facts)    09 Context + Embed (fastembed, 384-dim)
-        institution/course/              │
-        faculty/scholarship/             ▼
-        approval + lineage       10 pgvector (context_document, HNSW)
-                    │                    │
-                    └─────────► 11 Hybrid Retrieval ─► grounded answer
-```
+    %% PIPELINE
+    B1 --> B2
+    B2 --> B3
+    B3 --> B4
+    B4 --> B5
+    B5 --> B6
 
----
+    %% CANONICAL STORE
+    B6 --> C1
+    C1 --> C2
+    C2 --> C3
 
-## Phase 1 — Seed the 6 fragmented sources (`seed_all.py`)
+    %% SEARCH
+    D1 --> D2
+    D2 --> D3
+    D3 --> D4
+    C1 --> D4
+    C3 --> D4
+    D4 --> D5
+    D5 --> D6
 
-Deterministic mock data: a registry of **500 canonical institutes** (weighted
-across all states/UTs, with real AICTE-style type mix — ~55% engineering,
-management, pharmacy, architecture, polytechnic/applied arts, autonomous —
-and NBA / autonomous / current-status fields on every institute) and **six**
-sources that reference them with **no shared key and deliberately broken
-spelling**. Every planted problem is recorded in `conflicts_seeded.json`
-(the ground truth used to prove the pipeline later).
+    %% STYLING
+    classDef source fill:#1e293b,stroke:#64748b,color:#fff
+    classDef pipeline fill:#312e81,stroke:#818cf8,color:#fff
+    classDef store fill:#064e3b,stroke:#34d399,color:#fff
+    classDef search fill:#4c1d95,stroke:#a78bfa,color:#fff
+    classDef result fill:#78350f,stroke:#f59e0b,color:#fff
 
-| # | Source | Technology | Where | Rows | Deliberate mess |
-|---|--------|-----------|-------|------|-----------------|
-| 1 | Colleges / Institutes | **MySQL 8** | `aicte-mysql` · host `3307` | 518 | 18 within-source duplicates, ~15% noisy names, NBA/autonomous/status fields |
-| 2 | Courses | **PostgreSQL 16** | `aicte-postgres` :5433, `courses_db` | 1,403 | 24 dup groups, 6 orphan colleges, ~20% noisy names, `course_status`, emerging-tech catalog (AI/ML, Data Science, IoT, Cyber) |
-| 3 | Faculty | **PostgreSQL 16** | same server, `faculty_db` | 864 | 14 orphan institutes, ~20% noisy refs, specialization + years of experience |
-| 4 | Scholarships | **MongoDB 7** | `aicte-mongo` · host `27017` | 151 | 12 dup docs, genuinely varied field sets, real AICTE scheme names (Pragati, Saksham, Saraswati, …) |
-| 5 | Approvals / Legacy | **Flat CSVs** | `data/legacy/*.csv` | 273 | messiest: 3 date formats, ALL CAPS, stray whitespace |
-| 6 | Internships | **Flat CSV (clean)** | `data/internships.csv` | 650 | deliberately **clean** — the one well-maintained portal source; 200+ domains, stipend/PPO/mode/program-source |
-
-Planted issues (ground truth): **28 cross-source conflicts** · **54
-within-source duplicates** · **32 orphaned records** · name noise everywhere
-(`Shri`/`Sri`, `Inst.`/`Engg.`, `&`↔`and`, city reordering, ALL CAPS) ·
-timestamp drift (CSVs 2–3 years stale).
-
-
-## Phase 2 — Integrated harmonization pipeline (`pipeline/MAIN.py`)
-
-A 13-stage pipeline (`pipeline/`) that ingests the real Phase-1 sources and
-turns them into a canonical, deduplicated, traceable layer:
-
-| Stage | What it does |
-|-------|--------------|
-| 01 INGESTION | Pulls all 6 real sources (credentials from `.env`) + lineage stamp |
-| 02 SCHEMA DISCOVERY | Profiles columns, dtypes, sample values |
-| 03 SCHEMA MAPPING | Maps source fields → canonical AICTE schema (`MAPPING_RULES.yaml`) |
-| 04 STANDARDIZATION | States, booleans, text case cleaned |
-| 05 NORMALIZATION | Dtypes cast to the canonical schema |
-| 06 ENTITY RESOLUTION | **3,859 messy records → 649 master entities** (noise-reversal + RapidFuzz) |
-| 07 CONTEXT CLASSIFICATION | Structured/relational fields → Postgres; contextual → pgvector |
-| 08 POSTGRESQL | Loads institutions/courses/faculty/scholarships/approvals/internships + lineage |
-| 09 EMBEDDINGS | Builds rich context sentences, embeds with fastembed (384-dim) |
-| 10 PGVECTOR | Stores embeddings + metadata, HNSW index |
-| 11 RETRIEVAL | Hybrid: structured SQL + vector similarity + answer synthesis |
-| 12 TESTS | `pytest` smoke suite (sample data, offline) |
-| 13 CONFIG | `CONFIG.yaml`, `CANONICAL_SCHEMA.yaml` |
-| 14 DOCUMENTATION | `ARCHITECTURE.md` |
-
-Every canonical row keeps `source_system / source_database / source_table /
-source_record_id` — an answer can always cite exactly where a fact came from.
-
-## Phase 3 — Canonical store (`aicte_canonical`, PostgreSQL :5433)
-
-| Table | Rows | Notes |
-|-------|------|-------|
-| `institution` | 498 | canonical entities (registry + orphans preserved; city/ownership/NBA/autonomous/status fields) |
-| `course` | 1,403 | FK → institution, incl. `course_status` |
-| `faculty` | 864 | FK → institution, incl. specialization + experience |
-| `scholarship` | 151 | scheme-level facts |
-| `approval` | 273 | nba / closed / unapproved |
-| `internship` | 650 | FK → institution, domain/org/stipend/mode/PPO/program |
-| `entity_mapping` + `data_lineage` | 3,839 | every row traceable to its source |
-| `context_document` (pgvector) | **3,839** | 384-dim embeddings, **HNSW index** |
-
-Verified end-to-end with real retrieval:
+    class A1,A2,A3,A4,A5,A6 source
+    class B1,B2,B3,B4,B5,B6 pipeline
+    class C1,C2,C3 store
+    class D1,D2,D3,D4,D5 search
+    class D6 result
 
 ```
-Q: How many approved engineering colleges are there in Uttar Pradesh?
-→ 18 approved college(s) in Uttar Pradesh
 
-Q: list colleges in Telangana
-→ 19 college(s) in Telangana: Amrita College of Engineering, Nizamabad; …
-
-Q: scholarship for meritorious students in Tamil Nadu
-→ Tamil Nadu CM's Merit Scholarship (similarity 0.78, [Source: mongodb, record 24])
-
-Q: paid data science internship
-→ Data Science @ Reliance Retail (₹8,120 stipend) · Data Engineering @ Schneider Electric … [Source: internships, record 552]
-```
 
 ### Demo queries to try in the UI
 
@@ -284,6 +242,7 @@ Run it:
 ```bash
 internalenv/Scripts/python.exe -m uvicorn api.app:app --port 8000
 # open http://localhost:8000/ for the search UI, /docs for the API explorer
+
 ```
 
 (Note: the Phase 1–3 status **dashboard** is a separate app that also uses
@@ -325,6 +284,14 @@ internalenv/Scripts/python.exe -m uvicorn dashboard.app:app --port 8001
 `bash manage.sh help` lists everything: `up`, `pull`, `seed`, `counts`,
 `samples`, `mysql`, `courses`, `faculty`, `mongo`, `adminer`, `deps`,
 `status`, `logs`, `stop`, `down`, `wipe`, `fresh`.
+
+## Demo
+
+A short walkthrough of the system, from data ingestion and harmonization to the final unified search experience.
+
+<p align="center">
+  <img src="assets/demo.gif" width="900" alt="AICTE Unified Search System Demo">
+</p>
 
 ## Manual verification checklist (how to check each phase yourself)
 
