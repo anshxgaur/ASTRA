@@ -411,3 +411,5 @@ Internal_Matte/
   `EMBEDDING_MODEL`, `GROQ_MODEL`).
 - **Idempotent**: re-seeding, re-running `MAIN.py`, and re-running the tests
   are all safe; every load truncates and rebuilds.
+
+![gifgithub](https://github.com/user-attachments/assets/54dc1f7a-f327-43ab-ae9c-58c7421eee39)
