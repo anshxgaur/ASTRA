@@ -287,16 +287,6 @@ internalenv/Scripts/python.exe -m uvicorn dashboard.app:app --port 8001
 
 ## Demo
 
-<div align="center">
-  
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=50&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=500&lines=Fragmented+data?;More+like+unified+destiny" alt="Typing SVG">
-</p>
-</div>
-
-<p align="center">
-  <img src="assets/demo.gif" width="900" alt="AICTE Unified Search System Demo">
-</p>
 
 ## Manual verification checklist (how to check each phase yourself)
 
