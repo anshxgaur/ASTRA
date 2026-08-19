@@ -96,6 +96,19 @@ cmd_fresh() {
   cmd_seed
 }
 
+cmd_api() {
+  PORT="${1:-8000}"
+  echo ">> Starting Phase-4 API on http://localhost:$PORT (Ctrl-C to stop)"
+  echo "   (frontend at / · docs at /docs · health at /health)"
+  "$PY" -m uvicorn api.app:app --host 0.0.0.0 --port "$PORT"
+}
+
+cmd_pipeline() {
+  echo ">> Running the full ETL pipeline (Phase-1 sources -> canonical store + pgvector embeddings) ..."
+  echo "   This takes several minutes (embedding ~3,900 records)."
+  "$PY" pipeline/MAIN.py
+}
+
 cmd_counts() {
   echo "=================================================================="
   echo " ROW COUNTS — all 6 sources"
@@ -209,6 +222,10 @@ SEEDING
   seed | reseed     Seed / re-seed all 6 sources (idempotent — safe to re-run)
   deps              Install Python dependencies into internalenv/
 
+PIPELINE & API
+  pipeline | main    Run the full ETL pipeline (sources -> canonical store + pgvector)
+  api [port]        Start the Phase-4 API + search UI (default port 8000)
+
 INSPECT
   status | ps       Show container health
   logs [service]    Tail logs (e.g. bash manage.sh logs mysql)
@@ -240,6 +257,8 @@ case "${1:-help}" in
   fresh)               cmd_fresh ;;
   seed|reseed|reset)   cmd_seed ;;
   deps|venv)           cmd_deps ;;
+  pipeline|main)       cmd_pipeline ;;
+  api)                 cmd_api "${2:-8000}" ;;
   stop)                cmd_stop ;;
   down)                cmd_down ;;
   wipe)                cmd_wipe ;;

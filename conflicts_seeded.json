@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T09:40:25.846784+00:00",
+    "generated_at": "2026-08-18T16:47:39.639269+00:00",
     "note": "ground truth of deliberately planted issues"
   },
   "cross_source_conflicts": [
@@ -1048,7 +1048,7 @@
       "id": "mongo_dup_01",
       "description": "Exact duplicate scholarship document",
       "institutes": [
-        "Government School of Architecture, Kozhikode"
+        "Kongu Institute of Engineering and Management, Guwahati"
       ],
       "detail": {
         "scheme_name": "Punjab Scholarship for Scheduled Castes"
@@ -1080,7 +1080,7 @@
       "id": "mongo_dup_04",
       "description": "Near-duplicate scholarship document (amount/date drift)",
       "institutes": [
-        "Sardar Institute of Business Management, Kanpur"
+        "Government College of Architecture, Anantapur"
       ],
       "detail": {
         "scheme_name": "AICTE Tuition Fee Waiver for Economically Weaker Sections"
@@ -1102,7 +1102,7 @@
       "id": "mongo_dup_06",
       "description": "Near-duplicate scholarship document (amount/date drift)",
       "institutes": [
-        "Government College of Engineering, Karimnagar"
+        "Government College of Engineering, Vellore"
       ],
       "detail": {
         "scheme_name": "Nirali Vidyarthini Scholarship"
@@ -1114,7 +1114,7 @@
       "id": "mongo_dup_07",
       "description": "Exact duplicate scholarship document",
       "institutes": [
-        "Government College of Pharmacy, Salem"
+        "Ideal Engineering College and Technology, Jodhpur"
       ],
       "detail": {
         "scheme_name": "Post-Matric Scholarship for OBC Students"
@@ -1126,7 +1126,7 @@
       "id": "mongo_dup_08",
       "description": "Near-duplicate scholarship document (amount/date drift)",
       "institutes": [
-        "Bapatla Institute of Science and Technology, Guwahati"
+        "Malla Reddy Institute of Technology and Science, Coimbatore"
       ],
       "detail": {
         "scheme_name": "Vidyasiri Scholarship for Minority Students"
@@ -1138,7 +1138,7 @@
       "id": "mongo_dup_09",
       "description": "Exact duplicate scholarship document",
       "institutes": [
-        "K.S.R. Institute of Science and Technology, Ajmer"
+        "Government Engineering College, Ajmer"
       ],
       "detail": {
         "scheme_name": "Central Sector Scheme of Scholarships for College and University Students"
@@ -1150,7 +1150,7 @@
       "id": "mongo_dup_10",
       "description": "Near-duplicate scholarship document (amount/date drift)",
       "institutes": [
-        "Madurai. Anurag Engineering College"
+        "Karimnagar. Manipal Institute of Management Studies"
       ],
       "detail": {
         "scheme_name": "National Fellowship for OBC Students"
@@ -1162,7 +1162,7 @@
       "id": "mongo_dup_11",
       "description": "Exact duplicate scholarship document",
       "institutes": [
-        "Reva  Engg. College, Tezpur"
+        "Government  College of Applied Arts, Sambalpur"
       ],
       "detail": {
         "scheme_name": "Women in STEM Scholarship"
@@ -1174,7 +1174,7 @@
       "id": "mongo_dup_12",
       "description": "Near-duplicate scholarship document (amount/date drift)",
       "institutes": [
-        "Sinhgad Institute of Technology, Aurangabad"
+        "Vaagdevi Engineering College, Ajmer"
       ],
       "detail": {
         "scheme_name": "AICTE Yashasvi Scholarship"

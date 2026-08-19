@@ -1,6 +1,6 @@
 # Phase 4 — data package (generated from aicte_canonical)
 
-Generated 2026-08-17T15:58:19 by `export_phase4.py`
+Generated 2026-08-19T01:42:28 by `export_phase4.py`
 from the Phase-3 canonical store (database `aicte_canonical`). Everything needed to build
 the Phase-4 FastAPI hybrid-search API is here — no database access required.
 
@@ -10,20 +10,20 @@ the Phase-4 FastAPI hybrid-search API is here — no database access required.
 
 | File | Rows | Contents |
 |------|------|----------|
-| `institution.csv` | 498 | canonical institutions (`institution_id` PK, name, state, district, city, type, ownership, approval/current status, autonomous, NBA, year, AICTE code) |
+| `institution.csv` | 530 | canonical institutions (`institution_id` PK, name, state, district, city, type, ownership, approval/current status, autonomous, NBA, year, AICTE code) |
 | `course.csv` | 1403 | courses with FK `institution_id`, department, duration, intake, fee, course_status |
 | `faculty.csv` | 864 | faculty with FK `institution_id`, designation, qualification, specialization, department, years_of_experience |
 | `scholarship.csv` | 151 | scholarship schemes (amount, applicable_states) |
 | `approval.csv` | 273 | nba / closed / unapproved records with FK `institution_id` |
 | `internship.csv` | 650 | internship-portal openings with FK `institution_id`, domain, org, stipend, mode, PPO, program_source |
-| `entity_mapping.csv` | 3839 | every canonical id -> source record (lineage) |
-| `data_lineage.csv` | 3839 | every row -> source system/table/record + timestamp |
+| `entity_mapping.csv` | 3871 | every canonical id -> source record (lineage) |
+| `data_lineage.csv` | 3871 | every row -> source system/table/record + timestamp |
 
 ### Semantic context (pgvector)
 
 | File | Rows | Contents |
 |------|------|----------|
-| `context_document.csv` | 3839 | one row per embedding: `context_text` (rich sentence + [Source: ...] citation), `embedding` (384 floats), and metadata (`entity_id`, `entity_type`, `context_type`, source lineage) |
+| `context_document.csv` | 3871 | one row per embedding: `context_text` (rich sentence + [Source: ...] citation), `embedding` (384 floats), and metadata (`entity_id`, `entity_type`, `context_type`, source lineage) |
 
 ## How to use in Phase 4
 

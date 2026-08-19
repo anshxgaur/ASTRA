@@ -1,0 +1,15 @@
+# keep the deploy image small — only what the API needs at runtime
+internalenv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.docker-config/
+data/
+phase4_data/
+pipeline/run_reports/
+pipeline/DATA/
+seed/__pycache__/
+.git/
+.env
+.env.*
+!.env.example

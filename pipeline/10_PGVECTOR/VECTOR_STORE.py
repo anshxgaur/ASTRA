@@ -51,13 +51,17 @@ def build_vector_index(conn) -> None:
 def get_connection():
     if psycopg is None:
         raise RuntimeError("psycopg/pgvector not installed — pip install -r REQUIREMENTS/REQUIREMENTS.txt")
-    conn = psycopg.connect(
-        host=os.getenv("POSTGRES_HOST", "localhost"),
-        port=os.getenv("POSTGRES_PORT", "5432"),
-        dbname=os.getenv("POSTGRES_DB", "aicte_canonical"),
-        user=os.getenv("POSTGRES_USER", "postgres"),
-        password=os.getenv("POSTGRES_PASSWORD", ""),
-    )
+    url = os.getenv("DATABASE_URL")
+    if url:
+        conn = psycopg.connect(url)
+    else:
+        conn = psycopg.connect(
+            host=os.getenv("POSTGRES_HOST", "localhost"),
+            port=os.getenv("POSTGRES_PORT", "5432"),
+            dbname=os.getenv("POSTGRES_DB", "aicte_canonical"),
+            user=os.getenv("POSTGRES_USER", "postgres"),
+            password=os.getenv("POSTGRES_PASSWORD", ""),
+        )
     register_vector(conn)
     return conn
 

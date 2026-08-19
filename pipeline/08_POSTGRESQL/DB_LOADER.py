@@ -10,10 +10,15 @@ traceable back to its source record (design doc Rule 4).
 Reloads are idempotent: all canonical tables are TRUNCATED first, then
 rebuilt from the current pipeline output.
 """
+from __future__ import annotations  # keep pd.* annotations lazy (API runtime has no pandas)
+
 import os
 from pathlib import Path
 
-import pandas as pd
+try:
+    import pandas as pd
+except ImportError:  # API runtime needs only get_connection(), not the loaders
+    pd = None
 
 try:
     import psycopg
@@ -27,6 +32,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]  # pipeline/
 def get_connection():
     if psycopg is None:
         raise RuntimeError("psycopg not installed — pip install -r REQUIREMENTS/REQUIREMENTS.txt")
+    url = os.getenv("DATABASE_URL")
+    if url:
+        return psycopg.connect(url)
     return psycopg.connect(
         host=os.getenv("POSTGRES_HOST", "localhost"),
         port=os.getenv("POSTGRES_PORT", "5432"),
@@ -39,6 +47,9 @@ def get_connection():
 def _admin_connection():
     if psycopg is None:
         raise RuntimeError("psycopg not installed")
+    url = os.getenv("DATABASE_URL")
+    if url:
+        return psycopg.connect(url, autocommit=True)
     return psycopg.connect(
         host=os.getenv("POSTGRES_HOST", "localhost"),
         port=os.getenv("POSTGRES_PORT", "5432"),
@@ -258,7 +269,7 @@ def upsert_approvals(conn, approvals_df: pd.DataFrame) -> None:
 
 CANONICAL_TABLES = [
     "institution", "course", "faculty", "scholarship", "approval",
-    "student", "internship", "entity_mapping", "data_lineage", "context_document",
+    "internship", "entity_mapping", "data_lineage", "context_document",
 ]
 
 

@@ -4,3 +4,30 @@ __pycache__/
 internalenv/
 .venv/
 .DS_Store
+
+# PDF data files (too large for git)
+data/resumes/
+data/papers/
+*.pdf
+
+# Generated data
+phase4_data/
+pipeline/run_reports/
+pipeline/DATA/
+pipeline/REQUIREMENTS/
+pipeline/13_CONFIG/
+pipeline/14_DOCUMENTATION/
+pipeline/12_TESTS/
+__pycache__/
+*.pyc
+*.pyo
+
+# Docker volumes
+.docker-config/
+
+# Logs
+*.log
+uvicorn.log
+
+# Extracted data
+extracted_data/

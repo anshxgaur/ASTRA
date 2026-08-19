@@ -1,20 +1,20 @@
 {
   "name": "Phase 4 data package",
   "generated_by": "export_phase4.py",
-  "run_timestamp": "2026-08-17T15:58:19",
+  "run_timestamp": "2026-08-19T01:42:28",
   "source_database": "aicte_canonical",
   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2 (fastembed)",
   "embedding_dimensions": 384,
   "counts": {
-    "institution.csv": 498,
+    "institution.csv": 530,
     "course.csv": 1403,
     "faculty.csv": 864,
     "scholarship.csv": 151,
     "approval.csv": 273,
     "internship.csv": 650,
-    "entity_mapping.csv": 3839,
-    "data_lineage.csv": 3839,
-    "context_document.csv": 3839
+    "entity_mapping.csv": 3871,
+    "data_lineage.csv": 3871,
+    "context_document.csv": 3871
   },
-  "elapsed_seconds": 4.86
+  "elapsed_seconds": 1.9
 }

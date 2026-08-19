@@ -20,6 +20,8 @@ from __future__ import annotations
 
 import json
 import sys
+import time
+from datetime import datetime
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Query
@@ -28,6 +30,7 @@ from fastapi.responses import HTMLResponse, JSONResponse
 PROJECT_ROOT = Path(__file__).resolve().parents[1]          # Internal_Matte/
 PIPELINE_ROOT = PROJECT_ROOT / "pipeline"
 RETRIEVAL_ROOT = PIPELINE_ROOT / "11_RETRIEVAL"
+PERF_LOG_PATH = PIPELINE_ROOT / "run_reports" / "api_performance.jsonl"
 sys.path.insert(0, str(RETRIEVAL_ROOT))
 sys.path.insert(0, str(PIPELINE_ROOT / "10_PGVECTOR"))
 
@@ -53,6 +56,20 @@ ENTITY_PK = {
     "approval": "approval_id",
     "internship": "internship_id",
 }
+
+
+def _log_perf(event: dict) -> None:
+    """Best-effort local performance log for dashboard analysis."""
+    try:
+        PERF_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+        payload = {
+            "timestamp": datetime.now().isoformat(timespec="seconds"),
+            **event,
+        }
+        with PERF_LOG_PATH.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(payload, default=str, ensure_ascii=False) + "\n")
+    except Exception:
+        pass
 
 
 def _pg_ok() -> tuple[bool, str]:
@@ -107,12 +124,31 @@ def search(
     state: str | None = None,
     approval_status: str | None = Query(None, pattern="^(approved|not_approved)$"),
 ) -> dict:
+    started = time.perf_counter()
+    status = "ok"
+    path = "unknown"
+    count = 0
     try:
-        return HYBRID_RETRIEVER.hybrid_search(q, top_k=top_k,
-                                              entity_type=entity_type, state=state,
-                                              approval_status=approval_status)
+        result = HYBRID_RETRIEVER.hybrid_search(q, top_k=top_k,
+                                                entity_type=entity_type, state=state,
+                                                approval_status=approval_status)
+        path = result.get("retrieval", {}).get("path", path)
+        count = result.get("count", 0)
+        return result
     except Exception as exc:  # noqa: BLE001
+        status = "error"
         raise HTTPException(status_code=500, detail=f"search failed: {type(exc).__name__}: {exc}")
+    finally:
+        _log_perf({
+            "endpoint": "search",
+            "status": status,
+            "duration_ms": round((time.perf_counter() - started) * 1000, 2),
+            "query_length": len(q),
+            "top_k": top_k,
+            "path": path,
+            "result_count": count,
+            "llm": "groq" if GROQ_CLIENT.is_available() else "mock",
+        })
 
 
 @app.get("/answer")
@@ -120,6 +156,8 @@ def answer(
     q: str = Query(..., min_length=1, description="natural-language question"),
     top_k: int = Query(5, ge=1, le=10),
 ) -> dict:
+    started = time.perf_counter()
+    status = "ok"
     try:
         text = HYBRID_RETRIEVER.answer_question(q, top_k=top_k)
         return {
@@ -128,7 +166,18 @@ def answer(
             "llm": "groq" if GROQ_CLIENT.is_available() else "mock",
         }
     except Exception as exc:  # noqa: BLE001
+        status = "error"
         raise HTTPException(status_code=500, detail=f"answer failed: {type(exc).__name__}: {exc}")
+    finally:
+        _log_perf({
+            "endpoint": "answer",
+            "status": status,
+            "duration_ms": round((time.perf_counter() - started) * 1000, 2),
+            "query_length": len(q),
+            "top_k": top_k,
+            "path": "answer_synthesis",
+            "llm": "groq" if GROQ_CLIENT.is_available() else "mock",
+        })
 
 
 @app.get("/entity/{canonical_id}")
@@ -960,3 +1009,15 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
 </body>
 </html>
 """
+
+
+# ---------------------------------------------------------------------------
+# Research Paper RAG + AI Detection Endpoints
+# ---------------------------------------------------------------------------
+try:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from paper_ai_endpoints import router as paper_ai_router
+    app.include_router(paper_ai_router, tags=["Research Papers", "AI Detection"])
+    print("[api] Research Paper RAG + AI Detection endpoints loaded")
+except Exception as _e:
+    print(f"[api] WARNING: Could not load paper/AI endpoints: {_e}")

@@ -1,0 +1,11 @@
+# Runtime deps for the Phase-4 API only (deploy target).
+# Seed/pipeline deps (pandas, faker, pymysql, pymongo) are NOT needed at
+# serving time — the canonical store + embeddings live in Postgres.
+python-dotenv>=1.0
+psycopg[binary]>=3.1
+pgvector>=0.5
+groq>=1.0
+fastapi>=0.115
+uvicorn>=0.30
+# query-time embedding uses the same fastembed model as the pipeline
+fastembed>=0.8

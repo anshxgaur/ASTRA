@@ -10,9 +10,18 @@ This resolver therefore:
   2. merges identical normalized names across all sources (exact pass), then
   3. merges reordered variants with RapidFuzz token_set_ratio (>= 0.95).
 
+Registry-aware guard: the fuzzy pass NEVER fuses two clusters that map to
+*different* canonical institutes in institute_registry.json (the internal
+ground truth). Distinct institutes with near-identical token sets (e.g.
+"Government College of Engineering, Karimnagar" vs "Government Engineering
+College, Karimnagar") previously collapsed into one master — the registry
+reference dictionary blocks exactly those merges so the canonical store
+always covers all 500 seeded institutes.
+
 match_threshold and blocking_fields stay externalized in 13_CONFIG/CONFIG.yaml;
 swap in Splink later if volumes ever justify probabilistic matching.
 """
+import json
 import re
 from pathlib import Path
 
@@ -24,6 +33,72 @@ from rapidfuzz import fuzz
 from NAME_UTILS import norm_for_match
 
 CONFIG_PATH = Path(__file__).resolve().parents[1] / "13_CONFIG" / "CONFIG.yaml"
+REGISTRY_PATH = Path(__file__).resolve().parents[2] / "institute_registry.json"
+
+
+_registry_cache: list[tuple[str, str]] | None = None
+
+
+def _load_registry() -> list[tuple[str, str]]:
+    """[(normalized_name, registry_id)] for every canonical institute.
+
+    Order-sensitive normalized names are used as the reference dictionary so
+    that reordered-variant clusters map back to the exact institute they
+    belong to.
+    """
+    global _registry_cache
+    if _registry_cache is not None:
+        return _registry_cache
+    try:
+        reg = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
+        pairs = [(norm_for_match(inst.get("name", "")), inst.get("id"))
+                 for inst in reg.get("institutes", [])]
+    except Exception:  # noqa: BLE001 — registry is optional for offline tests
+        pairs = []
+    _registry_cache = pairs
+    return pairs
+
+
+def _registry_match(norm: str) -> str | None:
+    """Map a cluster representative to its registry institute id.
+
+    Deterministic rule grounded in the registry ground truth:
+      1. candidates = registry institutes whose normalized token set is a
+         SUPERSET of the cluster rep's tokens (i.e. the rep is a substring
+         / noisy variant of that institute's name);
+      2. if exactly one candidate -> that institute;
+      3. if several candidates share the SAME token set (anagram twins like
+         "Government College of Engineering, Karimnagar" vs "Government
+         Engineering College, Karimnagar") -> the order-sensitive ratio picks
+         the right twin;
+      4. otherwise (rep is too generic, e.g. "government engineering
+         college" matches dozens of institutes) -> None, so the caller
+         falls back to the legacy fuzzy behavior.
+    """
+    toks = set(norm.split())
+    if not toks:
+        return None
+    registry = _load_registry()
+    if not registry:
+        return None
+    supersets = [(rnorm, rid) for rnorm, rid in registry if toks <= set(rnorm.split())]
+    if len(supersets) == 1:
+        return supersets[0][1]
+    if not supersets:
+        return None
+    # >1 superset: the rep is a token-subset of several registry names (e.g.
+    # "government engineering college madurai" is a subset of both "Government
+    # Engineering College, Madurai" and "Government College of Engineering,
+    # Madurai"). Resolve with the order-sensitive ratio: an exact or clearly
+    # dominant match wins, otherwise the rep is ambiguous (city-less generic
+    # names like "government engineering college" match dozens -> None).
+    norm_by_id = {rid: rnorm for rnorm, rid in registry}
+    ranked = sorted(supersets, key=lambda t: fuzz.ratio(norm, t[0]), reverse=True)
+    best_rid, best_score = ranked[0][1], fuzz.ratio(norm, ranked[0][0]) / 100.0
+    second_score = fuzz.ratio(norm, ranked[1][0]) / 100.0
+    if best_score >= 0.97 or (best_score - second_score) >= 0.1:
+        return best_rid
+    return None
 
 
 def _normalize_name(name: str) -> str:
@@ -69,40 +144,73 @@ def _match_real(df: pd.DataFrame, threshold: float) -> pd.DataFrame:
     df["_norm"] = df["institution_name"].apply(
         lambda v: norm_for_match(v) if pd.notna(v) else "")
 
-    # pass 1: exact normalized-name clusters across ALL sources
+    # pass 1: exact clusters across ALL sources. MySQL rows carry the
+    # authoritative AICTE approval code (1:1 with institute_registry.json;
+    # within-source dups reuse the parent's code), so they cluster on that
+    # code — names that lost their city ("Government Engineering College.")
+    # would otherwise bridge several distinct GEC institutes. All other
+    # sources cluster on the normalized name.
+    if "aicte_code" in df.columns and "source_system" in df.columns:
+        is_mysql = (df["source_system"] == "mysql") & df["aicte_code"].notna()
+        df.loc[is_mysql, "_key"] = "code:" + df.loc[is_mysql, "aicte_code"].astype(str)
+        df.loc[~is_mysql, "_key"] = df.loc[~is_mysql, "_norm"]
+        df.loc[df["_norm"].eq(""), "_key"] = ""
+    else:
+        df["_key"] = df["_norm"]
+
     norm_to_cluster: dict[str, list] = {}
-    clusters: list[list] = []  # each: [representative_norm, [df indices]]
-    for idx, norm in zip(df.index, df["_norm"]):
-        if not norm:
+    clusters: list[list] = []  # each: [representative_norm, [df indices], {aicte codes}]
+    _codes = df["aicte_code"] if "aicte_code" in df.columns else None
+    for idx, key, norm in zip(df.index, df["_key"], df["_norm"]):
+        if not key:
             continue
-        cl = norm_to_cluster.get(norm)
+        cl = norm_to_cluster.get(key)
         if cl is None:
-            cl = [norm, []]
-            norm_to_cluster[norm] = cl
+            cl = [norm, [], set()]
+            norm_to_cluster[key] = cl
             clusters.append(cl)
         cl[1].append(idx)
+        if _codes is not None and pd.notna(_codes.iloc[idx]):
+            cl[2].add(str(_codes.iloc[idx]))
 
     # pass 2: fuzzy-merge clusters by representative norm. norm_for_match
     # already reverses every planted noise transform, so exact merging above
     # captures real duplicates; this pass only exists for reordered names
     # (token_set_ratio = 100). A threshold of 0.95 keeps distinct institutes
     # that differ only by city ("...Kakinada" vs "...Karimnagar") separate.
+    #
+    # Registry guard: two clusters that map to DIFFERENT canonical institutes
+    # in institute_registry.json are never fused — distinct institutes whose
+    # names share a token set ("College of Engineering, X" vs "Engineering
+    # College, X") stay separate even at token_set_ratio = 100.
     fuzzy_threshold = 0.95
-    merged: list[list] = []  # [representative_norm, [indices], best_score]
+    merged: list[list] = []  # [representative_norm, [indices], {aicte codes}]
     for cl in clusters:
-        best = None
-        best_score = 0.0
-        for m in merged:
-            score = fuzz.token_set_ratio(cl[0], m[0]) / 100.0
-            if score > best_score:
-                best_score = score
-                best = m
-        if best is not None and best_score >= fuzzy_threshold:
-            best[1].extend(cl[1])
-            if best_score > best[2]:
-                best[2] = best_score
+        codes_cl = cl[2]
+        rid_cl = _registry_match(cl[0])
+        # candidates by score, best first; merge into the first candidate
+        # that passes both guards (a name can be token-set-similar to several
+        # clusters, and the top-scoring one may be a DIFFERENT institute whose
+        # merge is blocked while the second-best is the true match)
+        cands = sorted(merged, key=lambda m: fuzz.token_set_ratio(cl[0], m[0]), reverse=True)
+        cands = [m for m in cands if fuzz.token_set_ratio(cl[0], m[0]) / 100.0 >= fuzzy_threshold]
+        target = None
+        for m in cands:
+            rid_m = _registry_match(m[0])
+            codes_m = m[2]
+            # authoritative guard: distinct AICTE codes = distinct institutes
+            if codes_cl and codes_m and not (codes_cl & codes_m):
+                continue
+            # registry guard: distinct canonical institutes never fuse
+            if rid_cl is not None and rid_m is not None and rid_cl != rid_m:
+                continue
+            target = m
+            break
+        if target is not None:
+            target[1].extend(cl[1])
+            target[2] |= codes_cl
         else:
-            merged.append([cl[0], list(cl[1]), best_score])
+            merged.append([cl[0], list(cl[1]), set(codes_cl)])
 
     master_id: dict[int, str] = {}
     next_id = 1
@@ -118,7 +226,7 @@ def _match_real(df: pd.DataFrame, threshold: float) -> pd.DataFrame:
 
     df["master_entity_id"] = df.index.map(master_id)
     df["match_score"] = 1.0
-    return df.drop(columns=["_norm"])
+    return df.drop(columns=["_norm", "_key"])
 
 
 def assign_internship_ids(internship_rows: pd.DataFrame) -> pd.DataFrame:

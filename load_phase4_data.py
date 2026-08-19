@@ -10,6 +10,8 @@ Usage:
     internalenv/Scripts/python.exe load_phase4_data.py --db aicte_phase4
     # connection defaults to POSTGRES_HOST/PORT/USER/PASSWORD from .env;
     # override with --host/--port/--user/--password as needed.
+    # For a hosted database (Neon, Supabase, ...) pass a full connection
+    # string:  --url postgresql://user:pass@host/db?sslmode=require
 """
 from __future__ import annotations
 
@@ -125,6 +127,8 @@ def _cell(v):
 
 
 def _cfg(args) -> dict:
+    if getattr(args, "url", None):
+        return {"url": args.url}
     return {
         "host": args.host or os.environ.get("POSTGRES_HOST", "localhost"),
         "port": args.port or int(os.environ.get("POSTGRES_PORT", "5432")),
@@ -209,12 +213,16 @@ def main() -> int:
     parser.add_argument("--port", type=int, default=None)
     parser.add_argument("--user", default=None)
     parser.add_argument("--password", default=None)
+    parser.add_argument("--url", default=None,
+                        help="full connection string (e.g. Neon); skips CREATE DATABASE")
     args = parser.parse_args()
 
     cfg = _cfg(args)
-    ensure_database(cfg, args.db)
-
-    conn = psycopg.connect(**dict(cfg, dbname=args.db))
+    if "url" in cfg:
+        conn = psycopg.connect(cfg["url"])
+    else:
+        ensure_database(cfg, args.db)
+        conn = psycopg.connect(**dict(cfg, dbname=args.db))
     try:
         create_schema(conn)            # enables the vector extension first
         register_vector(conn)

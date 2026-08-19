@@ -1,651 +1,651 @@
 ﻿internship_id,institution_id,domain,organization_name,duration_weeks,stipend_amount,mode,is_ppo_linked,program_source
-INT_00001,INST_0273,Scientific Writing,HDFC Bank,6,5095.00,offline,False,General
-INT_00002,INST_0290,Automobile Engineering,Meesho,9,14089.00,online,False,General
-INT_00003,INST_0395,Large Language Models,Tech Mahindra,9,0.00,offline,False,General
-INT_00004,INST_0394,Incrementality,Uber India,7,0.00,offline,True,CDAC
-INT_00005,INST_0111,Biostatistics,Practo,7,6077.00,online,False,TULIP
-INT_00006,INST_0171,Surgical Robotics,H&M India,8,0.00,offline,False,General
+INT_00001,INST_0293,Scientific Writing,HDFC Bank,6,5095.00,offline,False,General
+INT_00002,INST_0312,Automobile Engineering,Meesho,9,14089.00,online,False,General
+INT_00003,INST_0428,Large Language Models,Tech Mahindra,9,0.00,offline,False,General
+INT_00004,INST_0427,Incrementality,Uber India,7,0.00,offline,True,CDAC
+INT_00005,INST_0112,Biostatistics,Practo,7,6077.00,online,False,TULIP
+INT_00006,INST_0177,Surgical Robotics,H&M India,8,0.00,offline,False,General
 INT_00007,INST_0028,ZooKeeper,IBM India,6,0.00,offline,False,General
-INT_00008,INST_0279,Propulsion,C-DAC,6,9478.00,offline,False,General
-INT_00009,INST_0366,Trade Policy,Khadi India,8,9329.00,offline,False,General
-INT_00010,INST_0403,Aero-engines,Reliance Retail,6,0.00,hybrid,False,General
-INT_00011,INST_0203,Community Health,Puma India,7,8581.00,online,False,General
-INT_00012,INST_0178,Packer,Levi's India,9,13645.00,offline,False,General
-INT_00013,INST_0115,Motion Graphics,Siemens Gamesa,9,7256.00,hybrid,False,General
-INT_00014,INST_0440,Risk Consulting,AICTE Internship Cell,6,7035.00,offline,False,General
-INT_00015,INST_0152,Recommendation Systems,H&M India,9,12901.00,offline,False,General
+INT_00008,INST_0301,Propulsion,C-DAC,6,9478.00,offline,False,General
+INT_00009,INST_0395,Trade Policy,Khadi India,8,9329.00,offline,False,General
+INT_00010,INST_0382,Aero-engines,Reliance Retail,6,0.00,hybrid,False,General
+INT_00011,INST_0215,Community Health,Puma India,7,8581.00,online,False,General
+INT_00012,INST_0186,Packer,Levi's India,9,13645.00,offline,False,General
+INT_00013,INST_0255,Motion Graphics,Siemens Gamesa,9,7256.00,hybrid,False,General
+INT_00014,INST_0479,Risk Consulting,AICTE Internship Cell,6,7035.00,offline,False,General
+INT_00015,INST_0156,Recommendation Systems,H&M India,9,12901.00,offline,False,General
 INT_00016,INST_0012,Photogrammetry,L&T Energy,7,0.00,hybrid,False,General
-INT_00017,INST_0273,Data Profiling,BHEL,9,6679.00,offline,False,General
-INT_00018,INST_0208,Microfluidics,IBM India,6,4076.00,offline,False,General
-INT_00019,INST_0144,CTR Modelling,UNICEF India,8,13347.00,online,False,TULIP
-INT_00020,INST_0317,Orbital Mechanics,Decathlon India,8,9797.00,online,False,General
-INT_00021,INST_0435,Pharmacovigilance,SAP Labs India,7,14916.00,offline,False,General
-INT_00022,INST_0290,Performance Engineering,Swiggy,6,10465.00,online,True,General
-INT_00023,INST_0411,Named Entity Recognition,AICTE Internship Cell,6,12430.00,offline,False,CDAC
-INT_00024,INST_0073,Causal Inference,Maruti Suzuki,8,5614.00,offline,True,General
-INT_00025,INST_0081,Welding Technology,Google India,6,9562.00,offline,False,CDAC
+INT_00017,INST_0411,Data Profiling,BHEL,9,6679.00,offline,False,General
+INT_00018,INST_0220,Microfluidics,IBM India,6,4076.00,offline,False,General
+INT_00019,INST_0148,CTR Modelling,UNICEF India,8,13347.00,online,False,TULIP
+INT_00020,INST_0418,Orbital Mechanics,Decathlon India,8,9797.00,online,False,General
+INT_00021,INST_0382,Pharmacovigilance,SAP Labs India,7,14916.00,offline,False,General
+INT_00022,INST_0312,Performance Engineering,Swiggy,6,10465.00,online,True,General
+INT_00023,INST_0444,Named Entity Recognition,AICTE Internship Cell,6,12430.00,offline,False,CDAC
+INT_00024,INST_0074,Causal Inference,Maruti Suzuki,8,5614.00,offline,True,General
+INT_00025,INST_0082,Welding Technology,Google India,6,9562.00,offline,False,CDAC
 INT_00026,INST_0024,Cloud Engineering,SAP Labs India,7,5069.00,online,False,General
-INT_00027,INST_0077,Operations Management,Nestle India,9,6348.00,online,False,General
-INT_00028,INST_0349,Financial Modelling,IBM India,9,3075.00,online,False,General
-INT_00029,INST_0346,A/B Testing,PayPal India,9,0.00,hybrid,False,General
-INT_00030,INST_0124,Imaging AI,Nykaa,6,9868.00,hybrid,False,General
-INT_00031,INST_0459,Health Education,Nike India,8,0.00,online,False,General
-INT_00032,INST_0166,Quantum Materials,Tech Mahindra,8,0.00,offline,False,General
-INT_00033,INST_0418,Financial Analysis,World Bank India,7,14943.00,offline,False,General
-INT_00034,INST_0388,CDN,Adidas India,6,9858.00,online,False,General
-INT_00035,INST_0109,Major Incident,P&G India,7,0.00,offline,True,General
+INT_00027,INST_0078,Operations Management,Nestle India,9,6348.00,online,False,General
+INT_00028,INST_0375,Financial Modelling,IBM India,9,3075.00,online,False,General
+INT_00029,INST_0255,A/B Testing,PayPal India,9,0.00,hybrid,False,General
+INT_00030,INST_0325,Imaging AI,Nykaa,6,9868.00,hybrid,False,General
+INT_00031,INST_0500,Health Education,Nike India,8,0.00,online,False,General
+INT_00032,INST_0172,Quantum Materials,Tech Mahindra,8,0.00,offline,False,General
+INT_00033,INST_0451,Financial Analysis,World Bank India,7,14943.00,offline,False,General
+INT_00034,INST_0420,CDN,Adidas India,6,9858.00,online,False,General
+INT_00035,INST_0110,Major Incident,P&G India,7,0.00,offline,True,General
 INT_00036,INST_0047,API Design,Capgemini,9,7404.00,offline,False,General
-INT_00037,INST_0280,Humanitarian Logistics,Voltas,8,3717.00,offline,False,Indian Army
-INT_00038,INST_0129,VLSI Design,Marico,6,8097.00,online,False,General
-INT_00039,INST_0205,Railway Operations,Railway Board,9,0.00,online,False,General
-INT_00040,INST_0184,Predictive Maintenance,Parle Products,8,0.00,hybrid,False,General
-INT_00041,INST_0434,Computational Chemistry,Dunzo,8,13507.00,offline,False,CDAC
-INT_00042,INST_0115,MLOps,Big Bazaar (Future),6,8836.00,offline,False,General
-INT_00043,INST_0415,Executive Search,Dell Technologies,9,13332.00,online,False,CDAC
-INT_00044,INST_0165,Data Profiling,upGrad,6,3541.00,offline,False,Indian Army
-INT_00045,INST_0056,Passwordless,Ather Energy,8,0.00,offline,False,General
-INT_00046,INST_0073,Reverse Engineering,Cognizant,6,7767.00,offline,False,CDAC
-INT_00047,INST_0077,Sanctions Screening,Adidas India,9,8304.00,offline,False,CDAC
-INT_00048,INST_0366,Reinforcement Learning,NTPC,9,11244.00,online,False,Indian Army
-INT_00049,INST_0092,Microbiology,Cognizant,7,8051.00,online,False,General
-INT_00050,INST_0364,Supply Chain Security,Amazon India,6,9567.00,offline,False,TULIP
-INT_00051,INST_0243,Elder Care Technology,MakeMyTrip,8,13964.00,offline,False,General
-INT_00052,INST_0429,Compiler Design,Royal Enfield,6,14971.00,online,False,General
-INT_00053,INST_0216,Hydrology,Fabindia,9,0.00,hybrid,True,General
-INT_00054,INST_0177,Social Work,Oyo,6,12437.00,offline,False,TULIP
-INT_00055,INST_0245,Soft Robotics,Mahindra & Mahindra,8,0.00,online,True,General
-INT_00056,INST_0334,ASR,Voltas,9,0.00,online,False,General
+INT_00037,INST_0302,Humanitarian Logistics,Voltas,8,3717.00,offline,False,Indian Army
+INT_00038,INST_0207,VLSI Design,Marico,6,8097.00,online,False,General
+INT_00039,INST_0217,Railway Operations,Railway Board,9,0.00,online,False,General
+INT_00040,INST_0193,Predictive Maintenance,Parle Products,8,0.00,hybrid,False,General
+INT_00041,INST_0472,Computational Chemistry,Dunzo,8,13507.00,offline,False,CDAC
+INT_00042,INST_0116,MLOps,Big Bazaar (Future),6,8836.00,offline,False,General
+INT_00043,INST_0448,Executive Search,Dell Technologies,9,13332.00,online,False,CDAC
+INT_00044,INST_0171,Data Profiling,upGrad,6,3541.00,offline,False,Indian Army
+INT_00045,INST_0057,Passwordless,Ather Energy,8,0.00,offline,False,General
+INT_00046,INST_0074,Reverse Engineering,Cognizant,6,7767.00,offline,False,CDAC
+INT_00047,INST_0078,Sanctions Screening,Adidas India,9,8304.00,offline,False,CDAC
+INT_00048,INST_0395,Reinforcement Learning,NTPC,9,11244.00,online,False,Indian Army
+INT_00049,INST_0093,Microbiology,Cognizant,7,8051.00,online,False,General
+INT_00050,INST_0393,Supply Chain Security,Amazon India,6,9567.00,offline,False,TULIP
+INT_00051,INST_0260,Elder Care Technology,MakeMyTrip,8,13964.00,offline,False,General
+INT_00052,INST_0465,Compiler Design,Royal Enfield,6,14971.00,online,False,General
+INT_00053,INST_0229,Hydrology,Fabindia,9,0.00,hybrid,True,General
+INT_00054,INST_0184,Social Work,Oyo,6,12437.00,offline,False,TULIP
+INT_00055,INST_0262,Soft Robotics,Mahindra & Mahindra,8,0.00,online,True,General
+INT_00056,INST_0359,ASR,Voltas,9,0.00,online,False,General
 INT_00057,INST_0039,Geofencing,State Bank of India,6,8875.00,offline,False,General
-INT_00058,INST_0068,Fuel Cells,Infosys,9,7711.00,online,False,TULIP
+INT_00058,INST_0069,Fuel Cells,Infosys,9,7711.00,online,False,TULIP
 INT_00059,INST_0006,Remote Patient Monitoring,Fabindia,9,6325.00,offline,True,General
-INT_00060,INST_0219,Particle Physics,Wipro,6,0.00,offline,False,General
+INT_00060,INST_0232,Particle Physics,Wipro,6,0.00,offline,False,General
 INT_00061,INST_0019,Sports Analytics,Practo,7,9755.00,hybrid,True,General
-INT_00062,INST_0105,Strategy Consulting,ITC Limited,6,0.00,online,False,General
-INT_00063,INST_0227,Optimization Modelling,Voltas,9,0.00,offline,True,General
-INT_00064,INST_0105,Skill Development,IBM India,9,11921.00,hybrid,True,General
-INT_00065,INST_0313,Content Moderation,Hyundai India,9,11056.00,online,False,General
-INT_00066,INST_0184,GIS Mapping,Emami,7,0.00,online,False,General
+INT_00062,INST_0276,Strategy Consulting,ITC Limited,6,0.00,online,False,General
+INT_00063,INST_0242,Optimization Modelling,Voltas,9,0.00,offline,True,General
+INT_00064,INST_0276,Skill Development,IBM India,9,11921.00,hybrid,True,General
+INT_00065,INST_0336,Content Moderation,Hyundai India,9,11056.00,online,False,General
+INT_00066,INST_0193,GIS Mapping,Emami,7,0.00,online,False,General
 INT_00067,INST_0026,Risk Management,Bata India,6,9977.00,offline,False,General
-INT_00068,INST_0330,Differential Privacy,HP India,7,0.00,online,False,General
-INT_00069,INST_0081,SD-WAN,ReNew Power,9,6258.00,offline,True,General
-INT_00070,INST_0416,Prompt Engineering,Trent (Westside),8,8202.00,online,True,General
-INT_00071,INST_0440,Aero-engines,Indian Oil,9,6859.00,online,False,General
-INT_00072,INST_0358,Executive Search,Ultratech Cement,9,10276.00,online,False,General
-INT_00073,INST_0215,Solar Energy,Hindustan Aeronautics,6,0.00,online,False,General
-INT_00074,INST_0310,Autonomous Driving,GAIL India,8,10384.00,offline,False,General
-INT_00075,INST_0090,Game Development,ISRO,6,7858.00,online,False,General
-INT_00076,INST_0345,Sharding,NTPC,7,4293.00,offline,False,General
-INT_00077,INST_0395,Perovskite Solar Cells,IRCTC,6,10802.00,online,False,General
-INT_00078,INST_0250,Metro Operations,Reliance Industries,6,0.00,online,False,General
-INT_00079,INST_0301,Feature Flags,Ola Electric,9,6421.00,offline,False,General
-INT_00080,INST_0265,Food Safety Standards,Adobe India,9,0.00,online,False,General
-INT_00081,INST_0261,Autonomous Vehicles,Power Grid Corporation,8,5364.00,offline,False,General
-INT_00082,INST_0318,OAuth,Paytm,6,6437.00,online,False,General
-INT_00083,INST_0235,Road Safety,Stripe India,9,14324.00,offline,False,General
-INT_00084,INST_0205,Exactly-once,Cisco India,9,0.00,offline,False,General
-INT_00085,INST_0078,Location Intelligence,Marico,7,10624.00,offline,True,General
-INT_00086,INST_0416,Experimental Design,Crompton,8,11981.00,hybrid,False,General
-INT_00087,INST_0247,Point-of-care Diagnostics,Swiggy,9,0.00,offline,False,Indian Army
-INT_00088,INST_0280,Humanitarian Logistics,AICTE Internship Cell,8,0.00,online,False,General
+INT_00068,INST_0354,Differential Privacy,HP India,7,0.00,online,False,General
+INT_00069,INST_0082,SD-WAN,ReNew Power,9,6258.00,offline,True,General
+INT_00070,INST_0449,Prompt Engineering,Trent (Westside),8,8202.00,online,True,General
+INT_00071,INST_0479,Aero-engines,Indian Oil,9,6859.00,online,False,General
+INT_00072,INST_0385,Executive Search,Ultratech Cement,9,10276.00,online,False,General
+INT_00073,INST_0185,Solar Energy,Hindustan Aeronautics,6,0.00,online,False,General
+INT_00074,INST_0333,Autonomous Driving,GAIL India,8,10384.00,offline,False,General
+INT_00075,INST_0091,Game Development,ISRO,6,7858.00,online,False,General
+INT_00076,INST_0371,Sharding,NTPC,7,4293.00,offline,False,General
+INT_00077,INST_0428,Perovskite Solar Cells,IRCTC,6,10802.00,online,False,General
+INT_00078,INST_0267,Metro Operations,Reliance Industries,6,0.00,online,False,General
+INT_00079,INST_0323,Feature Flags,Ola Electric,9,6421.00,offline,False,General
+INT_00080,INST_0284,Food Safety Standards,Adobe India,9,0.00,online,False,General
+INT_00081,INST_0280,Autonomous Vehicles,Power Grid Corporation,8,5364.00,offline,False,General
+INT_00082,INST_0341,OAuth,Paytm,6,6437.00,online,False,General
+INT_00083,INST_0250,Road Safety,Stripe India,9,14324.00,offline,False,General
+INT_00084,INST_0217,Exactly-once,Cisco India,9,0.00,offline,False,General
+INT_00085,INST_0079,Location Intelligence,Marico,7,10624.00,offline,True,General
+INT_00086,INST_0449,Experimental Design,Crompton,8,11981.00,hybrid,False,General
+INT_00087,INST_0264,Point-of-care Diagnostics,Swiggy,9,0.00,offline,False,Indian Army
+INT_00088,INST_0302,Humanitarian Logistics,AICTE Internship Cell,8,0.00,online,False,General
 INT_00089,INST_0027,Industrial Automation,Godrej Industries,9,8719.00,offline,False,General
 INT_00090,INST_0011,Advertising,ServiceNow India,6,0.00,hybrid,True,General
 INT_00091,INST_0035,ESG Investing,Nykaa,7,0.00,online,False,General
-INT_00092,INST_0364,Fraud Scoring,Kotak Mahindra Bank,6,13484.00,online,False,General
-INT_00093,INST_0333,Foundation Models,Reliance Industries,7,0.00,online,False,General
-INT_00094,INST_0054,Mechanical Design,Twitter/X India,7,6612.00,hybrid,False,General
-INT_00095,INST_0071,Diversity and Inclusion,FedEx India,6,0.00,hybrid,False,General
-INT_00096,INST_0102,Microfluidics,Voltas,7,0.00,hybrid,False,General
-INT_00097,INST_0412,Location Intelligence,Shoppers Stop,6,5169.00,offline,False,General
-INT_00098,INST_0308,Dead Letter Queue,Reliance Jio,8,3486.00,offline,False,General
+INT_00092,INST_0393,Fraud Scoring,Kotak Mahindra Bank,6,13484.00,online,False,General
+INT_00093,INST_0358,Foundation Models,Reliance Industries,7,0.00,online,False,General
+INT_00094,INST_0255,Mechanical Design,Twitter/X India,7,6612.00,hybrid,False,General
+INT_00095,INST_0072,Diversity and Inclusion,FedEx India,6,0.00,hybrid,False,General
+INT_00096,INST_0103,Microfluidics,Voltas,7,0.00,hybrid,False,General
+INT_00097,INST_0445,Location Intelligence,Shoppers Stop,6,5169.00,offline,False,General
+INT_00098,INST_0331,Dead Letter Queue,Reliance Jio,8,3486.00,offline,False,General
 INT_00099,INST_0012,Public Sector Consulting,Britannia,6,11012.00,hybrid,True,General
-INT_00100,INST_0125,Robotics,LTIMindtree,9,9548.00,offline,True,General
-INT_00101,INST_0349,Biosensors,RedBus,9,0.00,offline,False,General
-INT_00102,INST_0398,Highway Engineering,Tata Power,6,13672.00,offline,False,General
-INT_00103,INST_0060,Imaging AI,Practo,6,13448.00,online,False,General
-INT_00104,INST_0112,Event-driven Architecture,Delhivery,8,10102.00,offline,False,General
-INT_00105,INST_0167,Performance Management,Tata Motors,9,0.00,online,False,General
-INT_00106,INST_0241,KYC Operations,Tata Power,9,0.00,offline,False,CDAC
-INT_00107,INST_0455,Railway Signalling,Marico,9,11049.00,offline,False,General
-INT_00108,INST_0194,Impact Assessment,upGrad,8,0.00,online,False,General
+INT_00100,INST_0127,Robotics,LTIMindtree,9,9548.00,offline,True,General
+INT_00101,INST_0375,Biosensors,RedBus,9,0.00,offline,False,General
+INT_00102,INST_0431,Highway Engineering,Tata Power,6,13672.00,offline,False,General
+INT_00103,INST_0061,Imaging AI,Practo,6,13448.00,online,False,General
+INT_00104,INST_0113,Event-driven Architecture,Delhivery,8,10102.00,offline,False,General
+INT_00105,INST_0173,Performance Management,Tata Motors,9,0.00,online,False,General
+INT_00106,INST_0257,KYC Operations,Tata Power,9,0.00,offline,False,CDAC
+INT_00107,INST_0495,Railway Signalling,Marico,9,11049.00,offline,False,General
+INT_00108,INST_0205,Impact Assessment,upGrad,8,0.00,online,False,General
 INT_00109,INST_0050,Green Procurement,FedEx India,6,0.00,offline,False,General
-INT_00110,INST_0180,Columnar Storage,Spotify India,7,6399.00,offline,False,General
-INT_00111,INST_0405,Conversational AI,Levi's India,9,9627.00,hybrid,False,General
+INT_00110,INST_0189,Columnar Storage,Spotify India,7,6399.00,offline,False,General
+INT_00111,INST_0438,Conversational AI,Levi's India,9,9627.00,hybrid,False,General
 INT_00112,INST_0033,Audit and Compliance,Emami,8,3253.00,offline,False,General
-INT_00113,INST_0190,Key Management,Kotak Mahindra Bank,6,10489.00,online,False,General
-INT_00114,INST_0147,Supplier Diversity,UNICEF India,6,6351.00,online,False,General
+INT_00113,INST_0201,Key Management,Kotak Mahindra Bank,6,10489.00,online,False,General
+INT_00114,INST_0151,Supplier Diversity,UNICEF India,6,6351.00,online,False,General
 INT_00115,INST_0026,Sustainable Finance,ITC Limited,8,0.00,offline,False,General
-INT_00116,INST_0298,Contrastive Learning,FedEx India,6,9498.00,hybrid,False,General
-INT_00117,INST_0202,Marine Biology,Siemens India,6,0.00,hybrid,False,General
-INT_00118,INST_0072,Circuit Breaker,Practo,8,11511.00,offline,False,Indian Army
-INT_00119,INST_0154,Secure Boot,upGrad,7,5003.00,online,False,General
-INT_00120,INST_0380,Planetary Science,ReNew Power,7,8655.00,offline,False,General
-INT_00121,INST_0268,Interior Design,Railway Board,6,0.00,offline,False,General
-INT_00122,INST_0434,Developer Relations,Vedanta,6,0.00,offline,False,General
-INT_00123,INST_0170,Logistics,Kotak Mahindra Bank,8,0.00,offline,False,General
-INT_00124,INST_0246,Agriculture Technology,AICTE Internship Cell,7,5437.00,hybrid,False,General
+INT_00116,INST_0320,Contrastive Learning,FedEx India,6,9498.00,hybrid,False,General
+INT_00117,INST_0214,Marine Biology,Siemens India,6,0.00,hybrid,False,General
+INT_00118,INST_0073,Circuit Breaker,Practo,8,11511.00,offline,False,Indian Army
+INT_00119,INST_0158,Secure Boot,upGrad,7,5003.00,online,False,General
+INT_00120,INST_0409,Planetary Science,ReNew Power,7,8655.00,offline,False,General
+INT_00121,INST_0287,Interior Design,Railway Board,6,0.00,offline,False,General
+INT_00122,INST_0472,Developer Relations,Vedanta,6,0.00,offline,False,General
+INT_00123,INST_0176,Logistics,Kotak Mahindra Bank,8,0.00,offline,False,General
+INT_00124,INST_0455,Agriculture Technology,AICTE Internship Cell,7,5437.00,hybrid,False,General
 INT_00125,INST_0009,Point-of-care Diagnostics,Tech Mahindra,6,7792.00,offline,False,General
-INT_00126,INST_0265,Bot Detection,Myntra,9,12030.00,hybrid,False,General
-INT_00127,INST_0287,DevOps,MakeMyTrip,7,13669.00,offline,False,TULIP
-INT_00128,INST_0126,Raft,GAIL India,6,7598.00,hybrid,False,General
+INT_00126,INST_0284,Bot Detection,Myntra,9,12030.00,hybrid,False,General
+INT_00127,INST_0309,DevOps,MakeMyTrip,7,13669.00,offline,False,TULIP
+INT_00128,INST_0130,Raft,GAIL India,6,7598.00,hybrid,False,General
 INT_00129,INST_0048,Full-Stack Development,Shoppers Stop,9,7106.00,offline,False,General
-INT_00130,INST_0334,Bioelectronics,Myntra,6,0.00,online,False,General
-INT_00131,INST_0276,Mining Engineering,Blinkit,8,4556.00,offline,False,General
+INT_00130,INST_0359,Bioelectronics,Myntra,6,0.00,online,False,General
+INT_00131,INST_0296,Mining Engineering,Blinkit,8,4556.00,offline,False,General
 INT_00132,INST_0047,Quality Assurance,Zara India,7,0.00,hybrid,True,General
-INT_00133,INST_0077,Dairy Technology,Indian Army (Technical),6,12975.00,online,False,General
-INT_00134,INST_0313,Attack Surface Management,ServiceNow India,7,12810.00,offline,True,General
-INT_00135,INST_0061,Geology,Suzlon,6,0.00,offline,False,General
-INT_00136,INST_0087,Database Administration,Razorpay,9,8147.00,offline,False,General
+INT_00133,INST_0078,Dairy Technology,Indian Army (Technical),6,12975.00,online,False,General
+INT_00134,INST_0336,Attack Surface Management,ServiceNow India,7,12810.00,offline,True,General
+INT_00135,INST_0062,Geology,Suzlon,6,0.00,offline,False,General
+INT_00136,INST_0088,Database Administration,Razorpay,9,8147.00,offline,False,General
 INT_00137,INST_0024,Forensic Psychology,Wipro,6,12066.00,offline,False,General
-INT_00138,INST_0232,Data Engineering,Hindustan Aeronautics,8,3565.00,hybrid,False,General
-INT_00139,INST_0015,Business Continuity,Meesho,7,0.00,offline,False,General
-INT_00140,INST_0213,Triage,Adani Group,6,0.00,hybrid,False,General
-INT_00141,INST_0440,Microbiology,NTPC,8,0.00,offline,False,General
-INT_00142,INST_0108,Confidential Computing,Zara India,8,12816.00,offline,False,CDAC
-INT_00143,INST_0410,Pub/Sub,Mahindra & Mahindra,6,14081.00,online,False,TULIP
-INT_00144,INST_0321,Drone Technology,Trent (Westside),7,13168.00,online,False,General
-INT_00145,INST_0084,Cubesat Development,Blue Dart,6,0.00,offline,False,General
-INT_00146,INST_0370,Vehicle Telematics,Honeywell India,9,10512.00,online,False,General
-INT_00147,INST_0280,Knowledge Management,Twitter/X India,8,11824.00,online,False,CDAC
-INT_00148,INST_0351,Blockchain Development,Marico,8,12802.00,offline,False,General
-INT_00149,INST_0318,Smart Metering,Honeywell India,9,0.00,hybrid,False,General
-INT_00150,INST_0421,Identity Verification,Swiggy,8,0.00,online,True,General
-INT_00151,INST_0241,Composites,Amul,8,0.00,online,False,CDAC
-INT_00152,INST_0092,Resilience Testing,JSW Steel,9,10041.00,offline,False,General
-INT_00153,INST_0156,Humanoid Robotics,Godrej Industries,9,6182.00,hybrid,False,TULIP
-INT_00154,INST_0208,Disk Forensics,Rapido,7,3642.00,offline,False,General
-INT_00155,INST_0447,Low-code Development,Dell Technologies,8,0.00,offline,False,General
-INT_00156,INST_0428,ERP Implementation,Unacademy,7,12317.00,offline,True,TULIP
-INT_00157,INST_0220,Explainable AI,Porter,8,12312.00,offline,False,General
-INT_00158,INST_0378,Banking Operations,Ola,6,3120.00,hybrid,False,General
-INT_00159,INST_0273,Corporate Governance,Capgemini,8,14430.00,hybrid,True,General
-INT_00160,INST_0136,Implant Design,Vedantu,8,0.00,offline,False,General
+INT_00138,INST_0247,Data Engineering,Hindustan Aeronautics,8,3565.00,hybrid,False,General
+INT_00139,INST_0198,Business Continuity,Meesho,7,0.00,offline,False,General
+INT_00140,INST_0226,Triage,Adani Group,6,0.00,hybrid,False,General
+INT_00141,INST_0479,Microbiology,NTPC,8,0.00,offline,False,General
+INT_00142,INST_0109,Confidential Computing,Zara India,8,12816.00,offline,False,CDAC
+INT_00143,INST_0443,Pub/Sub,Mahindra & Mahindra,6,14081.00,online,False,TULIP
+INT_00144,INST_0344,Drone Technology,Trent (Westside),7,13168.00,online,False,General
+INT_00145,INST_0085,Cubesat Development,Blue Dart,6,0.00,offline,False,General
+INT_00146,INST_0399,Vehicle Telematics,Honeywell India,9,10512.00,online,False,General
+INT_00147,INST_0302,Knowledge Management,Twitter/X India,8,11824.00,online,False,CDAC
+INT_00148,INST_0377,Blockchain Development,Marico,8,12802.00,offline,False,General
+INT_00149,INST_0341,Smart Metering,Honeywell India,9,0.00,hybrid,False,General
+INT_00150,INST_0454,Identity Verification,Swiggy,8,0.00,online,True,General
+INT_00151,INST_0257,Composites,Amul,8,0.00,online,False,CDAC
+INT_00152,INST_0093,Resilience Testing,JSW Steel,9,10041.00,offline,False,General
+INT_00153,INST_0160,Humanoid Robotics,Godrej Industries,9,6182.00,hybrid,False,TULIP
+INT_00154,INST_0220,Disk Forensics,Rapido,7,3642.00,offline,False,General
+INT_00155,INST_0486,Low-code Development,Dell Technologies,8,0.00,offline,False,General
+INT_00156,INST_0382,ERP Implementation,Unacademy,7,12317.00,offline,True,TULIP
+INT_00157,INST_0234,Explainable AI,Porter,8,12312.00,offline,False,General
+INT_00158,INST_0382,Banking Operations,Ola,6,3120.00,hybrid,False,General
+INT_00159,INST_0293,Corporate Governance,Capgemini,8,14430.00,hybrid,True,General
+INT_00160,INST_0139,Implant Design,Vedantu,8,0.00,offline,False,General
 INT_00161,INST_0004,Interior Design,H&M India,7,0.00,online,True,TULIP
-INT_00162,INST_0367,Cryo-EM,Treebo,6,3579.00,online,False,TULIP
-INT_00163,INST_0454,Poultry Science,Crompton,6,5523.00,hybrid,False,General
-INT_00164,INST_0026,Key Management,IRCTC,7,4000.00,online,False,General
-INT_00165,INST_0124,Corporate Governance,MakeMyTrip,9,10938.00,hybrid,True,General
-INT_00166,INST_0159,Aircraft Maintenance,Dunzo,8,13369.00,online,False,General
+INT_00162,INST_0396,Cryo-EM,Treebo,6,3579.00,online,False,TULIP
+INT_00163,INST_0494,Poultry Science,Crompton,6,5523.00,hybrid,False,General
+INT_00164,INST_0119,Key Management,IRCTC,7,4000.00,online,False,General
+INT_00165,INST_0367,Corporate Governance,MakeMyTrip,9,10938.00,hybrid,True,General
+INT_00166,INST_0164,Aircraft Maintenance,Dunzo,8,13369.00,online,False,General
 INT_00167,INST_0045,Bot Detection,Adani Green Energy,9,5639.00,offline,True,General
-INT_00168,INST_0232,Algorithmic Trading,Adobe India,9,7492.00,hybrid,False,General
-INT_00169,INST_0158,Go-live Support,Bharti Airtel,8,0.00,offline,False,CDAC
-INT_00170,INST_0250,Route Optimization,GAIL India,7,6267.00,online,False,General
-INT_00171,INST_0063,Humanitarian Logistics,Bajaj Electricals,9,0.00,online,False,General
-INT_00172,INST_0188,Intellectual Property,TULIP Portal Partner,6,0.00,online,False,General
-INT_00173,INST_0386,Crisis Management,Ashok Leyland,8,10624.00,offline,False,General
-INT_00174,INST_0225,Particle Physics,Unacademy,7,11466.00,online,False,General
-INT_00175,INST_0248,Formal Verification,Delhivery,7,8989.00,offline,False,TULIP
-INT_00176,INST_0431,Message Broker,Tata Power,6,0.00,online,False,General
-INT_00177,INST_0130,Data Profiling,Emami,7,7874.00,online,True,CDAC
-INT_00178,INST_0322,Industrial Automation,Tata Power,9,13845.00,hybrid,False,General
+INT_00168,INST_0247,Algorithmic Trading,Adobe India,9,7492.00,hybrid,False,General
+INT_00169,INST_0163,Go-live Support,Bharti Airtel,8,0.00,offline,False,CDAC
+INT_00170,INST_0267,Route Optimization,GAIL India,7,6267.00,online,False,General
+INT_00171,INST_0064,Humanitarian Logistics,Bajaj Electricals,9,0.00,online,False,General
+INT_00172,INST_0197,Intellectual Property,TULIP Portal Partner,6,0.00,online,False,General
+INT_00173,INST_0416,Crisis Management,Ashok Leyland,8,10624.00,offline,False,General
+INT_00174,INST_0239,Particle Physics,Unacademy,7,11466.00,online,False,General
+INT_00175,INST_0265,Formal Verification,Delhivery,7,8989.00,offline,False,TULIP
+INT_00176,INST_0468,Message Broker,Tata Power,6,0.00,online,False,General
+INT_00177,INST_0133,Data Profiling,Emami,7,7874.00,online,True,CDAC
+INT_00178,INST_0345,Industrial Automation,Tata Power,9,13845.00,hybrid,False,General
 INT_00179,INST_0016,Disaster Response,PhonePe,9,14661.00,offline,False,Indian Army
-INT_00180,INST_0056,Federated Learning,Puma India,9,0.00,hybrid,False,General
+INT_00180,INST_0057,Federated Learning,Puma India,9,0.00,hybrid,False,General
 INT_00181,INST_0012,Influencer Marketing,HP India,6,6864.00,offline,True,Indian Army
-INT_00182,INST_0238,Regulatory Technology,ISRO,8,14295.00,offline,False,General
-INT_00183,INST_0278,Caching,ABB India,7,8166.00,hybrid,True,General
-INT_00184,INST_0067,Data Privacy,Trent (Westside),7,6811.00,hybrid,True,General
+INT_00182,INST_0253,Regulatory Technology,ISRO,8,14295.00,offline,False,General
+INT_00183,INST_0300,Caching,ABB India,7,8166.00,hybrid,True,General
+INT_00184,INST_0068,Data Privacy,Trent (Westside),7,6811.00,hybrid,True,General
 INT_00185,INST_0011,Blockchain Development,Netflix India,9,12263.00,hybrid,False,General
-INT_00186,INST_0170,Cloud Migration,BigBasket,9,0.00,online,False,General
-INT_00187,INST_0119,Semantic Search,Axis Bank,8,0.00,offline,False,General
-INT_00188,INST_0082,Climate Finance,Schneider Electric,7,10231.00,online,True,General
-INT_00189,INST_0304,Human Rights Due Diligence,Nike India,6,7162.00,offline,False,General
+INT_00186,INST_0223,Cloud Migration,BigBasket,9,0.00,online,False,General
+INT_00187,INST_0121,Semantic Search,Axis Bank,8,0.00,offline,False,General
+INT_00188,INST_0083,Climate Finance,Schneider Electric,7,10231.00,online,True,General
+INT_00189,INST_0327,Human Rights Due Diligence,Nike India,6,7162.00,offline,False,General
 INT_00190,INST_0028,Animation,Indian Army (Technical),8,0.00,offline,False,General
-INT_00191,INST_0371,Firewall Rules,World Bank India,6,10173.00,online,False,General
-INT_00192,INST_0201,Biodiversity Assessment,MakeMyTrip,7,12300.00,offline,False,General
-INT_00193,INST_0252,SOAR,Adidas India,6,0.00,online,False,General
-INT_00194,INST_0175,Wearable Health,State Bank of India,6,13150.00,offline,False,General
-INT_00195,INST_0115,Electric Vehicles,Big Bazaar (Future),8,14707.00,online,False,TULIP
-INT_00196,INST_0368,Food Packaging,Myntra,9,6383.00,offline,False,General
-INT_00197,INST_0258,Full-Stack Development,Cisco India,8,0.00,offline,False,General
+INT_00191,INST_0400,Firewall Rules,World Bank India,6,10173.00,online,False,General
+INT_00192,INST_0213,Biodiversity Assessment,MakeMyTrip,7,12300.00,offline,False,General
+INT_00193,INST_0269,SOAR,Adidas India,6,0.00,online,False,General
+INT_00194,INST_0182,Wearable Health,State Bank of India,6,13150.00,offline,False,General
+INT_00195,INST_0255,Electric Vehicles,Big Bazaar (Future),8,14707.00,online,False,TULIP
+INT_00196,INST_0397,Food Packaging,Myntra,9,6383.00,offline,False,General
+INT_00197,INST_0277,Full-Stack Development,Cisco India,8,0.00,offline,False,General
 INT_00198,INST_0042,Highway Engineering,Reliance Retail,9,10040.00,offline,False,General
-INT_00199,INST_0063,Telecommunications,Zara India,8,12904.00,offline,False,Indian Army
-INT_00200,INST_0159,Schema Migration,Google India,9,9832.00,offline,True,General
-INT_00201,INST_0081,Vulnerability Research,DRDO,9,0.00,online,False,General
-INT_00202,INST_0144,Econometrics,L&T Energy,8,8900.00,offline,True,Indian Army
-INT_00203,INST_0427,Visa Processing,ISRO,8,11528.00,offline,False,General
-INT_00204,INST_0107,Wind Energy,Titan Company,9,0.00,offline,False,General
-INT_00205,INST_0250,Economics Research,Cure.fit,9,4932.00,online,False,General
-INT_00206,INST_0119,Journalism,ACC Cement,6,5237.00,online,False,General
+INT_00199,INST_0064,Telecommunications,Zara India,8,12904.00,offline,False,Indian Army
+INT_00200,INST_0164,Schema Migration,Google India,9,9832.00,offline,True,General
+INT_00201,INST_0082,Vulnerability Research,DRDO,9,0.00,online,False,General
+INT_00202,INST_0148,Econometrics,L&T Energy,8,8900.00,offline,True,Indian Army
+INT_00203,INST_0463,Visa Processing,ISRO,8,11528.00,offline,False,General
+INT_00204,INST_0108,Wind Energy,Titan Company,9,0.00,offline,False,General
+INT_00205,INST_0267,Economics Research,Cure.fit,9,4932.00,online,False,General
+INT_00206,INST_0255,Journalism,ACC Cement,6,5237.00,online,False,General
 INT_00207,INST_0047,Vulnerability Research,ACC Cement,9,5785.00,hybrid,False,General
-INT_00208,INST_0377,Vault,Myntra,8,5769.00,hybrid,True,General
-INT_00209,INST_0323,Vulnerability Research,Vedanta,7,6857.00,offline,False,CDAC
+INT_00208,INST_0406,Vault,Myntra,8,5769.00,hybrid,True,General
+INT_00209,INST_0346,Vulnerability Research,Vedanta,7,6857.00,offline,False,CDAC
 INT_00210,INST_0021,Bug Bounty,Shoppers Stop,9,5680.00,offline,False,CDAC
-INT_00211,INST_0371,Green Procurement,ICICI Bank,8,3083.00,hybrid,False,CDAC
-INT_00212,INST_0290,Service Mesh,Porter,9,11563.00,offline,True,TULIP
-INT_00213,INST_0089,Go-live Support,Amazon India,9,7700.00,offline,False,General
-INT_00214,INST_0372,Financial Consulting,Delhivery,6,13668.00,offline,True,Indian Army
-INT_00215,INST_0384,Nomad,Cure.fit,8,0.00,offline,False,Indian Army
-INT_00216,INST_0336,Geology,ISRO,7,11547.00,offline,False,General
-INT_00217,INST_0458,AML Compliance,Tata Consultancy Services,6,0.00,offline,False,General
-INT_00218,INST_0342,MPLS,DRDO,6,12988.00,offline,False,General
-INT_00219,INST_0197,Chaos Engineering,DMart,7,13794.00,hybrid,False,Indian Army
-INT_00220,INST_0106,Protobuf,PayPal India,9,7708.00,online,False,General
-INT_00221,INST_0294,Search and Rescue,FedEx India,8,3800.00,hybrid,False,General
-INT_00222,INST_0465,Distributed Locking,Zoho Corporation,6,4312.00,offline,False,General
+INT_00211,INST_0400,Green Procurement,ICICI Bank,8,3083.00,hybrid,False,CDAC
+INT_00212,INST_0312,Service Mesh,Porter,9,11563.00,offline,True,TULIP
+INT_00213,INST_0090,Go-live Support,Amazon India,9,7700.00,offline,False,General
+INT_00214,INST_0401,Financial Consulting,Delhivery,6,13668.00,offline,True,Indian Army
+INT_00215,INST_0414,Nomad,Cure.fit,8,0.00,offline,False,Indian Army
+INT_00216,INST_0361,Geology,ISRO,7,11547.00,offline,False,General
+INT_00217,INST_0499,AML Compliance,Tata Consultancy Services,6,0.00,offline,False,General
+INT_00218,INST_0368,MPLS,DRDO,6,12988.00,offline,False,General
+INT_00219,INST_0209,Chaos Engineering,DMart,7,13794.00,hybrid,False,Indian Army
+INT_00220,INST_0272,Protobuf,PayPal India,9,7708.00,online,False,General
+INT_00221,INST_0316,Search and Rescue,FedEx India,8,3800.00,hybrid,False,General
+INT_00222,INST_0382,Distributed Locking,Zoho Corporation,6,4312.00,offline,False,General
 INT_00223,INST_0014,Consumer Protection,Vodafone Idea,9,0.00,online,False,General
 INT_00224,INST_0050,Search Relevance,ACC Cement,7,8638.00,offline,False,General
-INT_00225,INST_0216,Speech Recognition,Trent (Westside),6,0.00,offline,False,General
-INT_00226,INST_0240,Radiology AI,P&G India,7,0.00,hybrid,False,General
-INT_00227,INST_0153,Master Data,HP India,6,0.00,online,False,General
-INT_00228,INST_0060,Vulnerability Management,Uber India,9,3138.00,hybrid,False,General
-INT_00229,INST_0266,HACCP,Fabindia,6,0.00,offline,False,General
-INT_00230,INST_0190,Low-code Development,Schneider Electric,9,10096.00,offline,False,General
-INT_00231,INST_0350,Smart Home,Dabur,7,0.00,offline,False,General
-INT_00232,INST_0124,Identity Verification,Zoho Corporation,9,0.00,hybrid,False,General
-INT_00233,INST_0152,Space Debris,Tanishq,9,0.00,hybrid,False,General
-INT_00234,INST_0180,Vendor Risk,World Bank India,7,13843.00,online,False,TULIP
-INT_00235,INST_0384,Clinical Research,Amazon India,6,14756.00,offline,False,Indian Army
-INT_00236,INST_0424,Smart Home,Tanishq,7,10221.00,offline,False,General
-INT_00237,INST_0105,SD-WAN,Emami,9,10671.00,offline,False,General
-INT_00238,INST_0244,Sharding,Cure.fit,9,0.00,offline,False,General
-INT_00239,INST_0233,Flexible Electronics,HCL Technologies,9,12626.00,offline,False,General
-INT_00240,INST_0429,SLO,Hindustan Unilever,7,4129.00,hybrid,False,General
-INT_00241,INST_0261,Mental Health Apps,Voltas,9,7661.00,offline,True,General
-INT_00242,INST_0401,Talent Management,ABB India,9,0.00,offline,True,General
-INT_00243,INST_0345,Swarm Robotics,Stripe India,6,9402.00,hybrid,False,General
-INT_00244,INST_0081,ZooKeeper,DRDO,9,13905.00,offline,False,General
-INT_00245,INST_0406,CTR Modelling,Suzlon,9,12149.00,offline,False,General
-INT_00246,INST_0179,Homomorphic Encryption,Royal Enfield,8,0.00,online,False,General
-INT_00247,INST_0382,Parquet,Urban Company,7,0.00,hybrid,False,General
-INT_00248,INST_0137,Electric Vehicles,Bosch India,8,0.00,offline,False,CDAC
-INT_00249,INST_0284,Customer Identity,AICTE Internship Cell,7,13690.00,offline,True,General
-INT_00250,INST_0056,Library Science,Amul,8,10965.00,online,False,General
+INT_00225,INST_0229,Speech Recognition,Trent (Westside),6,0.00,offline,False,General
+INT_00226,INST_0256,Radiology AI,P&G India,7,0.00,hybrid,False,General
+INT_00227,INST_0157,Master Data,HP India,6,0.00,online,False,General
+INT_00228,INST_0061,Vulnerability Management,Uber India,9,3138.00,hybrid,False,General
+INT_00229,INST_0285,HACCP,Fabindia,6,0.00,offline,False,General
+INT_00230,INST_0201,Low-code Development,Schneider Electric,9,10096.00,offline,False,General
+INT_00231,INST_0376,Smart Home,Dabur,7,0.00,offline,False,General
+INT_00232,INST_0325,Identity Verification,Zoho Corporation,9,0.00,hybrid,False,General
+INT_00233,INST_0156,Space Debris,Tanishq,9,0.00,hybrid,False,General
+INT_00234,INST_0189,Vendor Risk,World Bank India,7,13843.00,online,False,TULIP
+INT_00235,INST_0414,Clinical Research,Amazon India,6,14756.00,offline,False,Indian Army
+INT_00236,INST_0460,Smart Home,Tanishq,7,10221.00,offline,False,General
+INT_00237,INST_0276,SD-WAN,Emami,9,10671.00,offline,False,General
+INT_00238,INST_0261,Sharding,Cure.fit,9,0.00,offline,False,General
+INT_00239,INST_0248,Flexible Electronics,HCL Technologies,9,12626.00,offline,False,General
+INT_00240,INST_0465,SLO,Hindustan Unilever,7,4129.00,hybrid,False,General
+INT_00241,INST_0280,Mental Health Apps,Voltas,9,7661.00,offline,True,General
+INT_00242,INST_0434,Talent Management,ABB India,9,0.00,offline,True,General
+INT_00243,INST_0371,Swarm Robotics,Stripe India,6,9402.00,hybrid,False,General
+INT_00244,INST_0082,ZooKeeper,DRDO,9,13905.00,offline,False,General
+INT_00245,INST_0382,CTR Modelling,Suzlon,9,12149.00,offline,False,General
+INT_00246,INST_0241,Homomorphic Encryption,Royal Enfield,8,0.00,online,False,General
+INT_00247,INST_0412,Parquet,Urban Company,7,0.00,hybrid,False,General
+INT_00248,INST_0140,Electric Vehicles,Bosch India,8,0.00,offline,False,CDAC
+INT_00249,INST_0306,Customer Identity,AICTE Internship Cell,7,13690.00,offline,True,General
+INT_00250,INST_0057,Library Science,Amul,8,10965.00,online,False,General
 INT_00251,INST_0039,Radiology AI,Indian Oil,6,10667.00,offline,False,General
-INT_00252,INST_0326,Sports Analytics,GAIL India,7,13854.00,offline,False,CDAC
-INT_00253,INST_0440,Go-live Support,Amazon India,7,3114.00,offline,True,General
+INT_00252,INST_0350,Sports Analytics,GAIL India,7,13854.00,offline,False,CDAC
+INT_00253,INST_0479,Go-live Support,Amazon India,7,3114.00,offline,True,General
 INT_00254,INST_0009,Welding Technology,Axis Bank,8,9859.00,offline,False,General
-INT_00255,INST_0228,Brand Management,Hindustan Aeronautics,6,13509.00,offline,False,General
-INT_00256,INST_0145,Contrastive Learning,Nestle India,6,8665.00,offline,False,General
-INT_00257,INST_0277,Data Warehousing,Marico,7,0.00,offline,True,Indian Army
-INT_00258,INST_0341,Energy Management Systems,Paytm,7,12350.00,online,False,General
-INT_00259,INST_0446,WAF,AICTE Internship Cell,9,13210.00,offline,True,General
-INT_00260,INST_0415,Fuel Cells,Royal Enfield,6,8891.00,online,True,General
-INT_00261,INST_0054,Packer,Salesforce India,8,5231.00,offline,False,General
-INT_00262,INST_0291,Organic Electronics,Zoho Corporation,6,14523.00,hybrid,False,General
-INT_00263,INST_0455,VLSI Design,Railway Board,6,9482.00,offline,False,General
-INT_00264,INST_0262,Green Buildings,H&M India,8,8580.00,offline,True,General
-INT_00265,INST_0251,MMM,Power Grid Corporation,8,0.00,online,False,General
-INT_00266,INST_0341,Crypto Research,Tanishq,7,6159.00,offline,False,General
-INT_00267,INST_0085,Data Engineering,Schneider Electric,8,0.00,hybrid,True,General
-INT_00268,INST_0062,Healthcare Management,upGrad,8,14552.00,online,False,CDAC
-INT_00269,INST_0464,Telemedicine,Delhivery,6,4155.00,online,False,General
-INT_00270,INST_0465,Threat Intelligence,Ultratech Cement,8,14688.00,offline,False,General
-INT_00271,INST_0264,Process Excellence,GAIL India,6,11307.00,offline,False,General
+INT_00255,INST_0243,Brand Management,Hindustan Aeronautics,6,13509.00,offline,False,General
+INT_00256,INST_0149,Contrastive Learning,Nestle India,6,8665.00,offline,False,General
+INT_00257,INST_0255,Data Warehousing,Marico,7,0.00,offline,True,Indian Army
+INT_00258,INST_0366,Energy Management Systems,Paytm,7,12350.00,online,False,General
+INT_00259,INST_0255,WAF,AICTE Internship Cell,9,13210.00,offline,True,General
+INT_00260,INST_0448,Fuel Cells,Royal Enfield,6,8891.00,online,True,General
+INT_00261,INST_0255,Packer,Salesforce India,8,5231.00,offline,False,General
+INT_00262,INST_0313,Organic Electronics,Zoho Corporation,6,14523.00,hybrid,False,General
+INT_00263,INST_0495,VLSI Design,Railway Board,6,9482.00,offline,False,General
+INT_00264,INST_0281,Green Buildings,H&M India,8,8580.00,offline,True,General
+INT_00265,INST_0268,MMM,Power Grid Corporation,8,0.00,online,False,General
+INT_00266,INST_0255,Crypto Research,Tanishq,7,6159.00,offline,False,General
+INT_00267,INST_0086,Data Engineering,Schneider Electric,8,0.00,hybrid,True,General
+INT_00268,INST_0063,Healthcare Management,upGrad,8,14552.00,online,False,CDAC
+INT_00269,INST_0382,Telemedicine,Delhivery,6,4155.00,online,False,General
+INT_00270,INST_0382,Threat Intelligence,Ultratech Cement,8,14688.00,offline,False,General
+INT_00271,INST_0283,Process Excellence,GAIL India,6,11307.00,offline,False,General
 INT_00272,INST_0049,Archaeology,NTPC,9,3120.00,hybrid,False,CDAC
-INT_00273,INST_0402,Edge Computing,Larsen & Toubro,6,6244.00,online,True,Indian Army
-INT_00274,INST_0352,Ayurveda Research,Havells,9,7769.00,offline,False,General
-INT_00275,INST_0184,Microbiology,Mother Dairy,9,0.00,hybrid,False,General
-INT_00276,INST_0389,Telemedicine,ACC Cement,7,3652.00,offline,False,General
+INT_00273,INST_0435,Edge Computing,Larsen & Toubro,6,6244.00,online,True,Indian Army
+INT_00274,INST_0378,Ayurveda Research,Havells,9,7769.00,offline,False,General
+INT_00275,INST_0193,Microbiology,Mother Dairy,9,0.00,hybrid,False,General
+INT_00276,INST_0497,Telemedicine,ACC Cement,7,3652.00,offline,False,General
 INT_00277,INST_0045,Performance Engineering,Ashok Leyland,8,0.00,offline,False,General
-INT_00278,INST_0097,NGO Operations,Meesho,7,6471.00,offline,False,CDAC
-INT_00279,INST_0195,Microfluidics,BigBasket,9,11666.00,offline,False,General
-INT_00280,INST_0427,Animation,Zara India,7,0.00,offline,False,General
-INT_00281,INST_0106,Energy Management Systems,DMart,6,9733.00,online,False,TULIP
-INT_00282,INST_0228,Health Education,Unacademy,7,0.00,offline,False,TULIP
-INT_00283,INST_0159,Infrastructure as Code,Infosys,7,12815.00,offline,False,TULIP
-INT_00284,INST_0089,Knowledge Graphs,PayPal India,8,8778.00,offline,False,General
-INT_00285,INST_0424,Virtual Reality,Havells,9,0.00,offline,False,General
+INT_00278,INST_0098,NGO Operations,Meesho,7,6471.00,offline,False,CDAC
+INT_00279,INST_0206,Microfluidics,BigBasket,9,11666.00,offline,False,General
+INT_00280,INST_0463,Animation,Zara India,7,0.00,offline,False,General
+INT_00281,INST_0107,Energy Management Systems,DMart,6,9733.00,online,False,TULIP
+INT_00282,INST_0243,Health Education,Unacademy,7,0.00,offline,False,TULIP
+INT_00283,INST_0164,Infrastructure as Code,Infosys,7,12815.00,offline,False,TULIP
+INT_00284,INST_0090,Knowledge Graphs,PayPal India,8,8778.00,offline,False,General
+INT_00285,INST_0460,Virtual Reality,Havells,9,0.00,offline,False,General
 INT_00286,INST_0008,Function-as-a-Service,Razorpay,7,10440.00,hybrid,False,General
-INT_00287,INST_0406,Subnetting,Dunzo,7,0.00,hybrid,False,General
-INT_00288,INST_0385,Secure Boot,Vodafone Idea,8,7121.00,online,False,CDAC
-INT_00289,INST_0199,Financial Analysis,ServiceNow India,7,5222.00,offline,False,General
-INT_00290,INST_0090,Columnar Storage,Airbnb India,9,8058.00,hybrid,False,CDAC
-INT_00291,INST_0373,Idempotency,Tata Consultancy Services,7,0.00,offline,False,General
-INT_00292,INST_0458,Petroleum Engineering,Razorpay,7,11320.00,hybrid,False,General
-INT_00293,INST_0183,Telemedicine,BHEL,9,3391.00,offline,False,General
-INT_00294,INST_0327,Learning and Development,upGrad,9,13961.00,offline,False,General
-INT_00295,INST_0153,Satellite Propulsion,JSW Steel,7,7865.00,online,True,General
-INT_00296,INST_0081,BGP,Netflix India,6,14352.00,online,False,General
-INT_00297,INST_0057,Predictive Maintenance,ICICI Bank,6,0.00,hybrid,False,General
-INT_00298,INST_0194,Agriculture Technology,Fabindia,7,4090.00,offline,False,General
-INT_00299,INST_0059,Learning to Rank,Bharat Electronics,6,11962.00,offline,False,General
-INT_00300,INST_0200,Network Forensics,Kia India,9,0.00,offline,True,General
-INT_00301,INST_0394,Forestry,Indian Oil,8,11769.00,online,False,Indian Army
-INT_00302,INST_0123,Economics Research,ACC Cement,8,11066.00,offline,False,General
-INT_00303,INST_0220,Shopper Insights,Meta India,6,8649.00,offline,False,General
-INT_00304,INST_0246,Cutover Planning,Reliance Jio,9,0.00,hybrid,True,General
-INT_00305,INST_0180,ISO 9001,Blinkit,8,0.00,online,False,General
-INT_00306,INST_0167,Reliability Engineering,Vedantu,7,0.00,online,False,General
-INT_00307,INST_0169,Pharmaceutical Research,Hero MotoCorp,6,4338.00,hybrid,False,Indian Army
-INT_00308,INST_0437,Terraform,Adobe India,6,3416.00,online,False,General
-INT_00309,INST_0115,Graphic Design,Mahindra & Mahindra,6,5862.00,offline,False,General
-INT_00310,INST_0230,Event-driven Architecture,Hindustan Unilever,8,0.00,hybrid,False,General
-INT_00311,INST_0115,Adversarial ML,Paytm,8,0.00,offline,False,TULIP
-INT_00312,INST_0223,API Gateway,AICTE Internship Cell,7,3392.00,offline,False,General
-INT_00313,INST_0080,Grant Writing,Google India,7,14676.00,offline,False,General
-INT_00314,INST_0108,3D Modelling,HP India,9,0.00,hybrid,False,General
+INT_00287,INST_0382,Subnetting,Dunzo,7,0.00,hybrid,False,General
+INT_00288,INST_0415,Secure Boot,Vodafone Idea,8,7121.00,online,False,CDAC
+INT_00289,INST_0211,Financial Analysis,ServiceNow India,7,5222.00,offline,False,General
+INT_00290,INST_0091,Columnar Storage,Airbnb India,9,8058.00,hybrid,False,CDAC
+INT_00291,INST_0255,Idempotency,Tata Consultancy Services,7,0.00,offline,False,General
+INT_00292,INST_0499,Petroleum Engineering,Razorpay,7,11320.00,hybrid,False,General
+INT_00293,INST_0192,Telemedicine,BHEL,9,3391.00,offline,False,General
+INT_00294,INST_0351,Learning and Development,upGrad,9,13961.00,offline,False,General
+INT_00295,INST_0157,Satellite Propulsion,JSW Steel,7,7865.00,online,True,General
+INT_00296,INST_0082,BGP,Netflix India,6,14352.00,online,False,General
+INT_00297,INST_0058,Predictive Maintenance,ICICI Bank,6,0.00,hybrid,False,General
+INT_00298,INST_0205,Agriculture Technology,Fabindia,7,4090.00,offline,False,General
+INT_00299,INST_0060,Learning to Rank,Bharat Electronics,6,11962.00,offline,False,General
+INT_00300,INST_0212,Network Forensics,Kia India,9,0.00,offline,True,General
+INT_00301,INST_0427,Forestry,Indian Oil,8,11769.00,online,False,Indian Army
+INT_00302,INST_0125,Economics Research,ACC Cement,8,11066.00,offline,False,General
+INT_00303,INST_0234,Shopper Insights,Meta India,6,8649.00,offline,False,General
+INT_00304,INST_0455,Cutover Planning,Reliance Jio,9,0.00,hybrid,True,General
+INT_00305,INST_0189,ISO 9001,Blinkit,8,0.00,online,False,General
+INT_00306,INST_0173,Reliability Engineering,Vedantu,7,0.00,online,False,General
+INT_00307,INST_0175,Pharmaceutical Research,Hero MotoCorp,6,4338.00,hybrid,False,Indian Army
+INT_00308,INST_0255,Terraform,Adobe India,6,3416.00,online,False,General
+INT_00309,INST_0255,Graphic Design,Mahindra & Mahindra,6,5862.00,offline,False,General
+INT_00310,INST_0348,Event-driven Architecture,Hindustan Unilever,8,0.00,hybrid,False,General
+INT_00311,INST_0255,Adversarial ML,Paytm,8,0.00,offline,False,TULIP
+INT_00312,INST_0185,API Gateway,AICTE Internship Cell,7,3392.00,offline,False,General
+INT_00313,INST_0081,Grant Writing,Google India,7,14676.00,offline,False,General
+INT_00314,INST_0109,3D Modelling,HP India,9,0.00,hybrid,False,General
 INT_00315,INST_0033,SD-WAN,Practo,8,8969.00,hybrid,False,CDAC
-INT_00316,INST_0272,Ride Hailing,Railway Board,7,10555.00,online,False,General
-INT_00317,INST_0121,Threat Intelligence,Siemens Gamesa,7,11530.00,offline,False,General
-INT_00318,INST_0017,Financial Analysis,Godrej Industries,9,0.00,offline,False,General
-INT_00319,INST_0464,Foundation Models,Airbnb India,8,5350.00,online,False,General
-INT_00320,INST_0417,Propensity Modelling,TVS Motor,9,9322.00,online,False,CDAC
-INT_00321,INST_0260,Propulsion,MakeMyTrip,8,0.00,hybrid,False,General
-INT_00322,INST_0196,Harbour Engineering,Dabur,9,7514.00,offline,False,General
-INT_00323,INST_0309,SOAR,Schneider Electric,8,4969.00,offline,False,General
-INT_00324,INST_0069,Open Source Governance,Google India,6,0.00,online,False,General
+INT_00316,INST_0292,Ride Hailing,Railway Board,7,10555.00,online,False,General
+INT_00317,INST_0123,Threat Intelligence,Siemens Gamesa,7,11530.00,offline,False,General
+INT_00318,INST_0166,Financial Analysis,Godrej Industries,9,0.00,offline,False,General
+INT_00319,INST_0382,Foundation Models,Airbnb India,8,5350.00,online,False,General
+INT_00320,INST_0382,Propensity Modelling,TVS Motor,9,9322.00,online,False,CDAC
+INT_00321,INST_0279,Propulsion,MakeMyTrip,8,0.00,hybrid,False,General
+INT_00322,INST_0208,Harbour Engineering,Dabur,9,7514.00,offline,False,General
+INT_00323,INST_0255,SOAR,Schneider Electric,8,4969.00,offline,False,General
+INT_00324,INST_0070,Open Source Governance,Google India,6,0.00,online,False,General
 INT_00325,INST_0049,Attack Surface Management,Ather Energy,6,0.00,offline,False,General
-INT_00326,INST_0171,Entrepreneurship Training,Google India,9,0.00,offline,False,CDAC
-INT_00327,INST_0066,Behavioural Biometrics,Blinkit,8,14192.00,offline,True,General
-INT_00328,INST_0373,A/B Testing,Twitter/X India,6,13777.00,hybrid,False,General
-INT_00329,INST_0144,Dairy Technology,Bajaj Auto,8,11804.00,online,False,CDAC
-INT_00330,INST_0338,Data Profiling,Dabur,8,3390.00,offline,False,General
+INT_00326,INST_0177,Entrepreneurship Training,Google India,9,0.00,offline,False,CDAC
+INT_00327,INST_0067,Behavioural Biometrics,Blinkit,8,14192.00,offline,True,General
+INT_00328,INST_0255,A/B Testing,Twitter/X India,6,13777.00,hybrid,False,General
+INT_00329,INST_0148,Dairy Technology,Bajaj Auto,8,11804.00,online,False,CDAC
+INT_00330,INST_0363,Data Profiling,Dabur,8,3390.00,offline,False,General
 INT_00331,INST_0011,Smart Grid,Capgemini,9,0.00,offline,True,General
-INT_00332,INST_0377,Game Theory,L&T Energy,8,0.00,hybrid,False,General
-INT_00333,INST_0307,Food Processing,Bharti Airtel,8,3113.00,offline,False,General
-INT_00334,INST_0102,Archaeology,Amazon India,6,0.00,offline,False,General
-INT_00335,INST_0116,Load Balancing,Adobe India,7,14270.00,online,True,General
-INT_00336,INST_0109,Grant Management,ACC Cement,6,10755.00,hybrid,False,General
-INT_00337,INST_0340,Social Impact Consulting,Crompton,7,8791.00,offline,False,General
-INT_00338,INST_0203,Compliance Reporting,Big Bazaar (Future),9,0.00,online,False,General
-INT_00339,INST_0440,Hydrology,Ashok Leyland,6,8836.00,hybrid,False,CDAC
-INT_00340,INST_0367,Augmented Reality,Hindustan Aeronautics,6,0.00,offline,False,General
-INT_00341,INST_0343,Vendor Risk,NTPC,6,7372.00,online,False,General
-INT_00342,INST_0154,Shopper Insights,Adani Green Energy,9,14860.00,hybrid,True,General
-INT_00343,INST_0281,Change Data Capture,UNDP India,7,10907.00,offline,False,General
-INT_00344,INST_0314,WAF,HCL Technologies,8,0.00,offline,False,General
+INT_00332,INST_0406,Game Theory,L&T Energy,8,0.00,hybrid,False,General
+INT_00333,INST_0330,Food Processing,Bharti Airtel,8,3113.00,offline,False,General
+INT_00334,INST_0103,Archaeology,Amazon India,6,0.00,offline,False,General
+INT_00335,INST_0117,Load Balancing,Adobe India,7,14270.00,online,True,General
+INT_00336,INST_0110,Grant Management,ACC Cement,6,10755.00,hybrid,False,General
+INT_00337,INST_0365,Social Impact Consulting,Crompton,7,8791.00,offline,False,General
+INT_00338,INST_0215,Compliance Reporting,Big Bazaar (Future),9,0.00,online,False,General
+INT_00339,INST_0479,Hydrology,Ashok Leyland,6,8836.00,hybrid,False,CDAC
+INT_00340,INST_0396,Augmented Reality,Hindustan Aeronautics,6,0.00,offline,False,General
+INT_00341,INST_0369,Vendor Risk,NTPC,6,7372.00,online,False,General
+INT_00342,INST_0158,Shopper Insights,Adani Green Energy,9,14860.00,hybrid,True,General
+INT_00343,INST_0303,Change Data Capture,UNDP India,7,10907.00,offline,False,General
+INT_00344,INST_0337,WAF,HCL Technologies,8,0.00,offline,False,General
 INT_00345,INST_0027,Platform Governance,IBM India,6,6721.00,offline,False,General
-INT_00346,INST_0185,Message Broker,Bharti Airtel,6,6226.00,hybrid,False,General
-INT_00347,INST_0175,Multimodal Models,Kotak Mahindra Bank,7,14291.00,hybrid,True,TULIP
-INT_00348,INST_0155,Skill Development,Tata Power,9,0.00,online,False,General
-INT_00349,INST_0155,Astrophysics,LinkedIn India,8,4949.00,offline,False,General
-INT_00350,INST_0150,Six Sigma,Zoho Corporation,6,0.00,hybrid,True,TULIP
-INT_00351,INST_0412,NGO Operations,Bajaj Finance,9,4096.00,offline,False,Indian Army
-INT_00352,INST_0464,Containerization,Tata Motors,7,0.00,hybrid,True,General
-INT_00353,INST_0400,Geology,State Bank of India,7,0.00,online,False,General
+INT_00346,INST_0194,Message Broker,Bharti Airtel,6,6226.00,hybrid,False,General
+INT_00347,INST_0182,Multimodal Models,Kotak Mahindra Bank,7,14291.00,hybrid,True,TULIP
+INT_00348,INST_0159,Skill Development,Tata Power,9,0.00,online,False,General
+INT_00349,INST_0159,Astrophysics,LinkedIn India,8,4949.00,offline,False,General
+INT_00350,INST_0154,Six Sigma,Zoho Corporation,6,0.00,hybrid,True,TULIP
+INT_00351,INST_0445,NGO Operations,Bajaj Finance,9,4096.00,offline,False,Indian Army
+INT_00352,INST_0382,Containerization,Tata Motors,7,0.00,hybrid,True,General
+INT_00353,INST_0382,Geology,State Bank of India,7,0.00,online,False,General
 INT_00354,INST_0027,Retail Analytics,ABB India,7,11173.00,hybrid,False,General
-INT_00355,INST_0079,Data Visualization,ONGC,7,9531.00,hybrid,False,General
-INT_00356,INST_0244,Go-live Support,ONGC,7,7203.00,offline,False,General
-INT_00357,INST_0289,Account Takeover,Tata Power,8,0.00,offline,False,General
-INT_00358,INST_0223,Space Debris,Google India,7,4780.00,offline,False,General
-INT_00359,INST_0259,Warehouse Automation,Trent (Westside),8,3654.00,offline,False,General
-INT_00360,INST_0143,Green Bonds,Zoho Corporation,8,5513.00,offline,False,General
-INT_00361,INST_0231,Sanctions Screening,AICTE Internship Cell,8,0.00,hybrid,False,CDAC
-INT_00362,INST_0101,Economics Research,P&G India,9,13125.00,offline,False,General
-INT_00363,INST_0285,Chaos Engineering,Tata Consultancy Services,9,6330.00,offline,False,General
-INT_00364,INST_0318,Prompt Engineering,ICICI Bank,7,6310.00,online,False,General
+INT_00355,INST_0080,Data Visualization,ONGC,7,9531.00,hybrid,False,General
+INT_00356,INST_0261,Go-live Support,ONGC,7,7203.00,offline,False,General
+INT_00357,INST_0311,Account Takeover,Tata Power,8,0.00,offline,False,General
+INT_00358,INST_0185,Space Debris,Google India,7,4780.00,offline,False,General
+INT_00359,INST_0278,Warehouse Automation,Trent (Westside),8,3654.00,offline,False,General
+INT_00360,INST_0147,Green Bonds,Zoho Corporation,8,5513.00,offline,False,General
+INT_00361,INST_0246,Sanctions Screening,AICTE Internship Cell,8,0.00,hybrid,False,CDAC
+INT_00362,INST_0102,Economics Research,P&G India,9,13125.00,offline,False,General
+INT_00363,INST_0307,Chaos Engineering,Tata Consultancy Services,9,6330.00,offline,False,General
+INT_00364,INST_0341,Prompt Engineering,ICICI Bank,7,6310.00,online,False,General
 INT_00365,INST_0015,Railway Operations,Cure.fit,9,13488.00,offline,False,General
-INT_00366,INST_0396,ISO 9001,NITI Aayog,8,0.00,offline,False,General
-INT_00367,INST_0113,Event Management,C-DAC,8,11431.00,offline,False,General
-INT_00368,INST_0033,Artificial Intelligence,Reliance Industries,7,13227.00,offline,True,TULIP
-INT_00369,INST_0412,Neural Search,Rapido,9,8872.00,hybrid,False,General
-INT_00370,INST_0282,Master Data,Ola,8,0.00,hybrid,False,General
-INT_00371,INST_0404,Border Control,State Bank of India,9,11165.00,offline,False,TULIP
-INT_00372,INST_0450,Traffic Simulation,TVS Motor,7,12469.00,hybrid,False,General
-INT_00373,INST_0308,Virtual Reality,LinkedIn India,6,12466.00,online,False,TULIP
-INT_00374,INST_0170,Vaccine Development,NTPC,6,0.00,offline,False,General
-INT_00375,INST_0464,Media Planning,Hero MotoCorp,6,0.00,offline,False,General
-INT_00376,INST_0391,Pharmaceutical Research,Adani Group,7,12247.00,offline,False,General
-INT_00377,INST_0311,Startup Mentoring,LinkedIn India,6,8000.00,offline,False,General
-INT_00378,INST_0400,Non-destructive Testing,Reliance Industries,6,14098.00,hybrid,True,General
-INT_00379,INST_0235,Market Research,ICICI Bank,7,0.00,online,False,General
-INT_00380,INST_0169,Defence Analysis,Hero MotoCorp,6,0.00,online,True,CDAC
-INT_00381,INST_0188,Customer Identity,National Skill Development Corporation,6,5543.00,online,True,General
-INT_00382,INST_0175,Harbour Engineering,Bharat Electronics,8,14369.00,offline,False,General
-INT_00383,INST_0143,Process Excellence,Dabur,6,0.00,online,True,General
-INT_00384,INST_0139,Superconductors,Reliance Jio,9,7712.00,online,False,General
-INT_00385,INST_0115,Polymer Science,Voltas,7,10877.00,online,False,General
-INT_00386,INST_0164,Consumer Research,Siemens India,7,7329.00,offline,False,General
-INT_00387,INST_0165,Cryo-EM,Lafarge India,9,3081.00,hybrid,True,General
-INT_00388,INST_0307,Edge Computing,Suzlon,7,0.00,online,False,General
-INT_00389,INST_0179,Aviation Management,Bharti Airtel,8,11084.00,offline,False,General
-INT_00390,INST_0246,Augmented Reality,Hindalco,7,0.00,offline,False,General
-INT_00391,INST_0015,Healthtech,Tata Consultancy Services,8,0.00,offline,False,General
-INT_00392,INST_0223,Construction Management,Freshworks,6,7164.00,online,True,General
-INT_00393,INST_0247,LTV Prediction,ServiceNow India,9,11999.00,offline,True,Indian Army
-INT_00394,INST_0130,OAuth,Vedanta,8,0.00,hybrid,False,General
-INT_00395,INST_0149,Robotics,LTIMindtree,9,13081.00,offline,False,General
-INT_00396,INST_0092,Learning to Rank,Lafarge India,9,0.00,online,False,General
+INT_00366,INST_0429,ISO 9001,NITI Aayog,8,0.00,offline,False,General
+INT_00367,INST_0114,Event Management,C-DAC,8,11431.00,offline,False,General
+INT_00368,INST_0200,Artificial Intelligence,Reliance Industries,7,13227.00,offline,True,TULIP
+INT_00369,INST_0445,Neural Search,Rapido,9,8872.00,hybrid,False,General
+INT_00370,INST_0304,Master Data,Ola,8,0.00,hybrid,False,General
+INT_00371,INST_0437,Border Control,State Bank of India,9,11165.00,offline,False,TULIP
+INT_00372,INST_0489,Traffic Simulation,TVS Motor,7,12469.00,hybrid,False,General
+INT_00373,INST_0331,Virtual Reality,LinkedIn India,6,12466.00,online,False,TULIP
+INT_00374,INST_0223,Vaccine Development,NTPC,6,0.00,offline,False,General
+INT_00375,INST_0382,Media Planning,Hero MotoCorp,6,0.00,offline,False,General
+INT_00376,INST_0423,Pharmaceutical Research,Adani Group,7,12247.00,offline,False,General
+INT_00377,INST_0334,Startup Mentoring,LinkedIn India,6,8000.00,offline,False,General
+INT_00378,INST_0382,Non-destructive Testing,Reliance Industries,6,14098.00,hybrid,True,General
+INT_00379,INST_0250,Market Research,ICICI Bank,7,0.00,online,False,General
+INT_00380,INST_0175,Defence Analysis,Hero MotoCorp,6,0.00,online,True,CDAC
+INT_00381,INST_0197,Customer Identity,National Skill Development Corporation,6,5543.00,online,True,General
+INT_00382,INST_0182,Harbour Engineering,Bharat Electronics,8,14369.00,offline,False,General
+INT_00383,INST_0147,Process Excellence,Dabur,6,0.00,online,True,General
+INT_00384,INST_0142,Superconductors,Reliance Jio,9,7712.00,online,False,General
+INT_00385,INST_0116,Polymer Science,Voltas,7,10877.00,online,False,General
+INT_00386,INST_0170,Consumer Research,Siemens India,7,7329.00,offline,False,General
+INT_00387,INST_0171,Cryo-EM,Lafarge India,9,3081.00,hybrid,True,General
+INT_00388,INST_0330,Edge Computing,Suzlon,7,0.00,online,False,General
+INT_00389,INST_0187,Aviation Management,Bharti Airtel,8,11084.00,offline,False,General
+INT_00390,INST_0263,Augmented Reality,Hindalco,7,0.00,offline,False,General
+INT_00391,INST_0198,Healthtech,Tata Consultancy Services,8,0.00,offline,False,General
+INT_00392,INST_0185,Construction Management,Freshworks,6,7164.00,online,True,General
+INT_00393,INST_0264,LTV Prediction,ServiceNow India,9,11999.00,offline,True,Indian Army
+INT_00394,INST_0382,OAuth,Vedanta,8,0.00,hybrid,False,General
+INT_00395,INST_0153,Robotics,LTIMindtree,9,13081.00,offline,False,General
+INT_00396,INST_0093,Learning to Rank,Lafarge India,9,0.00,online,False,General
 INT_00397,INST_0026,Service Mesh,Nestle India,8,13773.00,offline,False,General
-INT_00398,INST_0280,Cost Optimization,Havells,8,12682.00,online,False,General
-INT_00399,INST_0157,TTS,Tata Steel,7,0.00,hybrid,False,General
-INT_00400,INST_0365,DDoS Mitigation,PhonePe,8,5986.00,offline,False,General
-INT_00401,INST_0150,Ride Hailing,Titan Company,6,6162.00,hybrid,False,General
-INT_00402,INST_0289,Attack Surface Management,Oyo,9,0.00,offline,False,General
-INT_00403,INST_0343,Product Management,FedEx India,6,0.00,offline,False,General
-INT_00404,INST_0417,Policy as Code,Bajaj Auto,6,13042.00,offline,False,General
-INT_00405,INST_0270,Cutover Planning,SAP Labs India,9,7237.00,offline,False,General
-INT_00406,INST_0243,Water Treatment,Tata Motors,7,6149.00,offline,False,General
-INT_00407,INST_0239,Library Science,MakeMyTrip,8,0.00,offline,False,General
-INT_00408,INST_0195,Social Work,Hyundai India,7,8556.00,online,False,General
-INT_00409,INST_0313,PKI,HCL Technologies,6,7088.00,offline,False,TULIP
-INT_00410,INST_0465,Raft,MakeMyTrip,7,10849.00,offline,False,General
+INT_00398,INST_0302,Cost Optimization,Havells,8,12682.00,online,False,General
+INT_00399,INST_0162,TTS,Tata Steel,7,0.00,hybrid,False,General
+INT_00400,INST_0394,DDoS Mitigation,PhonePe,8,5986.00,offline,False,General
+INT_00401,INST_0154,Ride Hailing,Titan Company,6,6162.00,hybrid,False,General
+INT_00402,INST_0311,Attack Surface Management,Oyo,9,0.00,offline,False,General
+INT_00403,INST_0369,Product Management,FedEx India,6,0.00,offline,False,General
+INT_00404,INST_0382,Policy as Code,Bajaj Auto,6,13042.00,offline,False,General
+INT_00405,INST_0289,Cutover Planning,SAP Labs India,9,7237.00,offline,False,General
+INT_00406,INST_0260,Water Treatment,Tata Motors,7,6149.00,offline,False,General
+INT_00407,INST_0254,Library Science,MakeMyTrip,8,0.00,offline,False,General
+INT_00408,INST_0206,Social Work,Hyundai India,7,8556.00,online,False,General
+INT_00409,INST_0336,PKI,HCL Technologies,6,7088.00,offline,False,TULIP
+INT_00410,INST_0382,Raft,MakeMyTrip,7,10849.00,offline,False,General
 INT_00411,INST_0037,Data Migration,Bharti Airtel,8,11334.00,offline,False,General
-INT_00412,INST_0280,Pricing Optimization,Tata Consultancy Services,8,0.00,offline,False,General
-INT_00413,INST_0062,Instrumentation,Maruti Suzuki,7,0.00,online,False,TULIP
-INT_00414,INST_0437,Corporate Governance,Larsen & Toubro,9,9582.00,online,True,General
-INT_00415,INST_0355,Natural Language Processing,DMart,7,0.00,online,False,General
-INT_00416,INST_0202,Fiscal Policy,Practo,6,0.00,offline,False,General
-INT_00417,INST_0120,Assistive Technology,BYJU'S,7,12629.00,offline,False,General
-INT_00418,INST_0228,Dead Letter Queue,Cure.fit,6,10934.00,hybrid,False,General
-INT_00419,INST_0244,Employer Branding,Bajaj Auto,8,10023.00,hybrid,False,General
+INT_00412,INST_0302,Pricing Optimization,Tata Consultancy Services,8,0.00,offline,False,General
+INT_00413,INST_0063,Instrumentation,Maruti Suzuki,7,0.00,online,False,TULIP
+INT_00414,INST_0255,Corporate Governance,Larsen & Toubro,9,9582.00,online,True,General
+INT_00415,INST_0381,Natural Language Processing,DMart,7,0.00,online,False,General
+INT_00416,INST_0214,Fiscal Policy,Practo,6,0.00,offline,False,General
+INT_00417,INST_0382,Assistive Technology,BYJU'S,7,12629.00,offline,False,General
+INT_00418,INST_0243,Dead Letter Queue,Cure.fit,6,10934.00,hybrid,False,General
+INT_00419,INST_0261,Employer Branding,Bajaj Auto,8,10023.00,hybrid,False,General
 INT_00420,INST_0041,Augmented Reality,Netflix India,7,14157.00,offline,False,Indian Army
-INT_00421,INST_0434,Credit Risk,BigBasket,7,0.00,hybrid,False,General
+INT_00421,INST_0472,Credit Risk,BigBasket,7,0.00,hybrid,False,General
 INT_00422,INST_0027,CDN,Bajaj Finance,8,10337.00,offline,True,General
-INT_00423,INST_0346,Robotics,Axis Bank,6,0.00,offline,True,General
-INT_00424,INST_0133,Server Management,Adobe India,7,0.00,offline,True,General
-INT_00425,INST_0457,Telecom Billing,Wipro,7,13881.00,offline,False,General
-INT_00426,INST_0084,CDN,Salesforce India,8,4198.00,offline,False,General
-INT_00427,INST_0237,Data Governance,HCL Technologies,9,0.00,online,True,General
-INT_00428,INST_0352,Food Technology,Myntra,6,14302.00,offline,False,TULIP
-INT_00429,INST_0372,AML Compliance,Swiggy,9,0.00,online,False,General
-INT_00430,INST_0427,Risk-based Authentication,Airbnb India,9,9639.00,online,False,General
-INT_00431,INST_0277,Wind Energy,Amazon India,7,14011.00,offline,False,TULIP
-INT_00432,INST_0272,Aircraft Maintenance,ISRO,8,0.00,online,False,General
-INT_00433,INST_0391,CVE Research,Lafarge India,6,14484.00,hybrid,False,General
-INT_00434,INST_0236,Federated Learning,Reliance Industries,9,7797.00,hybrid,False,General
-INT_00435,INST_0317,3D Bioprinting,Blue Star,6,7362.00,hybrid,False,General
-INT_00436,INST_0443,Low-code Development,PhonePe,9,5586.00,online,False,General
-INT_00437,INST_0100,Account Takeover,Razorpay,6,12812.00,hybrid,False,General
-INT_00438,INST_0175,Dead Letter Queue,Dell Technologies,7,7672.00,hybrid,False,General
-INT_00439,INST_0079,Autoscaling,Adani Green Energy,8,8082.00,online,False,TULIP
-INT_00440,INST_0402,Nuclear Engineering,HCL Technologies,7,6040.00,online,False,General
-INT_00441,INST_0364,Major Incident,Unacademy,7,8988.00,online,False,General
-INT_00442,INST_0451,Content Writing,ReNew Power,7,4205.00,offline,False,TULIP
-INT_00443,INST_0142,Container Scanning,Treebo,7,0.00,offline,True,General
+INT_00423,INST_0255,Robotics,Axis Bank,6,0.00,offline,True,General
+INT_00424,INST_0136,Server Management,Adobe India,7,0.00,offline,True,General
+INT_00425,INST_0498,Telecom Billing,Wipro,7,13881.00,offline,False,General
+INT_00426,INST_0085,CDN,Salesforce India,8,4198.00,offline,False,General
+INT_00427,INST_0252,Data Governance,HCL Technologies,9,0.00,online,True,General
+INT_00428,INST_0378,Food Technology,Myntra,6,14302.00,offline,False,TULIP
+INT_00429,INST_0401,AML Compliance,Swiggy,9,0.00,online,False,General
+INT_00430,INST_0463,Risk-based Authentication,Airbnb India,9,9639.00,online,False,General
+INT_00431,INST_0255,Wind Energy,Amazon India,7,14011.00,offline,False,TULIP
+INT_00432,INST_0292,Aircraft Maintenance,ISRO,8,0.00,online,False,General
+INT_00433,INST_0423,CVE Research,Lafarge India,6,14484.00,hybrid,False,General
+INT_00434,INST_0251,Federated Learning,Reliance Industries,9,7797.00,hybrid,False,General
+INT_00435,INST_0340,3D Bioprinting,Blue Star,6,7362.00,hybrid,False,General
+INT_00436,INST_0482,Low-code Development,PhonePe,9,5586.00,online,False,General
+INT_00437,INST_0101,Account Takeover,Razorpay,6,12812.00,hybrid,False,General
+INT_00438,INST_0182,Dead Letter Queue,Dell Technologies,7,7672.00,hybrid,False,General
+INT_00439,INST_0080,Autoscaling,Adani Green Energy,8,8082.00,online,False,TULIP
+INT_00440,INST_0435,Nuclear Engineering,HCL Technologies,7,6040.00,online,False,General
+INT_00441,INST_0393,Major Incident,Unacademy,7,8988.00,online,False,General
+INT_00442,INST_0490,Content Writing,ReNew Power,7,4205.00,offline,False,TULIP
+INT_00443,INST_0145,Container Scanning,Treebo,7,0.00,offline,True,General
 INT_00444,INST_0026,ASR,PayPal India,8,3665.00,offline,False,TULIP
-INT_00445,INST_0101,Operations Consulting,Schneider Electric,7,11775.00,online,True,General
-INT_00446,INST_0268,IT Service Management,Blue Star,9,11344.00,online,False,CDAC
-INT_00447,INST_0167,Human Resources,Larsen & Toubro,8,4849.00,offline,False,General
-INT_00448,INST_0389,Indoor Positioning,SAP Labs India,9,6180.00,online,False,General
-INT_00449,INST_0102,Leader Election,Uber India,6,3855.00,offline,False,General
-INT_00450,INST_0262,Database Administration,Godrej Industries,9,13890.00,offline,False,General
-INT_00451,INST_0231,Sociology Research,NTPC,9,0.00,online,False,General
-INT_00452,INST_0312,War Rooms,Vodafone Idea,7,0.00,offline,False,General
-INT_00453,INST_0376,Technical Writing,ABB India,6,0.00,offline,False,General
-INT_00454,INST_0341,Payroll Operations,Bosch India,8,6253.00,hybrid,True,General
-INT_00455,INST_0187,Telecommunications,FedEx India,8,6435.00,hybrid,False,TULIP
-INT_00456,INST_0344,Conversion Prediction,Siemens India,8,0.00,offline,False,General
-INT_00457,INST_0161,Airport Security,Oracle India,7,11615.00,offline,False,General
-INT_00458,INST_0258,Fund Management,Tata Consultancy Services,9,11511.00,offline,True,General
-INT_00459,INST_0089,Propulsion,PayPal India,9,4033.00,offline,False,General
-INT_00460,INST_0372,Foundation Models,Cognizant,6,9810.00,offline,False,General
-INT_00461,INST_0452,Architecture Design,PharmEasy,8,11416.00,offline,True,General
-INT_00462,INST_0263,Mission Planning,Mahindra & Mahindra,9,5985.00,hybrid,False,General
-INT_00463,INST_0324,Journalism,Zara India,6,4197.00,offline,False,CDAC
-INT_00464,INST_0232,Retail Analytics,Razorpay,6,0.00,offline,False,General
-INT_00465,INST_0421,Advertising,Stripe India,8,3090.00,offline,False,General
-INT_00466,INST_0220,Firmware Security,SAP Labs India,6,6775.00,offline,False,General
+INT_00445,INST_0102,Operations Consulting,Schneider Electric,7,11775.00,online,True,General
+INT_00446,INST_0287,IT Service Management,Blue Star,9,11344.00,online,False,CDAC
+INT_00447,INST_0173,Human Resources,Larsen & Toubro,8,4849.00,offline,False,General
+INT_00448,INST_0421,Indoor Positioning,SAP Labs India,9,6180.00,online,False,General
+INT_00449,INST_0103,Leader Election,Uber India,6,3855.00,offline,False,General
+INT_00450,INST_0281,Database Administration,Godrej Industries,9,13890.00,offline,False,General
+INT_00451,INST_0246,Sociology Research,NTPC,9,0.00,online,False,General
+INT_00452,INST_0255,War Rooms,Vodafone Idea,7,0.00,offline,False,General
+INT_00453,INST_0255,Technical Writing,ABB India,6,0.00,offline,False,General
+INT_00454,INST_0366,Payroll Operations,Bosch India,8,6253.00,hybrid,True,General
+INT_00455,INST_0196,Telecommunications,FedEx India,8,6435.00,hybrid,False,TULIP
+INT_00456,INST_0370,Conversion Prediction,Siemens India,8,0.00,offline,False,General
+INT_00457,INST_0167,Airport Security,Oracle India,7,11615.00,offline,False,General
+INT_00458,INST_0277,Fund Management,Tata Consultancy Services,9,11511.00,offline,True,General
+INT_00459,INST_0090,Propulsion,PayPal India,9,4033.00,offline,False,General
+INT_00460,INST_0401,Foundation Models,Cognizant,6,9810.00,offline,False,General
+INT_00461,INST_0492,Architecture Design,PharmEasy,8,11416.00,offline,True,General
+INT_00462,INST_0282,Mission Planning,Mahindra & Mahindra,9,5985.00,hybrid,False,General
+INT_00463,INST_0347,Journalism,Zara India,6,4197.00,offline,False,CDAC
+INT_00464,INST_0247,Retail Analytics,Razorpay,6,0.00,offline,False,General
+INT_00465,INST_0454,Advertising,Stripe India,8,3090.00,offline,False,General
+INT_00466,INST_0234,Firmware Security,SAP Labs India,6,6775.00,offline,False,General
 INT_00467,INST_0034,Cutover Planning,Mother Dairy,9,0.00,hybrid,False,General
-INT_00468,INST_0255,Category Management,Ola,6,9572.00,hybrid,True,General
-INT_00469,INST_0370,Fleet Management,UNICEF India,7,6272.00,offline,True,TULIP
-INT_00470,INST_0193,Contrastive Learning,IBM India,9,13340.00,online,False,General
-INT_00471,INST_0345,Change Management,ICICI Bank,8,12264.00,online,False,General
-INT_00472,INST_0410,Elder Care Technology,HCL Technologies,7,0.00,online,False,General
-INT_00473,INST_0320,Data Visualization,Hindustan Aeronautics,6,4129.00,offline,True,General
+INT_00468,INST_0273,Category Management,Ola,6,9572.00,hybrid,True,General
+INT_00469,INST_0399,Fleet Management,UNICEF India,7,6272.00,offline,True,TULIP
+INT_00470,INST_0204,Contrastive Learning,IBM India,9,13340.00,online,False,General
+INT_00471,INST_0371,Change Management,ICICI Bank,8,12264.00,online,False,General
+INT_00472,INST_0443,Elder Care Technology,HCL Technologies,7,0.00,online,False,General
+INT_00473,INST_0343,Data Visualization,Hindustan Aeronautics,6,4129.00,offline,True,General
 INT_00474,INST_0008,Fraud Scoring,PayPal India,6,0.00,offline,False,General
-INT_00475,INST_0089,Skill Development,State Bank of India,6,0.00,online,False,General
-INT_00476,INST_0240,Corporate Governance,Meesho,6,3298.00,online,False,General
-INT_00477,INST_0268,Hydrology,Capgemini,8,8201.00,online,False,General
-INT_00478,INST_0291,Growth Hacking,Honeywell India,6,7507.00,offline,False,Indian Army
-INT_00479,INST_0302,Wearable Health,FedEx India,8,3660.00,online,False,General
-INT_00480,INST_0315,Sales and Marketing,Adidas India,9,14724.00,offline,True,CDAC
-INT_00481,INST_0126,Contact Center AI,FedEx India,7,0.00,online,True,General
-INT_00482,INST_0243,HVAC Design,Adani Green Energy,9,14403.00,offline,False,General
-INT_00483,INST_0266,Carbon Capture,BHEL,8,5917.00,offline,False,General
-INT_00484,INST_0264,Criminology,Meesho,6,3265.00,offline,False,General
-INT_00485,INST_0302,Vaccine Development,Havells,9,4192.00,offline,False,General
-INT_00486,INST_0376,Fundraising,upGrad,9,0.00,hybrid,False,General
-INT_00487,INST_0331,SEO,Schneider Electric,6,0.00,offline,False,General
-INT_00488,INST_0142,Humanitarian Logistics,upGrad,7,14770.00,offline,False,General
-INT_00489,INST_0136,Electric Vehicles,Practo,7,10988.00,offline,False,General
-INT_00490,INST_0131,Microsegmentation,Tech Mahindra,9,4527.00,hybrid,False,General
-INT_00491,INST_0085,Vertical Farming,Freshworks,6,6953.00,offline,False,General
-INT_00492,INST_0138,Networking,Reliance Jio,8,4723.00,offline,False,General
-INT_00493,INST_0428,Zero Trust,Nike India,8,3236.00,offline,False,General
-INT_00494,INST_0293,Maritime Safety,Honeywell India,6,5083.00,online,False,General
+INT_00475,INST_0090,Skill Development,State Bank of India,6,0.00,online,False,General
+INT_00476,INST_0256,Corporate Governance,Meesho,6,3298.00,online,False,General
+INT_00477,INST_0287,Hydrology,Capgemini,8,8201.00,online,False,General
+INT_00478,INST_0313,Growth Hacking,Honeywell India,6,7507.00,offline,False,Indian Army
+INT_00479,INST_0324,Wearable Health,FedEx India,8,3660.00,online,False,General
+INT_00480,INST_0338,Sales and Marketing,Adidas India,9,14724.00,offline,True,CDAC
+INT_00481,INST_0128,Contact Center AI,FedEx India,7,0.00,online,True,General
+INT_00482,INST_0260,HVAC Design,Adani Green Energy,9,14403.00,offline,False,General
+INT_00483,INST_0285,Carbon Capture,BHEL,8,5917.00,offline,False,General
+INT_00484,INST_0283,Criminology,Meesho,6,3265.00,offline,False,General
+INT_00485,INST_0324,Vaccine Development,Havells,9,4192.00,offline,False,General
+INT_00486,INST_0255,Fundraising,upGrad,9,0.00,hybrid,False,General
+INT_00487,INST_0355,SEO,Schneider Electric,6,0.00,offline,False,General
+INT_00488,INST_0145,Humanitarian Logistics,upGrad,7,14770.00,offline,False,General
+INT_00489,INST_0139,Electric Vehicles,Practo,7,10988.00,offline,False,General
+INT_00490,INST_0134,Microsegmentation,Tech Mahindra,9,4527.00,hybrid,False,General
+INT_00491,INST_0086,Vertical Farming,Freshworks,6,6953.00,offline,False,General
+INT_00492,INST_0141,Networking,Reliance Jio,8,4723.00,offline,False,General
+INT_00493,INST_0382,Zero Trust,Nike India,8,3236.00,offline,False,General
+INT_00494,INST_0255,Maritime Safety,Honeywell India,6,5083.00,online,False,General
 INT_00495,INST_0037,Textile Engineering,Tata Motors,9,11329.00,offline,True,General
-INT_00496,INST_0385,Container Scanning,Bharti Airtel,7,0.00,online,False,General
-INT_00497,INST_0340,Customer Analytics,Bajaj Finance,9,3941.00,offline,False,General
-INT_00498,INST_0303,Operations Consulting,Capgemini,8,5232.00,online,False,General
-INT_00499,INST_0113,Technical Writing,Amazon India,7,10807.00,offline,True,General
-INT_00500,INST_0335,Distributed Locking,Siemens India,9,14701.00,offline,False,General
-INT_00501,INST_0186,Airport Security,Siemens Gamesa,7,9767.00,offline,False,Indian Army
-INT_00502,INST_0146,Structural Biology,Porter,6,0.00,online,False,General
-INT_00503,INST_0389,Pharmaceutical Research,TVS Motor,8,14975.00,hybrid,False,General
-INT_00504,INST_0435,Policy Analysis,JSW Steel,7,11697.00,hybrid,False,CDAC
-INT_00505,INST_0131,Corporate Law,Vedanta,7,0.00,online,False,General
-INT_00506,INST_0272,Mining Engineering,Indian Army (Technical),9,0.00,online,False,General
-INT_00507,INST_0310,Reliability Engineering,Urban Company,9,8929.00,online,False,Indian Army
-INT_00508,INST_0349,Synthetic Biology,Tata Power,6,0.00,offline,False,General
-INT_00509,INST_0157,Data Visualization,Hero MotoCorp,8,11081.00,offline,False,General
-INT_00510,INST_0247,Plasma Physics,Crompton,9,9035.00,hybrid,False,General
-INT_00511,INST_0222,Sustainability Consulting,DRDO,8,0.00,offline,False,General
-INT_00512,INST_0391,Graph Databases,Capgemini,6,10738.00,offline,True,CDAC
-INT_00513,INST_0189,Composites,Fabindia,7,3393.00,online,False,General
-INT_00514,INST_0223,Vector Databases,Godrej Industries,6,10219.00,offline,False,General
+INT_00496,INST_0415,Container Scanning,Bharti Airtel,7,0.00,online,False,General
+INT_00497,INST_0365,Customer Analytics,Bajaj Finance,9,3941.00,offline,False,General
+INT_00498,INST_0326,Operations Consulting,Capgemini,8,5232.00,online,False,General
+INT_00499,INST_0114,Technical Writing,Amazon India,7,10807.00,offline,True,General
+INT_00500,INST_0255,Distributed Locking,Siemens India,9,14701.00,offline,False,General
+INT_00501,INST_0195,Airport Security,Siemens Gamesa,7,9767.00,offline,False,Indian Army
+INT_00502,INST_0150,Structural Biology,Porter,6,0.00,online,False,General
+INT_00503,INST_0421,Pharmaceutical Research,TVS Motor,8,14975.00,hybrid,False,General
+INT_00504,INST_0382,Policy Analysis,JSW Steel,7,11697.00,hybrid,False,CDAC
+INT_00505,INST_0134,Corporate Law,Vedanta,7,0.00,online,False,General
+INT_00506,INST_0292,Mining Engineering,Indian Army (Technical),9,0.00,online,False,General
+INT_00507,INST_0333,Reliability Engineering,Urban Company,9,8929.00,online,False,Indian Army
+INT_00508,INST_0375,Synthetic Biology,Tata Power,6,0.00,offline,False,General
+INT_00509,INST_0162,Data Visualization,Hero MotoCorp,8,11081.00,offline,False,General
+INT_00510,INST_0264,Plasma Physics,Crompton,9,9035.00,hybrid,False,General
+INT_00511,INST_0236,Sustainability Consulting,DRDO,8,0.00,offline,False,General
+INT_00512,INST_0423,Graph Databases,Capgemini,6,10738.00,offline,True,CDAC
+INT_00513,INST_0199,Composites,Fabindia,7,3393.00,online,False,General
+INT_00514,INST_0185,Vector Databases,Godrej Industries,6,10219.00,offline,False,General
 INT_00515,INST_0025,Columnar Storage,Fabindia,7,9180.00,online,False,General
-INT_00516,INST_0373,Drone Technology,ServiceNow India,8,14249.00,online,True,General
-INT_00517,INST_0144,Healthtech,Swiggy,6,12562.00,offline,True,General
-INT_00518,INST_0133,Particle Physics,Meesho,9,11026.00,hybrid,False,General
-INT_00519,INST_0390,Border Control,RedBus,6,7668.00,hybrid,False,General
-INT_00520,INST_0388,Satellite Communication,Hindalco,6,3295.00,offline,False,General
-INT_00521,INST_0101,Tissue Engineering,Hyundai India,7,11267.00,online,False,General
-INT_00522,INST_0428,Astrobiology,Mother Dairy,9,7282.00,offline,False,General
-INT_00523,INST_0307,Campaign Optimization,ONGC,6,7661.00,online,False,General
-INT_00524,INST_0422,Agriculture Technology,HCL Technologies,7,8080.00,offline,True,General
+INT_00516,INST_0255,Drone Technology,ServiceNow India,8,14249.00,online,True,General
+INT_00517,INST_0148,Healthtech,Swiggy,6,12562.00,offline,True,General
+INT_00518,INST_0136,Particle Physics,Meesho,9,11026.00,hybrid,False,General
+INT_00519,INST_0422,Border Control,RedBus,6,7668.00,hybrid,False,General
+INT_00520,INST_0420,Satellite Communication,Hindalco,6,3295.00,offline,False,General
+INT_00521,INST_0102,Tissue Engineering,Hyundai India,7,11267.00,online,False,General
+INT_00522,INST_0382,Astrobiology,Mother Dairy,9,7282.00,offline,False,General
+INT_00523,INST_0330,Campaign Optimization,ONGC,6,7661.00,online,False,General
+INT_00524,INST_0456,Agriculture Technology,HCL Technologies,7,8080.00,offline,True,General
 INT_00525,INST_0024,Infrastructure as Code,Treebo,7,0.00,offline,False,General
-INT_00526,INST_0174,Biomaterials,Indian Oil,8,0.00,offline,False,TULIP
-INT_00527,INST_0301,MLOps,Cisco India,7,11805.00,offline,False,General
-INT_00528,INST_0243,Implant Design,Capgemini,8,0.00,online,False,General
-INT_00529,INST_0145,Impact Assessment,FedEx India,7,5096.00,offline,False,General
-INT_00530,INST_0377,Data Visualization,Mahindra & Mahindra,9,6591.00,offline,True,CDAC
-INT_00531,INST_0064,Systems Biology,Zoho Corporation,9,0.00,offline,False,General
-INT_00532,INST_0161,VFX,LinkedIn India,6,0.00,offline,False,General
-INT_00533,INST_0068,Reverse Proxy,Infosys,9,9149.00,offline,True,General
+INT_00526,INST_0180,Biomaterials,Indian Oil,8,0.00,offline,False,TULIP
+INT_00527,INST_0323,MLOps,Cisco India,7,11805.00,offline,False,General
+INT_00528,INST_0260,Implant Design,Capgemini,8,0.00,online,False,General
+INT_00529,INST_0382,Impact Assessment,FedEx India,7,5096.00,offline,False,General
+INT_00530,INST_0406,Data Visualization,Mahindra & Mahindra,9,6591.00,offline,True,CDAC
+INT_00531,INST_0065,Systems Biology,Zoho Corporation,9,0.00,offline,False,General
+INT_00532,INST_0167,VFX,LinkedIn India,6,0.00,offline,False,General
+INT_00533,INST_0069,Reverse Proxy,Infosys,9,9149.00,offline,True,General
 INT_00534,INST_0033,Conversion Prediction,Reliance Industries,6,0.00,offline,False,General
-INT_00535,INST_0291,Named Entity Recognition,Uber India,7,4488.00,offline,False,General
-INT_00536,INST_0122,Crowdsourcing,Shoppers Stop,9,3126.00,offline,False,General
-INT_00537,INST_0168,etcd,Blinkit,6,13170.00,offline,False,TULIP
+INT_00535,INST_0313,Named Entity Recognition,Uber India,7,4488.00,offline,False,General
+INT_00536,INST_0124,Crowdsourcing,Shoppers Stop,9,3126.00,offline,False,General
+INT_00537,INST_0174,etcd,Blinkit,6,13170.00,offline,False,TULIP
 INT_00538,INST_0013,Nuclear Fusion,Maruti Suzuki,9,3338.00,offline,True,General
-INT_00539,INST_0315,Sentiment Analysis,BHEL,7,9689.00,hybrid,False,General
-INT_00540,INST_0234,Grant Writing,TVS Motor,9,0.00,offline,False,TULIP
-INT_00541,INST_0439,Industrial Automation,Tata Steel,8,14535.00,online,False,General
-INT_00542,INST_0104,Textile Engineering,Reliance Industries,8,10378.00,offline,True,TULIP
-INT_00543,INST_0125,etcd,Salesforce India,8,0.00,offline,True,General
-INT_00544,INST_0124,Natural Language Processing,Titan Company,7,0.00,online,False,General
-INT_00545,INST_0115,DAST,Bajaj Electricals,6,5386.00,online,True,TULIP
-INT_00546,INST_0280,Model Registry,NTPC,8,8528.00,offline,False,General
-INT_00547,INST_0157,Computer Vision in Retail,P&G India,7,0.00,online,False,General
-INT_00548,INST_0239,VLSI Design,Delhivery,6,11634.00,offline,False,General
-INT_00549,INST_0322,Query Optimization,Adani Green Energy,8,3768.00,online,False,General
-INT_00550,INST_0135,Smart Shelves,PayPal India,9,0.00,online,False,General
-INT_00551,INST_0071,Homomorphic Encryption,Axis Bank,6,0.00,offline,False,CDAC
-INT_00552,INST_0144,Data Science,Reliance Retail,6,8120.00,online,False,General
-INT_00553,INST_0427,Payroll Operations,Capgemini,8,0.00,online,False,General
-INT_00554,INST_0248,Investment Banking,World Bank India,9,12861.00,online,False,General
-INT_00555,INST_0268,Biomedical Engineering,Cure.fit,7,14745.00,offline,True,General
-INT_00556,INST_0182,Contrastive Learning,RedBus,9,0.00,online,False,General
-INT_00557,INST_0120,ETL Pipelines,Tata Consultancy Services,9,9247.00,online,False,TULIP
-INT_00558,INST_0079,Hydrogen Economy,Nestle India,9,3688.00,online,False,General
-INT_00559,INST_0125,Economic Consulting,Bharat Electronics,6,7240.00,offline,True,TULIP
+INT_00539,INST_0338,Sentiment Analysis,BHEL,7,9689.00,hybrid,False,General
+INT_00540,INST_0249,Grant Writing,TVS Motor,9,0.00,offline,False,TULIP
+INT_00541,INST_0478,Industrial Automation,Tata Steel,8,14535.00,online,False,General
+INT_00542,INST_0105,Textile Engineering,Reliance Industries,8,10378.00,offline,True,TULIP
+INT_00543,INST_0127,etcd,Salesforce India,8,0.00,offline,True,General
+INT_00544,INST_0325,Natural Language Processing,Titan Company,7,0.00,online,False,General
+INT_00545,INST_0116,DAST,Bajaj Electricals,6,5386.00,online,True,TULIP
+INT_00546,INST_0302,Model Registry,NTPC,8,8528.00,offline,False,General
+INT_00547,INST_0162,Computer Vision in Retail,P&G India,7,0.00,online,False,General
+INT_00548,INST_0254,VLSI Design,Delhivery,6,11634.00,offline,False,General
+INT_00549,INST_0345,Query Optimization,Adani Green Energy,8,3768.00,online,False,General
+INT_00550,INST_0138,Smart Shelves,PayPal India,9,0.00,online,False,General
+INT_00551,INST_0072,Homomorphic Encryption,Axis Bank,6,0.00,offline,False,CDAC
+INT_00552,INST_0148,Data Science,Reliance Retail,6,8120.00,online,False,General
+INT_00553,INST_0463,Payroll Operations,Capgemini,8,0.00,online,False,General
+INT_00554,INST_0265,Investment Banking,World Bank India,9,12861.00,online,False,General
+INT_00555,INST_0287,Biomedical Engineering,Cure.fit,7,14745.00,offline,True,General
+INT_00556,INST_0191,Contrastive Learning,RedBus,9,0.00,online,False,General
+INT_00557,INST_0382,ETL Pipelines,Tata Consultancy Services,9,9247.00,online,False,TULIP
+INT_00558,INST_0080,Hydrogen Economy,Nestle India,9,3688.00,online,False,General
+INT_00559,INST_0127,Economic Consulting,Bharat Electronics,6,7240.00,offline,True,TULIP
 INT_00560,INST_0008,Biostatistics,IRCTC,8,0.00,offline,False,Indian Army
 INT_00561,INST_0038,Differential Privacy,Zoho Corporation,7,11200.00,offline,False,General
-INT_00562,INST_0239,Robotics,IRCTC,8,14056.00,hybrid,False,General
-INT_00563,INST_0373,Particle Physics,Vedantu,7,0.00,offline,False,General
+INT_00562,INST_0254,Robotics,IRCTC,8,14056.00,hybrid,False,General
+INT_00563,INST_0255,Particle Physics,Vedantu,7,0.00,offline,False,General
 INT_00564,INST_0047,Ride Hailing,Indian Oil,7,10342.00,offline,False,Indian Army
-INT_00565,INST_0319,Aerodynamics,Hero MotoCorp,9,13764.00,offline,False,General
-INT_00566,INST_0286,Computational Chemistry,Adani Group,9,0.00,offline,False,General
-INT_00567,INST_0334,Planetary Science,Rapido,9,5635.00,offline,False,General
-INT_00568,INST_0157,Error Budgets,H&M India,6,0.00,offline,False,General
-INT_00569,INST_0141,Disk Forensics,Crompton,9,13231.00,offline,False,General
-INT_00570,INST_0344,Mechanical Design,Unacademy,9,0.00,online,True,General
-INT_00571,INST_0106,Financial Analysis,Cognizant,8,0.00,offline,False,General
-INT_00572,INST_0407,Internet of Things,TVS Motor,7,0.00,online,False,CDAC
-INT_00573,INST_0107,Genomic Medicine,ABB India,6,4682.00,online,False,General
-INT_00574,INST_0203,Urban Mobility,PharmEasy,6,3851.00,offline,False,General
+INT_00565,INST_0342,Aerodynamics,Hero MotoCorp,9,13764.00,offline,False,General
+INT_00566,INST_0308,Computational Chemistry,Adani Group,9,0.00,offline,False,General
+INT_00567,INST_0359,Planetary Science,Rapido,9,5635.00,offline,False,General
+INT_00568,INST_0162,Error Budgets,H&M India,6,0.00,offline,False,General
+INT_00569,INST_0144,Disk Forensics,Crompton,9,13231.00,offline,False,General
+INT_00570,INST_0370,Mechanical Design,Unacademy,9,0.00,online,True,General
+INT_00571,INST_0272,Financial Analysis,Cognizant,8,0.00,offline,False,General
+INT_00572,INST_0255,Internet of Things,TVS Motor,7,0.00,online,False,CDAC
+INT_00573,INST_0108,Genomic Medicine,ABB India,6,4682.00,online,False,General
+INT_00574,INST_0215,Urban Mobility,PharmEasy,6,3851.00,offline,False,General
 INT_00575,INST_0050,Elder Care Technology,Accenture,7,4590.00,offline,False,Indian Army
-INT_00576,INST_0252,Post-quantum Cryptography,Blue Star,9,0.00,offline,True,General
-INT_00577,INST_0399,Livelihood Programs,HCL Technologies,8,0.00,online,False,General
-INT_00578,INST_0100,Secrets Management,ONGC,6,4272.00,hybrid,False,General
-INT_00579,INST_0060,Industrial Automation,Larsen & Toubro,9,13371.00,hybrid,False,General
+INT_00576,INST_0269,Post-quantum Cryptography,Blue Star,9,0.00,offline,True,General
+INT_00577,INST_0432,Livelihood Programs,HCL Technologies,8,0.00,online,False,General
+INT_00578,INST_0101,Secrets Management,ONGC,6,4272.00,hybrid,False,General
+INT_00579,INST_0061,Industrial Automation,Larsen & Toubro,9,13371.00,hybrid,False,General
 INT_00580,INST_0051,Data Centre Operations,Maruti Suzuki,7,4128.00,hybrid,False,General
-INT_00581,INST_0172,Fundraising,ACC Cement,8,7410.00,hybrid,False,General
-INT_00582,INST_0152,Augmented Reality,HCL Technologies,6,11311.00,offline,False,General
-INT_00583,INST_0120,CDN,Maruti Suzuki,9,13626.00,hybrid,False,General
-INT_00584,INST_0344,Structural Analysis,Twitter/X India,7,14897.00,online,False,General
+INT_00581,INST_0178,Fundraising,ACC Cement,8,7410.00,hybrid,False,General
+INT_00582,INST_0156,Augmented Reality,HCL Technologies,6,11311.00,offline,False,General
+INT_00583,INST_0382,CDN,Maruti Suzuki,9,13626.00,hybrid,False,General
+INT_00584,INST_0370,Structural Analysis,Twitter/X India,7,14897.00,online,False,General
 INT_00585,INST_0049,Hybrid Cloud,HCL Technologies,6,0.00,offline,False,General
-INT_00586,INST_0358,Electrical Engineering,Tata Motors,6,5264.00,hybrid,False,General
-INT_00587,INST_0397,Livelihood Programs,L&T Energy,7,7203.00,online,False,General
-INT_00588,INST_0233,Algorithmic Fairness,Vedantu,7,0.00,hybrid,False,General
-INT_00589,INST_0109,Confidential Computing,Paytm,6,7696.00,offline,False,CDAC
-INT_00590,INST_0276,Corporate Law,TULIP Portal Partner,6,7055.00,offline,False,General
-INT_00591,INST_0144,Fintech Compliance,Honeywell India,8,0.00,online,False,CDAC
-INT_00592,INST_0384,Low-code Development,Hero MotoCorp,8,13499.00,offline,False,General
-INT_00593,INST_0411,Electrical Engineering,Rapido,8,6585.00,offline,False,General
-INT_00594,INST_0326,Cutover Planning,Zomato,8,5918.00,online,True,General
-INT_00595,INST_0170,Computer Vision,FedEx India,7,9922.00,offline,False,General
-INT_00596,INST_0099,Smart City Projects,H&M India,6,3095.00,offline,True,General
-INT_00597,INST_0178,Microbiology,Tata Power,7,13549.00,offline,False,General
-INT_00598,INST_0096,OSINT,Cognizant,8,0.00,online,False,General
-INT_00599,INST_0253,Personalized Medicine,Tata Motors,8,3533.00,hybrid,False,General
-INT_00600,INST_0227,Video Editing,Ultratech Cement,6,10372.00,hybrid,True,General
-INT_00601,INST_0057,Semantic Search,Khadi India,6,14129.00,hybrid,False,General
-INT_00602,INST_0277,Architecture Design,ServiceNow India,9,5319.00,offline,False,General
-INT_00603,INST_0249,Kubernetes,ServiceNow India,7,0.00,online,True,General
-INT_00604,INST_0207,Network Segmentation,Havells,9,0.00,offline,False,General
-INT_00605,INST_0179,Fleet Management,Urban Company,8,0.00,offline,False,General
-INT_00606,INST_0390,Resilience Testing,Ola,6,0.00,online,False,General
+INT_00586,INST_0385,Electrical Engineering,Tata Motors,6,5264.00,hybrid,False,General
+INT_00587,INST_0430,Livelihood Programs,L&T Energy,7,7203.00,online,False,General
+INT_00588,INST_0248,Algorithmic Fairness,Vedantu,7,0.00,hybrid,False,General
+INT_00589,INST_0110,Confidential Computing,Paytm,6,7696.00,offline,False,CDAC
+INT_00590,INST_0296,Corporate Law,TULIP Portal Partner,6,7055.00,offline,False,General
+INT_00591,INST_0148,Fintech Compliance,Honeywell India,8,0.00,online,False,CDAC
+INT_00592,INST_0414,Low-code Development,Hero MotoCorp,8,13499.00,offline,False,General
+INT_00593,INST_0444,Electrical Engineering,Rapido,8,6585.00,offline,False,General
+INT_00594,INST_0350,Cutover Planning,Zomato,8,5918.00,online,True,General
+INT_00595,INST_0223,Computer Vision,FedEx India,7,9922.00,offline,False,General
+INT_00596,INST_0100,Smart City Projects,H&M India,6,3095.00,offline,True,General
+INT_00597,INST_0186,Microbiology,Tata Power,7,13549.00,offline,False,General
+INT_00598,INST_0097,OSINT,Cognizant,8,0.00,online,False,General
+INT_00599,INST_0270,Personalized Medicine,Tata Motors,8,3533.00,hybrid,False,General
+INT_00600,INST_0242,Video Editing,Ultratech Cement,6,10372.00,hybrid,True,General
+INT_00601,INST_0058,Semantic Search,Khadi India,6,14129.00,hybrid,False,General
+INT_00602,INST_0255,Architecture Design,ServiceNow India,9,5319.00,offline,False,General
+INT_00603,INST_0266,Kubernetes,ServiceNow India,7,0.00,online,True,General
+INT_00604,INST_0219,Network Segmentation,Havells,9,0.00,offline,False,General
+INT_00605,INST_0241,Fleet Management,Urban Company,8,0.00,offline,False,General
+INT_00606,INST_0422,Resilience Testing,Ola,6,0.00,online,False,General
 INT_00607,INST_0037,Propulsion,Unacademy,8,14521.00,hybrid,False,TULIP
-INT_00608,INST_0316,Border Control,Swiggy,9,0.00,online,False,General
-INT_00609,INST_0315,Secrets Management,Zomato,7,6383.00,hybrid,False,General
-INT_00610,INST_0156,Astrobiology,Nykaa,9,6110.00,offline,False,General
-INT_00611,INST_0230,Vault,Salesforce India,7,4184.00,offline,True,General
-INT_00612,INST_0171,Behavioural Biometrics,ISRO,8,0.00,online,False,General
-INT_00613,INST_0158,SAST,Larsen & Toubro,9,0.00,offline,False,General
-INT_00614,INST_0360,Astrobiology,Ultratech Cement,7,9520.00,offline,False,General
-INT_00615,INST_0317,Molecular Biology,Zomato,8,5290.00,offline,True,General
-INT_00616,INST_0449,Ayurveda Research,Urban Company,7,0.00,offline,False,General
-INT_00617,INST_0367,Optics,ServiceNow India,7,7627.00,offline,False,General
-INT_00618,INST_0414,Smart Grid,Infosys,7,7541.00,offline,False,General
-INT_00619,INST_0370,Dead Letter Queue,Porter,6,9628.00,online,False,General
-INT_00620,INST_0245,Audit and Compliance,Kia India,6,0.00,hybrid,False,TULIP
-INT_00621,INST_0017,Columnar Storage,Royal Enfield,6,0.00,offline,True,General
-INT_00622,INST_0078,Welding Technology,Hindustan Aeronautics,9,13945.00,online,False,General
-INT_00623,INST_0289,Account Takeover,Kotak Mahindra Bank,9,0.00,hybrid,False,Indian Army
-INT_00624,INST_0292,GraphQL,ServiceNow India,9,0.00,offline,False,General
-INT_00625,INST_0244,International Relations,Ultratech Cement,7,11400.00,online,True,General
-INT_00626,INST_0392,Vehicle Telematics,Freshworks,8,13716.00,offline,False,General
-INT_00627,INST_0265,Network Segmentation,Bharti Airtel,9,0.00,online,False,General
-INT_00628,INST_0341,Sales and Marketing,Oyo,8,13217.00,online,True,General
-INT_00629,INST_0273,Aerodynamics,Razorpay,6,13204.00,hybrid,False,CDAC
+INT_00608,INST_0339,Border Control,Swiggy,9,0.00,online,False,General
+INT_00609,INST_0338,Secrets Management,Zomato,7,6383.00,hybrid,False,General
+INT_00610,INST_0160,Astrobiology,Nykaa,9,6110.00,offline,False,General
+INT_00611,INST_0348,Vault,Salesforce India,7,4184.00,offline,True,General
+INT_00612,INST_0177,Behavioural Biometrics,ISRO,8,0.00,online,False,General
+INT_00613,INST_0163,SAST,Larsen & Toubro,9,0.00,offline,False,General
+INT_00614,INST_0388,Astrobiology,Ultratech Cement,7,9520.00,offline,False,General
+INT_00615,INST_0340,Molecular Biology,Zomato,8,5290.00,offline,True,General
+INT_00616,INST_0488,Ayurveda Research,Urban Company,7,0.00,offline,False,General
+INT_00617,INST_0396,Optics,ServiceNow India,7,7627.00,offline,False,General
+INT_00618,INST_0447,Smart Grid,Infosys,7,7541.00,offline,False,General
+INT_00619,INST_0399,Dead Letter Queue,Porter,6,9628.00,online,False,General
+INT_00620,INST_0262,Audit and Compliance,Kia India,6,0.00,hybrid,False,TULIP
+INT_00621,INST_0166,Columnar Storage,Royal Enfield,6,0.00,offline,True,General
+INT_00622,INST_0079,Welding Technology,Hindustan Aeronautics,9,13945.00,online,False,General
+INT_00623,INST_0311,Account Takeover,Kotak Mahindra Bank,9,0.00,hybrid,False,Indian Army
+INT_00624,INST_0314,GraphQL,ServiceNow India,9,0.00,offline,False,General
+INT_00625,INST_0261,International Relations,Ultratech Cement,7,11400.00,online,True,General
+INT_00626,INST_0425,Vehicle Telematics,Freshworks,8,13716.00,offline,False,General
+INT_00627,INST_0284,Network Segmentation,Bharti Airtel,9,0.00,online,False,General
+INT_00628,INST_0255,Sales and Marketing,Oyo,8,13217.00,online,True,General
+INT_00629,INST_0293,Aerodynamics,Razorpay,6,13204.00,hybrid,False,CDAC
 INT_00630,INST_0013,CVSS,Kotak Mahindra Bank,8,0.00,online,False,CDAC
-INT_00631,INST_0206,Risk-based Authentication,Axis Bank,8,3461.00,offline,False,General
-INT_00632,INST_0443,Carbon Capture,BYJU'S,6,0.00,online,False,General
+INT_00631,INST_0218,Risk-based Authentication,Axis Bank,8,3461.00,offline,False,General
+INT_00632,INST_0482,Carbon Capture,BYJU'S,6,0.00,online,False,General
 INT_00633,INST_0007,Event Management,Microsoft India,7,11750.00,online,False,CDAC
-INT_00634,INST_0105,Customer Identity,Siemens India,6,8318.00,offline,False,General
-INT_00635,INST_0363,Criminology,Hero MotoCorp,6,6507.00,hybrid,False,General
-INT_00636,INST_0313,Vaccination Drives,Razorpay,7,0.00,online,False,General
+INT_00634,INST_0276,Customer Identity,Siemens India,6,8318.00,offline,False,General
+INT_00635,INST_0392,Criminology,Hero MotoCorp,6,6507.00,hybrid,False,General
+INT_00636,INST_0336,Vaccination Drives,Razorpay,7,0.00,online,False,General
 INT_00637,INST_0038,Personalized Medicine,Ashok Leyland,6,0.00,online,False,General
-INT_00638,INST_0436,Clinical Trials Management,C-DAC,7,0.00,offline,False,General
-INT_00639,INST_0402,Metrology,GAIL India,9,0.00,hybrid,False,General
-INT_00640,INST_0201,Disaster Recovery,Dabur,8,6478.00,offline,False,Indian Army
+INT_00638,INST_0474,Clinical Trials Management,C-DAC,7,0.00,offline,False,General
+INT_00639,INST_0435,Metrology,GAIL India,9,0.00,hybrid,False,General
+INT_00640,INST_0213,Disaster Recovery,Dabur,8,6478.00,offline,False,Indian Army
 INT_00641,INST_0029,Aerospace Engineering,Tata Consultancy Services,9,12797.00,offline,False,General
-INT_00642,INST_0368,HACCP,upGrad,6,14478.00,hybrid,False,Indian Army
+INT_00642,INST_0397,HACCP,upGrad,6,14478.00,hybrid,False,Indian Army
 INT_00643,INST_0046,Vault,Uber India,7,4137.00,offline,False,General
-INT_00644,INST_0342,Library Science,Bajaj Finance,7,9201.00,hybrid,True,General
-INT_00645,INST_0154,Caching,BYJU'S,7,3176.00,offline,False,General
-INT_00646,INST_0066,User Research,Kotak Mahindra Bank,9,0.00,offline,False,General
-INT_00647,INST_0402,Vulnerability Research,LTIMindtree,9,13300.00,offline,True,General
-INT_00648,INST_0099,Data Protection,Microsoft India,9,6527.00,online,False,General
+INT_00644,INST_0368,Library Science,Bajaj Finance,7,9201.00,hybrid,True,General
+INT_00645,INST_0158,Caching,BYJU'S,7,3176.00,offline,False,General
+INT_00646,INST_0067,User Research,Kotak Mahindra Bank,9,0.00,offline,False,General
+INT_00647,INST_0435,Vulnerability Research,LTIMindtree,9,13300.00,offline,True,General
+INT_00648,INST_0100,Data Protection,Microsoft India,9,6527.00,online,False,General
 INT_00649,INST_0016,Influencer Marketing,Salesforce India,8,0.00,offline,False,General
-INT_00650,INST_0080,Schema Migration,Blue Dart,7,3084.00,offline,False,TULIP
+INT_00650,INST_0298,Schema Migration,Blue Dart,7,3084.00,offline,False,TULIP

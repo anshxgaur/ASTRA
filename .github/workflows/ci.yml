@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt pytest
+
+      - name: Run pipeline smoke tests
+        run: pytest pipeline/12_TESTS/TEST_PIPELINE.py -v
+
+      - name: Run API endpoint tests (skips when no DB reachable)
+        run: pytest pipeline/12_TESTS/TEST_API.py -v
+
+      - name: Compile check (all stages import cleanly)
+        run: python -m compileall -q pipeline api dashboard seed load_phase4_data.py export_phase4.py seed_all.py

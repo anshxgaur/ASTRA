@@ -1,0 +1,19 @@
+# Koyeb deploy config (optional — the dashboard UI can also be used).
+# Apply with the Koyeb CLI:
+#   koyeb app init aicte-search #     --git github.com/anshxgaur/small_potato_stuff #     --git-run-command "uvicorn api.app:app --host 0.0.0.0 --port 8000" #     --git-branch main #     --ports 8000:http #     --routes /:8000 #     --env DATABASE_URL=... --env GROQ_API_KEY=...
+# Then set the two env vars in the Koyeb dashboard (Service > Settings > Env).
+name: aicte-search
+service:
+  name: api
+  routes:
+    - path: /
+      port: 8000
+  ports:
+    - port: 8000
+  instance_type: nano
+  scalings:
+    min: 0
+    max: 1
+  env:
+    - name: PORT
+      value: "8000"
