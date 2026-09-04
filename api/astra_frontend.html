@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASTRA — AI-Powered Unified Search</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════
+   DESIGN TOKENS — ASTRA "official registry / ledger"
+   ═══════════════════════════════════════════════════ */
+:root {
+  --bg: #0E1013;
+  --bg-panel: #161A1F;
+  --bg-inset: #12151A;
+  --border: #262B33;
+  --border-hover: #B8902E;
+  --text: #E9E6DD;
+  --text-dim: #9AA0AA;
+  --text-muted: #5B6169;
+  --gold: #B8902E;
+  --gold-bright: #D3AC4E;
+  --gold-dim: #8A6C24;
+  --gold-glow: rgba(184,144,46,0.18);
+  --gold-bg-glow: rgba(184,144,46,0.07);
+  --serif: 'Source Serif 4', 'Georgia', serif;
+  --sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', 'SF Mono', monospace;
+  --transition: 180ms ease-out;
+  --max-w: 1200px;
+}
+
+/* ═══════════════════════════════════════════════════
+   GRAIN TEXTURE OVERLAY (~3.5% opacity, blend-mode overlay)
+   ═══════════════════════════════════════════════════ */
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+/* ═══════════════════════════════════════════════════
+   RESET
+   ═══════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.6;min-height:100vh}
+::selection{background:var(--gold-glow);color:var(--gold-bright)}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+button{font-family:inherit;cursor:pointer}
+input{font-family:inherit}
+
+/* ═══════════════════════════════════════════════════
+   PREFERS-REDUCED-MOTION
+   ═══════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .seal-ring { animation: none !important; }
+  .seal-emblem { animation: none !important; transform: scale(1) !important; }
+}
+
+/* ═══════════════════════════════════════════════════
+   NAVBAR
+   ═══════════════════════════════════════════════════ */
+.navbar {
+  position: sticky; top: 0; z-index: 50;
+  height: 56px;
+  background: rgba(14,16,19,0.88);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center;
+}
+.navbar-inner {
+  max-width: var(--max-w);
+  margin: 0 auto; padding: 0 24px;
+  width: 100%; display: flex; align-items: center; gap: 24px;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+.brand-mark {
+  width: 30px; height: 30px;
+  border: 1.5px solid var(--gold);
+  border-radius: 50%;
+  display: grid; place-items: center;
+  color: var(--gold); font-family: var(--serif); font-weight: 700; font-size: 13px;
+}
+.brand-name { font-family: var(--serif); font-size: 15px; font-weight: 600; color: var(--text); letter-spacing: 0.02em; }
+.nav-links { display: flex; gap: 4px; margin-left: 16px; }
+.nav-links a {
+  font-size: 13px; font-weight: 500; color: var(--text-dim);
+  padding: 6px 12px; border-radius: 6px;
+  text-decoration: none; transition: all var(--transition);
+  position: relative;
+}
+.nav-links a:hover { color: var(--gold); background: var(--gold-glow); text-decoration: none; }
+.nav-links a.active { color: var(--gold-bright); }
+.nav-links a.active::after {
+  content: ''; position: absolute; bottom: 0; left: 12px; right: 12px;
+  height: 1.5px; background: var(--gold);
+  animation: wipe-in 200ms ease-out;
+}
+@keyframes wipe-in { from { transform: scaleX(0); transform-origin: left; } to { transform: scaleX(1); transform-origin: left; } }
+.nav-right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.sys-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 500; color: var(--text-dim);
+  padding: 4px 10px; border-radius: 20px;
+  border: 1px solid var(--border);
+  font-family: var(--mono);
+}
+.sys-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; background: var(--gold-dim); }
+.sys-dot.ok { background: var(--gold); box-shadow: 0 0 8px rgba(184,144,46,0.5); animation: pulse-dot 2s ease-in-out infinite; }
+.sys-dot.err { background: var(--text-muted); }
+@keyframes pulse-dot { 0%,100%{ opacity:1 } 50%{ opacity:0.5 } }
+@media (max-width: 768px) { .nav-links { display: none; } }
+@media (max-width: 480px) { .sys-badge { display: none; } }
+
+/* ═══════════════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════════════ */
+.hero {
+  position: relative;
+  min-height: 72vh;
+  display: flex; align-items: center; justify-content: center;
+  padding: 80px 24px 60px;
+  overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 60% 40%, var(--gold-bg-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-inner {
+  position: relative; z-index: 1;
+  max-width: var(--max-w); width: 100%;
+  display: grid; grid-template-columns: 1fr auto; gap: 60px;
+  align-items: center;
+}
+.hero-text h1 {
+  font-family: var(--serif);
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700; line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+.hero-text h1 span { color: var(--gold-bright); }
+.hero-text p {
+  font-size: clamp(15px, 2vw, 18px);
+  color: var(--text-dim);
+  max-width: 520px; line-height: 1.6;
+  margin-bottom: 32px;
+}
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .seal-col { display: none; }
+  .hero { min-height: auto; padding: 60px 24px 40px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   SEAL EMBLEM
+   ═══════════════════════════════════════════════════ */
+.seal-col { display: flex; align-items: center; justify-content: center; }
+.seal-emblem {
+  width: 220px; height: 220px;
+  animation: stamp-in 600ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+@keyframes stamp-in {
+  from { transform: scale(1.6); opacity: 0.3; }
+  to { transform: scale(1); opacity: 1; }
+}
+.seal-ring {
+  transform-origin: center;
+  animation: rotate-slow 60s linear infinite;
+}
+@keyframes rotate-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* ═══════════════════════════════════════════════════
+   SEARCH TERMINAL
+   ═══════════════════════════════════════════════════ */
+.search-terminal {
+  max-width: 640px; width: 100%;
+  position: relative;
+}
+.search-terminal::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+}
+.search-bar {
+  display: flex; align-items: center;
+  height: 56px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+.search-bar:focus-within {
+  border-color: var(--gold-dim);
+  box-shadow: 0 0 0 3px rgba(184,144,46,0.1), 0 4px 24px rgba(0,0,0,0.3);
+}
+.search-bar .icon { padding: 0 4px 0 16px; color: var(--gold-dim); font-size: 16px; flex-shrink: 0; font-family: var(--mono); }
+.search-bar input {
+  flex: 1; border: none; outline: none; background: transparent;
+  padding: 0 8px; font-size: 15px; color: var(--text);
+  line-height: 56px;
+}
+.search-bar input::placeholder { color: var(--text-muted); }
+.ask-btn {
+  margin-right: 6px;
+  height: 40px; padding: 0 20px;
+  background: var(--gold);
+  color: #0E1013;
+  border: none; border-radius: 8px;
+  font-size: 13px; font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: all var(--transition);
+  position: relative; overflow: hidden;
+}
+.ask-btn:hover {
+  background: var(--gold-bright);
+  transform: translateY(-1px);
+}
+.ask-btn:hover::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.15) 50%, transparent 60%);
+  animation: sweep 400ms ease-out;
+}
+@keyframes sweep { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+.ask-btn:disabled { opacity: 0.5; cursor: wait; transform: none; }
+@media (max-width: 480px) { .ask-btn { padding: 0 14px; font-size: 12px; } }
+
+/* ═══════════════════════════════════════════════════
+   PRESET QUERIES
+   ═══════════════════════════════════════════════════ */
+.presets { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.preset-btn {
+  font-size: 12px; font-weight: 500;
+  color: var(--text-dim);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 5px 14px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.preset-btn:hover {
+  border-color: var(--gold-dim); color: var(--gold-bright);
+  background: var(--gold-glow);
+}
+
+/* ═══════════════════════════════════════════════════
+   STATS STRIP
+   ═══════════════════════════════════════════════════ */
+.stats-strip {
+  max-width: var(--max-w); width: 100%;
+  margin: 0 auto;
+  display: grid; grid-template-columns: repeat(6, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.stat-cell {
+  background: var(--bg-panel);
+  padding: 16px 12px;
+  text-align: center;
+}
+.stat-num {
+  font-family: var(--serif);
+  font-size: 22px; font-weight: 700;
+  color: var(--gold-bright);
+  font-variant-numeric: tabular-nums;
+}
+.stat-label {
+  font-family: var(--mono);
+  font-size: 10px; font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
+@media (max-width: 640px) { .stats-strip { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 400px) { .stats-strip { grid-template-columns: repeat(2, 1fr); } }
+
+/* ═══════════════════════════════════════════════════
+   SECTION CONTAINER
+   ═══════════════════════════════════════════════════ */
+.section-wrap {
+  max-width: var(--max-w); margin: 0 auto;
+  padding: 0 24px;
+}
+.section-title {
+  font-family: var(--serif);
+  font-size: 13px; font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+/* ═══════════════════════════════════════════════════
+   PIPELINE TRACE
+   ═══════════════════════════════════════════════════ */
+.pipeline { margin-top: 32px; }
+.pipe-steps { display: flex; flex-direction: column; gap: 6px; }
+.pipe-step {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 16px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: all var(--transition);
+  opacity: 0.3;
+}
+.pipe-step.active {
+  opacity: 1;
+  border-color: var(--gold-dim);
+  background: var(--bg-inset);
+}
+.pipe-step.done { opacity: 0.6; }
+.pipe-step .num {
+  font-family: var(--mono);
+  font-size: 11px; font-weight: 700;
+  color: var(--text-muted);
+  width: 20px; text-align: center;
+  flex-shrink: 0;
+}
+.pipe-step.active .num { color: var(--gold-bright); }
+.pipe-step .label {
+  font-size: 13px; font-weight: 600;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+.pipe-step.active .label { color: var(--gold-bright); }
+.pipe-step .detail {
+  font-family: var(--mono);
+  font-size: 11px; color: var(--text-muted);
+  margin-left: auto;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  max-width: 400px;
+}
+.pipe-step.active .detail { color: var(--gold-dim); }
+.pipe-step .sql-typing {
+  font-family: var(--mono);
+  font-size: 11px; color: var(--gold-dim);
+  margin-left: 0;
+  width: 100%;
+  white-space: pre-wrap;
+}
+.pipe-bar {
+  width: 60px; height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.pipe-bar .fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: width 300ms ease-out;
+}
+@media (max-width: 640px) {
+  .pipe-step .detail { display: none; }
+  .pipe-bar { width: 40px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   ANSWER CARD
+   ═══════════════════════════════════════════════════ */
+.answer-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+  animation: fade-up 300ms ease-out both;
+}
+@keyframes fade-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.answer-card .head {
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+}
+.answer-card .head .badge {
+  font-family: var(--mono);
+  font-size: 10px; font-weight: 700;
+  color: var(--gold);
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.answer-card .head .meta {
+  font-size: 11px; color: var(--text-muted);
+  font-family: var(--mono);
+  margin-left: auto;
+}
+.answer-card .body { padding: 20px; }
+.answer-card .body p {
+  font-size: 15px; line-height: 1.8;
+  color: var(--text);
+}
+.answer-card .body strong { color: var(--gold-bright); font-weight: 600; }
+.answer-card .body code {
+  font-family: var(--mono); font-size: 12px;
+  background: var(--bg-inset); border: 1px solid var(--border);
+  border-radius: 4px; padding: 1px 5px; color: var(--gold-dim);
+}
+.cite-row {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+}
+.cite-tag {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--mono); font-size: 11px; font-weight: 600;
+  color: var(--text-dim);
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.cite-tag:hover { border-color: var(--gold-dim); color: var(--gold); background: var(--gold-glow); }
+.cite-tag .dot { width: 5px; height: 5px; background: var(--gold); border-radius: 1px; flex-shrink: 0; }
+
+/* ═══════════════════════════════════════════════════
+   REGISTRY FILTER CHIPS
+   ═══════════════════════════════════════════════════ */
+.chip-bar {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  padding: 16px 0;
+}
+.chip {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 13px; font-weight: 500;
+  color: var(--text-dim);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all var(--transition);
+  user-select: none;
+}
+.chip .initials {
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  color: var(--gold-dim);
+  border: 1px solid var(--gold-dim);
+  border-radius: 3px;
+  padding: 1px 4px;
+  line-height: 1.2;
+  transition: all var(--transition);
+}
+.chip .count {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--text-muted);
+}
+.chip:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold-dim);
+  background: var(--gold-glow);
+}
+.chip:hover .initials { color: var(--gold-bright); border-color: var(--gold-bright); }
+.chip.active {
+  opacity: 1;
+  border-color: var(--gold);
+  background: var(--gold-glow);
+}
+.chip.active .initials {
+  background: var(--gold);
+  color: var(--bg);
+  border-color: var(--gold);
+}
+.chip.active .label { color: var(--gold-bright); }
+.chip:not(.active) { opacity: 0.55; }
+.chip:not(.active):hover { opacity: 0.85; }
+
+/* ═══════════════════════════════════════════════════
+   LEDGER RESULT ROWS
+   ═══════════════════════════════════════════════════ */
+.ledger-row {
+  display: flex; gap: 0;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.ledger-row::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+  width: 3px; background: transparent;
+  transition: background var(--transition);
+}
+.ledger-row:hover {
+  border-color: var(--gold-dim);
+  background: var(--bg-inset);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.ledger-row:hover::before { background: var(--gold); }
+.ledger-row:hover .lr-title { color: var(--gold-bright); }
+.ledger-row:hover .lr-initials {
+  background: var(--gold);
+  color: var(--bg);
+  border-color: var(--gold);
+}
+.ledger-row .lr-body { flex: 1; padding: 12px 16px; min-width: 0; }
+.ledger-row .lr-top {
+  display: flex; align-items: center; gap: 8px;
+}
+.lr-initials {
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  color: var(--gold-dim);
+  border: 1px solid var(--gold-dim);
+  border-radius: 3px;
+  padding: 1px 5px;
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+.lr-title {
+  font-size: 14px; font-weight: 600;
+  color: var(--text);
+  transition: color var(--transition);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.lr-id {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--text-muted);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.lr-facts {
+  display: flex; flex-wrap: wrap; gap: 4px 16px;
+  margin-top: 6px;
+}
+.lr-fact {
+  font-size: 12px; color: var(--text-dim);
+}
+.lr-fact b {
+  font-size: 10px; font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+.lr-fact .mono { font-family: var(--mono); font-size: 11px; }
+.lr-lineage {
+  display: none;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--gold-dim);
+  padding: 6px 16px 10px;
+  border-top: 1px dashed var(--border);
+  margin-top: 6px;
+}
+.ledger-row:hover .lr-lineage { display: block; }
+.lr-side {
+  display: flex; flex-direction: column;
+  align-items: flex-end; justify-content: center;
+  gap: 4px; padding: 12px 14px 12px 8px;
+  flex-shrink: 0;
+}
+.lr-score {
+  font-family: var(--mono); font-size: 11px; font-weight: 700;
+  color: var(--text-muted);
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+@media (max-width: 640px) {
+  .lr-side { display: none; }
+  .lr-id { display: none; }
+}
+
+/* ═══════════════════════════════════════════════════
+   DATA QUALITY GRID
+   ═══════════════════════════════════════════════════ */
+.quality-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+.quality-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  transition: all var(--transition);
+  cursor: default;
+}
+.quality-card:hover {
+  transform: scale(1.01);
+  border-color: var(--gold-dim);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.quality-card .q-num {
+  font-family: var(--serif);
+  font-size: 28px; font-weight: 700;
+  color: var(--gold-bright);
+}
+.quality-card .q-label {
+  font-size: 12px; font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+}
+.quality-card .q-desc {
+  font-size: 12px; color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+@media (max-width: 640px) { .quality-grid { grid-template-columns: 1fr; } }
+
+/* ═══════════════════════════════════════════════════
+   ENTITY MODAL
+   ═══════════════════════════════════════════════════ */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: none; align-items: flex-start; justify-content: center;
+  padding: 60px 20px; overflow-y: auto;
+}
+.modal-overlay.show { display: flex; }
+.modal-box {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  width: 100%; max-width: 700px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  animation: fade-up 180ms ease-out;
+}
+.modal-head {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+.modal-head .title { font-family: var(--serif); font-size: 16px; font-weight: 600; color: var(--text); }
+.modal-head .id { font-family: var(--mono); font-size: 12px; color: var(--text-muted); }
+.modal-close {
+  margin-left: auto;
+  width: 28px; height: 28px;
+  display: grid; place-items: center;
+  background: transparent; border: 1px solid var(--border);
+  border-radius: 6px; color: var(--text-dim);
+  font-size: 16px; cursor: pointer;
+  transition: all var(--transition);
+}
+.modal-close:hover { border-color: var(--gold-dim); color: var(--gold); }
+.modal-body { padding: 20px; }
+.modal-body h5 {
+  font-size: 10px; font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin: 16px 0 8px;
+}
+.modal-body h5:first-child { margin-top: 0; }
+.modal-kv-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 4px 20px;
+}
+.modal-kv {
+  display: flex; justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px dashed rgba(38,43,51,0.5);
+  font-size: 12px;
+}
+.modal-kv b { color: var(--text-muted); font-weight: 600; }
+.modal-kv span { color: var(--text-dim); font-family: var(--mono); font-size: 11px; text-align: right; word-break: break-all; }
+table.lg { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 6px; }
+table.lg th {
+  text-align: left; font-size: 9px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--text-muted); padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+}
+table.lg td {
+  padding: 6px 8px; border-bottom: 1px solid rgba(38,43,51,0.4);
+  color: var(--text-dim); font-family: var(--mono); font-size: 10px;
+}
+@media (max-width: 640px) { .modal-kv-grid { grid-template-columns: 1fr; } }
+
+/* ═══════════════════════════════════════════════════
+   LOADING SKELETON
+   ═══════════════════════════════════════════════════ */
+.skeleton .sk {
+  background: linear-gradient(90deg, var(--bg-panel) 25%, rgba(38,43,51,0.5) 50%, var(--bg-panel) 75%);
+  background-size: 400% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: 4px;
+}
+@keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+.sk-row {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 6px;
+}
+
+/* ═══════════════════════════════════════════════════
+   EMPTY STATE
+   ═══════════════════════════════════════════════════ */
+.empty-state {
+  text-align: center;
+  padding: 60px 24px;
+  max-width: 440px; margin: 0 auto;
+}
+.empty-state .icon {
+  font-family: var(--serif); font-size: 28px;
+  color: var(--gold-dim);
+  margin-bottom: 16px;
+}
+.empty-state b {
+  font-family: var(--serif); font-size: 16px; font-weight: 600;
+  color: var(--text); display: block; margin-bottom: 8px;
+}
+.empty-state p { font-size: 14px; color: var(--text-dim); line-height: 1.6; }
+
+/* ═══════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════ */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+  margin-top: 60px;
+}
+.footer-inner {
+  max-width: var(--max-w); margin: 0 auto;
+  display: flex; flex-wrap: wrap; gap: 16px; align-items: center;
+}
+.footer-inner .tech {
+  display: flex; gap: 6px;
+}
+.footer-inner .tech span {
+  font-size: 10px; font-weight: 600;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-family: var(--mono);
+}
+.footer-inner .links {
+  margin-left: auto; display: flex; gap: 16px;
+}
+.footer-inner .links a {
+  font-size: 12px; color: var(--text-muted); text-decoration: none;
+}
+.footer-inner .links a:hover { color: var(--gold); }
+.footer-inner .copy {
+  width: 100%;
+  font-size: 11px; color: var(--text-muted);
+  margin-top: 8px;
+}
+
+/* ═══════════════════════════════════════════════════
+   ERROR BOX
+   ═══════════════════════════════════════════════════ */
+.error-box {
+  padding: 20px;
+  background: var(--bg-panel);
+  border: 1px solid var(--gold-dim);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+}
+.error-box b { font-size: 14px; color: var(--gold-bright); display: block; margin-bottom: 4px; }
+.error-box p { font-size: 13px; color: var(--text-dim); }
+.error-box pre {
+  font-family: var(--mono); font-size: 11px;
+  background: var(--bg-inset); border: 1px solid var(--border);
+  padding: 10px; border-radius: 6px;
+  margin-top: 10px; overflow-x: auto;
+  color: var(--text-dim);
+}
+
+/* ═══════════════════════════════════════════════════
+   VIEW TABS
+   ═══════════════════════════════════════════════════ */
+.view-tabs {
+  display: flex; gap: 4px; padding: 16px 0 0;
+}
+.view-tab {
+  font-size: 12px; font-weight: 600;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.view-tab:hover { color: var(--text-dim); }
+.view-tab.active {
+  color: var(--gold-bright);
+  background: var(--bg-panel);
+  border-color: var(--border);
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .section-wrap { padding: 0 16px; }
+  .stats-strip { gap: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     NAVBAR
+     ═══════════════════════════════════════════════════ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="/">
+      <div class="brand-mark">A</div>
+      <span class="brand-name">ASTRA</span>
+    </a>
+    <div class="nav-links">
+      <a href="#" class="active" id="navSearch" onclick="showView('search');return false;">Search</a>
+      <a href="#" id="navRegistry" onclick="showView('registry');return false;">Registry</a>
+      <a href="#" id="navQuality" onclick="showView('quality');return false;">Data Quality</a>
+    </div>
+    <div class="nav-right">
+      <span class="sys-badge" id="sysBadge">
+        <span class="sys-dot" id="sysDot"></span>
+        <span id="sysText">connecting…</span>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════
+     HERO (landing only)
+     ═══════════════════════════════════════════════════ -->
+<section class="hero" id="heroSection">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>India's technical education <span>data registry</span>, unified.</h1>
+      <p>Search institutions, courses, faculty, scholarships, approvals, and internships across AICTE's fragmented sources — with AI-powered natural language queries.</p>
+      <!-- Search Bar -->
+      <div class="search-terminal">
+        <div class="search-bar">
+          <span class="icon">⌘</span>
+          <input id="q" type="text" autocomplete="off" spellcheck="false"
+                 placeholder="How many approved engineering colleges are in Tamil Nadu?" aria-label="Search query">
+          <button class="ask-btn" id="askBtn" onclick="doSearch()">Ask</button>
+        </div>
+        <div class="presets" id="presets"></div>
+      </div>
+    </div>
+    <div class="seal-col">
+      <!-- Decorative Seal Emblem -->
+      <svg class="seal-emblem" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g class="seal-ring">
+          <circle cx="110" cy="110" r="100" stroke="#B8902E" stroke-width="0.5" opacity="0.3"/>
+          <circle cx="110" cy="110" r="90" stroke="#B8902E" stroke-width="0.8" opacity="0.5"/>
+          <!-- tick marks -->
+          <g stroke="#B8902E" stroke-width="0.6" opacity="0.4">
+            <line x1="110" y1="10" x2="110" y2="20"/>
+            <line x1="110" y1="200" x2="110" y2="210"/>
+            <line x1="10" y1="110" x2="20" y2="110"/>
+            <line x1="200" y1="110" x2="210" y2="110"/>
+            <line x1="39" y1="39" x2="46" y2="46"/>
+            <line x1="174" y1="174" x2="181" y2="181"/>
+            <line x1="181" y1="39" x2="174" y2="46"/>
+            <line x1="46" y1="174" x2="39" y2="181"/>
+          </g>
+          <!-- concentric rings -->
+          <circle cx="110" cy="110" r="75" stroke="#B8902E" stroke-width="0.4" opacity="0.25"/>
+          <circle cx="110" cy="110" r="60" stroke="#B8902E" stroke-width="0.6" opacity="0.35"/>
+          <circle cx="110" cy="110" r="45" stroke="#B8902E" stroke-width="0.5" opacity="0.3"/>
+        </g>
+        <!-- center mark (does not rotate) -->
+        <g>
+          <polygon points="110,80 118,100 110,95 102,100" fill="#B8902E" opacity="0.6"/>
+          <polygon points="110,140 118,120 110,125 102,120" fill="#B8902E" opacity="0.6"/>
+          <circle cx="110" cy="110" r="6" fill="none" stroke="#B8902E" stroke-width="1" opacity="0.7"/>
+          <circle cx="110" cy="110" r="2" fill="#B8902E" opacity="0.8"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     STATS STRIP
+     ═══════════════════════════════════════════════════ -->
+<div class="section-wrap" style="margin-top:-20px;margin-bottom:24px;">
+  <div class="stats-strip" id="statsStrip">
+    <div class="stat-cell"><div class="stat-num" data-target="0" id="st-institution">0</div><div class="stat-label">Institutions</div></div>
+    <div class="stat-cell"><div class="stat-num" data-target="0" id="st-course">0</div><div class="stat-label">Courses</div></div>
+    <div class="stat-cell"><div class="stat-num" data-target="0" id="st-faculty">0</div><div class="stat-label">Faculty</div></div>
+    <div class="stat-cell"><div class="stat-num" data-target="0" id="st-scholarship">0</div><div class="stat-label">Scholarships</div></div>
+    <div class="stat-cell"><div class="stat-num" data-target="0" id="st-approval">0</div><div class="stat-label">Approvals</div></div>
+    <div class="stat-cell"><div class="stat-num" data-target="0" id="st-internship">0</div><div class="stat-label">Internships</div></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     MAIN CONTENT AREA
+     ═══════════════════════════════════════════════════ -->
+<div class="section-wrap" id="mainContent">
+
+  <!-- Search Results View -->
+  <div id="viewSearch">
+    <!-- Pipeline Trace -->
+    <div id="pipelineSection" style="display:none"></div>
+
+    <!-- Answer Card -->
+    <div id="answerSection" style="display:none"></div>
+
+    <!-- Entity Filter Chips (shown during results) -->
+    <div id="filterSection" style="display:none">
+      <div class="chip-bar" id="chipBar"></div>
+    </div>
+
+    <!-- Results -->
+    <div id="resultsSection" style="display:none"></div>
+
+    <!-- Loading -->
+    <div id="loadingSection" style="display:none">
+      <div class="pipe-steps">
+        <div class="pipe-step active"><span class="num">1</span><span class="label">Processing query…</span></div>
+      </div>
+      <div class="skeleton" style="margin-top:12px">
+        <div class="sk-row"><div class="sk" style="height:14px;width:50%"></div><div class="sk" style="height:11px;width:70%;margin-top:10px;display:block"></div></div>
+        <div class="sk-row"><div class="sk" style="height:14px;width:40%"></div><div class="sk" style="height:11px;width:60%;margin-top:10px;display:block"></div></div>
+        <div class="sk-row"><div class="sk" style="height:14px;width:45%"></div><div class="sk" style="height:11px;width:55%;margin-top:10px;display:block"></div></div>
+      </div>
+    </div>
+
+    <!-- Error -->
+    <div id="errorSection" style="display:none"></div>
+
+    <!-- Empty State -->
+    <div id="emptyState">
+      <div class="empty-state">
+        <div class="icon">✦</div>
+        <b>Start exploring the ASTRA data registry</b>
+        <p>Ask a natural-language question about India's technical education landscape.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Registry View -->
+  <div id="viewRegistry" style="display:none">
+    <div class="section-title">Registry — Browse by Entity Type</div>
+    <div class="chip-bar" id="registryChips"></div>
+    <div id="registryResults"></div>
+  </div>
+
+  <!-- Data Quality View -->
+  <div id="viewQuality" style="display:none">
+    <div class="section-title">Data Quality Ledger</div>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px;">Summary of planted ground-truth issues across the canonical store.</p>
+    <div class="quality-grid" id="qualityGrid"></div>
+    <div id="qualityDetails" style="margin-top:16px"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     ENTITY MODAL
+     ═══════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <div class="modal-head">
+      <span class="title" id="mTitle">Entity</span>
+      <span class="id" id="mId"></span>
+      <button class="modal-close" onclick="closeModal()">×</button>
+    </div>
+    <div class="modal-body" id="mBody">
+      <div style="text-align:center;padding:24px;color:var(--text-muted)">Loading…</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="tech">
+      <span>PostgreSQL</span><span>pgvector</span><span>Groq LLM</span><span>HNSW</span>
+    </div>
+    <div class="links">
+      <a href="/docs">API Docs</a>
+      <a href="/health">Health</a>
+    </div>
+    <div class="copy">ASTRA — AICTE Unified Search Platform. Canonical data from fragmented MySQL/PostgreSQL/MongoDB sources.</div>
+  </div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════
+   HELPERS
+   ═══════════════════════════════════════════════════ */
+const $ = id => document.getElementById(id);
+const esc = s => { const d=document.createElement('div'); d.textContent=s==null?'':String(s); return d.innerHTML; };
+const fmt = n => n==null ? '—' : Number(n).toLocaleString('en-IN');
+const inr = v => { const n=Number(v); return isNaN(n) ? (v==null?'—':esc(v)) : '₹'+n.toLocaleString('en-IN'); };
+
+const ENTITY_TYPES = ['institution','course','faculty','scholarship','approval','internship'];
+const INITIALS = { institution:'IN', course:'CO', faculty:'FA', scholarship:'SC', approval:'AP', internship:'IT' };
+const TLABEL = { institution:'Institutions', course:'Courses', faculty:'Faculty', scholarship:'Scholarships', approval:'Approvals', internship:'Internships' };
+const TITLE_FIELD = { institution:'institution_name', course:'course_name', faculty:'faculty_name', scholarship:'scheme_name', internship:'domain' };
+const FACTS = {
+  institution: [['state','State'],['district','District'],['institute_type','Type'],['year_established','Est.'],['approval_status','Status',v=>v?'Approved':'Not approved']],
+  course: [['department','Dept.'],['duration_years','Duration',v=>v?v+' yrs':'—'],['intake_capacity','Intake'],['fee_per_year','Fee/yr',inr]],
+  faculty: [['designation','Designation'],['qualification','Qualification'],['department','Dept.']],
+  scholarship: [['administering_body','Body'],['amount','Amount'],['applicable_states','States']],
+  approval: [['approval_type','Type'],['nba_status','NBA'],['valid_until','Valid until'],['state','State']],
+  internship: [['organization_name','Org'],['duration_weeks','Weeks'],['stipend_amount','Stipend',inr],['mode','Mode']],
+};
+const PRESETS = [
+  'How many approved engineering colleges are in Tamil Nadu?',
+  'Scholarships for meritorious students in Maharashtra',
+  'List all B.Tech Computer Science courses',
+  'Faculty at IIT Delhi with PhD qualifications',
+  'Internships with stipend above ₹20000',
+  'List all institutions in Uttar Pradesh',
+];
+
+/* ═══════════════════════════════════════════════════
+   STATE
+   ═══════════════════════════════════════════════════ */
+let currentView = 'search';
+let currentFilters = { entity_type: '', state: '', approval_status: '' };
+let statsAnimated = false;
+let statsData = {};
+let searchCache = {};
+
+/* ═══════════════════════════════════════════════════
+   PRESETS
+   ═══════════════════════════════════════════════════ */
+$('presets').innerHTML = PRESETS.map(p =>
+  `<button class="preset-btn" onclick="usePreset('${esc(p).replace(/'/g,"\\'")}')">${esc(p)}</button>`
+).join('');
+
+function usePreset(q) { $('q').value = q; doSearch(); }
+
+/* ═══════════════════════════════════════════════════
+   KEYBOARD
+   ═══════════════════════════════════════════════════ */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && document.activeElement === $('q')) doSearch();
+  if (e.key === 'Escape') closeModal();
+});
+
+/* ═══════════════════════════════════════════════════
+   VIEWS
+   ═══════════════════════════════════════════════════ */
+function showView(v) {
+  currentView = v;
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  if (v === 'search') $('navSearch').classList.add('active');
+  if (v === 'registry') $('navRegistry').classList.add('active');
+  if (v === 'quality') $('navQuality').classList.add('active');
+
+  $('viewSearch').style.display = v === 'search' ? '' : 'none';
+  $('viewRegistry').style.display = v === 'registry' ? '' : 'none';
+  $('viewQuality').style.display = v === 'quality' ? '' : 'none';
+
+  if (v === 'registry') loadRegistry();
+  if (v === 'quality') loadQuality();
+}
+
+/* ═══════════════════════════════════════════════════
+   HEALTH / BOOT
+   ═══════════════════════════════════════════════════ */
+async function apiFetch(url) {
+  const r = await fetch(url);
+  if (!r.ok) { let m='HTTP '+r.status; try{m=(await r.json()).detail||m;}catch(e){} throw new Error(m); }
+  return r.json();
+}
+
+async function boot() {
+  try {
+    const h = await apiFetch('/health');
+    const c = h.coverage || {};
+    const ok = h.database.ok && h.llm.configured;
+    $('sysDot').className = 'sys-dot ' + (ok ? 'ok' : 'err');
+    $('sysText').textContent = ok ? `Groq · ${h.llm.model}` : 'Degraded';
+
+    statsData = c;
+    // Set targets
+    ENTITY_TYPES.forEach(t => { $('st-'+t).dataset.target = c[t] || 0; });
+  } catch(e) {
+    $('sysDot').className = 'sys-dot err';
+    $('sysText').textContent = 'API unreachable';
+  }
+}
+
+/* Stats count-up animation (once, on scroll into view) */
+const statsObs = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting && !statsAnimated) {
+    statsAnimated = true;
+    statsObs.disconnect();
+    animateStats();
+  }
+}, { threshold: 0.3 });
+statsObs.observe($('statsStrip'));
+
+function animateStats() {
+  ENTITY_TYPES.forEach(t => {
+    const el = $('st-'+t);
+    const target = parseInt(el.dataset.target) || 0;
+    if (target === 0) { el.textContent = '0'; return; }
+    const duration = 1200;
+    const start = performance.now();
+    function tick(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3); // ease-out cubic
+      el.textContent = Math.round(target * ease).toLocaleString('en-IN');
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+}
+
+/* ═══════════════════════════════════════════════════
+   SEARCH / PIPELINE TRACE
+   ═══════════════════════════════════════════════════ */
+async function doSearch() {
+  const q = $('q').value.trim();
+  if (!q) return;
+
+  // Switch to search view
+  showView('search');
+
+  // Hide idle, show loading
+  $('emptyState').style.display = 'none';
+  $('errorSection').style.display = 'none';
+  $('answerSection').style.display = 'none';
+  $('resultsSection').style.display = 'none';
+  $('pipelineSection').style.display = 'none';
+  $('filterSection').style.display = 'none';
+  $('loadingSection').style.display = '';
+
+  $('askBtn').disabled = true;
+  $('askBtn').textContent = '…';
+
+  const t0 = performance.now();
+
+  // Build params
+  const sp = new URLSearchParams({ q, top_k: '6' });
+  if (currentFilters.entity_type) sp.set('entity_type', currentFilters.entity_type);
+  if (currentFilters.state) sp.set('state', currentFilters.state);
+  if (currentFilters.approval_status) sp.set('approval_status', currentFilters.approval_status);
+
+  try {
+    const [searchRes, answerRes] = await Promise.all([
+      apiFetch('/search?' + sp),
+      apiFetch('/answer?' + sp).catch(() => null)
+    ]);
+    const ms = Math.round(performance.now() - t0);
+
+    $('loadingSection').style.display = 'none';
+
+    // Render pipeline trace
+    renderPipeline(searchRes, ms);
+
+    // Render answer if available
+    if (answerRes && answerRes.answer) {
+      renderAnswer(answerRes, ms);
+    }
+
+    // Render filter chips
+    renderFilterChips();
+
+    // Render results
+    if (searchRes.count || searchRes.sql_rows || searchRes.rule_matched) {
+      renderResults(searchRes, ms);
+    } else {
+      renderEmpty();
+    }
+
+  } catch(e) {
+    $('loadingSection').style.display = 'none';
+    renderError(e);
+  } finally {
+    $('askBtn').disabled = false;
+    $('askBtn').textContent = 'Ask';
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   PIPELINE TRACE RENDER
+   ═══════════════════════════════════════════════════ */
+function renderPipeline(d, ms) {
+  const path = d.retrieval ? d.retrieval.path : 'unknown';
+  const ruleMatched = d.rule_matched;
+  const hasSQL = !!d.sql_query;
+  const hasVector = d.vector && d.vector.length > 0;
+
+  // Determine which steps to show
+  const steps = [];
+
+  // Step 1: Rules-first
+  if (ruleMatched) {
+    steps.push({ num: 1, label: 'Rules-first', detail: 'Deterministic keyword match ✓', done: true });
+  } else {
+    steps.push({ num: 1, label: 'Rules-first', detail: 'No match — deferring to LLM', done: true });
+  }
+
+  // Step 2: Text-to-SQL
+  if (hasSQL) {
+    steps.push({ num: 2, label: 'Text-to-SQL (Groq)', detail: '', sql: d.sql_query, done: true });
+  } else if (!ruleMatched) {
+    steps.push({ num: 2, label: 'Text-to-SQL (Groq)', detail: 'Skipped — semantic path', done: false });
+  }
+
+  // Step 3: Vector recall
+  if (hasVector) {
+    const scores = d.vector.slice(0, 3).map(v => Math.round((v.similarity || 0) * 100));
+    steps.push({ num: 3, label: 'Vector recall (pgvector)', detail: `Top-k: ${d.vector.length} · scores: ${scores.join(', ')}%`, done: true });
+  } else {
+    steps.push({ num: 3, label: 'Vector recall (pgvector)', detail: 'No semantic hits', done: false });
+  }
+
+  // Step 4: Answer synthesis
+  steps.push({ num: 4, label: 'Answer synthesis (Groq)', detail: `${fmt(ms)}ms total`, done: true });
+
+  $('pipelineSection').style.display = '';
+  $('pipelineSection').innerHTML = `
+    <div class="pipe-steps">
+      ${steps.map(s => `
+        <div class="pipe-step ${s.done ? 'done' : ''}">
+          <span class="num">${s.num}</span>
+          <span class="label">${esc(s.label)}</span>
+          ${s.sql ? `<div class="sql-typing">${esc(s.sql)}</div>` : `<span class="detail">${esc(s.detail)}</span>`}
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+/* ═══════════════════════════════════════════════════
+   ANSWER RENDER
+   ═══════════════════════════════════════════════════ */
+function renderAnswer(d, ms) {
+  $('answerSection').style.display = '';
+  const text = formatAnswer(d.answer);
+  const tagLabel = d.llm === 'groq' ? 'Groq LLM' : 'Mock synth';
+  $('answerSection').innerHTML = `
+    <div class="answer-card">
+      <div class="head">
+        <span class="badge">✦ Answer</span>
+        <span class="meta">${tagLabel} · ${fmt(ms)}ms</span>
+      </div>
+      <div class="body"><p>${text}</p></div>
+      <div class="cite-row" id="citeRow"></div>
+    </div>
+  `;
+}
+
+function formatAnswer(t) {
+  return esc(t)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\[Source:\s*([^\]]+)\]/g, '<span class="cite-tag" style="display:inline-flex;margin:0 2px;"><span class="dot"></span>$1</span>')
+    .replace(/\n/g, '<br>');
+}
+
+/* ═══════════════════════════════════════════════════
+   FILTER CHIPS
+   ═══════════════════════════════════════════════════ */
+function renderFilterChips() {
+  $('filterSection').style.display = '';
+  $('chipBar').innerHTML = ENTITY_TYPES.map(t => {
+    const active = currentFilters.entity_type === t ? ' active' : '';
+    return `<button class="chip${active}" onclick="toggleFilter('${t}')">
+      <span class="initials">${INITIALS[t]}</span>
+      <span class="label">${TLABEL[t]}</span>
+    </button>`;
+  }).join('');
+}
+
+function toggleFilter(t) {
+  currentFilters.entity_type = currentFilters.entity_type === t ? '' : t;
+  doSearch();
+}
+
+/* ═══════════════════════════════════════════════════
+   RESULTS RENDER
+   ═══════════════════════════════════════════════════ */
+function renderResults(d, ms) {
+  $('resultsSection').style.display = '';
+  let html = '';
+
+  // Summary
+  const brk = d.breakdown || {};
+  const chips = ENTITY_TYPES.filter(t => brk[t]).map(t =>
+    `<span style="display:inline-flex;align-items:center;gap:5px;font-size:11px;font-family:var(--mono);color:var(--text-dim);border:1px solid var(--border);border-radius:4px;padding:3px 8px;"><span style="width:5px;height:5px;background:var(--gold);border-radius:1px;"></span>${TLABEL[t]} <strong style="color:var(--gold-bright)">${brk[t]}</strong></span>`
+  ).join('');
+
+  html += `<div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:12px;flex-wrap:wrap;">
+    <div><div style="font-family:var(--serif);font-size:22px;font-weight:700;color:var(--gold-bright);">${fmt(d.count)}</div>
+    <div style="font-family:var(--mono);font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;">Results</div></div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;">${chips}</div>
+    <div style="margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--text-muted);">${fmt(ms)}ms</div>
+  </div>`;
+
+  // SQL table
+  if (d.sql_rows && d.sql_rows.length) {
+    html += renderSqlTable(d);
+  }
+
+  // Entity groups
+  const groups = {};
+  (d.vector || []).forEach(h => {
+    if (!groups[h.entity_type]) groups[h.entity_type] = [];
+    groups[h.entity_type].push(h);
+  });
+  ENTITY_TYPES.forEach(t => {
+    if (groups[t]) html += renderGroup(t, groups[t]);
+  });
+
+  $('resultsSection').innerHTML = html;
+
+  // Build citation tags in answer card
+  const citeRow = $('citeRow');
+  if (citeRow) {
+    const citeParts = [];
+    if (d.sql_rows && d.sql_rows.length) citeParts.push(`SQL · ${d.sql_rows.length} rows`);
+    if (d.vector && d.vector.length) citeParts.push(`Semantic · ${d.vector.length} hits`);
+    citeRow.innerHTML = citeParts.map(c =>
+      `<span class="cite-tag"><span class="dot"></span>${esc(c)}</span>`
+    ).join('');
+  }
+}
+
+function renderSqlTable(d) {
+  if (!d.sql_rows || !d.sql_rows.length) return '';
+  const cols = Object.keys(d.sql_rows[0]);
+  const head = cols.map(c => `<th>${esc(c)}</th>`).join('');
+  const rows = d.sql_rows.slice(0, 15).map(r =>
+    `<tr>${cols.map(c => {
+      const v = r[c];
+      const isNum = typeof v === 'number';
+      return `<td style="${isNum?'color:var(--gold-bright);font-weight:600;':''}">${esc(v)}</td>`;
+    }).join('')}</tr>`
+  ).join('');
+  const more = d.sql_rows.length > 15 ?
+    `<tr><td colspan="${cols.length}" style="color:var(--text-muted);font-size:11px;padding:10px 16px;">… ${d.sql_rows.length - 15} more rows</td></tr>` : '';
+
+  return `<div style="background:var(--bg-panel);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:16px;">
+    <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-bottom:1px solid var(--border);background:var(--bg-inset);">
+      <span style="font-family:var(--mono);font-size:10px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;">SQL Result</span>
+      <span style="font-family:var(--mono);font-size:10px;color:var(--gold);">${d.sql_rows.length} rows</span>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--text-muted);max-width:50%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${esc(d.sql_query||'')}">${esc(d.sql_query||'')}</span>
+    </div>
+    <div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead><tr>${head}</tr></thead>
+      <tbody>${rows}${more}</tbody>
+    </table></div>
+  </div>`;
+}
+
+function renderGroup(t, hits) {
+  const rows = hits.map(h => {
+    const s = h.similarity || 0;
+    const scorePct = Math.round(s * 100);
+    const title = (h.record && h.record[TITLE_FIELD[t]]) || h.entity_type + ' ' + h.entity_id;
+    const facts = (FACTS[t] || []).map(([f, l, opt]) => {
+      let v = h.record ? h.record[f] : null;
+      if (v == null || v === '') return '';
+      if (typeof opt === 'function') v = opt(v);
+      return `<div class="lr-fact"><b>${esc(l)}</b> <span class="mono">${esc(v)}</span></div>`;
+    }).filter(Boolean).join('');
+
+    const src = h.source_database || 'canonical';
+    const rid = h.source_record_id != null ? ' · r' + h.source_record_id : '';
+    const lineage = `${esc(src)} › ${esc(h.source_table||'')} › ${esc(h.source_record_id||'')} › synced`;
+
+    return `<div class="ledger-row" onclick="openEntity('${esc(h.entity_id)}')">
+      <div class="lr-body">
+        <div class="lr-top">
+          <span class="lr-initials">${INITIALS[t]}</span>
+          <span class="lr-title">${esc(title)}</span>
+          <span class="lr-id">${esc(h.entity_id)}</span>
+        </div>
+        <div class="lr-facts">${facts || `<div class="lr-fact" style="color:var(--text-muted)">${esc((h.context_text||'').substring(0,120))}</div>`}</div>
+        <div class="lr-lineage">${lineage}</div>
+      </div>
+      <div class="lr-side">
+        <span class="lr-score">${scorePct}%</span>
+      </div>
+    </div>`;
+  }).join('');
+
+  return `<div style="margin-bottom:20px;">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+      <span style="font-family:var(--mono);font-size:10px;font-weight:700;color:var(--gold-dim);border:1px solid var(--gold-dim);border-radius:3px;padding:1px 5px;">${INITIALS[t]}</span>
+      <span style="font-size:12px;font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:0.06em;">${TLABEL[t]}</span>
+      <span style="font-family:var(--mono);font-size:11px;color:var(--text-muted);">${hits.length}</span>
+    </div>
+    ${rows}
+  </div>`;
+}
+
+/* ═══════════════════════════════════════════════════
+   EMPTY / ERROR
+   ═══════════════════════════════════════════════════ */
+function renderEmpty() {
+  $('resultsSection').style.display = '';
+  $('resultsSection').innerHTML = `
+    <div class="empty-state">
+      <div class="icon">∅</div>
+      <b>No results found</b>
+      <p>No indexed records match your query with the current filters. Try reformulating.</p>
+    </div>
+  `;
+}
+
+function renderError(e) {
+  $('errorSection').style.display = '';
+  $('errorSection').innerHTML = `
+    <div class="error-box">
+      <b>Search failed</b>
+      <p>${esc(e.message || String(e))}</p>
+      <pre>${esc(e.stack || '')}</pre>
+    </div>
+  `;
+}
+
+/* ═══════════════════════════════════════════════════
+   REGISTRY VIEW
+   ═══════════════════════════════════════════════════ */
+let registryActiveType = '';
+
+async function loadRegistry() {
+  const chips = $('registryChips');
+  chips.innerHTML = ENTITY_TYPES.map(t => {
+    const count = statsData[t] || 0;
+    const active = registryActiveType === t ? ' active' : '';
+    return `<button class="chip${active}" onclick="toggleRegistry('${t}')">
+      <span class="initials">${INITIALS[t]}</span>
+      <span class="label">${TLABEL[t]}</span>
+      <span class="count">${fmt(count)}</span>
+    </button>`;
+  }).join('');
+
+  if (registryActiveType) {
+    await loadRegistryResults(registryActiveType);
+  } else {
+    $('registryResults').innerHTML = `<div class="empty-state"><div class="icon">✦</div><b>Select an entity type</b><p>Click a chip above to browse the registry.</p></div>`;
+  }
+}
+
+function toggleRegistry(t) {
+  registryActiveType = registryActiveType === t ? '' : t;
+  loadRegistry();
+}
+
+async function loadRegistryResults(t) {
+  $('registryResults').innerHTML = `<div class="skeleton">
+    ${'<div class="sk-row"><div class="sk" style="height:14px;width:50%"></div><div class="sk" style="height:11px;width:70%;margin-top:10px;display:block"></div></div>'.repeat(3)}
+  </div>`;
+
+  try {
+    const q = `list all ${t}s`;
+    const sp = new URLSearchParams({ q, entity_type: t, top_k: '20' });
+    const d = await apiFetch('/search?' + sp);
+
+    if (d.vector && d.vector.length) {
+      $('registryResults').innerHTML = renderGroup(t, d.vector);
+    } else if (d.sql_rows && d.sql_rows.length) {
+      $('registryResults').innerHTML = renderSqlTable(d);
+    } else {
+      $('registryResults').innerHTML = `<div class="empty-state"><div class="icon">∅</div><b>No records found</b><p>No ${TLABEL[t].toLowerCase()} in the registry.</p></div>`;
+    }
+  } catch(e) {
+    $('registryResults').innerHTML = `<div class="error-box"><b>Failed to load</b><p>${esc(e.message)}</p></div>`;
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   DATA QUALITY VIEW
+   ═══════════════════════════════════════════════════ */
+async function loadQuality() {
+  $('qualityGrid').innerHTML = `<div class="skeleton" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+    ${'<div class="sk-row" style="height:80px"><div class="sk" style="height:20px;width:40%"></div><div class="sk" style="height:12px;width:60%;margin-top:10px;display:block"></div></div>'.repeat(3)}
+  </div>`;
+
+  try {
+    const d = await apiFetch('/conflicts');
+    const s = d.summary || {};
+    $('qualityGrid').innerHTML = `
+      <div class="quality-card">
+        <div class="q-num">${s.conflicts || 0}</div>
+        <div class="q-label">Cross-Source Conflicts</div>
+        <div class="q-desc">Records with conflicting statuses across MySQL, PostgreSQL, and MongoDB sources.</div>
+      </div>
+      <div class="quality-card">
+        <div class="q-num">${s.duplicates || 0}</div>
+        <div class="q-label">Within-Source Duplicates</div>
+        <div class="q-desc">Duplicate records found within the same source system.</div>
+      </div>
+      <div class="quality-card">
+        <div class="q-num">${s.orphans || 0}</div>
+        <div class="q-label">Orphaned Records</div>
+        <div class="q-desc">Records that lack a mapping to a canonical entity.</div>
+      </div>
+    `;
+  } catch(e) {
+    $('qualityGrid').innerHTML = `<div class="error-box"><b>Failed to load quality data</b><p>${esc(e.message)}</p></div>`;
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   ENTITY MODAL
+   ═══════════════════════════════════════════════════ */
+async function openEntity(id) {
+  $('modalOverlay').classList.add('show');
+  $('mTitle').textContent = 'Entity';
+  $('mId').textContent = id;
+  $('mBody').innerHTML = '<div style="text-align:center;padding:24px;color:var(--text-muted)">Loading lineage…</div>';
+
+  try {
+    const d = await apiFetch('/entity/' + encodeURIComponent(id));
+    const rec = d.record || {};
+    $('mTitle').textContent = TLABEL[d.entity_type] || 'Entity';
+
+    const kvHtml = Object.entries(rec).map(([k,v]) =>
+      `<div class="modal-kv"><b>${esc(k)}</b><span>${esc(v==null?'—':String(v))}</span></div>`
+    ).join('');
+
+    const mapRows = (d.mapping || []).map(m =>
+      `<tr><td><b>${esc(m.source_system)}</b></td><td>${esc(m.source_database)}</td><td>${esc(m.source_table)}</td><td>${esc(m.source_record_id)}</td><td>${m.match_score!=null?m.match_score.toFixed(2):'—'}</td></tr>`
+    ).join('');
+
+    const lgRows = (d.lineage || []).map(l =>
+      `<tr><td><b>${esc(l.source_system)}</b></td><td>${esc(l.source_database)}</td><td>${esc(l.source_table)}</td><td>${esc(l.source_record_id)}</td><td>${esc(l.validation_status||'')}</td></tr>`
+    ).join('');
+
+    $('mBody').innerHTML = `
+      <h5>Canonical Record · ${esc(d.entity_type)}</h5>
+      <div class="modal-kv-grid">${kvHtml || '<div style="color:var(--text-muted);font-size:12px;">No structured record</div>'}</div>
+      <h5>Source Mapping</h5>
+      <table class="lg"><thead><tr><th>system</th><th>database</th><th>table</th><th>record</th><th>score</th></tr></thead>
+      <tbody>${mapRows || '<tr><td colspan="5" style="color:var(--text-muted)">none</td></tr>'}</tbody></table>
+      <h5>Data Lineage</h5>
+      <table class="lg"><thead><tr><th>system</th><th>database</th><th>table</th><th>record</th><th>status</th></tr></thead>
+      <tbody>${lgRows || '<tr><td colspan="5" style="color:var(--text-muted)">none</td></tr>'}</tbody></table>
+    `;
+  } catch(e) {
+    $('mBody').innerHTML = `<div class="error-box"><b>Lineage unavailable</b><p>${esc(e.message||e)}</p></div>`;
+  }
+}
+
+function closeModal() { $('modalOverlay').classList.remove('show'); }
+
+/* ═══════════════════════════════════════════════════
+   URL PARAM CHECK
+   ═══════════════════════════════════════════════════ */
+const urlQ = new URLSearchParams(location.search).get('q');
+if (urlQ) { $('q').value = urlQ; }
+
+/* ═══════════════════════════════════════════════════
+   BOOT
+   ═══════════════════════════════════════════════════ */
+boot();
+</script>
+</body>
+</html>

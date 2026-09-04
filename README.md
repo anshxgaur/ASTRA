@@ -242,6 +242,49 @@ POSTGRES_DB=aicte_canonical
 
 ---
 
+## ☁️ Deploy to Production
+
+The deployable unit is the **API container** (`Dockerfile`) — it serves the
+search UI, hybrid retrieval, and RAG endpoints. The data lives in a hosted
+**PostgreSQL + pgvector** instance; the container never needs MySQL/MongoDB.
+
+### 1. Prepare the hosted database
+
+Create a PostgreSQL + pgvector database on any provider (Neon, Supabase,
+Fly Postgres, Railway, ...), then load the packaged data into it:
+
+```bash
+# load phase4_data/ (all tables + 384-dim embeddings + HNSW index)
+./internalenv/Scripts/python.exe load_phase4_data.py --url "$DATABASE_URL"
+```
+
+### 2. Set environment variables on the platform
+
+| Variable | Required | Notes |
+|----------|----------|-------|
+| `DATABASE_URL` | yes | e.g. `postgresql://user:pass@host:5432/aicte_canonical?sslmode=require` |
+| `GROQ_API_KEY` | yes (for LLM answers) | without it, the API serves mock (retrieved-context-only) answers |
+| `GROQ_MODEL` | no | defaults to `openai/gpt-oss-120b` |
+
+### 3. Deploy the container
+
+- **Koyeb** — `koyeb app init aicte-search --git github.com/you/repo --git-run-command "uvicorn api.app:app --host 0.0.0.0 --port 8000" --ports 8000:http --routes /:8000` (config in `koyeb.yaml`)
+- **Fly.io** — `fly launch` then `fly secrets set DATABASE_URL=... GROQ_API_KEY=...` (config in `fly.toml`)
+- **Railway / Render** — point at the `Dockerfile`, port `8000`, same env vars
+
+### 4. Verify
+
+```bash
+curl https://your-app/health        # status ok + data coverage
+curl "https://your-app/search?q=How+many+approved+colleges+in+Uttar+Pradesh"
+```
+
+> ⚠️ The open ingest/delete endpoints (`/resumes/ingest`, `/papers/delete/...`)
+> are intended for the hackathon demo. If you expose this publicly, protect
+> them (auth proxy, disable via env) or restrict the service to a VPN.
+
+---
+
 ## 🤝 Team
 
 Built for Smart India Hackathon 2026

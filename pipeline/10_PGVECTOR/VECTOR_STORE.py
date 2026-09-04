@@ -50,7 +50,7 @@ def build_vector_index(conn) -> None:
 
 def get_connection():
     if psycopg is None:
-        raise RuntimeError("psycopg/pgvector not installed — pip install -r REQUIREMENTS/REQUIREMENTS.txt")
+        raise RuntimeError("psycopg/pgvector not installed — pip install -r requirements.txt")
     url = os.getenv("DATABASE_URL")
     if url:
         conn = psycopg.connect(url)

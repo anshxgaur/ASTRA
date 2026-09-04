@@ -15,6 +15,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import tempfile
 import time
 from datetime import datetime
 from pathlib import Path
@@ -33,6 +34,51 @@ import psycopg  # noqa: E402
 
 OUT_DIR = PROJECT_ROOT / "phase4_data"
 DB = os.environ.get("POSTGRES_DB", "aicte_canonical")
+
+# Transient Windows open failures (errno 22 = EINVAL, 13 = EACCES, 32 =
+# ERROR_SHARING_VIOLATION) that antivirus / search indexers / editors can
+# briefly raise when a freshly churned file is opened for writing.
+_TRANSIENT_ERRNOS = {22, 13, 32}
+
+
+def _atomic_write_csv(df, path: Path, attempts: int = 5) -> None:
+    """Write ``df`` as a utf-8-sig CSV via a temp file + atomic rename.
+
+    Hardening for Windows: a plain ``df.to_csv(path)`` opens the destination
+    directly, so a transient lock (antivirus scan, indexer, preview pane)
+    raised ``OSError: [Errno 22] Invalid argument`` and aborted the whole
+    export at the tail of long pipeline runs. Writing to a fresh temp name in
+    the same directory is never blocked by whoever holds the old file, and the
+    final ``os.replace`` is atomic (readers never see a half-written CSV).
+    Transient errors are retried with a short backoff.
+    """
+    last_err: OSError | None = None
+    for attempt in range(attempts):
+        fd, tmp_name = tempfile.mkstemp(dir=str(path.parent),
+                                        prefix=path.stem + "_", suffix=".tmp")
+        os.close(fd)
+        tmp = Path(tmp_name)
+        try:
+            df.to_csv(tmp, index=False, encoding="utf-8-sig")
+            os.replace(tmp, path)
+            return
+        except OSError as exc:
+            last_err = exc
+            try:
+                tmp.unlink()
+            except OSError:
+                pass
+            if exc.errno not in _TRANSIENT_ERRNOS:
+                raise
+            time.sleep(0.5 * (attempt + 1))
+        except BaseException:
+            try:
+                tmp.unlink()
+            except OSError:
+                pass
+            raise
+    if last_err is not None:
+        raise last_err
 
 RELATIONAL_TABLES = [
     "institution", "course", "faculty", "scholarship", "approval", "internship",
@@ -125,7 +171,7 @@ def export_phase4() -> dict:
                 cur.execute(f'SELECT * FROM "{table}" ORDER BY 1')
                 cols = [d[0] for d in cur.description]
                 df = pd.DataFrame(cur.fetchall(), columns=cols)
-                df.to_csv(OUT_DIR / f"{table}.csv", index=False, encoding="utf-8-sig")
+                _atomic_write_csv(df, OUT_DIR / f"{table}.csv")
                 counts[f"{table}.csv"] = len(df)
 
             cur.execute(
@@ -136,7 +182,7 @@ def export_phase4() -> dict:
             )
             cols = [d[0] for d in cur.description]
             df = pd.DataFrame(cur.fetchall(), columns=cols)
-            df.to_csv(OUT_DIR / "context_document.csv", index=False, encoding="utf-8-sig")
+            _atomic_write_csv(df, OUT_DIR / "context_document.csv")
             counts["context_document.csv"] = len(df)
 
     manifest = {

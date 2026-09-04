@@ -1,865 +1,865 @@
-﻿faculty_id,institution_id,faculty_name,designation,qualification,department,date_joined,last_updated,specialization,years_of_experience
-FAC_1,INST_0486,Rajata Wason,Assoc. Professor,M.Tech,Pharmacy,2019-09-15,2024-12-07 12:00:00,Pharmaceutical Chemistry,19
-FAC_10,INST_0334,Pallavi Lall,Asst. Professor,M.E.,MBA,2022-07-19,2026-04-25 12:00:00,Drug Delivery,22
-FAC_100,INST_0423,Agastya Sidhu,Professor,M.Tech,MBA,2005-12-24,2026-05-10 12:00:00,Computer Vision,5
-FAC_101,INST_0056,Yachana Dasgupta,Assoc. Professor,M.E.,IT,2010-04-17,2022-10-14 12:00:00,Business Analytics,10
-FAC_102,INST_0217,Anika Sridhar,Assoc. Professor,M.E.,EEE,2018-02-14,2026-07-21 12:00:00,Marketing Analytics,18
-FAC_103,INST_0160,Balhaar Mall,Assoc. Professor,M.E.,Architecture,2004-09-20,2026-06-04 12:00:00,Big Data Analytics,4
-FAC_104,INST_0142,Anamika Rau,Professor,PhD,ECE,2011-06-15,2026-05-16 12:00:00,Manufacturing Technology,11
-FAC_105,INST_0293,Faraj Thakkar,Asst. Professor,M.E.,ECE,2017-08-17,2026-07-13 12:00:00,Thermal Engineering,17
-FAC_106,INST_0003,Raghav Koshy,Asst. Professor,M.Sc.,Pharmacy,2017-09-05,2025-03-05 12:00:00,Manufacturing Technology,17
-FAC_107,INST_0262,Alka Chowdhury,Asst. Professor,M.Tech,AIDS,2013-01-07,2021-07-16 12:00:00,Pharmacology,13
-FAC_108,INST_0103,Gaurav Ratta,Assoc. Professor,M.Tech,EEE,2017-01-22,2022-06-06 12:00:00,Power Systems,17
-FAC_109,INST_0354,Peter Om,Assoc. Professor,M.E.,MECH,2009-02-03,2026-06-02 12:00:00,Thermal Engineering,9
-FAC_11,INST_0488,Anvi Ratta,Asst. Professor,M.E.,Physics,2022-07-21,2026-05-11 12:00:00,VLSI Design,22
-FAC_110,INST_0288,Inaya Virk,Professor,M.E.,Physics,2020-10-08,2026-06-09 12:00:00,Transportation Engineering,20
-FAC_111,INST_0124,Chameli Nayar,Assoc. Professor,M.Tech,Mathematics,2014-08-28,2026-05-06 12:00:00,Pharmaceutical Chemistry,14
-FAC_112,INST_0304,Zehaan Rajan,Assoc. Professor,M.E.,Physics,2006-04-29,2026-06-03 12:00:00,Natural Language Processing,6
-FAC_113,INST_0382,Falak Sundaram,Assoc. Professor,M.E.,ECE,2020-05-17,2026-05-21 12:00:00,Signal Processing,20
-FAC_114,INST_0465,Kavya Ramesh,Asst. Professor,M.Sc.,CSE,2021-09-17,2022-03-04 12:00:00,Pharmaceutical Chemistry,21
-FAC_115,INST_0010,Omisha Lal,Professor,M.E.,CSE,2023-11-02,2026-05-12 12:00:00,Supply Chain Management,23
-FAC_116,INST_0451,Ansh Gokhale,Asst. Professor,PhD,EEE,2010-11-24,2026-06-04 12:00:00,Human Resource Management,10
-FAC_117,INST_0367,Chavvi Mannan,Assoc. Professor,M.Sc.,Pharmacy,2006-10-21,2023-09-24 12:00:00,Control Systems,6
-FAC_118,INST_0220,Veda Chad,Assoc. Professor,PhD,MBA,2022-02-02,2024-11-06 12:00:00,Design Engineering,22
-FAC_119,INST_0365,Ijaya Mannan,Professor,M.Sc.,EEE,2016-03-16,2026-07-03 12:00:00,Geotechnical Engineering,16
-FAC_12,INST_0249,Triveni Konda,Asst. Professor,M.Sc.,AIDS,2020-10-23,2026-05-05 12:00:00,Wireless Communications,20
-FAC_120,INST_0003,Akshay Tailor,Asst. Professor,M.Sc.,Pharmacy,2015-10-30,2026-06-01 12:00:00,Manufacturing Technology,15
-FAC_121,INST_0380,Ranbir Walia,Asst. Professor,PhD,CSE,2020-03-01,2026-07-09 12:00:00,Internet of Things,20
-FAC_122,INST_0183,Watika Behl,Professor,M.E.,MECH,2023-05-17,2022-12-17 12:00:00,Biotechnology,23
-FAC_123,INST_0469,Panini Gopal,Professor,M.Sc.,EEE,2007-12-30,2026-05-10 12:00:00,Signal Processing,7
-FAC_124,INST_0050,Edhitha Viswanathan,Assoc. Professor,M.E.,MECH,2017-01-29,2026-04-22 12:00:00,VLSI Design,17
-FAC_125,INST_0244,Pooja Banerjee,Asst. Professor,M.Sc.,CIVIL,2011-05-01,2023-12-03 12:00:00,Robotics,11
-FAC_126,INST_0490,Qasim Dara,Assoc. Professor,M.Sc.,CIVIL,2011-11-14,2024-08-09 12:00:00,Network Security,11
-FAC_127,INST_0334,Jeevika Kaul,Professor,M.E.,ECE,2017-08-29,2026-05-30 12:00:00,Transportation Engineering,17
-FAC_128,INST_0137,Pranav Dora,Assoc. Professor,M.E.,MBA,2014-01-10,2026-05-29 12:00:00,Corporate Finance,14
-FAC_129,INST_0187,Yoshita Johal,Assoc. Professor,PhD,MBA,2019-09-16,2026-06-19 12:00:00,Mechatronics,19
-FAC_13,INST_0255,Yashvi Pal,Assoc. Professor,M.Sc.,MECH,2012-10-30,2022-01-26 12:00:00,Computer Vision,12
-FAC_130,INST_0229,Abhiram Keer,Professor,M.Sc.,Physics,2022-01-11,2026-05-10 12:00:00,Transportation Engineering,22
-FAC_131,INST_0113,Pallavi Gopal,Professor,M.Tech,CSE,2005-07-22,2023-04-01 12:00:00,Thermal Engineering,5
-FAC_132,INST_0179,Megha Prakash,Asst. Professor,M.E.,ECE,2020-05-05,2026-08-04 12:00:00,Big Data Analytics,20
-FAC_133,INST_0443,Urvi Subramaniam,Professor,M.E.,MBA,2004-04-25,2026-05-28 12:00:00,Cloud Computing,4
-FAC_134,INST_0371,Chandran Gara,Asst. Professor,M.E.,Mathematics,2021-09-26,2026-04-21 12:00:00,Robotics,21
-FAC_135,INST_0085,Chandani Raja,Asst. Professor,M.Tech,Pharmacy,2006-09-07,2026-07-31 12:00:00,Power Electronics,6
-FAC_136,INST_0316,Gautam Kara,Asst. Professor,M.E.,ECE,2022-04-23,2026-06-12 12:00:00,Wireless Communications,22
-FAC_137,INST_0300,Ranbir Kapoor,Assoc. Professor,M.Sc.,Mathematics,2015-04-13,2023-09-06 12:00:00,Renewable Energy Systems,15
-FAC_138,INST_0099,Xalak Shetty,Asst. Professor,PhD,MECH,2010-06-30,2023-04-11 12:00:00,Computer Vision,10
-FAC_139,INST_0111,Gavin Handa,Professor,M.Tech,Architecture,2011-01-31,2025-03-29 12:00:00,Data Mining,11
-FAC_14,INST_0382,Theodore Agarwal,Assoc. Professor,PhD,EEE,2010-07-05,2021-07-04 12:00:00,Wireless Communications,10
-FAC_140,INST_0180,Charan Mittal,Asst. Professor,PhD,AIML,2008-09-12,2024-08-01 12:00:00,Control Systems,8
-FAC_141,INST_0255,Daniel Bhargava,Professor,M.E.,CSE,2016-07-20,2023-08-28 12:00:00,Transportation Engineering,16
-FAC_142,INST_0338,Mugdha Kalita,Assoc. Professor,M.Tech,CIVIL,2021-11-07,2022-10-31 12:00:00,Renewable Energy Systems,21
-FAC_143,INST_0168,Yashoda Kari,Asst. Professor,M.E.,IT,2015-12-27,2026-08-02 12:00:00,Marketing Analytics,15
-FAC_144,INST_0255,Jacob Sodhi,Professor,PhD,MECH,2019-07-08,2026-04-25 12:00:00,Computational Fluid Dynamics,19
-FAC_145,INST_0410,Tanay Parekh,Professor,PhD,ECE,2010-01-11,2023-01-25 12:00:00,Business Analytics,10
-FAC_146,INST_0092,Oeshi Gala,Asst. Professor,PhD,CIVIL,2021-01-23,2023-08-24 12:00:00,Human Resource Management,21
-FAC_147,INST_0042,Ranbir Brar,Assoc. Professor,M.Tech,Mathematics,2014-06-15,2023-01-17 12:00:00,Operations Research,14
-FAC_148,INST_0215,Ojas Gour,Professor,M.Sc.,MBA,2004-06-19,2024-06-10 12:00:00,Drug Delivery,4
-FAC_149,INST_0123,Osha Tandon,Asst. Professor,M.Tech,ECE,2019-03-10,2021-11-13 12:00:00,Natural Language Processing,19
-FAC_15,INST_0302,Janani Karan,Professor,M.Sc.,CSE,2004-04-29,2026-05-13 12:00:00,Pharmaceutical Chemistry,4
-FAC_150,INST_0412,Hiral Vohra,Asst. Professor,M.E.,Architecture,2005-11-18,2026-04-25 12:00:00,Drug Delivery,5
-FAC_151,INST_0214,Guneet Korpal,Asst. Professor,M.Tech,CSE,2013-07-22,2022-09-15 12:00:00,Pharmaceutical Chemistry,13
-FAC_152,INST_0255,Lakshit Palan,Assoc. Professor,M.Sc.,CIVIL,2011-05-12,2026-05-29 12:00:00,Drug Delivery,11
-FAC_153,INST_0149,Gauri Mandal,Assoc. Professor,M.E.,MECH,2007-01-30,2026-05-01 12:00:00,VLSI Design,7
-FAC_154,INST_0307,Max Shetty,Assoc. Professor,PhD,CIVIL,2017-05-29,2026-08-06 12:00:00,Embedded Systems,17
-FAC_155,INST_0054,Yutika Shankar,Asst. Professor,PhD,Architecture,2004-06-09,2026-05-24 12:00:00,Cryptography,4
-FAC_156,INST_0092,Baljiwan Shankar,Assoc. Professor,M.Tech,MECH,2007-10-22,2026-06-23 12:00:00,Machine Learning,7
-FAC_157,INST_0454,Ishita Nori,Asst. Professor,PhD,AIDS,2019-07-25,2026-08-13 12:00:00,Data Mining,19
-FAC_158,INST_0067,Ishanvi Nagar,Professor,PhD,EEE,2020-05-27,2026-05-02 12:00:00,Manufacturing Technology,20
-FAC_159,INST_0041,Yoshita Palla,Asst. Professor,M.Sc.,Pharmacy,2020-09-24,2026-06-01 12:00:00,Manufacturing Technology,20
-FAC_16,INST_0254,Janya Pai,Asst. Professor,M.E.,ECE,2008-01-30,2026-08-08 12:00:00,Drug Delivery,8
-FAC_160,INST_0427,Faraj Joshi,Asst. Professor,PhD,Physics,2017-03-22,2026-08-10 12:00:00,Data Mining,17
-FAC_161,INST_0382,Dakshesh Naidu,Assoc. Professor,M.E.,Physics,2008-02-09,2026-08-10 12:00:00,Renewable Energy Systems,8
-FAC_162,INST_0497,Pranit Bhardwaj,Asst. Professor,M.Sc.,CSE,2019-09-12,2022-06-29 12:00:00,Pharmaceutical Chemistry,19
-FAC_163,INST_0264,Watika Sachar,Professor,PhD,MECH,2019-04-15,2025-01-18 12:00:00,Computer Vision,19
-FAC_164,INST_0472,Yash Vora,Asst. Professor,PhD,Physics,2017-12-14,2022-05-12 12:00:00,Business Analytics,17
-FAC_165,INST_0395,Yashica Sampath,Professor,M.E.,Architecture,2009-06-08,2026-04-26 12:00:00,Manufacturing Technology,9
-FAC_166,INST_0283,Geetika Rau,Asst. Professor,M.Tech,EEE,2022-06-14,2021-11-21 12:00:00,Pharmacology,22
-FAC_167,INST_0291,Finn Kohli,Assoc. Professor,M.Tech,EEE,2016-10-14,2023-11-05 12:00:00,Internet of Things,16
-FAC_168,INST_0177,Gopal Seth,Asst. Professor,PhD,Physics,2005-08-09,2023-05-27 12:00:00,Data Mining,5
-FAC_169,INST_0270,Lohit Rout,Asst. Professor,M.E.,MECH,2022-03-26,2024-12-18 12:00:00,Distributed Systems,22
-FAC_17,INST_0244,Harita Manda,Asst. Professor,M.Tech,Physics,2019-06-30,2023-02-03 12:00:00,Operations Research,19
-FAC_170,INST_0295,Hemangini Arora,Assoc. Professor,M.E.,Architecture,2009-12-19,2024-04-02 12:00:00,Structural Engineering,9
-FAC_171,INST_0328,Krishna Ravi,Professor,M.Sc.,IT,2007-11-06,2026-06-10 12:00:00,Computer Vision,7
-FAC_172,INST_0350,Brijesh Nigam,Professor,M.E.,ECE,2022-11-15,2024-02-02 12:00:00,Business Analytics,22
-FAC_173,INST_0157,Indira Upadhyay,Assoc. Professor,M.Sc.,AIML,2011-09-16,2026-07-13 12:00:00,Manufacturing Technology,11
-FAC_174,INST_0289,Henry Raval,Asst. Professor,M.E.,CHEM,2016-08-19,2026-04-19 12:00:00,Deep Learning,16
-FAC_175,INST_0318,Jeet Kothari,Assoc. Professor,M.Tech,Architecture,2006-10-01,2024-01-14 12:00:00,Data Mining,6
-FAC_176,INST_0356,Leena Kohli,Asst. Professor,M.E.,EEE,2007-10-05,2026-08-04 12:00:00,Cryptography,7
-FAC_177,INST_0306,Avni Shroff,Professor,M.Tech,Physics,2016-08-09,2023-05-08 12:00:00,Data Mining,16
-FAC_178,INST_0482,Agastya Dua,Asst. Professor,M.Sc.,CHEM,2010-05-23,2026-04-24 12:00:00,Business Analytics,10
-FAC_179,INST_0277,Xiti Deo,Asst. Professor,M.E.,CIVIL,2022-03-26,2022-05-25 12:00:00,Power Systems,22
-FAC_18,INST_0152,Nicholas Sachar,Professor,PhD,Physics,2007-12-30,2022-08-25 12:00:00,Machine Learning,7
-FAC_180,INST_0038,Jeet Minhas,Professor,M.E.,AIML,2004-06-21,2026-06-09 12:00:00,Supply Chain Management,4
-FAC_181,INST_0085,Balvan Lalla,Asst. Professor,M.Sc.,MECH,2011-05-01,2021-11-04 12:00:00,Data Mining,11
-FAC_182,INST_0220,Tanish Subramanian,Asst. Professor,M.Tech,Pharmacy,2011-09-26,2026-04-19 12:00:00,Drug Delivery,11
-FAC_183,INST_0275,Azad Deo,Professor,PhD,EEE,2004-07-27,2024-01-14 12:00:00,Data Mining,4
-FAC_184,INST_0428,Priya Sangha,Assoc. Professor,PhD,Pharmacy,2011-05-03,2022-03-03 12:00:00,Control Systems,11
-FAC_185,INST_0323,Gautam Sahni,Professor,M.Tech,CHEM,2018-04-29,2026-06-05 12:00:00,Distributed Systems,18
-FAC_186,INST_0085,Maanav Randhawa,Professor,M.E.,AIDS,2013-03-04,2026-04-23 12:00:00,Control Systems,13
-FAC_187,INST_0001,Adya Vaidya,Professor,M.E.,IT,2023-12-02,2026-04-23 12:00:00,Big Data Analytics,23
-FAC_188,INST_0345,Damini Kurian,Asst. Professor,M.E.,ECE,2018-10-19,2026-06-15 12:00:00,Pharmacology,18
-FAC_189,INST_0208,Krishna Mandal,Asst. Professor,M.E.,Physics,2012-10-08,2021-09-19 12:00:00,Supply Chain Management,12
-FAC_19,INST_0286,Eiravati Dara,Assoc. Professor,M.E.,AIDS,2008-02-01,2022-06-24 12:00:00,Design Engineering,8
-FAC_190,INST_0037,Logan Radhakrishnan,Asst. Professor,M.E.,ECE,2007-03-01,2022-07-10 12:00:00,Business Analytics,7
-FAC_191,INST_0099,Frado Barman,Assoc. Professor,M.Sc.,EEE,2005-03-18,2023-10-26 12:00:00,Signal Processing,5
-FAC_192,INST_0099,Lekha Modi,Asst. Professor,PhD,Pharmacy,2006-10-15,2026-06-30 12:00:00,Design Engineering,6
-FAC_193,INST_0142,Hitesh Solanki,Professor,M.E.,Mathematics,2005-09-29,2026-07-01 12:00:00,Power Systems,5
-FAC_194,INST_0094,Jeet Chaudry,Professor,PhD,Mathematics,2008-05-19,2026-05-30 12:00:00,Marketing Analytics,8
-FAC_195,INST_0367,Hemang Taneja,Asst. Professor,M.E.,EEE,2021-11-09,2026-08-01 12:00:00,Distributed Systems,21
-FAC_196,INST_0084,Eesha Baral,Assoc. Professor,PhD,CIVIL,2020-09-27,2026-06-16 12:00:00,Signal Processing,20
-FAC_197,INST_0011,Kashvi Ravel,Assoc. Professor,M.Sc.,ECE,2023-06-05,2026-06-19 12:00:00,Marketing Analytics,23
-FAC_198,INST_0423,Ayushman Agate,Assoc. Professor,PhD,MBA,2018-02-20,2026-07-01 12:00:00,Pharmaceutical Chemistry,18
-FAC_199,INST_0422,Arjun Kurian,Professor,M.E.,ECE,2017-12-17,2021-12-19 12:00:00,Computer Vision,17
-FAC_2,INST_0255,Diya Rout,Asst. Professor,M.Tech,Pharmacy,2011-06-29,2025-03-20 12:00:00,Computational Fluid Dynamics,11
-FAC_20,INST_0168,Gabriel Behl,Professor,M.E.,CHEM,2012-02-20,2026-08-10 12:00:00,Signal Processing,12
-FAC_200,INST_0326,Rishi Peri,Asst. Professor,M.E.,Architecture,2016-08-12,2025-01-16 12:00:00,Control Systems,16
-FAC_201,INST_0255,Reva Nazareth,Professor,M.Tech,MECH,2014-03-09,2026-08-04 12:00:00,Signal Processing,14
-FAC_202,INST_0265,Anjali Lalla,Assoc. Professor,PhD,EEE,2010-11-12,2026-08-09 12:00:00,Power Electronics,10
-FAC_203,INST_0148,Sachi Rajagopalan,Asst. Professor,M.Sc.,MECH,2021-11-21,2026-08-03 12:00:00,Pharmaceutical Chemistry,21
-FAC_204,INST_0028,Pushti Mody,Assoc. Professor,M.E.,EEE,2006-06-24,2026-07-27 12:00:00,Computer Vision,6
-FAC_205,INST_0135,Krish Banerjee,Assoc. Professor,M.E.,CHEM,2023-11-13,2026-04-30 12:00:00,Power Systems,23
-FAC_206,INST_0279,Jeevika Rao,Assoc. Professor,M.E.,AIDS,2007-10-11,2021-06-03 12:00:00,Drug Delivery,7
-FAC_207,INST_0364,Bimala Basak,Asst. Professor,PhD,ECE,2013-06-22,2026-06-18 12:00:00,Transportation Engineering,13
-FAC_208,INST_0311,Robert Varghese,Professor,PhD,EEE,2006-04-07,2025-05-15 12:00:00,Mechatronics,6
-FAC_209,INST_0366,Henry Sampath,Professor,M.Tech,CHEM,2019-11-08,2021-12-23 12:00:00,Deep Learning,19
-FAC_21,INST_0098,Madhav Vora,Assoc. Professor,M.Sc.,MECH,2009-01-03,2026-07-13 12:00:00,Business Analytics,9
-FAC_210,INST_0264,Kavya Sekhon,Professor,PhD,AIDS,2023-06-17,2026-06-08 12:00:00,Robotics,23
-FAC_211,INST_0377,Naveen Barman,Professor,M.Sc.,CSE,2011-03-21,2021-12-19 12:00:00,Embedded Systems,11
-FAC_212,INST_0465,Pavani Pal,Assoc. Professor,PhD,Physics,2007-02-04,2026-05-09 12:00:00,Human Resource Management,7
-FAC_213,INST_0007,Baghyawati Kuruvilla,Asst. Professor,M.Sc.,Mathematics,2023-04-29,2022-05-06 12:00:00,Supply Chain Management,23
-FAC_214,INST_0033,Niharika Hans,Asst. Professor,M.E.,CSE,2021-06-27,2026-04-30 12:00:00,Renewable Energy Systems,21
-FAC_215,INST_0495,Upkaar Khurana,Assoc. Professor,M.Tech,Mathematics,2021-05-15,2026-05-12 12:00:00,Cybersecurity,21
-FAC_216,INST_0486,Krishna Sekhon,Asst. Professor,PhD,Physics,2008-09-08,2026-08-14 12:00:00,Deep Learning,8
-FAC_217,INST_0428,Nikita Krishnamurthy,Assoc. Professor,M.Tech,EEE,2005-12-26,2022-01-24 12:00:00,Control Systems,5
-FAC_218,INST_0255,Jeet Mani,Asst. Professor,PhD,MBA,2017-08-21,2026-07-24 12:00:00,Distributed Systems,17
-FAC_219,INST_0105,Yashica Choudhry,Professor,M.Sc.,CSE,2007-04-30,2022-02-20 12:00:00,Power Electronics,7
-FAC_22,INST_0255,Tejas Shanker,Assoc. Professor,PhD,EEE,2023-10-05,2026-04-24 12:00:00,Deep Learning,23
-FAC_220,INST_0239,Siddharth Kala,Professor,M.Tech,ECE,2020-08-10,2026-05-06 12:00:00,Design Engineering,20
-FAC_221,INST_0376,Mekhala Char,Assoc. Professor,M.Tech,CIVIL,2013-05-29,2026-04-23 12:00:00,Corporate Finance,13
-FAC_222,INST_0112,Darpan Mangal,Professor,M.Tech,Physics,2018-10-26,2026-06-17 12:00:00,Marketing Analytics,18
-FAC_223,INST_0255,Ladli Bhasin,Asst. Professor,M.Tech,AIML,2008-04-06,2024-05-12 12:00:00,Control Systems,8
-FAC_224,INST_0223,Teerth Mahal,Asst. Professor,M.Sc.,Mathematics,2009-11-11,2026-07-11 12:00:00,Structural Engineering,9
-FAC_225,INST_0445,Ucchal Chauhan,Assoc. Professor,M.Tech,Mathematics,2021-05-27,2022-02-25 12:00:00,Manufacturing Technology,21
-FAC_226,INST_0423,Atharv Peri,Assoc. Professor,M.E.,AIDS,2005-10-16,2026-06-28 12:00:00,Renewable Energy Systems,5
-FAC_227,INST_0422,Watika Krish,Assoc. Professor,PhD,AIDS,2012-03-28,2026-05-14 12:00:00,Power Electronics,12
-FAC_228,INST_0327,Rajeshri Rastogi,Asst. Professor,M.Tech,EEE,2008-10-18,2026-06-11 12:00:00,Computational Fluid Dynamics,8
-FAC_229,INST_0203,Warhi Barman,Professor,PhD,ECE,2020-06-07,2023-09-23 12:00:00,Business Analytics,20
-FAC_23,INST_0062,Charan Chaudhary,Professor,M.E.,AIDS,2016-10-09,2022-09-05 12:00:00,Distributed Systems,16
-FAC_230,INST_0263,Darika Baral,Assoc. Professor,M.Sc.,Pharmacy,2022-07-08,2022-06-28 12:00:00,Embedded Systems,22
-FAC_231,INST_0210,Leena Kalita,Assoc. Professor,M.Sc.,IT,2008-12-25,2023-07-02 12:00:00,Deep Learning,8
-FAC_232,INST_0075,Rachit Bajwa,Asst. Professor,M.Sc.,Pharmacy,2005-05-10,2026-06-14 12:00:00,Design Engineering,5
-FAC_233,INST_0149,Chavvi Shroff,Assoc. Professor,M.Sc.,EEE,2004-10-27,2026-08-04 12:00:00,Power Systems,4
-FAC_234,INST_0452,Advik Mohanty,Professor,M.Sc.,AIML,2019-11-14,2026-06-19 12:00:00,Cloud Computing,19
-FAC_235,INST_0045,William Kanda,Assoc. Professor,M.Tech,CIVIL,2005-05-09,2023-01-15 12:00:00,Environmental Engineering,5
-FAC_236,INST_0217,Ishita Brar,Assoc. Professor,M.Tech,Physics,2008-02-02,2026-05-04 12:00:00,Big Data Analytics,8
-FAC_237,INST_0002,Gauri Khare,Professor,M.Sc.,AIDS,2013-04-29,2025-01-04 12:00:00,Human Resource Management,13
-FAC_238,INST_0113,Bina Bava,Asst. Professor,M.Sc.,AIML,2004-12-12,2026-08-14 12:00:00,Transportation Engineering,4
-FAC_239,INST_0445,Faras Khanna,Assoc. Professor,M.E.,CHEM,2015-04-02,2026-06-26 12:00:00,Internet of Things,15
-FAC_24,INST_0255,Urmi Anne,Asst. Professor,M.Tech,ECE,2004-02-07,2026-07-26 12:00:00,Embedded Systems,4
-FAC_240,INST_0255,Bakhshi Shere,Asst. Professor,M.Tech,Pharmacy,2017-12-04,2026-07-21 12:00:00,Transportation Engineering,17
-FAC_241,INST_0063,Vidhi Shukla,Professor,M.E.,Mathematics,2021-09-06,2023-07-11 12:00:00,Big Data Analytics,21
-FAC_242,INST_0325,Yashasvi Handa,Asst. Professor,M.E.,CSE,2018-08-27,2021-08-16 12:00:00,Control Systems,18
-FAC_243,INST_0276,Triya Kohli,Asst. Professor,M.Sc.,CSE,2023-12-12,2026-07-14 12:00:00,Geotechnical Engineering,23
-FAC_244,INST_0334,Reva Kumer,Asst. Professor,PhD,CHEM,2023-12-09,2026-04-19 12:00:00,Computational Fluid Dynamics,23
-FAC_245,INST_0329,Vasatika Mohanty,Assoc. Professor,PhD,CHEM,2004-12-25,2025-02-07 12:00:00,Drug Delivery,4
-FAC_246,INST_0268,Aryan Kakar,Assoc. Professor,M.E.,MECH,2020-06-01,2024-04-14 12:00:00,Big Data Analytics,20
-FAC_247,INST_0059,Ekantika Bajwa,Professor,M.Sc.,MBA,2007-12-06,2026-04-20 12:00:00,Transportation Engineering,7
-FAC_248,INST_0265,Bachittar Lad,Asst. Professor,PhD,Physics,2006-11-09,2026-05-28 12:00:00,Embedded Systems,6
-FAC_249,INST_0113,Aradhana Krishnan,Asst. Professor,M.Tech,CHEM,2015-06-26,2025-02-20 12:00:00,Control Systems,15
-FAC_25,INST_0286,Gaurangi Bakshi,Asst. Professor,M.Tech,CHEM,2023-07-28,2021-06-06 12:00:00,Power Systems,23
-FAC_250,INST_0105,Kamala Salvi,Professor,PhD,MBA,2004-04-01,2026-06-28 12:00:00,Natural Language Processing,4
-FAC_251,INST_0166,Abdul Walla,Asst. Professor,M.Sc.,CSE,2005-04-19,2026-05-10 12:00:00,Biotechnology,5
-FAC_252,INST_0320,Anika Sunder,Professor,M.E.,CIVIL,2021-05-17,2026-08-12 12:00:00,Signal Processing,21
-FAC_253,INST_0171,Lajita Malhotra,Asst. Professor,M.Sc.,MECH,2004-03-22,2026-07-02 12:00:00,Internet of Things,4
-FAC_254,INST_0047,Anamika Raju,Assoc. Professor,M.Tech,ECE,2022-01-24,2022-09-25 12:00:00,Power Electronics,22
-FAC_255,INST_0283,Charita Desai,Asst. Professor,PhD,IT,2023-10-10,2025-04-03 12:00:00,Natural Language Processing,23
-FAC_256,INST_0160,Matthew Manne,Professor,M.Tech,CIVIL,2021-05-11,2021-09-11 12:00:00,Wireless Communications,21
-FAC_257,INST_0145,Janya Dua,Assoc. Professor,PhD,MECH,2014-03-20,2026-05-06 12:00:00,Wireless Communications,14
-FAC_258,INST_0046,Zayyan Walla,Professor,M.E.,AIML,2016-05-14,2026-07-27 12:00:00,Machine Learning,16
-FAC_259,INST_0179,Daksha Chad,Professor,M.Sc.,CSE,2011-04-25,2026-08-10 12:00:00,Distributed Systems,11
-FAC_26,INST_0415,Ekalinga Parsa,Professor,M.Tech,Architecture,2011-10-03,2026-06-17 12:00:00,Drug Delivery,11
-FAC_260,INST_0264,Nachiket Vala,Professor,PhD,CHEM,2017-08-24,2023-11-10 12:00:00,Mechatronics,17
-FAC_261,INST_0162,Chameli Grewal,Asst. Professor,M.Sc.,Architecture,2011-05-04,2026-07-21 12:00:00,Signal Processing,11
-FAC_262,INST_0224,Krishna Mitter,Assoc. Professor,M.Sc.,Physics,2019-05-06,2026-05-18 12:00:00,Computer Vision,19
-FAC_263,INST_0143,Krish Virk,Assoc. Professor,M.Sc.,IT,2010-07-07,2026-06-08 12:00:00,Computer Vision,10
-FAC_264,INST_0382,Finn Agate,Professor,M.E.,Physics,2016-03-04,2026-07-05 12:00:00,Network Security,16
-FAC_265,INST_0392,Patrick Lalla,Assoc. Professor,M.Tech,AIDS,2019-06-24,2024-11-02 12:00:00,Human Resource Management,19
-FAC_266,INST_0012,Jhalak Murthy,Assoc. Professor,M.Sc.,CHEM,2012-04-19,2026-05-02 12:00:00,Power Systems,12
-FAC_267,INST_0490,Anika Date,Professor,PhD,ECE,2020-11-01,2026-07-21 12:00:00,Deep Learning,20
-FAC_268,INST_0181,Varenya Boase,Asst. Professor,M.Tech,CIVIL,2014-10-18,2023-07-03 12:00:00,Business Analytics,14
-FAC_269,INST_0122,Niharika Singh,Professor,PhD,CSE,2010-05-25,2026-08-10 12:00:00,Biotechnology,10
-FAC_27,INST_0449,Dev Chaudhuri,Assoc. Professor,M.E.,MECH,2011-10-12,2026-05-10 12:00:00,Environmental Engineering,11
-FAC_270,INST_0409,Tanveer Sachdev,Professor,PhD,CSE,2016-04-21,2026-07-17 12:00:00,Geotechnical Engineering,16
-FAC_271,INST_0063,Niharika Saha,Professor,M.E.,MECH,2004-10-13,2025-05-25 12:00:00,Marketing Analytics,4
-FAC_272,INST_0033,Reva Dugar,Professor,M.E.,IT,2009-11-18,2026-05-20 12:00:00,Structural Engineering,9
-FAC_273,INST_0401,Fariq Bakshi,Assoc. Professor,M.Tech,Pharmacy,2011-05-04,2026-06-14 12:00:00,Marketing Analytics,11
-FAC_274,INST_0255,Samesh Doctor,Assoc. Professor,M.Tech,AIML,2013-08-08,2026-07-04 12:00:00,Business Analytics,13
-FAC_275,INST_0044,Dalaja Kumar,Assoc. Professor,M.Tech,ECE,2008-02-22,2026-07-05 12:00:00,Big Data Analytics,8
-FAC_276,INST_0255,Ekanta Pingle,Asst. Professor,M.Tech,IT,2021-04-07,2026-05-29 12:00:00,Drug Delivery,21
-FAC_277,INST_0375,Radha Bhalla,Asst. Professor,M.E.,MECH,2014-03-14,2026-08-01 12:00:00,Internet of Things,14
-FAC_278,INST_0186,Frado Nigam,Asst. Professor,M.Sc.,Pharmacy,2006-08-23,2026-08-04 12:00:00,Supply Chain Management,6
-FAC_279,INST_0004,Kabir Mukhopadhyay,Asst. Professor,M.Tech,Architecture,2012-09-22,2026-05-14 12:00:00,Power Systems,12
-FAC_28,INST_0468,Gavin Krishnan,Assoc. Professor,M.Tech,AIDS,2013-12-25,2026-04-19 12:00:00,Natural Language Processing,13
-FAC_280,INST_0088,Vasudha Chaudhari,Professor,PhD,Physics,2004-11-17,2024-10-21 12:00:00,Thermal Engineering,4
-FAC_281,INST_0052,Guneet Pradhan,Professor,M.E.,Architecture,2020-09-02,2026-06-10 12:00:00,Thermal Engineering,20
-FAC_282,INST_0068,Wakeeta Patil,Asst. Professor,PhD,EEE,2018-10-07,2026-05-19 12:00:00,Structural Engineering,18
-FAC_283,INST_0325,Qushi Krishnamurthy,Assoc. Professor,M.Sc.,AIML,2019-07-07,2026-08-10 12:00:00,Natural Language Processing,19
-FAC_284,INST_0068,Aadhya Nagar,Asst. Professor,M.Sc.,CSE,2008-01-02,2021-06-12 12:00:00,Design Engineering,8
-FAC_285,INST_0137,Ekantika Mittal,Asst. Professor,M.Tech,EEE,2012-12-16,2026-05-27 12:00:00,Supply Chain Management,12
-FAC_286,INST_0449,Darsh Nayak,Professor,PhD,EEE,2004-09-20,2026-08-14 12:00:00,Geotechnical Engineering,4
-FAC_287,INST_0242,Benjamin Ghose,Asst. Professor,M.Sc.,EEE,2010-11-10,2026-06-10 12:00:00,Thermal Engineering,10
-FAC_288,INST_0395,Bhavani Kala,Professor,PhD,Architecture,2022-11-18,2022-03-14 12:00:00,Machine Learning,22
-FAC_289,INST_0314,Azad Kibe,Asst. Professor,M.Tech,Pharmacy,2021-02-05,2026-05-03 12:00:00,Pharmaceutical Chemistry,21
-FAC_29,INST_0428,Harish Borde,Asst. Professor,M.E.,MBA,2019-05-14,2023-08-18 12:00:00,Geotechnical Engineering,19
-FAC_290,INST_0415,Anika Garg,Assoc. Professor,PhD,Mathematics,2005-01-14,2026-07-17 12:00:00,Business Analytics,5
-FAC_291,INST_0149,Pahal Master,Asst. Professor,M.Sc.,Pharmacy,2021-06-05,2023-10-28 12:00:00,Network Security,21
-FAC_292,INST_0255,Jackson Basak,Asst. Professor,M.E.,ECE,2009-01-27,2025-06-07 12:00:00,Computer Vision,9
-FAC_293,INST_0452,Timothy Vyas,Assoc. Professor,PhD,AIDS,2013-02-14,2026-06-23 12:00:00,Computational Fluid Dynamics,13
-FAC_294,INST_0376,Tarak Narang,Asst. Professor,M.Tech,Physics,2011-09-08,2026-08-03 12:00:00,Distributed Systems,11
-FAC_295,INST_0003,Samar Contractor,Assoc. Professor,M.Sc.,IT,2014-07-28,2026-07-01 12:00:00,Deep Learning,14
-FAC_296,INST_0142,Avni Badami,Assoc. Professor,PhD,CIVIL,2021-11-27,2026-08-05 12:00:00,Structural Engineering,21
-FAC_297,INST_0171,Anita Puri,Asst. Professor,M.Tech,IT,2010-10-16,2026-08-12 12:00:00,Computer Vision,10
-FAC_298,INST_0247,Mohini Basu,Assoc. Professor,M.E.,MECH,2010-04-14,2023-10-02 12:00:00,Network Security,10
-FAC_299,INST_0187,Aarini Bedi,Assoc. Professor,M.Sc.,MECH,2023-10-02,2026-08-14 12:00:00,Drug Delivery,23
-FAC_3,INST_0403,Keya Brahmbhatt,Asst. Professor,PhD,IT,2011-02-12,2026-05-20 12:00:00,Computer Vision,11
-FAC_30,INST_0164,Dayamai Pall,Assoc. Professor,M.E.,MBA,2010-10-24,2026-05-23 12:00:00,Marketing Analytics,10
-FAC_300,INST_0351,Jhalak Kanda,Professor,PhD,Architecture,2007-09-09,2022-04-12 12:00:00,Big Data Analytics,7
-FAC_301,INST_0255,Hemal Zacharia,Professor,M.Tech,AIML,2009-01-18,2026-04-30 12:00:00,Corporate Finance,9
-FAC_302,INST_0382,Gaurika Mishra,Professor,M.Tech,Physics,2004-01-15,2023-03-15 12:00:00,Pharmacology,4
-FAC_303,INST_0300,Teerth Dara,Asst. Professor,M.E.,CSE,2020-11-07,2022-12-12 12:00:00,Corporate Finance,20
-FAC_304,INST_0382,Tarak Behl,Assoc. Professor,M.Sc.,AIML,2021-06-30,2023-05-01 12:00:00,Power Electronics,21
-FAC_305,INST_0276,Anjali Deshpande,Assoc. Professor,M.E.,Mathematics,2015-10-11,2026-04-21 12:00:00,Environmental Engineering,15
-FAC_306,INST_0447,Nakul Sule,Asst. Professor,PhD,AIDS,2021-09-09,2023-02-13 12:00:00,Biotechnology,21
-FAC_307,INST_0122,Darika Babu,Professor,M.Sc.,IT,2004-02-14,2026-07-08 12:00:00,Computer Vision,4
-FAC_308,INST_0325,Naveen Sibal,Assoc. Professor,M.E.,AIDS,2010-04-04,2024-08-30 12:00:00,Network Security,10
-FAC_309,INST_0130,Yochana Bhatia,Asst. Professor,M.E.,CSE,2017-10-12,2026-05-10 12:00:00,Distributed Systems,17
-FAC_31,INST_0112,Hemangini Kala,Professor,M.Tech,ECE,2012-08-18,2026-07-06 12:00:00,Deep Learning,12
-FAC_310,INST_0075,Neha Bahl,Assoc. Professor,M.Sc.,CIVIL,2020-09-22,2025-01-31 12:00:00,Pharmaceutical Chemistry,20
-FAC_311,INST_0255,Veda Swamy,Asst. Professor,M.E.,CHEM,2008-05-28,2021-12-26 12:00:00,Cryptography,8
-FAC_312,INST_0255,Vedika Mohan,Assoc. Professor,M.Sc.,AIML,2022-09-16,2023-01-08 12:00:00,Natural Language Processing,22
-FAC_313,INST_0036,Oscar Prakash,Asst. Professor,M.Tech,Physics,2007-09-16,2025-01-14 12:00:00,Distributed Systems,7
-FAC_314,INST_0093,Ladli Tak,Professor,M.Tech,Pharmacy,2005-01-17,2026-08-04 12:00:00,Robotics,5
-FAC_315,INST_0030,Manya Ganesan,Professor,M.E.,AIDS,2008-08-24,2022-08-23 12:00:00,Manufacturing Technology,8
-FAC_316,INST_0447,Ronith Pathak,Asst. Professor,PhD,Mathematics,2005-07-24,2024-12-12 12:00:00,Deep Learning,5
-FAC_317,INST_0080,Sathvik Vaidya,Professor,M.Tech,Physics,2018-08-09,2026-07-17 12:00:00,Operations Research,18
-FAC_318,INST_0203,Vedhika Keer,Asst. Professor,M.E.,EEE,2012-02-25,2025-04-09 12:00:00,Computational Fluid Dynamics,12
-FAC_319,INST_0205,Ekta Kothari,Assoc. Professor,M.Sc.,Physics,2007-03-20,2026-06-18 12:00:00,VLSI Design,7
-FAC_32,INST_0236,Geetika Sathe,Professor,M.Tech,CHEM,2021-01-24,2026-07-19 12:00:00,Pharmacology,21
-FAC_320,INST_0392,Gayathri Mistry,Assoc. Professor,M.E.,ECE,2004-09-06,2026-06-09 12:00:00,Internet of Things,4
-FAC_321,INST_0451,Gagan Rana,Asst. Professor,PhD,AIML,2004-11-10,2023-04-04 12:00:00,Geotechnical Engineering,4
-FAC_322,INST_0382,Bina Ray,Asst. Professor,M.E.,Mathematics,2009-04-01,2022-04-02 12:00:00,Marketing Analytics,9
-FAC_323,INST_0382,Veer Devan,Asst. Professor,PhD,MECH,2007-09-29,2026-04-22 12:00:00,Control Systems,7
-FAC_324,INST_0182,Ayaan Narula,Assoc. Professor,M.Tech,Pharmacy,2016-09-22,2023-08-05 12:00:00,Cryptography,16
-FAC_325,INST_0361,Gunbir Butala,Assoc. Professor,PhD,IT,2021-07-26,2026-05-21 12:00:00,Structural Engineering,21
-FAC_326,INST_0255,Neelima Seth,Assoc. Professor,M.Tech,ECE,2010-07-21,2026-08-10 12:00:00,Power Systems,10
-FAC_327,INST_0369,Tristan Hans,Asst. Professor,M.Sc.,CIVIL,2019-05-24,2026-08-10 12:00:00,Power Electronics,19
-FAC_328,INST_0010,Qushi Dugar,Assoc. Professor,M.Tech,ECE,2020-02-06,2026-05-05 12:00:00,Embedded Systems,20
-FAC_329,INST_0141,Patrick Loke,Assoc. Professor,M.Tech,EEE,2013-12-26,2026-05-22 12:00:00,Deep Learning,13
-FAC_33,INST_0346,Gayathri Bains,Professor,M.Tech,Physics,2011-07-30,2026-06-04 12:00:00,Control Systems,11
-FAC_330,INST_0283,Gopal Sastry,Assoc. Professor,M.E.,MECH,2009-11-21,2026-07-23 12:00:00,Wireless Communications,9
-FAC_331,INST_0291,Pooja Pau,Professor,PhD,ECE,2004-12-17,2024-11-14 12:00:00,Pharmaceutical Chemistry,4
-FAC_332,INST_0008,Aditya Sood,Assoc. Professor,M.E.,AIML,2005-12-19,2021-12-17 12:00:00,Operations Research,5
-FAC_333,INST_0180,Tanvi Barad,Assoc. Professor,M.Tech,Architecture,2006-03-08,2025-04-18 12:00:00,Deep Learning,6
-FAC_334,INST_0170,Mason Menon,Asst. Professor,M.E.,IT,2006-10-04,2026-06-14 12:00:00,Distributed Systems,6
-FAC_335,INST_0255,Qadim Sachar,Asst. Professor,PhD,CHEM,2019-05-18,2023-01-26 12:00:00,Transportation Engineering,19
-FAC_336,INST_0276,Zashil Reddy,Professor,M.Tech,AIDS,2018-06-16,2026-08-12 12:00:00,Network Security,18
-FAC_337,INST_0093,Indali Kashyap,Assoc. Professor,PhD,AIML,2005-02-02,2024-06-03 12:00:00,Internet of Things,5
-FAC_338,INST_0478,Ucchal Pal,Assoc. Professor,M.Sc.,CHEM,2022-12-28,2026-07-13 12:00:00,Data Mining,22
-FAC_339,INST_0039,Ekbal Desai,Asst. Professor,PhD,Mathematics,2014-03-26,2026-06-27 12:00:00,Pharmacology,14
-FAC_34,INST_0053,Maanas Sama,Assoc. Professor,M.E.,CSE,2021-07-28,2026-07-29 12:00:00,Geotechnical Engineering,21
-FAC_340,INST_0169,Ethan Tank,Professor,M.Sc.,CHEM,2018-05-30,2024-11-08 12:00:00,Thermal Engineering,18
-FAC_341,INST_0359,Eiravati Basak,Professor,M.Tech,Physics,2010-12-10,2021-11-15 12:00:00,Cybersecurity,10
-FAC_342,INST_0153,Avi Pillay,Asst. Professor,M.Tech,CHEM,2007-10-18,2026-04-26 12:00:00,Cybersecurity,7
-FAC_343,INST_0350,Vyanjana Chakrabarti,Asst. Professor,PhD,MBA,2023-07-08,2024-12-21 12:00:00,Design Engineering,23
-FAC_344,INST_0330,Eesha Kapur,Asst. Professor,PhD,Mathematics,2009-10-30,2026-06-09 12:00:00,VLSI Design,9
-FAC_345,INST_0037,Ayushman Pau,Assoc. Professor,M.Tech,CSE,2022-07-13,2026-08-06 12:00:00,Internet of Things,22
-FAC_346,INST_0255,Anvi Mand,Professor,M.E.,ECE,2023-08-20,2025-01-01 12:00:00,Computational Fluid Dynamics,23
-FAC_347,INST_0225,Vrishti Sabharwal,Asst. Professor,PhD,Physics,2018-02-08,2024-08-12 12:00:00,Cryptography,18
-FAC_348,INST_0251,Zayyan Lall,Professor,M.Sc.,EEE,2014-06-25,2025-01-23 12:00:00,Design Engineering,14
-FAC_349,INST_0045,Hemang Jha,Assoc. Professor,M.Tech,CSE,2005-06-13,2026-04-19 12:00:00,Power Systems,5
-FAC_35,INST_0038,Ucchal Parekh,Asst. Professor,PhD,EEE,2020-07-06,2026-06-26 12:00:00,Natural Language Processing,20
-FAC_350,INST_0118,Adweta Parmer,Asst. Professor,M.E.,CIVIL,2006-03-28,2026-05-01 12:00:00,Power Electronics,6
-FAC_351,INST_0185,Harish Chandra,Asst. Professor,M.E.,MBA,2022-03-11,2021-08-16 12:00:00,Business Analytics,22
-FAC_352,INST_0272,Vasudha Prasad,Professor,M.Sc.,Pharmacy,2012-11-17,2026-05-25 12:00:00,VLSI Design,12
-FAC_353,INST_0141,Ekansh Wadhwa,Professor,PhD,CSE,2012-01-30,2026-06-03 12:00:00,Deep Learning,12
-FAC_354,INST_0320,Hemang Dara,Professor,M.Tech,AIDS,2015-11-16,2024-03-05 12:00:00,Manufacturing Technology,15
-FAC_355,INST_0352,Devansh Kothari,Asst. Professor,M.Tech,CHEM,2012-09-17,2026-05-31 12:00:00,Network Security,12
-FAC_356,INST_0325,Anjali Natt,Asst. Professor,PhD,IT,2005-04-29,2022-10-07 12:00:00,Cloud Computing,5
-FAC_357,INST_0249,Jackson Acharya,Asst. Professor,PhD,Mathematics,2008-11-03,2026-05-08 12:00:00,Machine Learning,8
-FAC_358,INST_0382,Dev Sundaram,Assoc. Professor,M.Tech,CHEM,2008-06-19,2026-06-09 12:00:00,Business Analytics,8
-FAC_359,INST_0144,William Padmanabhan,Assoc. Professor,M.E.,MECH,2021-03-06,2026-08-16 12:00:00,Network Security,21
-FAC_36,INST_0476,Indira Zachariah,Professor,PhD,EEE,2011-11-26,2026-05-23 12:00:00,Computational Fluid Dynamics,11
-FAC_360,INST_0224,Gaurika Shanker,Asst. Professor,PhD,AIML,2011-11-17,2026-05-26 12:00:00,Power Systems,11
-FAC_361,INST_0395,Yutika Shetty,Assoc. Professor,M.Sc.,Pharmacy,2007-04-10,2024-07-29 12:00:00,Signal Processing,7
-FAC_362,INST_0330,Nidra Din,Assoc. Professor,M.E.,MECH,2017-03-28,2026-08-11 12:00:00,Embedded Systems,17
-FAC_363,INST_0298,Mason Mallick,Assoc. Professor,M.E.,CSE,2016-05-11,2026-07-31 12:00:00,Deep Learning,16
-FAC_364,INST_0252,Udant Sinha,Professor,PhD,AIDS,2017-08-17,2026-04-23 12:00:00,Corporate Finance,17
-FAC_365,INST_0040,Chakradhar Shetty,Professor,PhD,CHEM,2008-10-28,2021-10-07 12:00:00,Supply Chain Management,8
-FAC_366,INST_0420,Nikita Dhar,Asst. Professor,M.E.,MBA,2008-05-14,2026-04-23 12:00:00,Wireless Communications,8
-FAC_367,INST_0257,Jagat Kumar,Assoc. Professor,M.E.,AIML,2014-08-06,2026-08-07 12:00:00,Control Systems,14
-FAC_368,INST_0304,Baghyawati Soman,Assoc. Professor,M.Tech,EEE,2011-07-14,2023-12-26 12:00:00,Distributed Systems,11
-FAC_369,INST_0210,Damyanti Desai,Assoc. Professor,M.Tech,CIVIL,2007-11-04,2022-10-15 12:00:00,Drug Delivery,7
-FAC_37,INST_0255,Siddharth Misra,Professor,M.E.,CIVIL,2009-07-31,2024-02-29 12:00:00,Mechatronics,9
-FAC_370,INST_0185,Nisha Varkey,Professor,M.E.,CHEM,2021-09-22,2025-05-17 12:00:00,Manufacturing Technology,21
-FAC_371,INST_0497,Upadhriti Padmanabhan,Professor,M.Tech,CSE,2014-08-12,2026-07-16 12:00:00,Control Systems,14
-FAC_372,INST_0284,Jagrati Nagi,Asst. Professor,M.E.,Pharmacy,2010-02-10,2026-04-21 12:00:00,Embedded Systems,10
-FAC_373,INST_0262,Chavvi Dasgupta,Asst. Professor,M.Sc.,IT,2019-12-30,2026-05-11 12:00:00,Design Engineering,19
-FAC_374,INST_0304,Ekaja Madan,Asst. Professor,M.Sc.,IT,2014-09-22,2026-05-02 12:00:00,Power Electronics,14
-FAC_375,INST_0022,Vrishti Balakrishnan,Asst. Professor,M.Sc.,EEE,2008-11-06,2026-07-01 12:00:00,Distributed Systems,8
-FAC_376,INST_0306,Dipta Sant,Asst. Professor,M.Sc.,CHEM,2021-10-26,2026-08-03 12:00:00,Supply Chain Management,21
-FAC_377,INST_0470,Chatura Varughese,Professor,M.Sc.,ECE,2018-09-15,2023-01-12 12:00:00,Robotics,18
-FAC_378,INST_0246,Aadi Zachariah,Asst. Professor,PhD,Physics,2006-07-20,2023-01-29 12:00:00,Control Systems,6
-FAC_379,INST_0045,Tanish Mohanty,Assoc. Professor,PhD,ECE,2013-04-29,2026-07-10 12:00:00,Control Systems,13
-FAC_38,INST_0358,Ethan Narang,Assoc. Professor,PhD,EEE,2009-12-24,2023-11-13 12:00:00,Renewable Energy Systems,9
-FAC_380,INST_0320,Gaurika Dyal,Asst. Professor,M.E.,Architecture,2011-09-11,2026-07-11 12:00:00,Power Electronics,11
-FAC_381,INST_0423,Jeremiah Dass,Assoc. Professor,M.Sc.,Pharmacy,2007-04-07,2022-04-04 12:00:00,Geotechnical Engineering,7
-FAC_382,INST_0007,Ekani Merchant,Assoc. Professor,M.Sc.,MBA,2007-02-27,2026-06-12 12:00:00,Environmental Engineering,7
-FAC_383,INST_0381,Vivaan Gole,Assoc. Professor,M.Tech,ECE,2009-09-04,2026-06-19 12:00:00,Robotics,9
-FAC_384,INST_0289,Barkha Dara,Asst. Professor,M.Tech,MECH,2007-03-19,2024-09-06 12:00:00,Manufacturing Technology,7
-FAC_385,INST_0257,Jairaj Sanghvi,Assoc. Professor,M.Tech,AIDS,2021-07-26,2023-07-05 12:00:00,Cloud Computing,21
-FAC_386,INST_0105,Anay Panchal,Professor,M.Tech,MECH,2015-11-09,2026-07-21 12:00:00,Drug Delivery,15
-FAC_387,INST_0384,Mahika Palla,Assoc. Professor,PhD,CSE,2005-07-19,2021-11-03 12:00:00,Geotechnical Engineering,5
-FAC_388,INST_0380,Aadi Wable,Professor,PhD,AIDS,2009-06-24,2026-04-28 12:00:00,Control Systems,9
-FAC_389,INST_0247,Saumya Yogi,Asst. Professor,PhD,EEE,2016-12-17,2025-01-15 12:00:00,Environmental Engineering,16
-FAC_39,INST_0160,Azaan Date,Professor,M.Tech,Architecture,2007-09-23,2026-04-24 12:00:00,Design Engineering,7
-FAC_390,INST_0364,Chandani Chahal,Professor,M.Sc.,Architecture,2012-12-28,2026-06-23 12:00:00,Big Data Analytics,12
-FAC_391,INST_0293,Abhiram Shah,Professor,M.E.,ECE,2018-11-05,2023-11-17 12:00:00,Biotechnology,18
-FAC_392,INST_0279,Tara Baral,Assoc. Professor,M.Sc.,CIVIL,2016-09-16,2026-05-02 12:00:00,Thermal Engineering,16
-FAC_393,INST_0096,Vasudha Gera,Assoc. Professor,M.E.,Mathematics,2023-12-23,2026-07-07 12:00:00,Deep Learning,23
-FAC_394,INST_0021,Pranav Raman,Assoc. Professor,M.E.,CSE,2011-08-31,2026-05-19 12:00:00,VLSI Design,11
-FAC_395,INST_0375,Leena Muni,Assoc. Professor,M.E.,Mathematics,2020-10-01,2023-04-18 12:00:00,Data Mining,20
-FAC_396,INST_0497,Abdul Varma,Asst. Professor,M.Sc.,CHEM,2010-06-29,2022-06-30 12:00:00,Business Analytics,10
-FAC_397,INST_0437,Irya Mani,Asst. Professor,M.Tech,MECH,2023-10-21,2023-09-16 12:00:00,Pharmaceutical Chemistry,23
-FAC_398,INST_0166,Pooja Bala,Assoc. Professor,PhD,Architecture,2018-04-25,2023-01-31 12:00:00,Human Resource Management,18
-FAC_399,INST_0053,Upkaar Sankaran,Assoc. Professor,M.Tech,Physics,2023-12-06,2026-08-15 12:00:00,Deep Learning,23
-FAC_4,INST_0382,Ishwar Gaba,Professor,M.E.,Architecture,2015-10-06,2026-07-20 12:00:00,Natural Language Processing,15
-FAC_40,INST_0435,Balveer Kale,Assoc. Professor,M.Tech,CHEM,2016-12-10,2025-01-09 12:00:00,Cryptography,16
-FAC_400,INST_0347,Quincy Mangat,Asst. Professor,M.Sc.,AIML,2012-07-30,2026-06-17 12:00:00,Distributed Systems,12
-FAC_401,INST_0037,Tanish Kalla,Asst. Professor,M.Tech,ECE,2012-06-11,2026-05-15 12:00:00,Business Analytics,12
-FAC_402,INST_0284,Advay Panchal,Professor,M.Tech,IT,2011-12-21,2026-07-05 12:00:00,Signal Processing,11
-FAC_403,INST_0303,Nitesh Madan,Asst. Professor,M.E.,EEE,2014-12-30,2023-12-14 12:00:00,Business Analytics,14
-FAC_404,INST_0412,Nakul Karan,Asst. Professor,M.E.,ECE,2020-05-26,2026-07-17 12:00:00,Drug Delivery,20
-FAC_405,INST_0085,Kala Dhar,Professor,M.Sc.,CIVIL,2007-07-20,2026-06-04 12:00:00,Power Electronics,7
-FAC_406,INST_0264,Jhalak Choudhury,Asst. Professor,M.E.,CHEM,2016-03-05,2026-06-08 12:00:00,Data Mining,16
-FAC_407,INST_0361,Yash Sekhon,Assoc. Professor,M.E.,MECH,2009-07-11,2023-12-07 12:00:00,Deep Learning,9
-FAC_408,INST_0308,Sachi Modi,Professor,PhD,Physics,2019-06-01,2024-09-04 12:00:00,Operations Research,19
-FAC_409,INST_0087,Gopal Lata,Assoc. Professor,M.Tech,CSE,2017-03-23,2024-08-05 12:00:00,Wireless Communications,17
-FAC_41,INST_0028,Samar Lalla,Asst. Professor,PhD,IT,2010-09-24,2026-07-14 12:00:00,Signal Processing,10
-FAC_410,INST_0208,Caleb Saxena,Professor,M.Tech,Architecture,2022-03-29,2026-05-23 12:00:00,Power Electronics,22
-FAC_411,INST_0361,Tamanna Krishnan,Asst. Professor,M.Sc.,AIDS,2018-01-25,2026-08-07 12:00:00,Cryptography,18
-FAC_412,INST_0406,Ubika Tak,Asst. Professor,M.Sc.,Architecture,2016-06-09,2025-05-24 12:00:00,VLSI Design,16
-FAC_413,INST_0318,Reva Comar,Assoc. Professor,M.Sc.,Physics,2022-08-10,2026-08-14 12:00:00,Manufacturing Technology,22
-FAC_414,INST_0118,Nidhi Pradhan,Asst. Professor,M.Sc.,AIDS,2015-10-01,2022-04-14 12:00:00,Control Systems,15
-FAC_415,INST_0263,Quincy Bali,Professor,M.E.,CSE,2020-09-22,2021-11-24 12:00:00,Environmental Engineering,20
-FAC_416,INST_0143,Rajeshri Dasgupta,Professor,PhD,EEE,2008-02-03,2026-05-21 12:00:00,Internet of Things,8
-FAC_417,INST_0169,Nihal Dugar,Professor,M.Sc.,IT,2023-10-02,2026-07-21 12:00:00,Robotics,23
-FAC_418,INST_0191,Ikbal Kalita,Professor,PhD,CIVIL,2006-09-29,2026-04-23 12:00:00,Thermal Engineering,6
-FAC_419,INST_0382,Aarnav Aggarwal,Asst. Professor,PhD,IT,2012-02-08,2022-12-05 12:00:00,Wireless Communications,12
-FAC_42,INST_0373,Januja Kapoor,Asst. Professor,PhD,ECE,2012-06-10,2025-07-11 12:00:00,Natural Language Processing,12
-FAC_420,INST_0255,Chaitaly Chatterjee,Professor,PhD,Mathematics,2020-02-17,2026-06-28 12:00:00,Computational Fluid Dynamics,20
-FAC_421,INST_0144,George Chand,Assoc. Professor,M.Sc.,ECE,2018-11-08,2024-08-19 12:00:00,Distributed Systems,18
-FAC_422,INST_0255,Akshay Sethi,Asst. Professor,M.Sc.,MECH,2023-05-20,2026-08-06 12:00:00,Operations Research,23
-FAC_423,INST_0397,Patrick Lata,Professor,PhD,AIDS,2022-02-23,2024-02-20 12:00:00,Thermal Engineering,22
-FAC_424,INST_0011,Aradhana Yohannan,Asst. Professor,PhD,Physics,2009-07-20,2026-05-01 12:00:00,Pharmaceutical Chemistry,9
-FAC_425,INST_0288,Tanveer Ganesh,Professor,PhD,MBA,2009-01-15,2026-07-23 12:00:00,Control Systems,9
-FAC_426,INST_0444,Dayita Dar,Asst. Professor,M.Tech,CIVIL,2012-01-09,2026-05-30 12:00:00,Control Systems,12
-FAC_427,INST_0406,Kevin Kalla,Assoc. Professor,PhD,AIDS,2007-05-24,2023-09-19 12:00:00,Embedded Systems,7
-FAC_428,INST_0020,Anjali Bandi,Asst. Professor,PhD,EEE,2018-11-29,2022-01-02 12:00:00,Computational Fluid Dynamics,18
-FAC_429,INST_0125,Eesha Chandran,Asst. Professor,M.E.,MBA,2006-06-23,2022-09-22 12:00:00,Signal Processing,6
-FAC_43,INST_0361,Qushi Lata,Professor,PhD,ECE,2023-10-09,2026-06-17 12:00:00,Supply Chain Management,23
-FAC_430,INST_0075,Unnati Soman,Assoc. Professor,M.Tech,AIDS,2004-11-12,2026-06-22 12:00:00,Thermal Engineering,4
-FAC_431,INST_0255,Charvi Narayan,Professor,M.Tech,EEE,2004-05-10,2026-06-13 12:00:00,Natural Language Processing,4
-FAC_432,INST_0467,Shravya Lad,Professor,M.E.,CIVIL,2013-10-25,2026-05-16 12:00:00,Renewable Energy Systems,13
-FAC_433,INST_0318,Bimala Date,Asst. Professor,M.Tech,AIML,2007-09-01,2025-02-14 12:00:00,Thermal Engineering,7
-FAC_434,INST_0329,Gopal Bala,Asst. Professor,M.E.,Mathematics,2023-01-29,2026-07-19 12:00:00,Signal Processing,23
-FAC_435,INST_0063,Krishna Mane,Asst. Professor,PhD,EEE,2009-09-04,2026-06-29 12:00:00,Internet of Things,9
-FAC_436,INST_0451,Diya Misra,Professor,M.Sc.,Physics,2011-06-29,2026-07-04 12:00:00,Mechatronics,11
-FAC_437,INST_0042,Wyatt Keer,Assoc. Professor,PhD,Mathematics,2006-11-03,2026-06-19 12:00:00,Biotechnology,6
-FAC_438,INST_0346,Girik Bahri,Asst. Professor,PhD,MECH,2021-06-27,2026-05-20 12:00:00,Embedded Systems,21
-FAC_439,INST_0195,Girik Shere,Assoc. Professor,M.Sc.,MBA,2012-12-14,2026-05-11 12:00:00,Computational Fluid Dynamics,12
-FAC_44,INST_0306,Owen Chhabra,Assoc. Professor,M.E.,CSE,2017-10-11,2026-05-31 12:00:00,Wireless Communications,17
-FAC_440,INST_0282,Simon Ganguly,Assoc. Professor,PhD,MBA,2022-01-17,2026-05-22 12:00:00,Operations Research,22
-FAC_441,INST_0382,Viraj Venkataraman,Professor,PhD,AIML,2008-09-14,2026-07-10 12:00:00,Computer Vision,8
-FAC_442,INST_0382,Champak Datta,Professor,M.Sc.,EEE,2004-01-19,2026-05-01 12:00:00,Computational Fluid Dynamics,4
-FAC_443,INST_0367,Jackson Natt,Assoc. Professor,M.E.,CHEM,2015-10-26,2022-04-27 12:00:00,Deep Learning,15
-FAC_444,INST_0331,Bhavya Patil,Professor,PhD,Mathematics,2018-01-04,2026-04-21 12:00:00,Distributed Systems,18
-FAC_445,INST_0500,Charvi Patel,Professor,PhD,CSE,2005-06-12,2026-07-02 12:00:00,Wireless Communications,5
-FAC_446,INST_0285,Anthony Srivastava,Assoc. Professor,PhD,EEE,2014-04-02,2026-07-14 12:00:00,Mechatronics,14
-FAC_447,INST_0212,Wazir Kulkarni,Professor,M.Sc.,IT,2009-12-25,2026-08-16 12:00:00,Renewable Energy Systems,9
-FAC_448,INST_0358,Vasatika Radhakrishnan,Professor,M.Sc.,Architecture,2004-10-16,2026-05-17 12:00:00,Supply Chain Management,4
-FAC_449,INST_0257,Indrajit Pillai,Professor,M.Sc.,Pharmacy,2015-12-27,2026-05-18 12:00:00,Biotechnology,15
-FAC_45,INST_0307,Ekta Bedi,Asst. Professor,PhD,Pharmacy,2023-04-02,2026-06-26 12:00:00,Computer Vision,23
-FAC_450,INST_0140,Quincy Ramesh,Professor,M.E.,MECH,2019-12-12,2026-04-27 12:00:00,Power Electronics,19
-FAC_451,INST_0037,Radha Dhaliwal,Professor,M.Tech,CIVIL,2011-07-02,2024-07-11 12:00:00,Distributed Systems,11
-FAC_452,INST_0428,Mekhala Ghosh,Professor,M.E.,EEE,2004-06-01,2023-06-15 12:00:00,Operations Research,4
-FAC_453,INST_0191,Amruta Purohit,Asst. Professor,M.E.,Physics,2014-03-25,2026-05-05 12:00:00,Embedded Systems,14
-FAC_454,INST_0351,Reva Kala,Asst. Professor,M.Sc.,EEE,2010-02-01,2026-07-16 12:00:00,Transportation Engineering,10
-FAC_455,INST_0134,Fariq Sule,Assoc. Professor,M.Tech,AIDS,2023-09-06,2022-02-27 12:00:00,Natural Language Processing,23
-FAC_456,INST_0097,Qarin Mangat,Assoc. Professor,M.Sc.,AIML,2007-01-15,2025-07-03 12:00:00,Cloud Computing,7
-FAC_457,INST_0193,Nicholas Chad,Professor,M.Sc.,Pharmacy,2023-11-21,2026-08-05 12:00:00,Network Security,23
-FAC_458,INST_0205,Gayathri Bera,Asst. Professor,M.E.,Architecture,2005-09-26,2026-06-16 12:00:00,Drug Delivery,5
-FAC_459,INST_0139,Gunbir Gera,Professor,M.Sc.,AIML,2021-04-23,2026-08-13 12:00:00,Business Analytics,21
-FAC_46,INST_0179,Barkha Bhatnagar,Assoc. Professor,M.Tech,ECE,2008-06-06,2026-07-15 12:00:00,Transportation Engineering,8
-FAC_460,INST_0306,Indira Savant,Asst. Professor,M.E.,Architecture,2017-07-20,2023-11-17 12:00:00,Robotics,17
-FAC_461,INST_0255,Shivansh Kaul,Asst. Professor,PhD,EEE,2021-01-24,2026-07-14 12:00:00,Thermal Engineering,21
-FAC_462,INST_0059,Daksh Palan,Asst. Professor,M.E.,MECH,2011-04-01,2024-03-16 12:00:00,Signal Processing,11
-FAC_463,INST_0255,Champak Bail,Asst. Professor,PhD,IT,2018-05-14,2026-07-28 12:00:00,Internet of Things,18
-FAC_464,INST_0279,Ekanta Hari,Professor,M.Sc.,Pharmacy,2023-10-20,2026-07-31 12:00:00,Robotics,23
-FAC_465,INST_0047,Watika Virk,Asst. Professor,M.Sc.,Physics,2009-09-12,2023-05-20 12:00:00,Cloud Computing,9
-FAC_466,INST_0331,Darika Gulati,Assoc. Professor,PhD,CHEM,2013-10-07,2026-07-19 12:00:00,Human Resource Management,13
-FAC_467,INST_0255,Harsh Rama,Assoc. Professor,M.Sc.,CIVIL,2023-03-21,2024-05-26 12:00:00,Network Security,23
-FAC_468,INST_0184,Yochana Mangat,Assoc. Professor,M.Sc.,AIML,2021-03-14,2026-05-01 12:00:00,Data Mining,21
-FAC_469,INST_0046,Chaaya Thakur,Asst. Professor,M.Tech,MECH,2014-12-23,2026-06-17 12:00:00,Pharmacology,14
-FAC_47,INST_0392,Anay Bains,Asst. Professor,PhD,IT,2020-03-18,2026-04-18 12:00:00,Power Systems,20
-FAC_470,INST_0138,Wishi Bhandari,Assoc. Professor,PhD,Mathematics,2005-03-18,2026-08-04 12:00:00,Pharmaceutical Chemistry,5
-FAC_471,INST_0203,Amrita Narasimhan,Assoc. Professor,M.E.,IT,2015-01-13,2026-05-05 12:00:00,Robotics,15
-FAC_472,INST_0338,Meghana Varty,Assoc. Professor,M.Sc.,Pharmacy,2012-10-19,2022-09-06 12:00:00,Design Engineering,12
-FAC_473,INST_0382,Jagat Raj,Asst. Professor,M.Tech,ECE,2013-07-12,2022-02-25 12:00:00,Natural Language Processing,13
-FAC_474,INST_0085,Laksh Mandal,Assoc. Professor,M.Sc.,Architecture,2017-10-15,2022-01-30 12:00:00,Pharmacology,17
-FAC_475,INST_0364,Bhavya Goyal,Professor,M.Sc.,CSE,2008-09-10,2026-06-05 12:00:00,Robotics,8
-FAC_476,INST_0088,Saanvi Maharaj,Professor,M.E.,CSE,2005-07-04,2023-09-24 12:00:00,Internet of Things,5
-FAC_477,INST_0047,Vritti Bail,Professor,PhD,AIDS,2011-04-26,2022-01-29 12:00:00,Data Mining,11
-FAC_478,INST_0255,Theodore Sama,Asst. Professor,M.Tech,AIML,2018-10-30,2022-01-13 12:00:00,Power Electronics,18
-FAC_479,INST_0059,Yatan Dass,Professor,M.Sc.,MECH,2023-08-15,2026-04-18 12:00:00,Cybersecurity,23
-FAC_48,INST_0393,Gaurangi Mutti,Assoc. Professor,M.Tech,CSE,2015-01-19,2026-06-23 12:00:00,Cybersecurity,15
-FAC_480,INST_0443,Anmol Dani,Asst. Professor,PhD,MECH,2011-01-06,2026-05-03 12:00:00,Natural Language Processing,11
-FAC_481,INST_0382,Max Sule,Asst. Professor,M.Tech,MBA,2014-01-26,2024-02-08 12:00:00,Pharmaceutical Chemistry,14
-FAC_482,INST_0489,Benjamin Kadakia,Professor,M.Sc.,CIVIL,2013-06-28,2026-06-05 12:00:00,Power Systems,13
-FAC_483,INST_0336,Pahal Krishna,Professor,M.Sc.,Mathematics,2011-06-15,2026-06-25 12:00:00,Cybersecurity,11
-FAC_484,INST_0358,Advay Dubey,Professor,PhD,ECE,2020-02-27,2021-12-12 12:00:00,Operations Research,20
-FAC_485,INST_0293,Zinal Rao,Professor,M.E.,AIDS,2009-07-11,2026-07-15 12:00:00,Signal Processing,9
-FAC_486,INST_0470,Balhaar Bhatt,Assoc. Professor,M.Sc.,MECH,2007-01-13,2026-07-19 12:00:00,Signal Processing,7
-FAC_487,INST_0141,Faraj Gole,Assoc. Professor,PhD,Physics,2018-08-19,2026-04-22 12:00:00,Marketing Analytics,18
-FAC_488,INST_0379,Balhaar Bala,Asst. Professor,M.Sc.,IT,2009-05-25,2025-03-28 12:00:00,Cryptography,9
-FAC_489,INST_0316,Sanya Padmanabhan,Asst. Professor,M.E.,Mathematics,2016-02-22,2026-05-18 12:00:00,Cryptography,16
-FAC_49,INST_0428,Karan Shankar,Assoc. Professor,M.E.,Pharmacy,2012-03-22,2022-05-23 12:00:00,Natural Language Processing,12
-FAC_490,INST_0273,Sanya Hegde,Asst. Professor,M.Tech,MBA,2022-01-26,2026-06-17 12:00:00,Geotechnical Engineering,22
-FAC_491,INST_0126,Dalaja Bedi,Professor,M.Sc.,Pharmacy,2022-01-04,2026-07-13 12:00:00,Power Electronics,22
-FAC_492,INST_0004,Ekbal Bhat,Assoc. Professor,M.Tech,CHEM,2021-06-09,2022-05-04 12:00:00,Natural Language Processing,21
-FAC_493,INST_0169,Chatresh Rout,Professor,M.Tech,ECE,2013-06-17,2024-11-27 12:00:00,Cloud Computing,13
-FAC_494,INST_0338,Aarna Batra,Asst. Professor,M.E.,IT,2023-03-22,2026-05-16 12:00:00,Thermal Engineering,23
-FAC_495,INST_0255,Gautam Mishra,Assoc. Professor,M.Tech,IT,2021-12-04,2025-03-22 12:00:00,Mechatronics,21
-FAC_496,INST_0500,Widisha Batta,Professor,PhD,ECE,2014-02-16,2026-04-30 12:00:00,Data Mining,14
-FAC_497,INST_0045,Neel Gole,Asst. Professor,M.E.,CIVIL,2020-08-28,2025-04-18 12:00:00,Signal Processing,20
-FAC_498,INST_0272,Wriddhish Char,Asst. Professor,M.Sc.,Mathematics,2009-07-19,2022-11-17 12:00:00,Wireless Communications,9
-FAC_499,INST_0382,Nathaniel Banik,Professor,M.Tech,ECE,2014-11-01,2026-07-01 12:00:00,Structural Engineering,14
-FAC_5,INST_0281,Anvi Baral,Assoc. Professor,PhD,Physics,2004-04-18,2026-05-28 12:00:00,Biotechnology,4
-FAC_50,INST_0137,Yatan Kakar,Assoc. Professor,M.Sc.,MECH,2013-06-30,2026-08-11 12:00:00,Wireless Communications,13
-FAC_500,INST_0470,Wridesh Dada,Assoc. Professor,M.Sc.,EEE,2020-06-08,2026-06-26 12:00:00,Corporate Finance,20
-FAC_501,INST_0239,Abhimanyu Mital,Assoc. Professor,M.E.,MECH,2017-09-26,2021-11-01 12:00:00,Environmental Engineering,17
-FAC_502,INST_0495,Sathvik Kibe,Assoc. Professor,PhD,MECH,2023-03-07,2026-07-01 12:00:00,Operations Research,23
-FAC_503,INST_0249,Jeet Prabhakar,Professor,M.Sc.,Architecture,2005-07-12,2026-07-24 12:00:00,Drug Delivery,5
-FAC_504,INST_0233,Chandran Mandal,Asst. Professor,PhD,Physics,2006-10-05,2026-05-27 12:00:00,Marketing Analytics,6
-FAC_505,INST_0002,Samarth Din,Professor,M.Sc.,AIML,2007-08-31,2022-06-17 12:00:00,Geotechnical Engineering,7
-FAC_506,INST_0498,Nandini Bakshi,Assoc. Professor,M.Sc.,CIVIL,2014-07-26,2025-05-11 12:00:00,Big Data Analytics,14
-FAC_507,INST_0489,Ojasvi Hari,Asst. Professor,M.E.,CSE,2004-04-29,2026-07-30 12:00:00,Marketing Analytics,4
-FAC_508,INST_0483,Kamala Gole,Asst. Professor,PhD,EEE,2008-06-16,2025-03-05 12:00:00,Transportation Engineering,8
-FAC_509,INST_0474,Ekaja Bora,Assoc. Professor,PhD,EEE,2010-12-31,2024-05-20 12:00:00,Biotechnology,10
-FAC_51,INST_0034,Geetika Gole,Professor,M.E.,CHEM,2013-07-14,2026-05-15 12:00:00,Renewable Energy Systems,13
-FAC_510,INST_0338,Ojasvi Raghavan,Assoc. Professor,M.Sc.,CSE,2020-05-29,2026-07-16 12:00:00,Cybersecurity,20
-FAC_511,INST_0165,Ekapad Balasubramanian,Assoc. Professor,M.Sc.,CHEM,2005-01-02,2026-05-07 12:00:00,Distributed Systems,5
-FAC_512,INST_0354,Tanish Sami,Professor,PhD,Physics,2015-11-05,2026-05-03 12:00:00,Internet of Things,15
-FAC_513,INST_0382,Kashish Comar,Assoc. Professor,PhD,Physics,2004-04-08,2026-06-16 12:00:00,Design Engineering,4
-FAC_514,INST_0054,Sudiksha Thakur,Assoc. Professor,PhD,MECH,2004-03-13,2024-03-19 12:00:00,Deep Learning,4
-FAC_515,INST_0449,Ayaan Bhatt,Professor,M.Tech,MECH,2016-04-20,2024-11-08 12:00:00,Control Systems,16
-FAC_516,INST_0052,Lila Vasa,Assoc. Professor,M.E.,Mathematics,2017-04-13,2026-08-09 12:00:00,Mechatronics,17
-FAC_517,INST_0255,Harini Guha,Asst. Professor,M.Tech,CSE,2005-04-11,2024-06-13 12:00:00,Design Engineering,5
-FAC_518,INST_0003,Eesha Garg,Assoc. Professor,M.E.,Architecture,2010-05-06,2026-07-07 12:00:00,Structural Engineering,10
-FAC_519,INST_0182,Charita Vyas,Professor,M.Sc.,Architecture,2004-01-24,2025-02-05 12:00:00,Computational Fluid Dynamics,4
-FAC_52,INST_0350,Devika Sagar,Assoc. Professor,M.Sc.,Mathematics,2009-06-02,2022-01-23 12:00:00,Cybersecurity,9
-FAC_520,INST_0471,Saumya Babu,Asst. Professor,PhD,CHEM,2015-11-15,2021-10-21 12:00:00,Network Security,15
-FAC_521,INST_0041,Nikita Bava,Asst. Professor,M.E.,EEE,2012-07-18,2023-03-02 12:00:00,Network Security,12
-FAC_522,INST_0255,Xavier Mani,Asst. Professor,M.Sc.,CSE,2013-04-04,2026-06-02 12:00:00,Structural Engineering,13
-FAC_523,INST_0213,Neel Kurian,Assoc. Professor,M.Tech,MECH,2012-09-27,2022-04-07 12:00:00,Geotechnical Engineering,12
-FAC_524,INST_0302,Bhavani Choudhary,Asst. Professor,PhD,IT,2021-08-23,2024-05-19 12:00:00,Supply Chain Management,21
-FAC_525,INST_0382,Hemal Shah,Professor,M.Tech,Pharmacy,2018-02-06,2026-07-25 12:00:00,Biotechnology,18
-FAC_526,INST_0037,Chaaya Sur,Asst. Professor,M.Tech,Mathematics,2014-04-30,2026-06-15 12:00:00,Design Engineering,14
-FAC_527,INST_0404,Zinal Jayaraman,Asst. Professor,M.Tech,Physics,2018-11-26,2026-06-12 12:00:00,Robotics,18
-FAC_528,INST_0381,Charles Rau,Asst. Professor,PhD,Architecture,2022-06-27,2026-06-11 12:00:00,Embedded Systems,22
-FAC_529,INST_0409,Dominic Setty,Assoc. Professor,M.Tech,Architecture,2011-06-30,2026-08-08 12:00:00,Operations Research,11
-FAC_53,INST_0185,Veda Narayanan,Assoc. Professor,PhD,CHEM,2017-05-02,2026-07-15 12:00:00,VLSI Design,17
-FAC_530,INST_0472,Kai Kurian,Asst. Professor,M.Tech,Architecture,2014-03-09,2023-07-27 12:00:00,Computational Fluid Dynamics,14
-FAC_531,INST_0294,Pratyush Lata,Assoc. Professor,PhD,Architecture,2021-07-03,2026-04-20 12:00:00,Natural Language Processing,21
-FAC_532,INST_0038,Wyatt Bir,Assoc. Professor,M.E.,Pharmacy,2018-03-26,2022-12-05 12:00:00,Power Electronics,18
-FAC_533,INST_0127,Eesha Ganesh,Asst. Professor,PhD,ECE,2011-10-06,2026-05-23 12:00:00,Robotics,11
-FAC_534,INST_0230,Irya Dhillon,Asst. Professor,M.Tech,Mathematics,2017-06-20,2026-06-04 12:00:00,Power Electronics,17
-FAC_535,INST_0426,Geetika Oommen,Professor,PhD,CIVIL,2015-04-11,2021-07-09 12:00:00,Wireless Communications,15
-FAC_536,INST_0428,Lopa Divan,Assoc. Professor,M.E.,IT,2011-04-01,2026-05-17 12:00:00,Robotics,11
-FAC_537,INST_0488,Devansh Oza,Professor,M.E.,AIML,2012-10-09,2022-03-14 12:00:00,Cybersecurity,12
-FAC_538,INST_0323,Unni Sachdev,Professor,M.Sc.,Pharmacy,2021-06-06,2023-01-15 12:00:00,Deep Learning,21
-FAC_539,INST_0112,Nitesh Chander,Asst. Professor,M.E.,Pharmacy,2004-03-17,2026-07-01 12:00:00,Corporate Finance,4
-FAC_54,INST_0022,Anya Sur,Assoc. Professor,PhD,CHEM,2008-10-02,2024-12-28 12:00:00,VLSI Design,8
-FAC_540,INST_0346,Charvi Mahajan,Assoc. Professor,M.Tech,MBA,2016-08-26,2024-06-11 12:00:00,Deep Learning,16
-FAC_541,INST_0307,Madhavi Bail,Assoc. Professor,M.E.,Pharmacy,2004-07-12,2026-07-14 12:00:00,Drug Delivery,4
-FAC_542,INST_0030,Daksha Ganesan,Professor,M.E.,CSE,2022-04-27,2023-02-10 12:00:00,Mechatronics,22
-FAC_543,INST_0307,Eta Bhagat,Professor,PhD,Pharmacy,2010-09-09,2026-04-30 12:00:00,Embedded Systems,10
-FAC_544,INST_0284,Ekavir Dutta,Assoc. Professor,M.E.,Physics,2021-12-16,2023-09-12 12:00:00,Computational Fluid Dynamics,21
-FAC_545,INST_0153,Veda Mall,Assoc. Professor,M.Tech,EEE,2011-06-23,2025-02-20 12:00:00,Marketing Analytics,11
-FAC_546,INST_0307,Hredhaan Mand,Assoc. Professor,M.E.,Pharmacy,2006-10-07,2024-04-03 12:00:00,Manufacturing Technology,6
-FAC_547,INST_0130,Atharv Dhar,Assoc. Professor,PhD,AIML,2009-09-05,2022-05-30 12:00:00,Power Electronics,9
-FAC_548,INST_0117,Amaira Bajwa,Assoc. Professor,M.Tech,AIDS,2004-02-18,2021-08-30 12:00:00,Computer Vision,4
-FAC_549,INST_0087,Faras Padmanabhan,Asst. Professor,M.Sc.,Physics,2022-03-23,2022-11-04 12:00:00,Corporate Finance,22
-FAC_55,INST_0233,Adweta Aggarwal,Professor,PhD,EEE,2007-03-29,2026-05-21 12:00:00,Computer Vision,7
-FAC_550,INST_0177,Omya Bassi,Professor,M.Sc.,Physics,2019-09-10,2026-05-31 12:00:00,Manufacturing Technology,19
-FAC_551,INST_0009,Eta Rastogi,Assoc. Professor,PhD,AIDS,2012-06-01,2025-04-07 12:00:00,Operations Research,12
-FAC_552,INST_0112,Saanvi Chand,Assoc. Professor,M.Tech,Physics,2005-12-21,2023-12-09 12:00:00,Computer Vision,5
-FAC_553,INST_0399,Christopher Krish,Assoc. Professor,M.Sc.,Pharmacy,2016-03-19,2026-08-04 12:00:00,Renewable Energy Systems,16
-FAC_554,INST_0306,Simon Agrawal,Assoc. Professor,PhD,AIML,2005-04-30,2024-10-08 12:00:00,Human Resource Management,5
-FAC_555,INST_0026,Isaiah Raja,Professor,M.E.,EEE,2012-11-23,2026-06-08 12:00:00,Corporate Finance,12
-FAC_556,INST_0261,Ucchal Rege,Assoc. Professor,M.Tech,EEE,2007-02-10,2021-07-25 12:00:00,Computational Fluid Dynamics,7
-FAC_557,INST_0151,Theodore Merchant,Professor,M.E.,EEE,2023-01-01,2026-07-02 12:00:00,Data Mining,23
-FAC_558,INST_0134,Shivani Nagar,Asst. Professor,M.Sc.,IT,2018-08-31,2025-04-23 12:00:00,Biotechnology,18
-FAC_559,INST_0039,Anya Saha,Assoc. Professor,PhD,Physics,2015-07-24,2026-08-16 12:00:00,Embedded Systems,15
-FAC_56,INST_0072,Garima Anne,Assoc. Professor,M.Sc.,MECH,2013-05-26,2026-06-26 12:00:00,Natural Language Processing,13
-FAC_560,INST_0254,Owen Hans,Asst. Professor,M.Sc.,AIDS,2014-07-17,2023-05-14 12:00:00,Transportation Engineering,14
-FAC_561,INST_0367,Fariq Merchant,Assoc. Professor,M.Sc.,Architecture,2021-04-09,2021-08-29 12:00:00,Internet of Things,21
-FAC_562,INST_0109,Sai Agrawal,Asst. Professor,M.Sc.,CIVIL,2022-04-22,2026-05-27 12:00:00,Data Mining,22
-FAC_563,INST_0390,Yutika Prabhakar,Assoc. Professor,M.E.,Architecture,2021-12-04,2026-07-18 12:00:00,Pharmaceutical Chemistry,21
-FAC_564,INST_0428,Fitan Apte,Asst. Professor,M.E.,MECH,2006-03-09,2026-07-15 12:00:00,Computer Vision,6
-FAC_565,INST_0414,Noah Mall,Assoc. Professor,M.E.,Mathematics,2023-04-07,2026-06-22 12:00:00,Manufacturing Technology,23
-FAC_566,INST_0183,Kashish Kar,Professor,M.Sc.,MBA,2012-05-04,2023-07-19 12:00:00,Data Mining,12
-FAC_567,INST_0235,Siya Ahuja,Assoc. Professor,M.E.,IT,2021-04-03,2025-01-03 12:00:00,Power Systems,21
-FAC_568,INST_0229,Krisha Singh,Professor,M.Sc.,Physics,2004-11-25,2026-07-17 12:00:00,Transportation Engineering,4
-FAC_569,INST_0286,Kevin Yadav,Assoc. Professor,M.Tech,Physics,2016-07-07,2022-07-27 12:00:00,Big Data Analytics,16
-FAC_57,INST_0018,Vidhi Gade,Professor,PhD,IT,2017-06-12,2026-05-13 12:00:00,Transportation Engineering,17
-FAC_570,INST_0092,Ekansh Jha,Assoc. Professor,PhD,Physics,2007-04-15,2024-06-10 12:00:00,Structural Engineering,7
-FAC_571,INST_0142,Chatura Issac,Professor,M.Sc.,Architecture,2011-04-07,2026-05-10 12:00:00,Operations Research,11
-FAC_572,INST_0334,Lipika Sampath,Asst. Professor,M.E.,AIDS,2010-03-04,2023-05-06 12:00:00,Geotechnical Engineering,10
-FAC_573,INST_0028,Geetika Jhaveri,Professor,M.E.,CSE,2021-12-29,2023-06-02 12:00:00,Cloud Computing,21
-FAC_574,INST_0329,Jeet Prabhakar,Assoc. Professor,M.E.,ECE,2009-12-30,2026-07-12 12:00:00,Data Mining,9
-FAC_575,INST_0382,Rajeshri Bir,Professor,M.Sc.,AIDS,2014-08-22,2026-05-22 12:00:00,Robotics,14
-FAC_576,INST_0472,Faras Tailor,Assoc. Professor,M.Sc.,Pharmacy,2019-07-05,2023-11-04 12:00:00,Renewable Energy Systems,19
-FAC_577,INST_0036,Jagvi Ganguly,Asst. Professor,M.E.,MECH,2023-05-10,2024-09-11 12:00:00,Pharmaceutical Chemistry,23
-FAC_578,INST_0328,Aradhana Dugar,Assoc. Professor,M.Tech,CIVIL,2023-03-21,2026-05-25 12:00:00,Network Security,23
-FAC_579,INST_0465,Nidra Sarkar,Asst. Professor,M.Sc.,CHEM,2006-09-06,2026-08-02 12:00:00,Signal Processing,6
-FAC_58,INST_0005,Nihal Lad,Professor,M.E.,MBA,2015-09-15,2026-06-07 12:00:00,Human Resource Management,15
-FAC_580,INST_0382,Chandresh Kamdar,Asst. Professor,PhD,MBA,2017-05-27,2026-05-04 12:00:00,Cybersecurity,17
-FAC_581,INST_0481,Ekiya Luthra,Professor,M.Sc.,CIVIL,2004-10-07,2026-04-26 12:00:00,Cryptography,4
-FAC_582,INST_0307,Jeevika Dara,Asst. Professor,M.E.,IT,2014-05-22,2026-05-16 12:00:00,Renewable Energy Systems,14
-FAC_583,INST_0258,Kamya Srinivas,Asst. Professor,M.E.,CHEM,2017-02-16,2026-06-20 12:00:00,Marketing Analytics,17
-FAC_584,INST_0255,Girindra Mittal,Assoc. Professor,M.E.,Physics,2015-06-04,2021-10-20 12:00:00,Power Electronics,15
-FAC_585,INST_0046,Anmol Dora,Assoc. Professor,PhD,ECE,2013-07-02,2026-06-07 12:00:00,Computer Vision,13
-FAC_586,INST_0411,Saumya Walla,Asst. Professor,M.Tech,Pharmacy,2005-01-20,2026-04-24 12:00:00,Business Analytics,5
-FAC_587,INST_0039,Anusha Rau,Professor,M.E.,CSE,2010-09-19,2025-03-31 12:00:00,Computational Fluid Dynamics,10
-FAC_588,INST_0377,Chaitanya Mukhopadhyay,Professor,M.E.,AIDS,2016-07-19,2023-06-27 12:00:00,Robotics,16
-FAC_589,INST_0347,Neha Choudhary,Assoc. Professor,M.Sc.,CHEM,2004-12-27,2026-05-04 12:00:00,Power Systems,4
-FAC_59,INST_0168,Balvan Khare,Professor,M.E.,AIDS,2009-05-11,2022-06-06 12:00:00,Big Data Analytics,9
-FAC_590,INST_0085,Lavanya Loke,Asst. Professor,M.E.,EEE,2014-10-12,2021-10-27 12:00:00,Machine Learning,14
-FAC_591,INST_0123,Leena Jha,Professor,PhD,IT,2006-11-02,2026-06-07 12:00:00,Distributed Systems,6
-FAC_592,INST_0034,Azaan Chada,Assoc. Professor,PhD,Pharmacy,2023-04-24,2024-02-01 12:00:00,Internet of Things,23
-FAC_593,INST_0255,Falan Prabhu,Professor,PhD,Architecture,2015-07-25,2024-08-17 12:00:00,Renewable Energy Systems,15
-FAC_594,INST_0449,Gabriel Mukhopadhyay,Asst. Professor,M.Tech,ECE,2020-04-22,2021-12-08 12:00:00,Big Data Analytics,20
-FAC_595,INST_0238,Upma Rajagopal,Asst. Professor,PhD,Physics,2004-01-04,2026-05-11 12:00:00,Internet of Things,4
-FAC_596,INST_0243,Yahvi Narasimhan,Assoc. Professor,M.E.,ECE,2004-08-05,2026-05-14 12:00:00,Power Systems,4
-FAC_597,INST_0451,Gunbir Devi,Asst. Professor,PhD,AIDS,2012-11-08,2026-06-16 12:00:00,Wireless Communications,12
-FAC_598,INST_0243,Naksh Thaman,Professor,M.Tech,ECE,2022-10-04,2026-04-24 12:00:00,Design Engineering,22
-FAC_599,INST_0500,Damini Padmanabhan,Asst. Professor,PhD,ECE,2006-10-03,2026-08-14 12:00:00,Pharmaceutical Chemistry,6
-FAC_6,INST_0152,Ronith Mallick,Assoc. Professor,M.E.,AIML,2010-11-29,2021-12-31 12:00:00,Business Analytics,10
-FAC_60,INST_0170,Benjamin Yohannan,Asst. Professor,PhD,CHEM,2011-10-06,2024-11-01 12:00:00,Power Electronics,11
-FAC_600,INST_0066,Netra Wason,Professor,M.Sc.,IT,2021-03-16,2022-03-12 12:00:00,VLSI Design,21
-FAC_601,INST_0072,Yug Padmanabhan,Assoc. Professor,PhD,Pharmacy,2023-02-09,2026-07-02 12:00:00,Mechatronics,23
-FAC_602,INST_0412,Lekha Suri,Professor,M.Sc.,AIDS,2014-06-18,2026-05-22 12:00:00,Environmental Engineering,14
-FAC_603,INST_0288,Benjamin Bhargava,Asst. Professor,M.E.,CIVIL,2022-06-23,2026-05-28 12:00:00,Natural Language Processing,22
-FAC_604,INST_0040,Ekalinga Datta,Assoc. Professor,PhD,Mathematics,2016-10-25,2024-12-15 12:00:00,Human Resource Management,16
-FAC_605,INST_0385,Advaith Gade,Professor,M.E.,AIDS,2019-02-07,2026-07-29 12:00:00,Natural Language Processing,19
-FAC_606,INST_0275,Ikshita Bala,Assoc. Professor,M.Sc.,MECH,2006-11-25,2023-02-06 12:00:00,Renewable Energy Systems,6
-FAC_607,INST_0038,Tripti Dhawan,Professor,PhD,Mathematics,2018-03-27,2026-07-27 12:00:00,Big Data Analytics,18
-FAC_608,INST_0361,Nisha Mani,Assoc. Professor,PhD,AIML,2020-05-09,2026-05-23 12:00:00,Computational Fluid Dynamics,20
-FAC_609,INST_0364,Kritika Korpal,Professor,M.Tech,Physics,2014-12-23,2026-05-09 12:00:00,Power Systems,14
-FAC_61,INST_0063,Logan Minhas,Asst. Professor,M.Sc.,Physics,2014-05-18,2022-10-19 12:00:00,Corporate Finance,14
-FAC_610,INST_0327,Ishanvi Murthy,Asst. Professor,M.E.,CHEM,2021-10-27,2023-05-15 12:00:00,Natural Language Processing,21
-FAC_611,INST_0324,Sanya Ravi,Asst. Professor,M.Tech,CSE,2015-12-30,2024-06-13 12:00:00,Marketing Analytics,15
-FAC_612,INST_0412,Pahal Gour,Asst. Professor,M.Tech,CSE,2022-07-08,2026-06-18 12:00:00,Control Systems,22
-FAC_613,INST_0098,Harshil Prakash,Assoc. Professor,M.E.,AIML,2005-06-29,2026-06-19 12:00:00,Cryptography,5
-FAC_614,INST_0415,Harrison Narayan,Professor,M.Sc.,IT,2010-08-29,2026-07-02 12:00:00,Cybersecurity,10
-FAC_615,INST_0125,Ayush Deshmukh,Assoc. Professor,PhD,AIDS,2008-09-21,2026-06-16 12:00:00,Marketing Analytics,8
-FAC_616,INST_0103,Ubika Nazareth,Assoc. Professor,M.Sc.,CIVIL,2019-04-29,2026-07-20 12:00:00,Computational Fluid Dynamics,19
-FAC_617,INST_0403,Triya Vaidya,Professor,M.Tech,CSE,2006-10-12,2026-05-21 12:00:00,Design Engineering,6
-FAC_618,INST_0414,Jason Dhawan,Professor,M.Sc.,EEE,2011-06-09,2023-04-29 12:00:00,VLSI Design,11
-FAC_619,INST_0409,Meghana Dhar,Assoc. Professor,M.E.,ECE,2023-04-22,2021-10-15 12:00:00,Business Analytics,23
-FAC_62,INST_0324,Panini Lad,Assoc. Professor,M.Tech,AIDS,2022-10-28,2024-12-31 12:00:00,Natural Language Processing,22
-FAC_620,INST_0182,Samuel Sethi,Professor,M.E.,CSE,2008-11-08,2025-03-13 12:00:00,Thermal Engineering,8
-FAC_621,INST_0336,Garima Nagy,Asst. Professor,M.Tech,IT,2009-04-20,2026-06-19 12:00:00,Signal Processing,9
-FAC_622,INST_0371,Vincent Korpal,Assoc. Professor,M.E.,EEE,2022-11-22,2023-02-08 12:00:00,Environmental Engineering,22
-FAC_623,INST_0175,Samaksh Apte,Professor,M.E.,Architecture,2019-06-23,2026-04-19 12:00:00,Power Systems,19
-FAC_624,INST_0255,Shaurya Walla,Assoc. Professor,M.Tech,Pharmacy,2020-07-30,2026-07-13 12:00:00,Design Engineering,20
-FAC_625,INST_0369,Dayamai Varma,Professor,M.Tech,Mathematics,2011-01-17,2026-07-25 12:00:00,Manufacturing Technology,11
-FAC_626,INST_0399,Aishani Kibe,Assoc. Professor,M.E.,Mathematics,2005-01-19,2021-12-28 12:00:00,Machine Learning,5
-FAC_627,INST_0255,Pavani Gara,Assoc. Professor,M.Tech,MECH,2020-12-21,2026-06-07 12:00:00,VLSI Design,20
-FAC_628,INST_0425,Eta Nori,Professor,M.Sc.,Physics,2007-11-21,2026-05-14 12:00:00,Biotechnology,7
-FAC_629,INST_0047,Christopher Dutt,Assoc. Professor,M.Tech,Pharmacy,2008-12-30,2026-05-29 12:00:00,Operations Research,8
-FAC_63,INST_0138,Krishna Devan,Assoc. Professor,PhD,MBA,2016-10-04,2023-08-22 12:00:00,Operations Research,16
-FAC_630,INST_0193,Prisha Barman,Assoc. Professor,M.Tech,Architecture,2015-02-02,2025-05-19 12:00:00,Thermal Engineering,15
-FAC_631,INST_0423,Nihal Dewan,Assoc. Professor,M.Tech,EEE,2021-09-22,2025-06-02 12:00:00,Biotechnology,21
-FAC_632,INST_0161,Shaurya Vala,Assoc. Professor,M.Tech,CIVIL,2005-09-22,2021-06-05 12:00:00,Signal Processing,5
-FAC_633,INST_0385,Aadi Bhagat,Asst. Professor,PhD,AIDS,2015-12-31,2022-10-02 12:00:00,Operations Research,15
-FAC_634,INST_0465,Umang Master,Asst. Professor,M.Sc.,MBA,2015-04-26,2026-05-10 12:00:00,Manufacturing Technology,15
-FAC_635,INST_0478,Umang Narain,Asst. Professor,M.Tech,AIDS,2005-03-12,2026-06-18 12:00:00,Transportation Engineering,5
-FAC_636,INST_0255,Zehaan Garg,Asst. Professor,M.Sc.,CIVIL,2015-09-09,2026-07-11 12:00:00,Environmental Engineering,15
-FAC_637,INST_0168,Arin Dar,Asst. Professor,PhD,CSE,2008-10-25,2024-09-04 12:00:00,Power Electronics,8
-FAC_638,INST_0445,Advay Gole,Asst. Professor,M.Sc.,Physics,2004-05-18,2023-02-19 12:00:00,Pharmacology,4
-FAC_639,INST_0171,Manbir Bora,Professor,M.E.,Architecture,2012-12-13,2026-05-23 12:00:00,Distributed Systems,12
-FAC_64,INST_0092,Hritik Chaudhari,Assoc. Professor,M.Tech,Physics,2004-09-27,2026-05-30 12:00:00,Power Systems,4
-FAC_640,INST_0255,Kalpit Tandon,Assoc. Professor,M.Tech,AIDS,2016-06-22,2026-05-16 12:00:00,Distributed Systems,16
-FAC_641,INST_0140,Chakradhar Rajagopalan,Asst. Professor,M.Tech,AIML,2004-07-31,2024-12-04 12:00:00,Natural Language Processing,4
-FAC_642,INST_0075,Tamanna Buch,Professor,M.E.,EEE,2011-04-08,2026-07-14 12:00:00,Power Electronics,11
-FAC_643,INST_0393,Thomas Saran,Professor,PhD,EEE,2022-05-14,2022-02-15 12:00:00,Power Systems,22
-FAC_644,INST_0136,Pranav Kalita,Assoc. Professor,M.Tech,AIDS,2013-06-04,2026-04-28 12:00:00,Robotics,13
-FAC_645,INST_0397,Anita Grover,Assoc. Professor,PhD,AIDS,2017-02-04,2026-05-06 12:00:00,Mechatronics,17
-FAC_646,INST_0361,Faras Ravi,Asst. Professor,M.Tech,MBA,2023-10-06,2026-04-18 12:00:00,Data Mining,23
-FAC_647,INST_0261,Charita Sodhi,Professor,M.E.,Physics,2019-10-03,2024-08-26 12:00:00,Thermal Engineering,19
-FAC_648,INST_0031,Samaksh Grover,Professor,M.Sc.,MBA,2019-11-26,2026-06-18 12:00:00,Distributed Systems,19
-FAC_649,INST_0293,Noah Khanna,Asst. Professor,M.Tech,MECH,2015-10-02,2021-09-06 12:00:00,Cybersecurity,15
-FAC_65,INST_0249,Eshana Bath,Assoc. Professor,PhD,IT,2012-04-21,2026-05-30 12:00:00,Corporate Finance,12
-FAC_650,INST_0036,Jagrati Joshi,Asst. Professor,PhD,Physics,2014-02-25,2026-07-29 12:00:00,Robotics,14
-FAC_651,INST_0185,Udarsh Vasa,Assoc. Professor,M.Tech,CHEM,2014-06-16,2026-06-18 12:00:00,VLSI Design,14
-FAC_652,INST_0085,Hema Lal,Asst. Professor,M.Tech,CHEM,2006-04-21,2024-09-29 12:00:00,Cloud Computing,6
-FAC_653,INST_0255,Widisha Narula,Asst. Professor,M.E.,IT,2022-12-31,2024-02-06 12:00:00,Supply Chain Management,22
-FAC_654,INST_0365,Adya Peri,Asst. Professor,M.Sc.,EEE,2023-12-18,2026-06-02 12:00:00,Cryptography,23
-FAC_655,INST_0068,Reva Bassi,Professor,M.Sc.,CSE,2010-12-13,2026-06-27 12:00:00,Structural Engineering,10
-FAC_656,INST_0345,Omya Pau,Professor,M.E.,Physics,2015-05-04,2026-06-03 12:00:00,Computational Fluid Dynamics,15
-FAC_657,INST_0437,Fariq Babu,Asst. Professor,M.Tech,CSE,2023-06-06,2023-11-18 12:00:00,Business Analytics,23
-FAC_658,INST_0411,Vanya Pai,Asst. Professor,M.E.,Mathematics,2015-08-14,2024-12-09 12:00:00,Renewable Energy Systems,15
-FAC_659,INST_0382,Unnati Raja,Asst. Professor,PhD,Physics,2016-12-09,2026-04-27 12:00:00,Thermal Engineering,16
-FAC_66,INST_0146,Garima Kadakia,Professor,M.E.,Pharmacy,2007-05-17,2021-09-08 12:00:00,Environmental Engineering,7
-FAC_660,INST_0055,Meera Nadig,Assoc. Professor,M.E.,AIDS,2023-07-14,2023-02-12 12:00:00,Thermal Engineering,23
-FAC_661,INST_0130,Warjas Setty,Assoc. Professor,M.Sc.,MECH,2013-03-31,2026-07-21 12:00:00,Supply Chain Management,13
-FAC_662,INST_0367,Warhi Kala,Asst. Professor,M.Tech,CHEM,2018-01-31,2026-06-18 12:00:00,Drug Delivery,18
-FAC_663,INST_0084,Thomas Ratti,Assoc. Professor,M.Tech,Physics,2004-07-03,2026-06-17 12:00:00,Cybersecurity,4
-FAC_664,INST_0084,Anya Nagy,Assoc. Professor,M.Sc.,Architecture,2015-09-11,2026-08-08 12:00:00,Business Analytics,15
-FAC_665,INST_0028,Charan Chaudhari,Professor,M.Tech,Mathematics,2018-10-18,2023-08-17 12:00:00,Wireless Communications,18
-FAC_666,INST_0272,Manan Prabhu,Assoc. Professor,M.E.,AIML,2010-03-30,2021-07-17 12:00:00,Business Analytics,10
-FAC_667,INST_0474,Sai Srinivasan,Assoc. Professor,PhD,ECE,2021-04-21,2022-09-04 12:00:00,Renewable Energy Systems,21
-FAC_668,INST_0224,Tristan Bala,Professor,M.Tech,Architecture,2018-12-04,2026-06-19 12:00:00,Big Data Analytics,18
-FAC_669,INST_0002,Janaki Ramanathan,Professor,M.E.,AIDS,2021-09-26,2026-06-24 12:00:00,Geotechnical Engineering,21
-FAC_67,INST_0320,Hamsini Sampath,Professor,M.E.,EEE,2015-09-06,2022-06-29 12:00:00,Signal Processing,15
-FAC_670,INST_0447,Darsh Madan,Asst. Professor,PhD,AIDS,2022-05-18,2026-07-30 12:00:00,Operations Research,22
-FAC_671,INST_0454,Aditya Raju,Asst. Professor,M.Tech,AIML,2022-05-19,2026-07-19 12:00:00,Manufacturing Technology,22
-FAC_672,INST_0255,Nachiket Dayal,Assoc. Professor,M.Sc.,IT,2021-06-04,2024-03-20 12:00:00,Power Systems,21
-FAC_673,INST_0255,Ubika Tank,Professor,M.Sc.,Pharmacy,2021-08-03,2026-06-24 12:00:00,Embedded Systems,21
-FAC_674,INST_0003,Rajata Pandya,Asst. Professor,M.Sc.,EEE,2009-03-24,2026-06-22 12:00:00,VLSI Design,9
-FAC_675,INST_0428,Ridhi Sachdev,Professor,M.E.,ECE,2013-08-21,2024-04-25 12:00:00,Network Security,13
-FAC_676,INST_0321,Ethan Bansal,Professor,M.Sc.,AIDS,2022-12-30,2021-07-11 12:00:00,Mechatronics,22
-FAC_677,INST_0373,Dalaja Subramaniam,Asst. Professor,M.Tech,Pharmacy,2013-08-06,2021-11-19 12:00:00,Big Data Analytics,13
-FAC_678,INST_0482,Jhalak Hari,Assoc. Professor,M.Tech,Architecture,2020-04-25,2026-06-17 12:00:00,Cloud Computing,20
-FAC_679,INST_0263,Parth Taneja,Assoc. Professor,M.Sc.,CIVIL,2017-01-21,2024-12-11 12:00:00,Machine Learning,17
-FAC_68,INST_0401,Vrishti Aurora,Professor,M.E.,CIVIL,2018-05-14,2022-08-28 12:00:00,Internet of Things,18
-FAC_680,INST_0369,Ojasvi Bal,Asst. Professor,M.Tech,CSE,2005-04-06,2025-02-20 12:00:00,Renewable Energy Systems,5
-FAC_681,INST_0087,Charan Nagar,Asst. Professor,PhD,Pharmacy,2010-11-03,2026-05-02 12:00:00,Cloud Computing,10
-FAC_682,INST_0326,Kavya Keer,Professor,M.Tech,AIML,2014-01-04,2026-05-24 12:00:00,Machine Learning,14
-FAC_683,INST_0404,Yug Lala,Professor,M.Sc.,CIVIL,2005-11-21,2021-12-30 12:00:00,Robotics,5
-FAC_684,INST_0395,Vamakshi Memon,Assoc. Professor,M.E.,MBA,2023-04-23,2022-12-27 12:00:00,Natural Language Processing,23
-FAC_685,INST_0282,Victor Chana,Assoc. Professor,M.Sc.,ECE,2016-09-26,2026-05-06 12:00:00,Transportation Engineering,16
-FAC_686,INST_0062,Noah Iyer,Asst. Professor,M.Tech,EEE,2023-01-02,2023-01-07 12:00:00,Pharmacology,23
-FAC_687,INST_0344,Isha Sawhney,Professor,M.Sc.,CHEM,2016-10-27,2026-05-13 12:00:00,Network Security,16
-FAC_688,INST_0310,Zehaan Chanda,Asst. Professor,M.E.,IT,2013-04-11,2026-06-21 12:00:00,Renewable Energy Systems,13
-FAC_689,INST_0255,Vidhi Solanki,Assoc. Professor,M.E.,IT,2013-04-29,2025-03-31 12:00:00,Human Resource Management,13
-FAC_69,INST_0111,Gavin Banerjee,Assoc. Professor,PhD,Pharmacy,2010-10-16,2022-08-06 12:00:00,Machine Learning,10
-FAC_690,INST_0044,George Peri,Assoc. Professor,M.E.,Physics,2011-05-07,2024-10-03 12:00:00,Internet of Things,11
-FAC_691,INST_0334,Rajeshri Dhingra,Assoc. Professor,M.E.,AIML,2009-04-05,2023-11-16 12:00:00,Machine Learning,9
-FAC_692,INST_0314,Aarini Bains,Professor,PhD,ECE,2007-11-05,2026-06-02 12:00:00,Wireless Communications,7
-FAC_693,INST_0168,Kavya Vora,Asst. Professor,M.Sc.,MECH,2014-05-21,2026-07-25 12:00:00,Signal Processing,14
-FAC_694,INST_0007,Riya Thaker,Asst. Professor,M.Tech,CIVIL,2005-11-04,2026-08-05 12:00:00,Natural Language Processing,5
-FAC_695,INST_0051,Sachi Madan,Asst. Professor,M.Sc.,Pharmacy,2023-01-07,2023-10-24 12:00:00,Big Data Analytics,23
-FAC_696,INST_0136,Libni Chanda,Professor,M.E.,Mathematics,2012-01-17,2026-04-27 12:00:00,Marketing Analytics,12
-FAC_697,INST_0270,Krish Bala,Assoc. Professor,M.Sc.,Architecture,2010-06-17,2026-06-12 12:00:00,Robotics,10
-FAC_698,INST_0182,Wyatt Jha,Assoc. Professor,PhD,ECE,2009-05-30,2026-07-31 12:00:00,Thermal Engineering,9
-FAC_699,INST_0186,Janya Banerjee,Assoc. Professor,M.E.,AIML,2011-12-02,2026-07-29 12:00:00,Drug Delivery,11
-FAC_7,INST_0124,Oni Vig,Assoc. Professor,PhD,ECE,2022-06-28,2026-04-30 12:00:00,Drug Delivery,22
-FAC_70,INST_0390,Arjun Vohra,Assoc. Professor,M.Sc.,EEE,2018-08-02,2026-07-25 12:00:00,Transportation Engineering,18
-FAC_700,INST_0490,Chatura De,Asst. Professor,M.E.,MBA,2004-09-22,2023-05-18 12:00:00,Big Data Analytics,4
-FAC_701,INST_0495,Arjun Mane,Assoc. Professor,M.Tech,CSE,2008-08-16,2022-06-13 12:00:00,Signal Processing,8
-FAC_702,INST_0066,Dalaja Kanda,Assoc. Professor,M.Sc.,MECH,2007-06-22,2023-09-09 12:00:00,Operations Research,7
-FAC_703,INST_0352,Dev Menon,Asst. Professor,M.Sc.,Architecture,2013-10-12,2026-07-02 12:00:00,Wireless Communications,13
-FAC_704,INST_0498,Abhiram Saxena,Professor,M.E.,ECE,2017-07-03,2026-08-05 12:00:00,Structural Engineering,17
-FAC_705,INST_0164,Tara Palla,Professor,M.Tech,Physics,2008-01-19,2026-06-16 12:00:00,Mechatronics,8
-FAC_706,INST_0224,Ekiya Gola,Assoc. Professor,M.Tech,CSE,2011-12-07,2024-04-26 12:00:00,Human Resource Management,11
-FAC_707,INST_0361,Netra Rajagopal,Professor,M.E.,ECE,2022-11-14,2025-03-15 12:00:00,Cryptography,22
-FAC_708,INST_0286,Wridesh Borra,Asst. Professor,M.Sc.,CHEM,2010-08-14,2026-07-09 12:00:00,Biotechnology,10
-FAC_709,INST_0308,Gunbir Vyas,Asst. Professor,PhD,CHEM,2010-03-02,2026-07-07 12:00:00,Power Systems,10
-FAC_71,INST_0361,Triveni Dhillon,Professor,M.Sc.,Mathematics,2020-02-24,2026-07-31 12:00:00,Data Mining,20
-FAC_710,INST_0044,Aarush Divan,Assoc. Professor,M.Tech,MECH,2015-07-12,2026-05-17 12:00:00,Environmental Engineering,15
-FAC_711,INST_0399,Theodore Chacko,Assoc. Professor,M.Tech,CHEM,2016-12-20,2023-09-30 12:00:00,Power Systems,16
-FAC_712,INST_0448,Tristan Sachar,Assoc. Professor,M.Tech,CHEM,2007-07-27,2026-07-28 12:00:00,Internet of Things,7
-FAC_713,INST_0181,Gagan Din,Professor,M.E.,CSE,2010-07-20,2024-12-08 12:00:00,Pharmaceutical Chemistry,10
-FAC_714,INST_0497,Parth Dugar,Assoc. Professor,PhD,Architecture,2023-07-17,2026-07-31 12:00:00,Pharmaceutical Chemistry,23
-FAC_715,INST_0005,Riya Pingle,Asst. Professor,M.E.,Mathematics,2016-09-03,2026-04-21 12:00:00,Embedded Systems,16
-FAC_716,INST_0286,Charles Jaggi,Assoc. Professor,M.Tech,ECE,2014-02-13,2026-05-24 12:00:00,Machine Learning,14
-FAC_717,INST_0022,Yash Vala,Assoc. Professor,PhD,MECH,2014-03-20,2026-06-06 12:00:00,Environmental Engineering,14
-FAC_718,INST_0011,Joshua Boase,Asst. Professor,M.Sc.,CHEM,2023-11-21,2026-06-12 12:00:00,Transportation Engineering,23
-FAC_719,INST_0255,Upkaar Puri,Asst. Professor,M.E.,Mathematics,2021-06-11,2026-08-04 12:00:00,Cryptography,21
-FAC_72,INST_0157,Praneel Kala,Assoc. Professor,M.Sc.,Physics,2013-04-08,2026-08-13 12:00:00,Renewable Energy Systems,13
-FAC_720,INST_0143,Dayita Narasimhan,Asst. Professor,M.Sc.,AIML,2007-03-25,2026-06-15 12:00:00,Embedded Systems,7
-FAC_721,INST_0191,Anirudh Rajagopal,Asst. Professor,PhD,MECH,2016-09-28,2026-05-18 12:00:00,Pharmaceutical Chemistry,16
-FAC_722,INST_0159,George Barad,Professor,M.Tech,Physics,2007-09-26,2026-05-22 12:00:00,Thermal Engineering,7
-FAC_723,INST_0471,Raagini Tandon,Professor,M.Tech,ECE,2012-03-05,2026-07-21 12:00:00,Business Analytics,12
-FAC_724,INST_0281,Bahadurjit Mangat,Assoc. Professor,M.Tech,Mathematics,2012-03-31,2026-07-16 12:00:00,Renewable Energy Systems,12
-FAC_725,INST_0205,Unnati Sodhi,Assoc. Professor,M.E.,Physics,2005-03-25,2026-05-27 12:00:00,Supply Chain Management,5
-FAC_726,INST_0281,Anay Wable,Professor,M.Tech,Architecture,2006-01-27,2023-12-15 12:00:00,Geotechnical Engineering,6
-FAC_727,INST_0302,Balvan Gaba,Asst. Professor,M.E.,EEE,2010-10-04,2026-04-26 12:00:00,Operations Research,10
-FAC_728,INST_0024,Damini Jhaveri,Professor,M.Tech,AIML,2013-11-20,2021-12-04 12:00:00,Power Systems,13
-FAC_729,INST_0468,Advaith Pandey,Asst. Professor,M.E.,ECE,2011-01-07,2026-05-24 12:00:00,Natural Language Processing,11
-FAC_73,INST_0392,Gayathri Chacko,Professor,PhD,MECH,2007-07-15,2021-11-02 12:00:00,Robotics,7
-FAC_730,INST_0356,Oscar Gill,Professor,M.Sc.,MECH,2009-07-01,2022-01-12 12:00:00,Natural Language Processing,9
-FAC_731,INST_0275,Timothy Tara,Asst. Professor,M.E.,EEE,2017-12-22,2026-05-10 12:00:00,Computational Fluid Dynamics,17
-FAC_732,INST_0326,Qasim Koshy,Assoc. Professor,M.E.,MBA,2015-03-30,2026-07-16 12:00:00,Drug Delivery,15
-FAC_733,INST_0001,Chandran Balay,Professor,PhD,Pharmacy,2016-04-09,2023-02-12 12:00:00,Deep Learning,16
-FAC_734,INST_0090,Chandran Balan,Assoc. Professor,M.Sc.,AIML,2022-12-17,2026-06-01 12:00:00,Cryptography,22
-FAC_735,INST_0223,Bhavika Kala,Assoc. Professor,PhD,ECE,2010-09-23,2026-06-13 12:00:00,Human Resource Management,10
-FAC_736,INST_0074,Rachita Purohit,Assoc. Professor,M.Sc.,AIDS,2020-06-08,2026-05-28 12:00:00,VLSI Design,20
-FAC_737,INST_0422,Qasim Bumb,Professor,M.E.,CIVIL,2008-08-05,2026-06-01 12:00:00,Business Analytics,8
-FAC_738,INST_0080,Warjas Narang,Assoc. Professor,PhD,CHEM,2023-01-19,2025-07-12 12:00:00,Embedded Systems,23
-FAC_739,INST_0249,Veer Murty,Assoc. Professor,M.Tech,IT,2014-05-29,2026-06-07 12:00:00,Embedded Systems,14
-FAC_74,INST_0421,Samesh Chad,Asst. Professor,M.E.,CHEM,2009-09-15,2022-03-26 12:00:00,VLSI Design,9
-FAC_740,INST_0373,Tamanna Mukhopadhyay,Professor,PhD,CHEM,2018-04-14,2024-11-12 12:00:00,Power Electronics,18
-FAC_741,INST_0370,Falak Gokhale,Assoc. Professor,M.Tech,CHEM,2017-03-05,2022-09-28 12:00:00,Operations Research,17
-FAC_742,INST_0382,Shravya Dutta,Professor,PhD,CSE,2023-02-25,2024-07-22 12:00:00,Geotechnical Engineering,23
-FAC_743,INST_0346,Amaira Andra,Assoc. Professor,M.Tech,Mathematics,2008-08-31,2026-06-30 12:00:00,Drug Delivery,8
-FAC_744,INST_0384,Bhavika Nanda,Assoc. Professor,M.Sc.,CIVIL,2022-04-23,2026-06-10 12:00:00,Pharmacology,22
-FAC_745,INST_0208,Chatura Dasgupta,Professor,M.Sc.,ECE,2011-05-20,2026-05-03 12:00:00,Geotechnical Engineering,11
-FAC_746,INST_0289,Indrajit Bali,Asst. Professor,M.E.,MECH,2012-11-26,2026-05-17 12:00:00,Operations Research,12
-FAC_747,INST_0090,Gavin Soni,Professor,M.Tech,Mathematics,2012-10-10,2022-08-06 12:00:00,Renewable Energy Systems,12
-FAC_748,INST_0047,Gunbir Misra,Professor,M.Tech,CSE,2018-09-01,2026-06-23 12:00:00,Internet of Things,18
-FAC_749,INST_0383,Jacob Sha,Assoc. Professor,PhD,CIVIL,2022-08-20,2026-06-29 12:00:00,Control Systems,22
-FAC_75,INST_0346,Vansha Mall,Asst. Professor,M.E.,MECH,2016-01-17,2026-08-06 12:00:00,Distributed Systems,16
-FAC_750,INST_0311,Jagat Dutt,Asst. Professor,M.Sc.,Architecture,2011-02-06,2025-02-25 12:00:00,Power Electronics,11
-FAC_751,INST_0027,Falak Jhaveri,Assoc. Professor,M.Sc.,MECH,2013-08-01,2024-06-13 12:00:00,Design Engineering,13
-FAC_752,INST_0361,Dayita Savant,Professor,M.Sc.,Pharmacy,2006-01-01,2021-06-28 12:00:00,Wireless Communications,6
-FAC_753,INST_0262,Vedhika Vora,Asst. Professor,PhD,Physics,2009-01-18,2026-04-28 12:00:00,Control Systems,9
-FAC_754,INST_0255,Pushti Badal,Professor,M.Tech,Mathematics,2014-07-25,2021-11-07 12:00:00,Drug Delivery,14
-FAC_755,INST_0027,Lohit Sarraf,Assoc. Professor,M.Sc.,Architecture,2017-03-07,2026-07-14 12:00:00,Deep Learning,17
-FAC_756,INST_0183,Pooja Shankar,Assoc. Professor,PhD,AIDS,2019-05-04,2026-07-03 12:00:00,Power Systems,19
-FAC_757,INST_0395,Chaitaly Narain,Asst. Professor,M.Sc.,Physics,2017-07-26,2026-07-19 12:00:00,Cybersecurity,17
-FAC_758,INST_0497,Gabriel Sekhon,Professor,M.E.,AIML,2021-08-13,2023-11-16 12:00:00,Thermal Engineering,21
-FAC_759,INST_0379,Caleb Rau,Asst. Professor,M.Sc.,EEE,2015-12-17,2026-07-24 12:00:00,Structural Engineering,15
-FAC_76,INST_0241,Chameli Verma,Asst. Professor,M.E.,MBA,2014-10-28,2024-12-23 12:00:00,Power Systems,14
-FAC_760,INST_0243,Gaurika Kalla,Professor,M.Sc.,AIML,2010-10-21,2026-05-21 12:00:00,Robotics,10
-FAC_761,INST_0255,Nakul Sarma,Asst. Professor,M.Tech,Physics,2013-05-17,2026-06-26 12:00:00,Deep Learning,13
-FAC_762,INST_0489,Ekiya Hayre,Professor,PhD,IT,2022-07-31,2026-08-03 12:00:00,Cybersecurity,22
-FAC_763,INST_0019,Chaaya Dhar,Asst. Professor,M.Tech,CIVIL,2009-09-24,2026-07-23 12:00:00,Deep Learning,9
-FAC_764,INST_0143,Kala Pall,Professor,PhD,CSE,2017-08-08,2026-06-11 12:00:00,VLSI Design,17
-FAC_765,INST_0308,Arunima Sankaran,Asst. Professor,M.Tech,CIVIL,2010-12-28,2023-07-23 12:00:00,Transportation Engineering,10
-FAC_766,INST_0047,Chandani Jayaraman,Assoc. Professor,M.Sc.,Pharmacy,2008-01-12,2024-11-06 12:00:00,Big Data Analytics,8
-FAC_767,INST_0291,Harshil Bhandari,Professor,M.Sc.,MBA,2014-05-26,2026-04-19 12:00:00,Robotics,14
-FAC_768,INST_0037,Hritik Divan,Professor,M.E.,AIML,2012-08-30,2026-07-12 12:00:00,Internet of Things,12
-FAC_769,INST_0382,Varenya Bath,Asst. Professor,PhD,ECE,2022-05-25,2026-05-07 12:00:00,Business Analytics,22
-FAC_77,INST_0229,Jasmit Sundaram,Asst. Professor,M.E.,EEE,2013-08-22,2024-02-06 12:00:00,Internet of Things,13
-FAC_770,INST_0212,Vasana Baria,Professor,M.E.,CIVIL,2013-05-03,2022-05-08 12:00:00,VLSI Design,13
-FAC_771,INST_0059,Janaki Goel,Professor,M.E.,Physics,2013-01-08,2026-05-26 12:00:00,Geotechnical Engineering,13
-FAC_772,INST_0308,Imaran Mangal,Asst. Professor,M.Sc.,ECE,2008-03-30,2024-04-27 12:00:00,Computational Fluid Dynamics,8
-FAC_773,INST_0096,Sathvik Atwal,Assoc. Professor,M.Tech,Pharmacy,2006-01-29,2024-05-29 12:00:00,Machine Learning,6
-FAC_774,INST_0205,Abdul Bhandari,Professor,PhD,Architecture,2018-12-14,2026-04-18 12:00:00,Manufacturing Technology,18
-FAC_775,INST_0326,Wridesh Chandra,Asst. Professor,PhD,Pharmacy,2019-10-14,2026-04-19 12:00:00,Natural Language Processing,19
-FAC_776,INST_0314,Ira Bhandari,Asst. Professor,M.E.,AIML,2016-05-03,2026-08-05 12:00:00,Thermal Engineering,16
-FAC_777,INST_0489,Farhan Banerjee,Assoc. Professor,PhD,Physics,2020-02-23,2026-05-04 12:00:00,Cybersecurity,20
-FAC_778,INST_0022,Rachit Bajwa,Professor,M.Tech,MECH,2019-02-19,2024-06-09 12:00:00,Environmental Engineering,19
-FAC_779,INST_0476,Anita Gill,Professor,M.E.,ECE,2016-10-08,2021-07-06 12:00:00,Pharmaceutical Chemistry,16
-FAC_78,INST_0338,Banjeet Wadhwa,Assoc. Professor,M.Sc.,Pharmacy,2015-10-22,2025-03-09 12:00:00,Natural Language Processing,15
-FAC_780,INST_0016,Laksh Wadhwa,Assoc. Professor,PhD,ECE,2006-02-09,2025-01-03 12:00:00,Operations Research,6
-FAC_781,INST_0279,Zilmil Lala,Asst. Professor,PhD,CSE,2007-03-01,2026-07-23 12:00:00,Power Electronics,7
-FAC_782,INST_0058,Yauvani Bora,Asst. Professor,PhD,Architecture,2014-10-01,2023-04-16 12:00:00,Computational Fluid Dynamics,14
-FAC_783,INST_0185,Gaurangi Loyal,Professor,PhD,MECH,2016-08-01,2026-07-22 12:00:00,Embedded Systems,16
-FAC_784,INST_0425,Dhruv Raman,Assoc. Professor,M.E.,CIVIL,2014-03-24,2026-08-04 12:00:00,Network Security,14
-FAC_785,INST_0242,Chaitanya Narang,Asst. Professor,M.Sc.,MECH,2012-12-15,2024-07-25 12:00:00,Transportation Engineering,12
-FAC_786,INST_0088,Dayita Kashyap,Asst. Professor,PhD,MBA,2022-07-27,2025-05-10 12:00:00,Deep Learning,22
-FAC_787,INST_0472,Rudra Bakshi,Professor,M.Sc.,MBA,2009-07-20,2021-10-05 12:00:00,Pharmacology,9
-FAC_788,INST_0385,Mitesh Bedi,Assoc. Professor,M.E.,Mathematics,2015-08-27,2026-07-17 12:00:00,Environmental Engineering,15
-FAC_789,INST_0034,Hamsini Mane,Assoc. Professor,M.Tech,IT,2009-03-11,2026-07-07 12:00:00,Operations Research,9
-FAC_79,INST_0414,Orinder Devan,Professor,M.Tech,Architecture,2016-07-15,2024-12-09 12:00:00,Network Security,16
-FAC_790,INST_0329,Charita Patla,Professor,PhD,Pharmacy,2018-05-03,2026-07-11 12:00:00,Network Security,18
-FAC_791,INST_0382,Gauri Majumdar,Asst. Professor,M.Sc.,IT,2014-06-20,2024-10-23 12:00:00,Control Systems,14
-FAC_792,INST_0189,Frado Bose,Asst. Professor,M.E.,IT,2004-11-13,2023-08-10 12:00:00,Power Systems,4
-FAC_793,INST_0486,Nachiket Vig,Asst. Professor,M.E.,MECH,2010-09-21,2026-06-28 12:00:00,Pharmacology,10
-FAC_794,INST_0382,Sanya Sharaf,Professor,PhD,IT,2016-10-20,2026-07-28 12:00:00,Biotechnology,16
-FAC_795,INST_0303,Suhani Sampath,Assoc. Professor,M.Sc.,Architecture,2008-10-25,2026-07-03 12:00:00,Cloud Computing,8
-FAC_796,INST_0142,Edhitha Goda,Asst. Professor,M.E.,CHEM,2004-05-21,2026-04-20 12:00:00,Thermal Engineering,4
-FAC_797,INST_0038,Ubika Mital,Asst. Professor,PhD,ECE,2022-02-18,2026-05-05 12:00:00,Cybersecurity,22
-FAC_798,INST_0013,Harrison Ravel,Asst. Professor,PhD,Architecture,2014-12-27,2023-12-29 12:00:00,Signal Processing,14
-FAC_799,INST_0276,Tanmayi Ramachandran,Professor,M.E.,CHEM,2008-12-23,2026-08-07 12:00:00,Internet of Things,8
-FAC_8,INST_0204,Gaurangi Ahuja,Assoc. Professor,PhD,ECE,2009-07-16,2022-05-27 12:00:00,Thermal Engineering,9
-FAC_80,INST_0136,Vedika Seth,Asst. Professor,M.Sc.,AIML,2021-10-06,2026-06-17 12:00:00,VLSI Design,21
-FAC_800,INST_0074,Anita Sant,Asst. Professor,M.Tech,Architecture,2019-07-27,2022-07-22 12:00:00,Data Mining,19
-FAC_801,INST_0011,Wriddhish Parsa,Professor,M.Tech,Mathematics,2015-10-23,2023-08-16 12:00:00,Data Mining,15
-FAC_802,INST_0265,Rachit Modi,Asst. Professor,PhD,CSE,2020-09-18,2026-06-23 12:00:00,Power Electronics,20
-FAC_803,INST_0301,Faris Bawa,Professor,M.Sc.,CHEM,2014-01-22,2026-07-09 12:00:00,Geotechnical Engineering,14
-FAC_804,INST_0206,Xiti Sawhney,Assoc. Professor,M.Tech,AIDS,2013-11-03,2024-12-16 12:00:00,Embedded Systems,13
-FAC_805,INST_0112,Andrew Nayak,Assoc. Professor,M.Tech,CSE,2014-05-06,2026-06-15 12:00:00,Deep Learning,14
-FAC_806,INST_0288,Darpan Chanda,Asst. Professor,M.Tech,AIDS,2020-03-07,2026-06-22 12:00:00,Signal Processing,20
-FAC_807,INST_0326,Gaurangi Mohan,Professor,M.Tech,MECH,2023-01-05,2026-07-02 12:00:00,Control Systems,23
-FAC_808,INST_0429,Yahvi Bawa,Professor,M.Sc.,IT,2019-02-15,2026-06-18 12:00:00,Power Systems,19
-FAC_809,INST_0416,Rachita Banik,Professor,PhD,AIDS,2011-05-13,2023-02-09 12:00:00,Human Resource Management,11
-FAC_81,INST_0133,Falak Contractor,Professor,M.E.,CIVIL,2013-01-21,2024-08-05 12:00:00,Machine Learning,13
-FAC_810,INST_0255,Wriddhish Barad,Asst. Professor,M.E.,CIVIL,2017-07-28,2026-04-25 12:00:00,Manufacturing Technology,17
-FAC_811,INST_0120,Sathvik Gara,Asst. Professor,M.E.,Physics,2012-02-14,2022-11-14 12:00:00,Renewable Energy Systems,12
-FAC_812,INST_0221,Pahal Banik,Asst. Professor,M.Tech,IT,2005-06-26,2025-01-18 12:00:00,Pharmacology,5
-FAC_813,INST_0172,Harrison Ratta,Professor,M.Sc.,MBA,2005-10-30,2026-08-08 12:00:00,Robotics,5
-FAC_814,INST_0045,Janaki Seshadri,Asst. Professor,M.E.,AIDS,2021-04-25,2022-11-04 12:00:00,Big Data Analytics,21
-FAC_815,INST_0382,Indira Balay,Assoc. Professor,M.E.,MBA,2004-02-18,2021-06-04 12:00:00,Deep Learning,4
-FAC_816,INST_0344,Dhruv Bhattacharyya,Professor,M.Tech,ECE,2018-08-14,2022-10-31 12:00:00,Signal Processing,18
-FAC_817,INST_0340,Jagvi Mohan,Asst. Professor,M.Tech,CHEM,2020-12-02,2026-07-23 12:00:00,Computational Fluid Dynamics,20
-FAC_818,INST_0255,Ayush Vyas,Asst. Professor,M.Sc.,IT,2010-10-17,2023-04-17 12:00:00,Human Resource Management,10
-FAC_819,INST_0284,Omaja Narayanan,Asst. Professor,M.Sc.,Architecture,2010-06-26,2026-05-02 12:00:00,Thermal Engineering,10
-FAC_82,INST_0421,Yash Subramaniam,Asst. Professor,M.Tech,Mathematics,2013-06-21,2026-08-14 12:00:00,Marketing Analytics,13
-FAC_820,INST_0308,Aarini Jaggi,Professor,M.Tech,ECE,2008-11-21,2026-07-22 12:00:00,Cybersecurity,8
-FAC_821,INST_0398,Faqid Aurora,Assoc. Professor,M.Sc.,IT,2005-11-28,2026-06-03 12:00:00,Business Analytics,5
-FAC_822,INST_0184,Adweta Chakrabarti,Asst. Professor,PhD,AIML,2014-04-29,2022-11-21 12:00:00,Natural Language Processing,14
-FAC_823,INST_0422,Neha Wali,Professor,M.Tech,AIDS,2014-05-17,2023-04-11 12:00:00,Power Systems,14
-FAC_824,INST_0075,Vedika Subramanian,Assoc. Professor,M.E.,AIML,2020-06-29,2023-01-29 12:00:00,Big Data Analytics,20
-FAC_825,INST_0278,Riya Keer,Assoc. Professor,M.Tech,CIVIL,2009-03-13,2024-08-04 12:00:00,Marketing Analytics,9
-FAC_826,INST_0270,Brijesh Pant,Professor,PhD,AIDS,2020-12-04,2026-07-04 12:00:00,Corporate Finance,20
-FAC_827,INST_0095,Kai Tank,Asst. Professor,M.Tech,MECH,2006-04-15,2023-01-03 12:00:00,Network Security,6
-FAC_828,INST_0213,Tripti Gala,Asst. Professor,M.Tech,MECH,2005-04-14,2026-05-05 12:00:00,Deep Learning,5
-FAC_829,INST_0426,Upkaar Manda,Asst. Professor,PhD,AIDS,2007-08-11,2023-04-23 12:00:00,Signal Processing,7
-FAC_83,INST_0316,Ladli Chaudhuri,Professor,M.E.,Mathematics,2020-09-21,2026-08-11 12:00:00,Human Resource Management,20
-FAC_830,INST_0182,Anay Palla,Professor,PhD,MECH,2007-10-14,2024-11-20 12:00:00,Design Engineering,7
-FAC_831,INST_0139,Harish Hari,Professor,M.E.,CHEM,2015-01-04,2024-06-07 12:00:00,Signal Processing,15
-FAC_832,INST_0215,Madhav Warrior,Professor,PhD,ECE,2005-04-17,2026-07-17 12:00:00,VLSI Design,5
-FAC_833,INST_0323,Amara Sandhu,Assoc. Professor,M.Sc.,CHEM,2020-06-11,2023-11-22 12:00:00,Internet of Things,20
-FAC_834,INST_0097,Chatresh Raman,Asst. Professor,PhD,MECH,2015-05-24,2026-05-11 12:00:00,Embedded Systems,15
-FAC_835,INST_0255,Pranav Balasubramanian,Assoc. Professor,M.Tech,Physics,2015-11-18,2021-07-23 12:00:00,Environmental Engineering,15
-FAC_836,INST_0255,Nathan Oommen,Professor,M.Tech,Physics,2006-11-16,2026-07-06 12:00:00,Machine Learning,6
-FAC_837,INST_0033,Naveen Dar,Professor,M.Tech,AIML,2016-02-26,2026-06-13 12:00:00,Power Electronics,16
-FAC_838,INST_0080,Imaran Dara,Asst. Professor,PhD,Pharmacy,2021-05-10,2026-07-17 12:00:00,Signal Processing,21
-FAC_839,INST_0255,Urishilla Patla,Professor,M.Sc.,CIVIL,2023-10-06,2021-10-21 12:00:00,Robotics,23
-FAC_84,INST_0283,Azaan Narang,Professor,M.E.,MBA,2022-12-13,2022-07-04 12:00:00,Signal Processing,22
-FAC_840,INST_0340,Mitali Bera,Professor,M.Sc.,MECH,2018-03-16,2022-11-04 12:00:00,Operations Research,18
-FAC_841,INST_0248,Ekansh Hayre,Assoc. Professor,M.Tech,Physics,2006-04-07,2026-06-28 12:00:00,Cryptography,6
-FAC_842,INST_0255,Suhani Thakur,Assoc. Professor,M.Tech,MBA,2006-01-29,2026-08-15 12:00:00,Embedded Systems,6
-FAC_843,INST_0385,Warhi Chanda,Asst. Professor,M.Sc.,CSE,2018-12-15,2026-05-04 12:00:00,Renewable Energy Systems,18
-FAC_844,INST_0317,Gunbir Narayanan,Asst. Professor,PhD,Architecture,2005-11-11,2026-07-28 12:00:00,Mechatronics,5
-FAC_845,INST_0124,Avi Mitter,Professor,M.Sc.,Physics,2023-07-28,2026-08-10 12:00:00,Signal Processing,23
-FAC_846,INST_0158,Balvan Hayre,Asst. Professor,M.E.,AIML,2007-01-12,2026-04-21 12:00:00,Thermal Engineering,7
-FAC_847,INST_0255,Bhanumati Mammen,Asst. Professor,M.Tech,CIVIL,2023-03-05,2026-07-01 12:00:00,Drug Delivery,23
-FAC_848,INST_0170,Edhitha Mittal,Professor,M.Sc.,Mathematics,2006-12-29,2026-04-23 12:00:00,VLSI Design,6
-FAC_849,INST_0063,Onveer De,Assoc. Professor,M.Tech,Architecture,2023-06-29,2025-03-28 12:00:00,Data Mining,23
-FAC_85,INST_0382,Ishani Krishnan,Asst. Professor,PhD,Physics,2008-11-11,2024-04-26 12:00:00,Power Systems,8
-FAC_850,INST_0052,Aryan Raval,Asst. Professor,PhD,Pharmacy,2019-09-02,2026-08-03 12:00:00,Big Data Analytics,19
-FAC_851,INST_0507,Lila Sani,Asst. Professor,PhD,MBA,2007-06-17,2023-05-08 12:00:00,Manufacturing Technology,7
-FAC_852,INST_0508,Jagat Baral,Asst. Professor,M.Sc.,ECE,2015-02-19,2024-12-12 12:00:00,Mechatronics,15
-FAC_853,INST_0509,Nitesh Munshi,Asst. Professor,M.Sc.,CSE,2019-06-17,2025-06-14 12:00:00,Deep Learning,19
-FAC_854,INST_0510,Gabriel Chada,Professor,M.Tech,ECE,2020-06-11,2022-11-05 12:00:00,Supply Chain Management,20
-FAC_855,INST_0511,Umang Bal,Asst. Professor,PhD,AIML,2008-11-02,2024-10-04 12:00:00,Marketing Analytics,8
-FAC_856,INST_0512,Shaurya Chowdhury,Asst. Professor,PhD,MECH,2013-01-19,2023-05-21 12:00:00,Marketing Analytics,13
-FAC_857,INST_0513,Joshua Kannan,Professor,M.Sc.,ECE,2013-03-24,2022-02-01 12:00:00,Drug Delivery,13
-FAC_858,INST_0514,Bachittar Kalla,Professor,PhD,Pharmacy,2007-03-06,2023-12-01 12:00:00,Business Analytics,7
-FAC_859,INST_0515,Ekapad Iyengar,Asst. Professor,PhD,CSE,2018-05-06,2023-04-23 12:00:00,Wireless Communications,18
-FAC_86,INST_0316,Nathan Raja,Professor,M.Sc.,Mathematics,2008-08-17,2025-03-23 12:00:00,Cryptography,8
-FAC_860,INST_0516,Raghav Karnik,Professor,M.Sc.,ECE,2014-08-17,2023-03-26 12:00:00,Operations Research,14
-FAC_861,INST_0517,Arya Grewal,Professor,M.E.,ECE,2019-08-26,2022-08-26 12:00:00,Marketing Analytics,19
-FAC_862,INST_0518,Triveni Vaidya,Professor,M.Sc.,Architecture,2012-08-30,2023-07-20 12:00:00,Manufacturing Technology,12
-FAC_863,INST_0519,Aayush Bhatia,Professor,M.E.,MBA,2013-07-20,2021-09-12 12:00:00,Machine Learning,13
-FAC_864,INST_0520,Ayushman Ramanathan,Assoc. Professor,PhD,EEE,2007-02-13,2023-09-04 12:00:00,Wireless Communications,7
-FAC_87,INST_0463,Jalsa Datta,Assoc. Professor,M.Sc.,Pharmacy,2013-11-01,2026-05-10 12:00:00,Pharmaceutical Chemistry,13
-FAC_88,INST_0495,Ansh Dalal,Assoc. Professor,M.Sc.,EEE,2016-12-29,2026-06-15 12:00:00,Internet of Things,16
-FAC_89,INST_0148,Chakradev Varghese,Assoc. Professor,M.E.,AIML,2007-09-23,2026-07-22 12:00:00,Robotics,7
-FAC_9,INST_0135,Dalaja Morar,Professor,M.Tech,Pharmacy,2012-12-16,2026-06-07 12:00:00,Structural Engineering,12
-FAC_90,INST_0392,Yasti Jain,Assoc. Professor,M.Tech,EEE,2014-11-17,2024-09-15 12:00:00,Cryptography,14
-FAC_91,INST_0205,George Cherian,Asst. Professor,M.E.,CIVIL,2021-02-16,2026-07-28 12:00:00,Thermal Engineering,21
-FAC_92,INST_0472,Umang Suresh,Asst. Professor,PhD,Architecture,2007-01-25,2022-01-20 12:00:00,Structural Engineering,7
-FAC_93,INST_0159,Ikshita Bhalla,Professor,M.Tech,AIDS,2018-07-14,2026-06-20 12:00:00,Embedded Systems,18
-FAC_94,INST_0416,Megha Dey,Professor,M.E.,ECE,2007-07-10,2026-05-29 12:00:00,Mechatronics,7
-FAC_95,INST_0369,Lucky Nadig,Assoc. Professor,M.E.,Architecture,2004-03-15,2026-05-26 12:00:00,Mechatronics,4
-FAC_96,INST_0310,Aadi Bail,Assoc. Professor,M.Tech,Pharmacy,2009-12-14,2023-11-18 12:00:00,Thermal Engineering,9
-FAC_97,INST_0338,Falak Sarma,Assoc. Professor,M.Tech,AIDS,2022-06-22,2024-07-11 12:00:00,Embedded Systems,22
-FAC_98,INST_0113,Tejas Bhakta,Assoc. Professor,M.E.,Mathematics,2005-08-09,2025-02-11 12:00:00,Wireless Communications,5
-FAC_99,INST_0034,Chakradev Sridhar,Asst. Professor,PhD,MBA,2022-10-24,2026-06-06 12:00:00,Transportation Engineering,22
+﻿faculty_id,institution_id,faculty_name,designation,qualification,specialization,department,years_of_experience,date_joined,last_updated
+FAC_1,INST_0172,Rajata Wason,Assoc. Professor,M.Tech,Pharmaceutical Chemistry,Pharmacy,19,2019-09-15,2024-12-07 12:00:00
+FAC_10,INST_0276,Pallavi Lall,Asst. Professor,M.E.,Drug Delivery,MBA,22,2022-07-19,2026-04-25 12:00:00
+FAC_100,INST_0142,Agastya Sidhu,Professor,M.Tech,Computer Vision,MBA,5,2005-12-24,2026-05-10 12:00:00
+FAC_101,INST_0275,Yachana Dasgupta,Assoc. Professor,M.E.,Business Analytics,IT,10,2010-04-17,2022-10-14 12:00:00
+FAC_102,INST_0113,Anika Sridhar,Assoc. Professor,M.E.,Marketing Analytics,EEE,18,2018-02-14,2026-07-21 12:00:00
+FAC_103,INST_0139,Balhaar Mall,Assoc. Professor,M.E.,Big Data Analytics,Architecture,4,2004-09-20,2026-06-04 12:00:00
+FAC_104,INST_0168,Anamika Rau,Professor,PhD,Manufacturing Technology,ECE,11,2011-06-15,2026-05-16 12:00:00
+FAC_105,INST_0184,Faraj Thakkar,Asst. Professor,M.E.,Thermal Engineering,ECE,17,2017-08-17,2026-07-13 12:00:00
+FAC_106,INST_0382,Raghav Koshy,Asst. Professor,M.Sc.,Manufacturing Technology,Pharmacy,17,2017-09-05,2025-03-05 12:00:00
+FAC_107,INST_0051,Alka Chowdhury,Asst. Professor,M.Tech,Pharmacology,AIDS,13,2013-01-07,2021-07-16 12:00:00
+FAC_108,INST_0327,Gaurav Ratta,Assoc. Professor,M.Tech,Power Systems,EEE,17,2017-01-22,2022-06-06 12:00:00
+FAC_109,INST_0027,Peter Om,Assoc. Professor,M.E.,Thermal Engineering,MECH,9,2009-02-03,2026-06-02 12:00:00
+FAC_11,INST_0420,Anvi Ratta,Asst. Professor,M.E.,VLSI Design,Physics,22,2022-07-21,2026-05-11 12:00:00
+FAC_110,INST_0008,Inaya Virk,Professor,M.E.,Transportation Engineering,Physics,20,2020-10-08,2026-06-09 12:00:00
+FAC_111,INST_0220,Chameli Nayar,Assoc. Professor,M.Tech,Pharmaceutical Chemistry,Mathematics,14,2014-08-28,2026-05-06 12:00:00
+FAC_112,INST_0304,Zehaan Rajan,Assoc. Professor,M.E.,Natural Language Processing,Physics,6,2006-04-29,2026-06-03 12:00:00
+FAC_113,INST_0215,Falak Sundaram,Assoc. Professor,M.E.,Signal Processing,ECE,20,2020-05-17,2026-05-21 12:00:00
+FAC_114,INST_0099,Kavya Ramesh,Asst. Professor,M.Sc.,Pharmaceutical Chemistry,CSE,21,2021-09-17,2022-03-04 12:00:00
+FAC_115,INST_0397,Omisha Lal,Professor,M.E.,Supply Chain Management,CSE,23,2023-11-02,2026-05-12 12:00:00
+FAC_116,INST_0005,Ansh Gokhale,Asst. Professor,PhD,Human Resource Management,EEE,10,2010-11-24,2026-06-04 12:00:00
+FAC_117,INST_0118,Chavvi Mannan,Assoc. Professor,M.Sc.,Control Systems,Pharmacy,6,2006-10-21,2023-09-24 12:00:00
+FAC_118,INST_0469,Veda Chad,Assoc. Professor,PhD,Design Engineering,MBA,22,2022-02-02,2024-11-06 12:00:00
+FAC_119,INST_0170,Ijaya Mannan,Professor,M.Sc.,Geotechnical Engineering,EEE,16,2016-03-16,2026-07-03 12:00:00
+FAC_12,INST_0443,Triveni Konda,Asst. Professor,M.Sc.,Wireless Communications,AIDS,20,2020-10-23,2026-05-05 12:00:00
+FAC_120,INST_0382,Akshay Tailor,Asst. Professor,M.Sc.,Manufacturing Technology,Pharmacy,15,2015-10-30,2026-06-01 12:00:00
+FAC_121,INST_0143,Ranbir Walia,Asst. Professor,PhD,Internet of Things,CSE,20,2020-03-01,2026-07-09 12:00:00
+FAC_122,INST_0018,Watika Behl,Professor,M.E.,Biotechnology,MECH,23,2023-05-17,2022-12-17 12:00:00
+FAC_123,INST_0144,Panini Gopal,Professor,M.Sc.,Signal Processing,EEE,7,2007-12-30,2026-05-10 12:00:00
+FAC_124,INST_0370,Edhitha Viswanathan,Assoc. Professor,M.E.,VLSI Design,MECH,17,2017-01-29,2026-04-22 12:00:00
+FAC_125,INST_0122,Pooja Banerjee,Asst. Professor,M.Sc.,Robotics,CIVIL,11,2011-05-01,2023-12-03 12:00:00
+FAC_126,INST_0483,Qasim Dara,Assoc. Professor,M.Sc.,Network Security,CIVIL,11,2011-11-14,2024-08-09 12:00:00
+FAC_127,INST_0276,Jeevika Kaul,Professor,M.E.,Transportation Engineering,ECE,17,2017-08-29,2026-05-30 12:00:00
+FAC_128,INST_0101,Pranav Dora,Assoc. Professor,M.E.,Corporate Finance,MBA,14,2014-01-10,2026-05-29 12:00:00
+FAC_129,INST_0359,Yoshita Johal,Assoc. Professor,PhD,Mechatronics,MBA,19,2019-09-16,2026-06-19 12:00:00
+FAC_13,INST_0426,Yashvi Pal,Assoc. Professor,M.Sc.,Computer Vision,MECH,12,2012-10-30,2022-01-26 12:00:00
+FAC_130,INST_0255,Abhiram Keer,Professor,M.Sc.,Transportation Engineering,Physics,22,2022-01-11,2026-05-10 12:00:00
+FAC_131,INST_0356,Pallavi Gopal,Professor,M.Tech,Thermal Engineering,CSE,5,2005-07-22,2023-04-01 12:00:00
+FAC_132,INST_0255,Megha Prakash,Asst. Professor,M.E.,Big Data Analytics,ECE,20,2020-05-05,2026-08-04 12:00:00
+FAC_133,INST_0239,Urvi Subramaniam,Professor,M.E.,Cloud Computing,MBA,4,2004-04-25,2026-05-28 12:00:00
+FAC_134,INST_0361,Chandran Gara,Asst. Professor,M.E.,Robotics,Mathematics,21,2021-09-26,2026-04-21 12:00:00
+FAC_135,INST_0173,Chandani Raja,Asst. Professor,M.Tech,Power Electronics,Pharmacy,6,2006-09-07,2026-07-31 12:00:00
+FAC_136,INST_0393,Gautam Kara,Asst. Professor,M.E.,Wireless Communications,ECE,22,2022-04-23,2026-06-12 12:00:00
+FAC_137,INST_0382,Ranbir Kapoor,Assoc. Professor,M.Sc.,Renewable Energy Systems,Mathematics,15,2015-04-13,2023-09-06 12:00:00
+FAC_138,INST_0271,Xalak Shetty,Asst. Professor,PhD,Computer Vision,MECH,10,2010-06-30,2023-04-11 12:00:00
+FAC_139,INST_0244,Gavin Handa,Professor,M.Tech,Data Mining,Architecture,11,2011-01-31,2025-03-29 12:00:00
+FAC_14,INST_0285,Theodore Agarwal,Assoc. Professor,PhD,Wireless Communications,EEE,10,2010-07-05,2021-07-04 12:00:00
+FAC_140,INST_0046,Charan Mittal,Asst. Professor,PhD,Control Systems,AIML,8,2008-09-12,2024-08-01 12:00:00
+FAC_141,INST_0028,Daniel Bhargava,Professor,M.E.,Transportation Engineering,CSE,16,2016-07-20,2023-08-28 12:00:00
+FAC_142,INST_0358,Mugdha Kalita,Assoc. Professor,M.Tech,Renewable Energy Systems,CIVIL,21,2021-11-07,2022-10-31 12:00:00
+FAC_143,INST_0024,Yashoda Kari,Asst. Professor,M.E.,Marketing Analytics,IT,15,2015-12-27,2026-08-02 12:00:00
+FAC_144,INST_0292,Jacob Sodhi,Professor,PhD,Computational Fluid Dynamics,MECH,19,2019-07-08,2026-04-25 12:00:00
+FAC_145,INST_0250,Tanay Parekh,Professor,PhD,Business Analytics,ECE,10,2010-01-11,2023-01-25 12:00:00
+FAC_146,INST_0047,Oeshi Gala,Asst. Professor,PhD,Human Resource Management,CIVIL,21,2021-01-23,2023-08-24 12:00:00
+FAC_147,INST_0255,Ranbir Brar,Assoc. Professor,M.Tech,Operations Research,Mathematics,14,2014-06-15,2023-01-17 12:00:00
+FAC_148,INST_0212,Ojas Gour,Professor,M.Sc.,Drug Delivery,MBA,4,2004-06-19,2024-06-10 12:00:00
+FAC_149,INST_0346,Osha Tandon,Asst. Professor,M.Tech,Natural Language Processing,ECE,19,2019-03-10,2021-11-13 12:00:00
+FAC_15,INST_0294,Janani Karan,Professor,M.Sc.,Pharmaceutical Chemistry,CSE,4,2004-04-29,2026-05-13 12:00:00
+FAC_150,INST_0331,Hiral Vohra,Asst. Professor,M.E.,Drug Delivery,Architecture,5,2005-11-18,2026-04-25 12:00:00
+FAC_151,INST_0463,Guneet Korpal,Asst. Professor,M.Tech,Pharmaceutical Chemistry,CSE,13,2013-07-22,2022-09-15 12:00:00
+FAC_152,INST_0112,Lakshit Palan,Assoc. Professor,M.Sc.,Drug Delivery,CIVIL,11,2011-05-12,2026-05-29 12:00:00
+FAC_153,INST_0203,Gauri Mandal,Assoc. Professor,M.E.,VLSI Design,MECH,7,2007-01-30,2026-05-01 12:00:00
+FAC_154,INST_0110,Max Shetty,Assoc. Professor,PhD,Embedded Systems,CIVIL,17,2017-05-29,2026-08-06 12:00:00
+FAC_155,INST_0084,Yutika Shankar,Asst. Professor,PhD,Cryptography,Architecture,4,2004-06-09,2026-05-24 12:00:00
+FAC_156,INST_0047,Baljiwan Shankar,Assoc. Professor,M.Tech,Machine Learning,MECH,7,2007-10-22,2026-06-23 12:00:00
+FAC_157,INST_0050,Ishita Nori,Asst. Professor,PhD,Data Mining,AIDS,19,2019-07-25,2026-08-13 12:00:00
+FAC_158,INST_0467,Ishanvi Nagar,Professor,PhD,Manufacturing Technology,EEE,20,2020-05-27,2026-05-02 12:00:00
+FAC_159,INST_0278,Yoshita Palla,Asst. Professor,M.Sc.,Manufacturing Technology,Pharmacy,20,2020-09-24,2026-06-01 12:00:00
+FAC_16,INST_0138,Janya Pai,Asst. Professor,M.E.,Drug Delivery,ECE,8,2008-01-30,2026-08-08 12:00:00
+FAC_160,INST_0323,Faraj Joshi,Asst. Professor,PhD,Data Mining,Physics,17,2017-03-22,2026-08-10 12:00:00
+FAC_161,INST_0285,Dakshesh Naidu,Assoc. Professor,M.E.,Renewable Energy Systems,Physics,8,2008-02-09,2026-08-10 12:00:00
+FAC_162,INST_0300,Pranit Bhardwaj,Asst. Professor,M.Sc.,Pharmaceutical Chemistry,CSE,19,2019-09-12,2022-06-29 12:00:00
+FAC_163,INST_0398,Watika Sachar,Professor,PhD,Computer Vision,MECH,19,2019-04-15,2025-01-18 12:00:00
+FAC_164,INST_0448,Yash Vora,Asst. Professor,PhD,Business Analytics,Physics,17,2017-12-14,2022-05-12 12:00:00
+FAC_165,INST_0214,Yashica Sampath,Professor,M.E.,Manufacturing Technology,Architecture,9,2009-06-08,2026-04-26 12:00:00
+FAC_166,INST_0340,Geetika Rau,Asst. Professor,M.Tech,Pharmacology,EEE,22,2022-06-14,2021-11-21 12:00:00
+FAC_167,INST_0151,Finn Kohli,Assoc. Professor,M.Tech,Internet of Things,EEE,16,2016-10-14,2023-11-05 12:00:00
+FAC_168,INST_0465,Gopal Seth,Asst. Professor,PhD,Data Mining,Physics,5,2005-08-09,2023-05-27 12:00:00
+FAC_169,INST_0076,Lohit Rout,Asst. Professor,M.E.,Distributed Systems,MECH,22,2022-03-26,2024-12-18 12:00:00
+FAC_17,INST_0122,Harita Manda,Asst. Professor,M.Tech,Operations Research,Physics,19,2019-06-30,2023-02-03 12:00:00
+FAC_170,INST_0306,Hemangini Arora,Assoc. Professor,M.E.,Structural Engineering,Architecture,9,2009-12-19,2024-04-02 12:00:00
+FAC_171,INST_0096,Krishna Ravi,Professor,M.Sc.,Computer Vision,IT,7,2007-11-06,2026-06-10 12:00:00
+FAC_172,INST_0461,Brijesh Nigam,Professor,M.E.,Business Analytics,ECE,22,2022-11-15,2024-02-02 12:00:00
+FAC_173,INST_0478,Indira Upadhyay,Assoc. Professor,M.Sc.,Manufacturing Technology,AIML,11,2011-09-16,2026-07-13 12:00:00
+FAC_174,INST_0092,Henry Raval,Asst. Professor,M.E.,Deep Learning,CHEM,16,2016-08-19,2026-04-19 12:00:00
+FAC_175,INST_0374,Jeet Kothari,Assoc. Professor,M.Tech,Data Mining,Architecture,6,2006-10-01,2024-01-14 12:00:00
+FAC_176,INST_0180,Leena Kohli,Asst. Professor,M.E.,Cryptography,EEE,7,2007-10-05,2026-08-04 12:00:00
+FAC_177,INST_0111,Avni Shroff,Professor,M.Tech,Data Mining,Physics,16,2016-08-09,2023-05-08 12:00:00
+FAC_178,INST_0482,Agastya Dua,Asst. Professor,M.Sc.,Business Analytics,CHEM,10,2010-05-23,2026-04-24 12:00:00
+FAC_179,INST_0055,Xiti Deo,Asst. Professor,M.E.,Power Systems,CIVIL,22,2022-03-26,2022-05-25 12:00:00
+FAC_18,INST_0255,Nicholas Sachar,Professor,PhD,Machine Learning,Physics,7,2007-12-30,2022-08-25 12:00:00
+FAC_180,INST_0404,Jeet Minhas,Professor,M.E.,Supply Chain Management,AIML,4,2004-06-21,2026-06-09 12:00:00
+FAC_181,INST_0173,Balvan Lalla,Asst. Professor,M.Sc.,Data Mining,MECH,11,2011-05-01,2021-11-04 12:00:00
+FAC_182,INST_0469,Tanish Subramanian,Asst. Professor,M.Tech,Drug Delivery,Pharmacy,11,2011-09-26,2026-04-19 12:00:00
+FAC_183,INST_0366,Azad Deo,Professor,PhD,Data Mining,EEE,4,2004-07-27,2024-01-14 12:00:00
+FAC_184,INST_0326,Priya Sangha,Assoc. Professor,PhD,Control Systems,Pharmacy,11,2011-05-03,2022-03-03 12:00:00
+FAC_185,INST_0444,Gautam Sahni,Professor,M.Tech,Distributed Systems,CHEM,18,2018-04-29,2026-06-05 12:00:00
+FAC_186,INST_0173,Maanav Randhawa,Professor,M.E.,Control Systems,AIDS,13,2013-03-04,2026-04-23 12:00:00
+FAC_187,INST_0016,Adya Vaidya,Professor,M.E.,Big Data Analytics,IT,23,2023-12-02,2026-04-23 12:00:00
+FAC_188,INST_0145,Damini Kurian,Asst. Professor,M.E.,Pharmacology,ECE,18,2018-10-19,2026-06-15 12:00:00
+FAC_189,INST_0382,Krishna Mandal,Asst. Professor,M.E.,Supply Chain Management,Physics,12,2012-10-08,2021-09-19 12:00:00
+FAC_19,INST_0157,Eiravati Dara,Assoc. Professor,M.E.,Design Engineering,AIDS,8,2008-02-01,2022-06-24 12:00:00
+FAC_190,INST_0189,Logan Radhakrishnan,Asst. Professor,M.E.,Business Analytics,ECE,7,2007-03-01,2022-07-10 12:00:00
+FAC_191,INST_0271,Frado Barman,Assoc. Professor,M.Sc.,Signal Processing,EEE,5,2005-03-18,2023-10-26 12:00:00
+FAC_192,INST_0271,Lekha Modi,Asst. Professor,PhD,Design Engineering,Pharmacy,6,2006-10-15,2026-06-30 12:00:00
+FAC_193,INST_0168,Hitesh Solanki,Professor,M.E.,Power Systems,Mathematics,5,2005-09-29,2026-07-01 12:00:00
+FAC_194,INST_0117,Jeet Chaudry,Professor,PhD,Marketing Analytics,Mathematics,8,2008-05-19,2026-05-30 12:00:00
+FAC_195,INST_0118,Hemang Taneja,Asst. Professor,M.E.,Distributed Systems,EEE,21,2021-11-09,2026-08-01 12:00:00
+FAC_196,INST_0010,Eesha Baral,Assoc. Professor,PhD,Signal Processing,CIVIL,20,2020-09-27,2026-06-16 12:00:00
+FAC_197,INST_0027,Kashvi Ravel,Assoc. Professor,M.Sc.,Marketing Analytics,ECE,23,2023-06-05,2026-06-19 12:00:00
+FAC_198,INST_0142,Ayushman Agate,Assoc. Professor,PhD,Pharmaceutical Chemistry,MBA,18,2018-02-20,2026-07-01 12:00:00
+FAC_199,INST_0380,Arjun Kurian,Professor,M.E.,Computer Vision,ECE,17,2017-12-17,2021-12-19 12:00:00
+FAC_2,INST_0382,Diya Rout,Asst. Professor,M.Tech,Computational Fluid Dynamics,Pharmacy,11,2011-06-29,2025-03-20 12:00:00
+FAC_20,INST_0024,Gabriel Behl,Professor,M.E.,Signal Processing,CHEM,12,2012-02-20,2026-08-10 12:00:00
+FAC_200,INST_0084,Rishi Peri,Asst. Professor,M.E.,Control Systems,Architecture,16,2016-08-12,2025-01-16 12:00:00
+FAC_201,INST_0105,Reva Nazareth,Professor,M.Tech,Signal Processing,MECH,14,2014-03-09,2026-08-04 12:00:00
+FAC_202,INST_0382,Anjali Lalla,Assoc. Professor,PhD,Power Electronics,EEE,10,2010-11-12,2026-08-09 12:00:00
+FAC_203,INST_0255,Sachi Rajagopalan,Asst. Professor,M.Sc.,Pharmaceutical Chemistry,MECH,21,2021-11-21,2026-08-03 12:00:00
+FAC_204,INST_0451,Pushti Mody,Assoc. Professor,M.E.,Computer Vision,EEE,6,2006-06-24,2026-07-27 12:00:00
+FAC_205,INST_0307,Krish Banerjee,Assoc. Professor,M.E.,Power Systems,CHEM,23,2023-11-13,2026-04-30 12:00:00
+FAC_206,INST_0130,Jeevika Rao,Assoc. Professor,M.E.,Drug Delivery,AIDS,7,2007-10-11,2021-06-03 12:00:00
+FAC_207,INST_0169,Bimala Basak,Asst. Professor,PhD,Transportation Engineering,ECE,13,2013-06-22,2026-06-18 12:00:00
+FAC_208,INST_0154,Robert Varghese,Professor,PhD,Mechatronics,EEE,6,2006-04-07,2025-05-15 12:00:00
+FAC_209,INST_0384,Henry Sampath,Professor,M.Tech,Deep Learning,CHEM,19,2019-11-08,2021-12-23 12:00:00
+FAC_21,INST_0428,Madhav Vora,Assoc. Professor,M.Sc.,Business Analytics,MECH,9,2009-01-03,2026-07-13 12:00:00
+FAC_210,INST_0398,Kavya Sekhon,Professor,PhD,Robotics,AIDS,23,2023-06-17,2026-06-08 12:00:00
+FAC_211,INST_0246,Naveen Barman,Professor,M.Sc.,Embedded Systems,CSE,11,2011-03-21,2021-12-19 12:00:00
+FAC_212,INST_0099,Pavani Pal,Assoc. Professor,PhD,Human Resource Management,Physics,7,2007-02-04,2026-05-09 12:00:00
+FAC_213,INST_0457,Baghyawati Kuruvilla,Asst. Professor,M.Sc.,Supply Chain Management,Mathematics,23,2023-04-29,2022-05-06 12:00:00
+FAC_214,INST_0385,Niharika Hans,Asst. Professor,M.E.,Renewable Energy Systems,CSE,21,2021-06-27,2026-04-30 12:00:00
+FAC_215,INST_0423,Upkaar Khurana,Assoc. Professor,M.Tech,Cybersecurity,Mathematics,21,2021-05-15,2026-05-12 12:00:00
+FAC_216,INST_0172,Krishna Sekhon,Asst. Professor,PhD,Deep Learning,Physics,8,2008-09-08,2026-08-14 12:00:00
+FAC_217,INST_0326,Nikita Krishnamurthy,Assoc. Professor,M.Tech,Control Systems,EEE,5,2005-12-26,2022-01-24 12:00:00
+FAC_218,INST_0426,Jeet Mani,Asst. Professor,PhD,Distributed Systems,MBA,17,2017-08-21,2026-07-24 12:00:00
+FAC_219,INST_0223,Yashica Choudhry,Professor,M.Sc.,Power Electronics,CSE,7,2007-04-30,2022-02-20 12:00:00
+FAC_22,INST_0026,Tejas Shanker,Assoc. Professor,PhD,Deep Learning,EEE,23,2023-10-05,2026-04-24 12:00:00
+FAC_220,INST_0094,Siddharth Kala,Professor,M.Tech,Design Engineering,ECE,20,2020-08-10,2026-05-06 12:00:00
+FAC_221,INST_0037,Mekhala Char,Assoc. Professor,M.Tech,Corporate Finance,CIVIL,13,2013-05-29,2026-04-23 12:00:00
+FAC_222,INST_0318,Darpan Mangal,Professor,M.Tech,Marketing Analytics,Physics,18,2018-10-26,2026-06-17 12:00:00
+FAC_223,INST_0292,Ladli Bhasin,Asst. Professor,M.Tech,Control Systems,AIML,8,2008-04-06,2024-05-12 12:00:00
+FAC_224,INST_0067,Teerth Mahal,Asst. Professor,M.Sc.,Structural Engineering,Mathematics,9,2009-11-11,2026-07-11 12:00:00
+FAC_225,INST_0238,Ucchal Chauhan,Assoc. Professor,M.Tech,Manufacturing Technology,Mathematics,21,2021-05-27,2022-02-25 12:00:00
+FAC_226,INST_0142,Atharv Peri,Assoc. Professor,M.E.,Renewable Energy Systems,AIDS,5,2005-10-16,2026-06-28 12:00:00
+FAC_227,INST_0380,Watika Krish,Assoc. Professor,PhD,Power Electronics,AIDS,12,2012-03-28,2026-05-14 12:00:00
+FAC_228,INST_0310,Rajeshri Rastogi,Asst. Professor,M.Tech,Computational Fluid Dynamics,EEE,8,2008-10-18,2026-06-11 12:00:00
+FAC_229,INST_0321,Warhi Barman,Professor,PhD,Business Analytics,ECE,20,2020-06-07,2023-09-23 12:00:00
+FAC_23,INST_0115,Charan Chaudhary,Professor,M.E.,Distributed Systems,AIDS,16,2016-10-09,2022-09-05 12:00:00
+FAC_230,INST_0062,Darika Baral,Assoc. Professor,M.Sc.,Embedded Systems,Pharmacy,22,2022-07-08,2022-06-28 12:00:00
+FAC_231,INST_0206,Leena Kalita,Assoc. Professor,M.Sc.,Deep Learning,IT,8,2008-12-25,2023-07-02 12:00:00
+FAC_232,INST_0303,Rachit Bajwa,Asst. Professor,M.Sc.,Design Engineering,Pharmacy,5,2005-05-10,2026-06-14 12:00:00
+FAC_233,INST_0454,Chavvi Shroff,Assoc. Professor,M.Sc.,Power Systems,EEE,4,2004-10-27,2026-08-04 12:00:00
+FAC_234,INST_0171,Advik Mohanty,Professor,M.Sc.,Cloud Computing,AIML,19,2019-11-14,2026-06-19 12:00:00
+FAC_235,INST_0153,William Kanda,Assoc. Professor,M.Tech,Environmental Engineering,CIVIL,5,2005-05-09,2023-01-15 12:00:00
+FAC_236,INST_0113,Ishita Brar,Assoc. Professor,M.Tech,Big Data Analytics,Physics,8,2008-02-02,2026-05-04 12:00:00
+FAC_237,INST_0011,Gauri Khare,Professor,M.Sc.,Human Resource Management,AIDS,13,2013-04-29,2025-01-04 12:00:00
+FAC_238,INST_0356,Bina Bava,Asst. Professor,M.Sc.,Transportation Engineering,AIML,4,2004-12-12,2026-08-14 12:00:00
+FAC_239,INST_0238,Faras Khanna,Assoc. Professor,M.E.,Internet of Things,CHEM,15,2015-04-02,2026-06-26 12:00:00
+FAC_24,INST_0350,Urmi Anne,Asst. Professor,M.Tech,Embedded Systems,ECE,4,2004-02-07,2026-07-26 12:00:00
+FAC_240,INST_0336,Bakhshi Shere,Asst. Professor,M.Tech,Transportation Engineering,Pharmacy,17,2017-12-04,2026-07-21 12:00:00
+FAC_241,INST_0127,Vidhi Shukla,Professor,M.E.,Big Data Analytics,Mathematics,21,2021-09-06,2023-07-11 12:00:00
+FAC_242,INST_0149,Yashasvi Handa,Asst. Professor,M.E.,Control Systems,CSE,18,2018-08-27,2021-08-16 12:00:00
+FAC_243,INST_0098,Triya Kohli,Asst. Professor,M.Sc.,Geotechnical Engineering,CSE,23,2023-12-12,2026-07-14 12:00:00
+FAC_244,INST_0276,Reva Kumer,Asst. Professor,PhD,Computational Fluid Dynamics,CHEM,23,2023-12-09,2026-04-19 12:00:00
+FAC_245,INST_0401,Vasatika Mohanty,Assoc. Professor,PhD,Drug Delivery,CHEM,4,2004-12-25,2025-02-07 12:00:00
+FAC_246,INST_0403,Aryan Kakar,Assoc. Professor,M.E.,Big Data Analytics,MECH,20,2020-06-01,2024-04-14 12:00:00
+FAC_247,INST_0369,Ekantika Bajwa,Professor,M.Sc.,Transportation Engineering,MBA,7,2007-12-06,2026-04-20 12:00:00
+FAC_248,INST_0382,Bachittar Lad,Asst. Professor,PhD,Embedded Systems,Physics,6,2006-11-09,2026-05-28 12:00:00
+FAC_249,INST_0356,Aradhana Krishnan,Asst. Professor,M.Tech,Control Systems,CHEM,15,2015-06-26,2025-02-20 12:00:00
+FAC_25,INST_0157,Gaurangi Bakshi,Asst. Professor,M.Tech,Power Systems,CHEM,23,2023-07-28,2021-06-06 12:00:00
+FAC_250,INST_0223,Kamala Salvi,Professor,PhD,Natural Language Processing,MBA,4,2004-04-01,2026-06-28 12:00:00
+FAC_251,INST_0415,Abdul Walla,Asst. Professor,M.Sc.,Biotechnology,CSE,5,2005-04-19,2026-05-10 12:00:00
+FAC_252,INST_0382,Anika Sunder,Professor,M.E.,Signal Processing,CIVIL,21,2021-05-17,2026-08-12 12:00:00
+FAC_253,INST_0476,Lajita Malhotra,Asst. Professor,M.Sc.,Internet of Things,MECH,4,2004-03-22,2026-07-02 12:00:00
+FAC_254,INST_0298,Anamika Raju,Assoc. Professor,M.Tech,Power Electronics,ECE,22,2022-01-24,2022-09-25 12:00:00
+FAC_255,INST_0340,Charita Desai,Asst. Professor,PhD,Natural Language Processing,IT,23,2023-10-10,2025-04-03 12:00:00
+FAC_256,INST_0139,Matthew Manne,Professor,M.Tech,Wireless Communications,CIVIL,21,2021-05-11,2021-09-11 12:00:00
+FAC_257,INST_0272,Janya Dua,Assoc. Professor,PhD,Wireless Communications,MECH,14,2014-03-20,2026-05-06 12:00:00
+FAC_258,INST_0293,Zayyan Walla,Professor,M.E.,Machine Learning,AIML,16,2016-05-14,2026-07-27 12:00:00
+FAC_259,INST_0255,Daksha Chad,Professor,M.Sc.,Distributed Systems,CSE,11,2011-04-25,2026-08-10 12:00:00
+FAC_26,INST_0409,Ekalinga Parsa,Professor,M.Tech,Drug Delivery,Architecture,11,2011-10-03,2026-06-17 12:00:00
+FAC_260,INST_0029,Nachiket Vala,Professor,PhD,Mechatronics,CHEM,17,2017-08-24,2023-11-10 12:00:00
+FAC_261,INST_0251,Chameli Grewal,Asst. Professor,M.Sc.,Signal Processing,Architecture,11,2011-05-04,2026-07-21 12:00:00
+FAC_262,INST_0159,Krishna Mitter,Assoc. Professor,M.Sc.,Computer Vision,Physics,19,2019-05-06,2026-05-18 12:00:00
+FAC_263,INST_0003,Krish Virk,Assoc. Professor,M.Sc.,Computer Vision,IT,10,2010-07-07,2026-06-08 12:00:00
+FAC_264,INST_0179,Finn Agate,Professor,M.E.,Network Security,Physics,16,2016-03-04,2026-07-05 12:00:00
+FAC_265,INST_0255,Patrick Lalla,Assoc. Professor,M.Tech,Human Resource Management,AIDS,19,2019-06-24,2024-11-02 12:00:00
+FAC_266,INST_0004,Jhalak Murthy,Assoc. Professor,M.Sc.,Power Systems,CHEM,12,2012-04-19,2026-05-02 12:00:00
+FAC_267,INST_0483,Anika Date,Professor,PhD,Deep Learning,ECE,20,2020-11-01,2026-07-21 12:00:00
+FAC_268,INST_0120,Varenya Boase,Asst. Professor,M.Tech,Business Analytics,CIVIL,14,2014-10-18,2023-07-03 12:00:00
+FAC_269,INST_0262,Niharika Singh,Professor,PhD,Biotechnology,CSE,10,2010-05-25,2026-08-10 12:00:00
+FAC_27,INST_0364,Dev Chaudhuri,Assoc. Professor,M.E.,Environmental Engineering,MECH,11,2011-10-12,2026-05-10 12:00:00
+FAC_270,INST_0044,Tanveer Sachdev,Professor,PhD,Geotechnical Engineering,CSE,16,2016-04-21,2026-07-17 12:00:00
+FAC_271,INST_0127,Niharika Saha,Professor,M.E.,Marketing Analytics,MECH,4,2004-10-13,2025-05-25 12:00:00
+FAC_272,INST_0385,Reva Dugar,Professor,M.E.,Structural Engineering,IT,9,2009-11-18,2026-05-20 12:00:00
+FAC_273,INST_0039,Fariq Bakshi,Assoc. Professor,M.Tech,Marketing Analytics,Pharmacy,11,2011-05-04,2026-06-14 12:00:00
+FAC_274,INST_0292,Samesh Doctor,Assoc. Professor,M.Tech,Business Analytics,AIML,13,2013-08-08,2026-07-04 12:00:00
+FAC_275,INST_0255,Dalaja Kumar,Assoc. Professor,M.Tech,Big Data Analytics,ECE,8,2008-02-22,2026-07-05 12:00:00
+FAC_276,INST_0040,Ekanta Pingle,Asst. Professor,M.Tech,Drug Delivery,IT,21,2021-04-07,2026-05-29 12:00:00
+FAC_277,INST_0133,Radha Bhalla,Asst. Professor,M.E.,Internet of Things,MECH,14,2014-03-14,2026-08-01 12:00:00
+FAC_278,INST_0002,Frado Nigam,Asst. Professor,M.Sc.,Supply Chain Management,Pharmacy,6,2006-08-23,2026-08-04 12:00:00
+FAC_279,INST_0195,Kabir Mukhopadhyay,Asst. Professor,M.Tech,Power Systems,Architecture,12,2012-09-22,2026-05-14 12:00:00
+FAC_28,INST_0495,Gavin Krishnan,Assoc. Professor,M.Tech,Natural Language Processing,AIDS,13,2013-12-25,2026-04-19 12:00:00
+FAC_280,INST_0254,Vasudha Chaudhari,Professor,PhD,Thermal Engineering,Physics,4,2004-11-17,2024-10-21 12:00:00
+FAC_281,INST_0468,Guneet Pradhan,Professor,M.E.,Thermal Engineering,Architecture,20,2020-09-02,2026-06-10 12:00:00
+FAC_282,INST_0014,Wakeeta Patil,Asst. Professor,PhD,Structural Engineering,EEE,18,2018-10-07,2026-05-19 12:00:00
+FAC_283,INST_0149,Qushi Krishnamurthy,Assoc. Professor,M.Sc.,Natural Language Processing,AIML,19,2019-07-07,2026-08-10 12:00:00
+FAC_284,INST_0014,Aadhya Nagar,Asst. Professor,M.Sc.,Design Engineering,CSE,8,2008-01-02,2021-06-12 12:00:00
+FAC_285,INST_0101,Ekantika Mittal,Asst. Professor,M.Tech,Supply Chain Management,EEE,12,2012-12-16,2026-05-27 12:00:00
+FAC_286,INST_0364,Darsh Nayak,Professor,PhD,Geotechnical Engineering,EEE,4,2004-09-20,2026-08-14 12:00:00
+FAC_287,INST_0009,Benjamin Ghose,Asst. Professor,M.Sc.,Thermal Engineering,EEE,10,2010-11-10,2026-06-10 12:00:00
+FAC_288,INST_0214,Bhavani Kala,Professor,PhD,Machine Learning,Architecture,22,2022-11-18,2022-03-14 12:00:00
+FAC_289,INST_0255,Azad Kibe,Asst. Professor,M.Tech,Pharmaceutical Chemistry,Pharmacy,21,2021-02-05,2026-05-03 12:00:00
+FAC_29,INST_0326,Harish Borde,Asst. Professor,M.E.,Geotechnical Engineering,MBA,19,2019-05-14,2023-08-18 12:00:00
+FAC_290,INST_0409,Anika Garg,Assoc. Professor,PhD,Business Analytics,Mathematics,5,2005-01-14,2026-07-17 12:00:00
+FAC_291,INST_0454,Pahal Master,Asst. Professor,M.Sc.,Network Security,Pharmacy,21,2021-06-05,2023-10-28 12:00:00
+FAC_292,INST_0040,Jackson Basak,Asst. Professor,M.E.,Computer Vision,ECE,9,2009-01-27,2025-06-07 12:00:00
+FAC_293,INST_0171,Timothy Vyas,Assoc. Professor,PhD,Computational Fluid Dynamics,AIDS,13,2013-02-14,2026-06-23 12:00:00
+FAC_294,INST_0037,Tarak Narang,Asst. Professor,M.Tech,Distributed Systems,Physics,11,2011-09-08,2026-08-03 12:00:00
+FAC_295,INST_0243,Samar Contractor,Assoc. Professor,M.Sc.,Deep Learning,IT,14,2014-07-28,2026-07-01 12:00:00
+FAC_296,INST_0168,Avni Badami,Assoc. Professor,PhD,Structural Engineering,CIVIL,21,2021-11-27,2026-08-05 12:00:00
+FAC_297,INST_0476,Anita Puri,Asst. Professor,M.Tech,Computer Vision,IT,10,2010-10-16,2026-08-12 12:00:00
+FAC_298,INST_0382,Mohini Basu,Assoc. Professor,M.E.,Network Security,MECH,10,2010-04-14,2023-10-02 12:00:00
+FAC_299,INST_0359,Aarini Bedi,Assoc. Professor,M.Sc.,Drug Delivery,MECH,23,2023-10-02,2026-08-14 12:00:00
+FAC_3,INST_0325,Keya Brahmbhatt,Asst. Professor,PhD,Computer Vision,IT,11,2011-02-12,2026-05-20 12:00:00
+FAC_30,INST_0134,Dayamai Pall,Assoc. Professor,M.E.,Marketing Analytics,MBA,10,2010-10-24,2026-05-23 12:00:00
+FAC_300,INST_0472,Jhalak Kanda,Professor,PhD,Big Data Analytics,Architecture,7,2007-09-09,2022-04-12 12:00:00
+FAC_301,INST_0021,Hemal Zacharia,Professor,M.Tech,Corporate Finance,AIML,9,2009-01-18,2026-04-30 12:00:00
+FAC_302,INST_0033,Gaurika Mishra,Professor,M.Tech,Pharmacology,Physics,4,2004-01-15,2023-03-15 12:00:00
+FAC_303,INST_0382,Teerth Dara,Asst. Professor,M.E.,Corporate Finance,CSE,20,2020-11-07,2022-12-12 12:00:00
+FAC_304,INST_0285,Tarak Behl,Assoc. Professor,M.Sc.,Power Electronics,AIML,21,2021-06-30,2023-05-01 12:00:00
+FAC_305,INST_0098,Anjali Deshpande,Assoc. Professor,M.E.,Environmental Engineering,Mathematics,15,2015-10-11,2026-04-21 12:00:00
+FAC_306,INST_0148,Nakul Sule,Asst. Professor,PhD,Biotechnology,AIDS,21,2021-09-09,2023-02-13 12:00:00
+FAC_307,INST_0262,Darika Babu,Professor,M.Sc.,Computer Vision,IT,4,2004-02-14,2026-07-08 12:00:00
+FAC_308,INST_0149,Naveen Sibal,Assoc. Professor,M.E.,Network Security,AIDS,10,2010-04-04,2024-08-30 12:00:00
+FAC_309,INST_0052,Yochana Bhatia,Asst. Professor,M.E.,Distributed Systems,CSE,17,2017-10-12,2026-05-10 12:00:00
+FAC_31,INST_0318,Hemangini Kala,Professor,M.Tech,Deep Learning,ECE,12,2012-08-18,2026-07-06 12:00:00
+FAC_310,INST_0303,Neha Bahl,Assoc. Professor,M.Sc.,Pharmaceutical Chemistry,CIVIL,20,2020-09-22,2025-01-31 12:00:00
+FAC_311,INST_0164,Veda Swamy,Asst. Professor,M.E.,Cryptography,CHEM,8,2008-05-28,2021-12-26 12:00:00
+FAC_312,INST_0382,Vedika Mohan,Assoc. Professor,M.Sc.,Natural Language Processing,AIML,22,2022-09-16,2023-01-08 12:00:00
+FAC_313,INST_0273,Oscar Prakash,Asst. Professor,M.Tech,Distributed Systems,Physics,7,2007-09-16,2025-01-14 12:00:00
+FAC_314,INST_0242,Ladli Tak,Professor,M.Tech,Robotics,Pharmacy,5,2005-01-17,2026-08-04 12:00:00
+FAC_315,INST_0229,Manya Ganesan,Professor,M.E.,Manufacturing Technology,AIDS,8,2008-08-24,2022-08-23 12:00:00
+FAC_316,INST_0148,Ronith Pathak,Asst. Professor,PhD,Deep Learning,Mathematics,5,2005-07-24,2024-12-12 12:00:00
+FAC_317,INST_0399,Sathvik Vaidya,Professor,M.Tech,Operations Research,Physics,18,2018-08-09,2026-07-17 12:00:00
+FAC_318,INST_0321,Vedhika Keer,Asst. Professor,M.E.,Computational Fluid Dynamics,EEE,12,2012-02-25,2025-04-09 12:00:00
+FAC_319,INST_0279,Ekta Kothari,Assoc. Professor,M.Sc.,VLSI Design,Physics,7,2007-03-20,2026-06-18 12:00:00
+FAC_32,INST_0395,Geetika Sathe,Professor,M.Tech,Pharmacology,CHEM,21,2021-01-24,2026-07-19 12:00:00
+FAC_320,INST_0255,Gayathri Mistry,Assoc. Professor,M.E.,Internet of Things,ECE,4,2004-09-06,2026-06-09 12:00:00
+FAC_321,INST_0005,Gagan Rana,Asst. Professor,PhD,Geotechnical Engineering,AIML,4,2004-11-10,2023-04-04 12:00:00
+FAC_322,INST_0410,Bina Ray,Asst. Professor,M.E.,Marketing Analytics,Mathematics,9,2009-04-01,2022-04-02 12:00:00
+FAC_323,INST_0179,Veer Devan,Asst. Professor,PhD,Control Systems,MECH,7,2007-09-29,2026-04-22 12:00:00
+FAC_324,INST_0193,Ayaan Narula,Assoc. Professor,M.Tech,Cryptography,Pharmacy,16,2016-09-22,2023-08-05 12:00:00
+FAC_325,INST_0146,Gunbir Butala,Assoc. Professor,PhD,Structural Engineering,IT,21,2021-07-26,2026-05-21 12:00:00
+FAC_326,INST_0135,Neelima Seth,Assoc. Professor,M.Tech,Power Systems,ECE,10,2010-07-21,2026-08-10 12:00:00
+FAC_327,INST_0382,Tristan Hans,Asst. Professor,M.Sc.,Power Electronics,CIVIL,19,2019-05-24,2026-08-10 12:00:00
+FAC_328,INST_0397,Qushi Dugar,Assoc. Professor,M.Tech,Embedded Systems,ECE,20,2020-02-06,2026-05-05 12:00:00
+FAC_329,INST_0263,Patrick Loke,Assoc. Professor,M.Tech,Deep Learning,EEE,13,2013-12-26,2026-05-22 12:00:00
+FAC_33,INST_0255,Gayathri Bains,Professor,M.Tech,Control Systems,Physics,11,2011-07-30,2026-06-04 12:00:00
+FAC_330,INST_0340,Gopal Sastry,Assoc. Professor,M.E.,Wireless Communications,MECH,9,2009-11-21,2026-07-23 12:00:00
+FAC_331,INST_0151,Pooja Pau,Professor,PhD,Pharmaceutical Chemistry,ECE,4,2004-12-17,2024-11-14 12:00:00
+FAC_332,INST_0382,Aditya Sood,Assoc. Professor,M.E.,Operations Research,AIML,5,2005-12-19,2021-12-17 12:00:00
+FAC_333,INST_0046,Tanvi Barad,Assoc. Professor,M.Tech,Deep Learning,Architecture,6,2006-03-08,2025-04-18 12:00:00
+FAC_334,INST_0141,Mason Menon,Asst. Professor,M.E.,Distributed Systems,IT,6,2006-10-04,2026-06-14 12:00:00
+FAC_335,INST_0382,Qadim Sachar,Asst. Professor,PhD,Transportation Engineering,CHEM,19,2019-05-18,2023-01-26 12:00:00
+FAC_336,INST_0098,Zashil Reddy,Professor,M.Tech,Network Security,AIDS,18,2018-06-16,2026-08-12 12:00:00
+FAC_337,INST_0242,Indali Kashyap,Assoc. Professor,PhD,Internet of Things,AIML,5,2005-02-02,2024-06-03 12:00:00
+FAC_338,INST_0007,Ucchal Pal,Assoc. Professor,M.Sc.,Data Mining,CHEM,22,2022-12-28,2026-07-13 12:00:00
+FAC_339,INST_0161,Ekbal Desai,Asst. Professor,PhD,Pharmacology,Mathematics,14,2014-03-26,2026-06-27 12:00:00
+FAC_34,INST_0125,Maanas Sama,Assoc. Professor,M.E.,Geotechnical Engineering,CSE,21,2021-07-28,2026-07-29 12:00:00
+FAC_340,INST_0289,Ethan Tank,Professor,M.Sc.,Thermal Engineering,CHEM,18,2018-05-30,2024-11-08 12:00:00
+FAC_341,INST_0231,Eiravati Basak,Professor,M.Tech,Cybersecurity,Physics,10,2010-12-10,2021-11-15 12:00:00
+FAC_342,INST_0261,Avi Pillay,Asst. Professor,M.Tech,Cybersecurity,CHEM,7,2007-10-18,2026-04-26 12:00:00
+FAC_343,INST_0461,Vyanjana Chakrabarti,Asst. Professor,PhD,Design Engineering,MBA,23,2023-07-08,2024-12-21 12:00:00
+FAC_344,INST_0165,Eesha Kapur,Asst. Professor,PhD,VLSI Design,Mathematics,9,2009-10-30,2026-06-09 12:00:00
+FAC_345,INST_0189,Ayushman Pau,Assoc. Professor,M.Tech,Internet of Things,CSE,22,2022-07-13,2026-08-06 12:00:00
+FAC_346,INST_0258,Anvi Mand,Professor,M.E.,Computational Fluid Dynamics,ECE,23,2023-08-20,2025-01-01 12:00:00
+FAC_347,INST_0026,Vrishti Sabharwal,Asst. Professor,PhD,Cryptography,Physics,18,2018-02-08,2024-08-12 12:00:00
+FAC_348,INST_0329,Zayyan Lall,Professor,M.Sc.,Design Engineering,EEE,14,2014-06-25,2025-01-23 12:00:00
+FAC_349,INST_0153,Hemang Jha,Assoc. Professor,M.Tech,Power Systems,CSE,5,2005-06-13,2026-04-19 12:00:00
+FAC_35,INST_0404,Ucchal Parekh,Asst. Professor,PhD,Natural Language Processing,EEE,20,2020-07-06,2026-06-26 12:00:00
+FAC_350,INST_0167,Adweta Parmer,Asst. Professor,M.E.,Power Electronics,CIVIL,6,2006-03-28,2026-05-01 12:00:00
+FAC_351,INST_0176,Harish Chandra,Asst. Professor,M.E.,Business Analytics,MBA,22,2022-03-11,2021-08-16 12:00:00
+FAC_352,INST_0182,Vasudha Prasad,Professor,M.Sc.,VLSI Design,Pharmacy,12,2012-11-17,2026-05-25 12:00:00
+FAC_353,INST_0263,Ekansh Wadhwa,Professor,PhD,Deep Learning,CSE,12,2012-01-30,2026-06-03 12:00:00
+FAC_354,INST_0011,Hemang Dara,Professor,M.Tech,Manufacturing Technology,AIDS,15,2015-11-16,2024-03-05 12:00:00
+FAC_355,INST_0255,Devansh Kothari,Asst. Professor,M.Tech,Network Security,CHEM,12,2012-09-17,2026-05-31 12:00:00
+FAC_356,INST_0149,Anjali Natt,Asst. Professor,PhD,Cloud Computing,IT,5,2005-04-29,2022-10-07 12:00:00
+FAC_357,INST_0443,Jackson Acharya,Asst. Professor,PhD,Machine Learning,Mathematics,8,2008-11-03,2026-05-08 12:00:00
+FAC_358,INST_0203,Dev Sundaram,Assoc. Professor,M.Tech,Business Analytics,CHEM,8,2008-06-19,2026-06-09 12:00:00
+FAC_359,INST_0367,William Padmanabhan,Assoc. Professor,M.E.,Network Security,MECH,21,2021-03-06,2026-08-16 12:00:00
+FAC_36,INST_0470,Indira Zachariah,Professor,PhD,Computational Fluid Dynamics,EEE,11,2011-11-26,2026-05-23 12:00:00
+FAC_360,INST_0159,Gaurika Shanker,Asst. Professor,PhD,Power Systems,AIML,11,2011-11-17,2026-05-26 12:00:00
+FAC_361,INST_0214,Yutika Shetty,Assoc. Professor,M.Sc.,Signal Processing,Pharmacy,7,2007-04-10,2024-07-29 12:00:00
+FAC_362,INST_0165,Nidra Din,Assoc. Professor,M.E.,Embedded Systems,MECH,17,2017-03-28,2026-08-11 12:00:00
+FAC_363,INST_0058,Mason Mallick,Assoc. Professor,M.E.,Deep Learning,CSE,16,2016-05-11,2026-07-31 12:00:00
+FAC_364,INST_0447,Udant Sinha,Professor,PhD,Corporate Finance,AIDS,17,2017-08-17,2026-04-23 12:00:00
+FAC_365,INST_0022,Chakradhar Shetty,Professor,PhD,Supply Chain Management,CHEM,8,2008-10-28,2021-10-07 12:00:00
+FAC_366,INST_0255,Nikita Dhar,Asst. Professor,M.E.,Wireless Communications,MBA,8,2008-05-14,2026-04-23 12:00:00
+FAC_367,INST_0177,Jagat Kumar,Assoc. Professor,M.E.,Control Systems,AIML,14,2014-08-06,2026-08-07 12:00:00
+FAC_368,INST_0304,Baghyawati Soman,Assoc. Professor,M.Tech,Distributed Systems,EEE,11,2011-07-14,2023-12-26 12:00:00
+FAC_369,INST_0206,Damyanti Desai,Assoc. Professor,M.Tech,Drug Delivery,CIVIL,7,2007-11-04,2022-10-15 12:00:00
+FAC_37,INST_0429,Siddharth Misra,Professor,M.E.,Mechatronics,CIVIL,9,2009-07-31,2024-02-29 12:00:00
+FAC_370,INST_0176,Nisha Varkey,Professor,M.E.,Manufacturing Technology,CHEM,21,2021-09-22,2025-05-17 12:00:00
+FAC_371,INST_0300,Upadhriti Padmanabhan,Professor,M.Tech,Control Systems,CSE,14,2014-08-12,2026-07-16 12:00:00
+FAC_372,INST_0066,Jagrati Nagi,Asst. Professor,M.E.,Embedded Systems,Pharmacy,10,2010-02-10,2026-04-21 12:00:00
+FAC_373,INST_0051,Chavvi Dasgupta,Asst. Professor,M.Sc.,Design Engineering,IT,19,2019-12-30,2026-05-11 12:00:00
+FAC_374,INST_0304,Ekaja Madan,Asst. Professor,M.Sc.,Power Electronics,IT,14,2014-09-22,2026-05-02 12:00:00
+FAC_375,INST_0160,Vrishti Balakrishnan,Asst. Professor,M.Sc.,Distributed Systems,EEE,8,2008-11-06,2026-07-01 12:00:00
+FAC_376,INST_0111,Dipta Sant,Asst. Professor,M.Sc.,Supply Chain Management,CHEM,21,2021-10-26,2026-08-03 12:00:00
+FAC_377,INST_0421,Chatura Varughese,Professor,M.Sc.,Robotics,ECE,18,2018-09-15,2023-01-12 12:00:00
+FAC_378,INST_0255,Aadi Zachariah,Asst. Professor,PhD,Control Systems,Physics,6,2006-07-20,2023-01-29 12:00:00
+FAC_379,INST_0153,Tanish Mohanty,Assoc. Professor,PhD,Control Systems,ECE,13,2013-04-29,2026-07-10 12:00:00
+FAC_38,INST_0422,Ethan Narang,Assoc. Professor,PhD,Renewable Energy Systems,EEE,9,2009-12-24,2023-11-13 12:00:00
+FAC_380,INST_0382,Gaurika Dyal,Asst. Professor,M.E.,Power Electronics,Architecture,11,2011-09-11,2026-07-11 12:00:00
+FAC_381,INST_0142,Jeremiah Dass,Assoc. Professor,M.Sc.,Geotechnical Engineering,Pharmacy,7,2007-04-07,2022-04-04 12:00:00
+FAC_382,INST_0457,Ekani Merchant,Assoc. Professor,M.Sc.,Environmental Engineering,MBA,7,2007-02-27,2026-06-12 12:00:00
+FAC_383,INST_0156,Vivaan Gole,Assoc. Professor,M.Tech,Robotics,ECE,9,2009-09-04,2026-06-19 12:00:00
+FAC_384,INST_0092,Barkha Dara,Asst. Professor,M.Tech,Manufacturing Technology,MECH,7,2007-03-19,2024-09-06 12:00:00
+FAC_385,INST_0177,Jairaj Sanghvi,Assoc. Professor,M.Tech,Cloud Computing,AIDS,21,2021-07-26,2023-07-05 12:00:00
+FAC_386,INST_0223,Anay Panchal,Professor,M.Tech,Drug Delivery,MECH,15,2015-11-09,2026-07-21 12:00:00
+FAC_387,INST_0255,Mahika Palla,Assoc. Professor,PhD,Geotechnical Engineering,CSE,5,2005-07-19,2021-11-03 12:00:00
+FAC_388,INST_0143,Aadi Wable,Professor,PhD,Control Systems,AIDS,9,2009-06-24,2026-04-28 12:00:00
+FAC_389,INST_0382,Saumya Yogi,Asst. Professor,PhD,Environmental Engineering,EEE,16,2016-12-17,2025-01-15 12:00:00
+FAC_39,INST_0139,Azaan Date,Professor,M.Tech,Design Engineering,Architecture,7,2007-09-23,2026-04-24 12:00:00
+FAC_390,INST_0169,Chandani Chahal,Professor,M.Sc.,Big Data Analytics,Architecture,12,2012-12-28,2026-06-23 12:00:00
+FAC_391,INST_0184,Abhiram Shah,Professor,M.E.,Biotechnology,ECE,18,2018-11-05,2023-11-17 12:00:00
+FAC_392,INST_0130,Tara Baral,Assoc. Professor,M.Sc.,Thermal Engineering,CIVIL,16,2016-09-16,2026-05-02 12:00:00
+FAC_393,INST_0205,Vasudha Gera,Assoc. Professor,M.E.,Deep Learning,Mathematics,23,2023-12-23,2026-07-07 12:00:00
+FAC_394,INST_0282,Pranav Raman,Assoc. Professor,M.E.,VLSI Design,CSE,11,2011-08-31,2026-05-19 12:00:00
+FAC_395,INST_0133,Leena Muni,Assoc. Professor,M.E.,Data Mining,Mathematics,20,2020-10-01,2023-04-18 12:00:00
+FAC_396,INST_0300,Abdul Varma,Asst. Professor,M.Sc.,Business Analytics,CHEM,10,2010-06-29,2022-06-30 12:00:00
+FAC_397,INST_0474,Irya Mani,Asst. Professor,M.Tech,Pharmaceutical Chemistry,MECH,23,2023-10-21,2023-09-16 12:00:00
+FAC_398,INST_0415,Pooja Bala,Assoc. Professor,PhD,Human Resource Management,Architecture,18,2018-04-25,2023-01-31 12:00:00
+FAC_399,INST_0125,Upkaar Sankaran,Assoc. Professor,M.Tech,Deep Learning,Physics,23,2023-12-06,2026-08-15 12:00:00
+FAC_4,INST_0179,Ishwar Gaba,Professor,M.E.,Natural Language Processing,Architecture,15,2015-10-06,2026-07-20 12:00:00
+FAC_40,INST_0235,Balveer Kale,Assoc. Professor,M.Tech,Cryptography,CHEM,16,2016-12-10,2025-01-09 12:00:00
+FAC_400,INST_0181,Quincy Mangat,Asst. Professor,M.Sc.,Distributed Systems,AIML,12,2012-07-30,2026-06-17 12:00:00
+FAC_401,INST_0189,Tanish Kalla,Asst. Professor,M.Tech,Business Analytics,ECE,12,2012-06-11,2026-05-15 12:00:00
+FAC_402,INST_0066,Advay Panchal,Professor,M.Tech,Signal Processing,IT,11,2011-12-21,2026-07-05 12:00:00
+FAC_403,INST_0249,Nitesh Madan,Asst. Professor,M.E.,Business Analytics,EEE,14,2014-12-30,2023-12-14 12:00:00
+FAC_404,INST_0331,Nakul Karan,Asst. Professor,M.E.,Drug Delivery,ECE,20,2020-05-26,2026-07-17 12:00:00
+FAC_405,INST_0173,Kala Dhar,Professor,M.Sc.,Power Electronics,CIVIL,7,2007-07-20,2026-06-04 12:00:00
+FAC_406,INST_0398,Jhalak Choudhury,Asst. Professor,M.E.,Data Mining,CHEM,16,2016-03-05,2026-06-08 12:00:00
+FAC_407,INST_0146,Yash Sekhon,Assoc. Professor,M.E.,Deep Learning,MECH,9,2009-07-11,2023-12-07 12:00:00
+FAC_408,INST_0208,Sachi Modi,Professor,PhD,Operations Research,Physics,19,2019-06-01,2024-09-04 12:00:00
+FAC_409,INST_0013,Gopal Lata,Assoc. Professor,M.Tech,Wireless Communications,CSE,17,2017-03-23,2024-08-05 12:00:00
+FAC_41,INST_0451,Samar Lalla,Asst. Professor,PhD,Signal Processing,IT,10,2010-09-24,2026-07-14 12:00:00
+FAC_410,INST_0382,Caleb Saxena,Professor,M.Tech,Power Electronics,Architecture,22,2022-03-29,2026-05-23 12:00:00
+FAC_411,INST_0146,Tamanna Krishnan,Asst. Professor,M.Sc.,Cryptography,AIDS,18,2018-01-25,2026-08-07 12:00:00
+FAC_412,INST_0020,Ubika Tak,Asst. Professor,M.Sc.,VLSI Design,Architecture,16,2016-06-09,2025-05-24 12:00:00
+FAC_413,INST_0374,Reva Comar,Assoc. Professor,M.Sc.,Manufacturing Technology,Physics,22,2022-08-10,2026-08-14 12:00:00
+FAC_414,INST_0167,Nidhi Pradhan,Asst. Professor,M.Sc.,Control Systems,AIDS,15,2015-10-01,2022-04-14 12:00:00
+FAC_415,INST_0062,Quincy Bali,Professor,M.E.,Environmental Engineering,CSE,20,2020-09-22,2021-11-24 12:00:00
+FAC_416,INST_0003,Rajeshri Dasgupta,Professor,PhD,Internet of Things,EEE,8,2008-02-03,2026-05-21 12:00:00
+FAC_417,INST_0289,Nihal Dugar,Professor,M.Sc.,Robotics,IT,23,2023-10-02,2026-07-21 12:00:00
+FAC_418,INST_0210,Ikbal Kalita,Professor,PhD,Thermal Engineering,CIVIL,6,2006-09-29,2026-04-23 12:00:00
+FAC_419,INST_0033,Aarnav Aggarwal,Asst. Professor,PhD,Wireless Communications,IT,12,2012-02-08,2022-12-05 12:00:00
+FAC_42,INST_0375,Januja Kapoor,Asst. Professor,PhD,Natural Language Processing,ECE,12,2012-06-10,2025-07-11 12:00:00
+FAC_420,INST_0344,Chaitaly Chatterjee,Professor,PhD,Computational Fluid Dynamics,Mathematics,20,2020-02-17,2026-06-28 12:00:00
+FAC_421,INST_0367,George Chand,Assoc. Professor,M.Sc.,Distributed Systems,ECE,18,2018-11-08,2024-08-19 12:00:00
+FAC_422,INST_0292,Akshay Sethi,Asst. Professor,M.Sc.,Operations Research,MECH,23,2023-05-20,2026-08-06 12:00:00
+FAC_423,INST_0497,Patrick Lata,Professor,PhD,Thermal Engineering,AIDS,22,2022-02-23,2024-02-20 12:00:00
+FAC_424,INST_0230,Aradhana Yohannan,Asst. Professor,PhD,Pharmaceutical Chemistry,Physics,9,2009-07-20,2026-05-01 12:00:00
+FAC_425,INST_0008,Tanveer Ganesh,Professor,PhD,Control Systems,MBA,9,2009-01-15,2026-07-23 12:00:00
+FAC_426,INST_0382,Dayita Dar,Asst. Professor,M.Tech,Control Systems,CIVIL,12,2012-01-09,2026-05-30 12:00:00
+FAC_427,INST_0020,Kevin Kalla,Assoc. Professor,PhD,Embedded Systems,AIDS,7,2007-05-24,2023-09-19 12:00:00
+FAC_428,INST_0334,Anjali Bandi,Asst. Professor,PhD,Computational Fluid Dynamics,EEE,18,2018-11-29,2022-01-02 12:00:00
+FAC_429,INST_0382,Eesha Chandran,Asst. Professor,M.E.,Signal Processing,MBA,6,2006-06-23,2022-09-22 12:00:00
+FAC_43,INST_0146,Qushi Lata,Professor,PhD,Supply Chain Management,ECE,23,2023-10-09,2026-06-17 12:00:00
+FAC_430,INST_0303,Unnati Soman,Assoc. Professor,M.Tech,Thermal Engineering,AIDS,4,2004-11-12,2026-06-22 12:00:00
+FAC_431,INST_0040,Charvi Narayan,Professor,M.Tech,Natural Language Processing,EEE,4,2004-05-10,2026-06-13 12:00:00
+FAC_432,INST_0054,Shravya Lad,Professor,M.E.,Renewable Energy Systems,CIVIL,13,2013-10-25,2026-05-16 12:00:00
+FAC_433,INST_0374,Bimala Date,Asst. Professor,M.Tech,Thermal Engineering,AIML,7,2007-09-01,2025-02-14 12:00:00
+FAC_434,INST_0401,Gopal Bala,Asst. Professor,M.E.,Signal Processing,Mathematics,23,2023-01-29,2026-07-19 12:00:00
+FAC_435,INST_0127,Krishna Mane,Asst. Professor,PhD,Internet of Things,EEE,9,2009-09-04,2026-06-29 12:00:00
+FAC_436,INST_0005,Diya Misra,Professor,M.Sc.,Mechatronics,Physics,11,2011-06-29,2026-07-04 12:00:00
+FAC_437,INST_0255,Wyatt Keer,Assoc. Professor,PhD,Biotechnology,Mathematics,6,2006-11-03,2026-06-19 12:00:00
+FAC_438,INST_0255,Girik Bahri,Asst. Professor,PhD,Embedded Systems,MECH,21,2021-06-27,2026-05-20 12:00:00
+FAC_439,INST_0365,Girik Shere,Assoc. Professor,M.Sc.,Computational Fluid Dynamics,MBA,12,2012-12-14,2026-05-11 12:00:00
+FAC_44,INST_0111,Owen Chhabra,Assoc. Professor,M.E.,Wireless Communications,CSE,17,2017-10-11,2026-05-31 12:00:00
+FAC_440,INST_0191,Simon Ganguly,Assoc. Professor,PhD,Operations Research,MBA,22,2022-01-17,2026-05-22 12:00:00
+FAC_441,INST_0258,Viraj Venkataraman,Professor,PhD,Computer Vision,AIML,8,2008-09-14,2026-07-10 12:00:00
+FAC_442,INST_0215,Champak Datta,Professor,M.Sc.,Computational Fluid Dynamics,EEE,4,2004-01-19,2026-05-01 12:00:00
+FAC_443,INST_0252,Jackson Natt,Assoc. Professor,M.E.,Deep Learning,CHEM,15,2015-10-26,2022-04-27 12:00:00
+FAC_444,INST_0345,Bhavya Patil,Professor,PhD,Distributed Systems,Mathematics,18,2018-01-04,2026-04-21 12:00:00
+FAC_445,INST_0471,Charvi Patel,Professor,PhD,Wireless Communications,CSE,5,2005-06-12,2026-07-02 12:00:00
+FAC_446,INST_0286,Anthony Srivastava,Assoc. Professor,PhD,Mechatronics,EEE,14,2014-04-02,2026-07-14 12:00:00
+FAC_447,INST_0031,Wazir Kulkarni,Professor,M.Sc.,Renewable Energy Systems,IT,9,2009-12-25,2026-08-16 12:00:00
+FAC_448,INST_0422,Vasatika Radhakrishnan,Professor,M.Sc.,Supply Chain Management,Architecture,4,2004-10-16,2026-05-17 12:00:00
+FAC_449,INST_0177,Indrajit Pillai,Professor,M.Sc.,Biotechnology,Pharmacy,15,2015-12-27,2026-05-18 12:00:00
+FAC_45,INST_0110,Ekta Bedi,Asst. Professor,PhD,Computer Vision,Pharmacy,23,2023-04-02,2026-06-26 12:00:00
+FAC_450,INST_0077,Quincy Ramesh,Professor,M.E.,Power Electronics,MECH,19,2019-12-12,2026-04-27 12:00:00
+FAC_451,INST_0189,Radha Dhaliwal,Professor,M.Tech,Distributed Systems,CIVIL,11,2011-07-02,2024-07-11 12:00:00
+FAC_452,INST_0326,Mekhala Ghosh,Professor,M.E.,Operations Research,EEE,4,2004-06-01,2023-06-15 12:00:00
+FAC_453,INST_0210,Amruta Purohit,Asst. Professor,M.E.,Embedded Systems,Physics,14,2014-03-25,2026-05-05 12:00:00
+FAC_454,INST_0472,Reva Kala,Asst. Professor,M.Sc.,Transportation Engineering,EEE,10,2010-02-01,2026-07-16 12:00:00
+FAC_455,INST_0087,Fariq Sule,Assoc. Professor,M.Tech,Natural Language Processing,AIDS,23,2023-09-06,2022-02-27 12:00:00
+FAC_456,INST_0255,Qarin Mangat,Assoc. Professor,M.Sc.,Cloud Computing,AIML,7,2007-01-15,2025-07-03 12:00:00
+FAC_457,INST_0090,Nicholas Chad,Professor,M.Sc.,Network Security,Pharmacy,23,2023-11-21,2026-08-05 12:00:00
+FAC_458,INST_0279,Gayathri Bera,Asst. Professor,M.E.,Drug Delivery,Architecture,5,2005-09-26,2026-06-16 12:00:00
+FAC_459,INST_0063,Gunbir Gera,Professor,M.Sc.,Business Analytics,AIML,21,2021-04-23,2026-08-13 12:00:00
+FAC_46,INST_0255,Barkha Bhatnagar,Assoc. Professor,M.Tech,Transportation Engineering,ECE,8,2008-06-06,2026-07-15 12:00:00
+FAC_460,INST_0111,Indira Savant,Asst. Professor,M.E.,Robotics,Architecture,17,2017-07-20,2023-11-17 12:00:00
+FAC_461,INST_0379,Shivansh Kaul,Asst. Professor,PhD,Thermal Engineering,EEE,21,2021-01-24,2026-07-14 12:00:00
+FAC_462,INST_0369,Daksh Palan,Asst. Professor,M.E.,Signal Processing,MECH,11,2011-04-01,2024-03-16 12:00:00
+FAC_463,INST_0112,Champak Bail,Asst. Professor,PhD,Internet of Things,IT,18,2018-05-14,2026-07-28 12:00:00
+FAC_464,INST_0130,Ekanta Hari,Professor,M.Sc.,Robotics,Pharmacy,23,2023-10-20,2026-07-31 12:00:00
+FAC_465,INST_0298,Watika Virk,Asst. Professor,M.Sc.,Cloud Computing,Physics,9,2009-09-12,2023-05-20 12:00:00
+FAC_466,INST_0345,Darika Gulati,Assoc. Professor,PhD,Human Resource Management,CHEM,13,2013-10-07,2026-07-19 12:00:00
+FAC_467,INST_0344,Harsh Rama,Assoc. Professor,M.Sc.,Network Security,CIVIL,23,2023-03-21,2024-05-26 12:00:00
+FAC_468,INST_0314,Yochana Mangat,Assoc. Professor,M.Sc.,Data Mining,AIML,21,2021-03-14,2026-05-01 12:00:00
+FAC_469,INST_0293,Chaaya Thakur,Asst. Professor,M.Tech,Pharmacology,MECH,14,2014-12-23,2026-06-17 12:00:00
+FAC_47,INST_0255,Anay Bains,Asst. Professor,PhD,Power Systems,IT,20,2020-03-18,2026-04-18 12:00:00
+FAC_470,INST_0255,Wishi Bhandari,Assoc. Professor,PhD,Pharmaceutical Chemistry,Mathematics,5,2005-03-18,2026-08-04 12:00:00
+FAC_471,INST_0321,Amrita Narasimhan,Assoc. Professor,M.E.,Robotics,IT,15,2015-01-13,2026-05-05 12:00:00
+FAC_472,INST_0358,Meghana Varty,Assoc. Professor,M.Sc.,Design Engineering,Pharmacy,12,2012-10-19,2022-09-06 12:00:00
+FAC_473,INST_0179,Jagat Raj,Asst. Professor,M.Tech,Natural Language Processing,ECE,13,2013-07-12,2022-02-25 12:00:00
+FAC_474,INST_0173,Laksh Mandal,Assoc. Professor,M.Sc.,Pharmacology,Architecture,17,2017-10-15,2022-01-30 12:00:00
+FAC_475,INST_0169,Bhavya Goyal,Professor,M.Sc.,Robotics,CSE,8,2008-09-10,2026-06-05 12:00:00
+FAC_476,INST_0254,Saanvi Maharaj,Professor,M.E.,Internet of Things,CSE,5,2005-07-04,2023-09-24 12:00:00
+FAC_477,INST_0298,Vritti Bail,Professor,PhD,Data Mining,AIDS,11,2011-04-26,2022-01-29 12:00:00
+FAC_478,INST_0379,Theodore Sama,Asst. Professor,M.Tech,Power Electronics,AIML,18,2018-10-30,2022-01-13 12:00:00
+FAC_479,INST_0369,Yatan Dass,Professor,M.Sc.,Cybersecurity,MECH,23,2023-08-15,2026-04-18 12:00:00
+FAC_48,INST_0382,Gaurangi Mutti,Assoc. Professor,M.Tech,Cybersecurity,CSE,15,2015-01-19,2026-06-23 12:00:00
+FAC_480,INST_0239,Anmol Dani,Asst. Professor,PhD,Natural Language Processing,MECH,11,2011-01-06,2026-05-03 12:00:00
+FAC_481,INST_0257,Max Sule,Asst. Professor,M.Tech,Pharmaceutical Chemistry,MBA,14,2014-01-26,2024-02-08 12:00:00
+FAC_482,INST_0216,Benjamin Kadakia,Professor,M.Sc.,Power Systems,CIVIL,13,2013-06-28,2026-06-05 12:00:00
+FAC_483,INST_0411,Pahal Krishna,Professor,M.Sc.,Cybersecurity,Mathematics,11,2011-06-15,2026-06-25 12:00:00
+FAC_484,INST_0422,Advay Dubey,Professor,PhD,Operations Research,ECE,20,2020-02-27,2021-12-12 12:00:00
+FAC_485,INST_0184,Zinal Rao,Professor,M.E.,Signal Processing,AIDS,9,2009-07-11,2026-07-15 12:00:00
+FAC_486,INST_0421,Balhaar Bhatt,Assoc. Professor,M.Sc.,Signal Processing,MECH,7,2007-01-13,2026-07-19 12:00:00
+FAC_487,INST_0263,Faraj Gole,Assoc. Professor,PhD,Marketing Analytics,Physics,18,2018-08-19,2026-04-22 12:00:00
+FAC_488,INST_0486,Balhaar Bala,Asst. Professor,M.Sc.,Cryptography,IT,9,2009-05-25,2025-03-28 12:00:00
+FAC_489,INST_0393,Sanya Padmanabhan,Asst. Professor,M.E.,Cryptography,Mathematics,16,2016-02-22,2026-05-18 12:00:00
+FAC_49,INST_0326,Karan Shankar,Assoc. Professor,M.E.,Natural Language Processing,Pharmacy,12,2012-03-22,2022-05-23 12:00:00
+FAC_490,INST_0412,Sanya Hegde,Asst. Professor,M.Tech,Geotechnical Engineering,MBA,22,2022-01-26,2026-06-17 12:00:00
+FAC_491,INST_0302,Dalaja Bedi,Professor,M.Sc.,Power Electronics,Pharmacy,22,2022-01-04,2026-07-13 12:00:00
+FAC_492,INST_0195,Ekbal Bhat,Assoc. Professor,M.Tech,Natural Language Processing,CHEM,21,2021-06-09,2022-05-04 12:00:00
+FAC_493,INST_0289,Chatresh Rout,Professor,M.Tech,Cloud Computing,ECE,13,2013-06-17,2024-11-27 12:00:00
+FAC_494,INST_0358,Aarna Batra,Asst. Professor,M.E.,Thermal Engineering,IT,23,2023-03-22,2026-05-16 12:00:00
+FAC_495,INST_0429,Gautam Mishra,Assoc. Professor,M.Tech,Mechatronics,IT,21,2021-12-04,2025-03-22 12:00:00
+FAC_496,INST_0471,Widisha Batta,Professor,PhD,Data Mining,ECE,14,2014-02-16,2026-04-30 12:00:00
+FAC_497,INST_0153,Neel Gole,Asst. Professor,M.E.,Signal Processing,CIVIL,20,2020-08-28,2025-04-18 12:00:00
+FAC_498,INST_0182,Wriddhish Char,Asst. Professor,M.Sc.,Wireless Communications,Mathematics,9,2009-07-19,2022-11-17 12:00:00
+FAC_499,INST_0490,Nathaniel Banik,Professor,M.Tech,Structural Engineering,ECE,14,2014-11-01,2026-07-01 12:00:00
+FAC_5,INST_0427,Anvi Baral,Assoc. Professor,PhD,Biotechnology,Physics,4,2004-04-18,2026-05-28 12:00:00
+FAC_50,INST_0101,Yatan Kakar,Assoc. Professor,M.Sc.,Wireless Communications,MECH,13,2013-06-30,2026-08-11 12:00:00
+FAC_500,INST_0421,Wridesh Dada,Assoc. Professor,M.Sc.,Corporate Finance,EEE,20,2020-06-08,2026-06-26 12:00:00
+FAC_501,INST_0094,Abhimanyu Mital,Assoc. Professor,M.E.,Environmental Engineering,MECH,17,2017-09-26,2021-11-01 12:00:00
+FAC_502,INST_0423,Sathvik Kibe,Assoc. Professor,PhD,Operations Research,MECH,23,2023-03-07,2026-07-01 12:00:00
+FAC_503,INST_0443,Jeet Prabhakar,Professor,M.Sc.,Drug Delivery,Architecture,5,2005-07-12,2026-07-24 12:00:00
+FAC_504,INST_0053,Chandran Mandal,Asst. Professor,PhD,Marketing Analytics,Physics,6,2006-10-05,2026-05-27 12:00:00
+FAC_505,INST_0041,Samarth Din,Professor,M.Sc.,Geotechnical Engineering,AIML,7,2007-08-31,2022-06-17 12:00:00
+FAC_506,INST_0265,Nandini Bakshi,Assoc. Professor,M.Sc.,Big Data Analytics,CIVIL,14,2014-07-26,2025-05-11 12:00:00
+FAC_507,INST_0216,Ojasvi Hari,Asst. Professor,M.E.,Marketing Analytics,CSE,4,2004-04-29,2026-07-30 12:00:00
+FAC_508,INST_0381,Kamala Gole,Asst. Professor,PhD,Transportation Engineering,EEE,8,2008-06-16,2025-03-05 12:00:00
+FAC_509,INST_0012,Ekaja Bora,Assoc. Professor,PhD,Biotechnology,EEE,10,2010-12-31,2024-05-20 12:00:00
+FAC_51,INST_0328,Geetika Gole,Professor,M.E.,Renewable Energy Systems,CHEM,13,2013-07-14,2026-05-15 12:00:00
+FAC_510,INST_0358,Ojasvi Raghavan,Assoc. Professor,M.Sc.,Cybersecurity,CSE,20,2020-05-29,2026-07-16 12:00:00
+FAC_511,INST_0137,Ekapad Balasubramanian,Assoc. Professor,M.Sc.,Distributed Systems,CHEM,5,2005-01-02,2026-05-07 12:00:00
+FAC_512,INST_0027,Tanish Sami,Professor,PhD,Internet of Things,Physics,15,2015-11-05,2026-05-03 12:00:00
+FAC_513,INST_0255,Kashish Comar,Assoc. Professor,PhD,Design Engineering,Physics,4,2004-04-08,2026-06-16 12:00:00
+FAC_514,INST_0425,Sudiksha Thakur,Assoc. Professor,PhD,Deep Learning,MECH,4,2004-03-13,2024-03-19 12:00:00
+FAC_515,INST_0364,Ayaan Bhatt,Professor,M.Tech,Control Systems,MECH,16,2016-04-20,2024-11-08 12:00:00
+FAC_516,INST_0468,Lila Vasa,Assoc. Professor,M.E.,Mechatronics,Mathematics,17,2017-04-13,2026-08-09 12:00:00
+FAC_517,INST_0336,Harini Guha,Asst. Professor,M.Tech,Design Engineering,CSE,5,2005-04-11,2024-06-13 12:00:00
+FAC_518,INST_0382,Eesha Garg,Assoc. Professor,M.E.,Structural Engineering,Architecture,10,2010-05-06,2026-07-07 12:00:00
+FAC_519,INST_0193,Charita Vyas,Professor,M.Sc.,Computational Fluid Dynamics,Architecture,4,2004-01-24,2025-02-05 12:00:00
+FAC_52,INST_0461,Devika Sagar,Assoc. Professor,M.Sc.,Cybersecurity,Mathematics,9,2009-06-02,2022-01-23 12:00:00
+FAC_520,INST_0435,Saumya Babu,Asst. Professor,PhD,Network Security,CHEM,15,2015-11-15,2021-10-21 12:00:00
+FAC_521,INST_0278,Nikita Bava,Asst. Professor,M.E.,Network Security,EEE,12,2012-07-18,2023-03-02 12:00:00
+FAC_522,INST_0105,Xavier Mani,Asst. Professor,M.Sc.,Structural Engineering,CSE,13,2013-04-04,2026-06-02 12:00:00
+FAC_523,INST_0330,Neel Kurian,Assoc. Professor,M.Tech,Geotechnical Engineering,MECH,12,2012-09-27,2022-04-07 12:00:00
+FAC_524,INST_0294,Bhavani Choudhary,Asst. Professor,PhD,Supply Chain Management,IT,21,2021-08-23,2024-05-19 12:00:00
+FAC_525,INST_0257,Hemal Shah,Professor,M.Tech,Biotechnology,Pharmacy,18,2018-02-06,2026-07-25 12:00:00
+FAC_526,INST_0189,Chaaya Sur,Asst. Professor,M.Tech,Design Engineering,Mathematics,14,2014-04-30,2026-06-15 12:00:00
+FAC_527,INST_0449,Zinal Jayaraman,Asst. Professor,M.Tech,Robotics,Physics,18,2018-11-26,2026-06-12 12:00:00
+FAC_528,INST_0156,Charles Rau,Asst. Professor,PhD,Embedded Systems,Architecture,22,2022-06-27,2026-06-11 12:00:00
+FAC_529,INST_0044,Dominic Setty,Assoc. Professor,M.Tech,Operations Research,Architecture,11,2011-06-30,2026-08-08 12:00:00
+FAC_53,INST_0085,Veda Narayanan,Assoc. Professor,PhD,VLSI Design,CHEM,17,2017-05-02,2026-07-15 12:00:00
+FAC_530,INST_0448,Kai Kurian,Asst. Professor,M.Tech,Computational Fluid Dynamics,Architecture,14,2014-03-09,2023-07-27 12:00:00
+FAC_531,INST_0236,Pratyush Lata,Assoc. Professor,PhD,Natural Language Processing,Architecture,21,2021-07-03,2026-04-20 12:00:00
+FAC_532,INST_0404,Wyatt Bir,Assoc. Professor,M.E.,Power Electronics,Pharmacy,18,2018-03-26,2022-12-05 12:00:00
+FAC_533,INST_0056,Eesha Ganesh,Asst. Professor,PhD,Robotics,ECE,11,2011-10-06,2026-05-23 12:00:00
+FAC_534,INST_0036,Irya Dhillon,Asst. Professor,M.Tech,Power Electronics,Mathematics,17,2017-06-20,2026-06-04 12:00:00
+FAC_535,INST_0311,Geetika Oommen,Professor,PhD,Wireless Communications,CIVIL,15,2015-04-11,2021-07-09 12:00:00
+FAC_536,INST_0326,Lopa Divan,Assoc. Professor,M.E.,Robotics,IT,11,2011-04-01,2026-05-17 12:00:00
+FAC_537,INST_0069,Devansh Oza,Professor,M.E.,Cybersecurity,AIML,12,2012-10-09,2022-03-14 12:00:00
+FAC_538,INST_0444,Unni Sachdev,Professor,M.Sc.,Deep Learning,Pharmacy,21,2021-06-06,2023-01-15 12:00:00
+FAC_539,INST_0318,Nitesh Chander,Asst. Professor,M.E.,Corporate Finance,Pharmacy,4,2004-03-17,2026-07-01 12:00:00
+FAC_54,INST_0160,Anya Sur,Assoc. Professor,PhD,VLSI Design,CHEM,8,2008-10-02,2024-12-28 12:00:00
+FAC_540,INST_0255,Charvi Mahajan,Assoc. Professor,M.Tech,Deep Learning,MBA,16,2016-08-26,2024-06-11 12:00:00
+FAC_541,INST_0110,Madhavi Bail,Assoc. Professor,M.E.,Drug Delivery,Pharmacy,4,2004-07-12,2026-07-14 12:00:00
+FAC_542,INST_0229,Daksha Ganesan,Professor,M.E.,Mechatronics,CSE,22,2022-04-27,2023-02-10 12:00:00
+FAC_543,INST_0110,Eta Bhagat,Professor,PhD,Embedded Systems,Pharmacy,10,2010-09-09,2026-04-30 12:00:00
+FAC_544,INST_0066,Ekavir Dutta,Assoc. Professor,M.E.,Computational Fluid Dynamics,Physics,21,2021-12-16,2023-09-12 12:00:00
+FAC_545,INST_0261,Veda Mall,Assoc. Professor,M.Tech,Marketing Analytics,EEE,11,2011-06-23,2025-02-20 12:00:00
+FAC_546,INST_0110,Hredhaan Mand,Assoc. Professor,M.E.,Manufacturing Technology,Pharmacy,6,2006-10-07,2024-04-03 12:00:00
+FAC_547,INST_0052,Atharv Dhar,Assoc. Professor,PhD,Power Electronics,AIML,9,2009-09-05,2022-05-30 12:00:00
+FAC_548,INST_0376,Amaira Bajwa,Assoc. Professor,M.Tech,Computer Vision,AIDS,4,2004-02-18,2021-08-30 12:00:00
+FAC_549,INST_0013,Faras Padmanabhan,Asst. Professor,M.Sc.,Corporate Finance,Physics,22,2022-03-23,2022-11-04 12:00:00
+FAC_55,INST_0053,Adweta Aggarwal,Professor,PhD,Computer Vision,EEE,7,2007-03-29,2026-05-21 12:00:00
+FAC_550,INST_0465,Omya Bassi,Professor,M.Sc.,Manufacturing Technology,Physics,19,2019-09-10,2026-05-31 12:00:00
+FAC_551,INST_0006,Eta Rastogi,Assoc. Professor,PhD,Operations Research,AIDS,12,2012-06-01,2025-04-07 12:00:00
+FAC_552,INST_0318,Saanvi Chand,Assoc. Professor,M.Tech,Computer Vision,Physics,5,2005-12-21,2023-12-09 12:00:00
+FAC_553,INST_0396,Christopher Krish,Assoc. Professor,M.Sc.,Renewable Energy Systems,Pharmacy,16,2016-03-19,2026-08-04 12:00:00
+FAC_554,INST_0111,Simon Agrawal,Assoc. Professor,PhD,Human Resource Management,AIML,5,2005-04-30,2024-10-08 12:00:00
+FAC_555,INST_0011,Isaiah Raja,Professor,M.E.,Corporate Finance,EEE,12,2012-11-23,2026-06-08 12:00:00
+FAC_556,INST_0028,Ucchal Rege,Assoc. Professor,M.Tech,Computational Fluid Dynamics,EEE,7,2007-02-10,2021-07-25 12:00:00
+FAC_557,INST_0140,Theodore Merchant,Professor,M.E.,Data Mining,EEE,23,2023-01-01,2026-07-02 12:00:00
+FAC_558,INST_0087,Shivani Nagar,Asst. Professor,M.Sc.,Biotechnology,IT,18,2018-08-31,2025-04-23 12:00:00
+FAC_559,INST_0161,Anya Saha,Assoc. Professor,PhD,Embedded Systems,Physics,15,2015-07-24,2026-08-16 12:00:00
+FAC_56,INST_0080,Garima Anne,Assoc. Professor,M.Sc.,Natural Language Processing,MECH,13,2013-05-26,2026-06-26 12:00:00
+FAC_560,INST_0138,Owen Hans,Asst. Professor,M.Sc.,Transportation Engineering,AIDS,14,2014-07-17,2023-05-14 12:00:00
+FAC_561,INST_0118,Fariq Merchant,Assoc. Professor,M.Sc.,Internet of Things,Architecture,21,2021-04-09,2021-08-29 12:00:00
+FAC_562,INST_0045,Sai Agrawal,Asst. Professor,M.Sc.,Data Mining,CIVIL,22,2022-04-22,2026-05-27 12:00:00
+FAC_563,INST_0281,Yutika Prabhakar,Assoc. Professor,M.E.,Pharmaceutical Chemistry,Architecture,21,2021-12-04,2026-07-18 12:00:00
+FAC_564,INST_0326,Fitan Apte,Asst. Professor,M.E.,Computer Vision,MECH,6,2006-03-09,2026-07-15 12:00:00
+FAC_565,INST_0175,Noah Mall,Assoc. Professor,M.E.,Manufacturing Technology,Mathematics,23,2023-04-07,2026-06-22 12:00:00
+FAC_566,INST_0018,Kashish Kar,Professor,M.Sc.,Data Mining,MBA,12,2012-05-04,2023-07-19 12:00:00
+FAC_567,INST_0217,Siya Ahuja,Assoc. Professor,M.E.,Power Systems,IT,21,2021-04-03,2025-01-03 12:00:00
+FAC_568,INST_0255,Krisha Singh,Professor,M.Sc.,Transportation Engineering,Physics,4,2004-11-25,2026-07-17 12:00:00
+FAC_569,INST_0157,Kevin Yadav,Assoc. Professor,M.Tech,Big Data Analytics,Physics,16,2016-07-07,2022-07-27 12:00:00
+FAC_57,INST_0247,Vidhi Gade,Professor,PhD,Transportation Engineering,IT,17,2017-06-12,2026-05-13 12:00:00
+FAC_570,INST_0047,Ekansh Jha,Assoc. Professor,PhD,Structural Engineering,Physics,7,2007-04-15,2024-06-10 12:00:00
+FAC_571,INST_0168,Chatura Issac,Professor,M.Sc.,Operations Research,Architecture,11,2011-04-07,2026-05-10 12:00:00
+FAC_572,INST_0276,Lipika Sampath,Asst. Professor,M.E.,Geotechnical Engineering,AIDS,10,2010-03-04,2023-05-06 12:00:00
+FAC_573,INST_0451,Geetika Jhaveri,Professor,M.E.,Cloud Computing,CSE,21,2021-12-29,2023-06-02 12:00:00
+FAC_574,INST_0401,Jeet Prabhakar,Assoc. Professor,M.E.,Data Mining,ECE,9,2009-12-30,2026-07-12 12:00:00
+FAC_575,INST_0351,Rajeshri Bir,Professor,M.Sc.,Robotics,AIDS,14,2014-08-22,2026-05-22 12:00:00
+FAC_576,INST_0448,Faras Tailor,Assoc. Professor,M.Sc.,Renewable Energy Systems,Pharmacy,19,2019-07-05,2023-11-04 12:00:00
+FAC_577,INST_0273,Jagvi Ganguly,Asst. Professor,M.E.,Pharmaceutical Chemistry,MECH,23,2023-05-10,2024-09-11 12:00:00
+FAC_578,INST_0096,Aradhana Dugar,Assoc. Professor,M.Tech,Network Security,CIVIL,23,2023-03-21,2026-05-25 12:00:00
+FAC_579,INST_0099,Nidra Sarkar,Asst. Professor,M.Sc.,Signal Processing,CHEM,6,2006-09-06,2026-08-02 12:00:00
+FAC_58,INST_0097,Nihal Lad,Professor,M.E.,Human Resource Management,MBA,15,2015-09-15,2026-06-07 12:00:00
+FAC_580,INST_0033,Chandresh Kamdar,Asst. Professor,PhD,Cybersecurity,MBA,17,2017-05-27,2026-05-04 12:00:00
+FAC_581,INST_0255,Ekiya Luthra,Professor,M.Sc.,Cryptography,CIVIL,4,2004-10-07,2026-04-26 12:00:00
+FAC_582,INST_0110,Jeevika Dara,Asst. Professor,M.E.,Renewable Energy Systems,IT,14,2014-05-22,2026-05-16 12:00:00
+FAC_583,INST_0437,Kamya Srinivas,Asst. Professor,M.E.,Marketing Analytics,CHEM,17,2017-02-16,2026-06-20 12:00:00
+FAC_584,INST_0377,Girindra Mittal,Assoc. Professor,M.E.,Power Electronics,Physics,15,2015-06-04,2021-10-20 12:00:00
+FAC_585,INST_0293,Anmol Dora,Assoc. Professor,PhD,Computer Vision,ECE,13,2013-07-02,2026-06-07 12:00:00
+FAC_586,INST_0317,Saumya Walla,Asst. Professor,M.Tech,Business Analytics,Pharmacy,5,2005-01-20,2026-04-24 12:00:00
+FAC_587,INST_0161,Anusha Rau,Professor,M.E.,Computational Fluid Dynamics,CSE,10,2010-09-19,2025-03-31 12:00:00
+FAC_588,INST_0246,Chaitanya Mukhopadhyay,Professor,M.E.,Robotics,AIDS,16,2016-07-19,2023-06-27 12:00:00
+FAC_589,INST_0181,Neha Choudhary,Assoc. Professor,M.Sc.,Power Systems,CHEM,4,2004-12-27,2026-05-04 12:00:00
+FAC_59,INST_0024,Balvan Khare,Professor,M.E.,Big Data Analytics,AIDS,9,2009-05-11,2022-06-06 12:00:00
+FAC_590,INST_0173,Lavanya Loke,Asst. Professor,M.E.,Machine Learning,EEE,14,2014-10-12,2021-10-27 12:00:00
+FAC_591,INST_0346,Leena Jha,Professor,PhD,Distributed Systems,IT,6,2006-11-02,2026-06-07 12:00:00
+FAC_592,INST_0328,Azaan Chada,Assoc. Professor,PhD,Internet of Things,Pharmacy,23,2023-04-24,2024-02-01 12:00:00
+FAC_593,INST_0026,Falan Prabhu,Professor,PhD,Renewable Energy Systems,Architecture,15,2015-07-25,2024-08-17 12:00:00
+FAC_594,INST_0364,Gabriel Mukhopadhyay,Asst. Professor,M.Tech,Big Data Analytics,ECE,20,2020-04-22,2021-12-08 12:00:00
+FAC_595,INST_0248,Upma Rajagopal,Asst. Professor,PhD,Internet of Things,Physics,4,2004-01-04,2026-05-11 12:00:00
+FAC_596,INST_0445,Yahvi Narasimhan,Assoc. Professor,M.E.,Power Systems,ECE,4,2004-08-05,2026-05-14 12:00:00
+FAC_597,INST_0005,Gunbir Devi,Asst. Professor,PhD,Wireless Communications,AIDS,12,2012-11-08,2026-06-16 12:00:00
+FAC_598,INST_0445,Naksh Thaman,Professor,M.Tech,Design Engineering,ECE,22,2022-10-04,2026-04-24 12:00:00
+FAC_599,INST_0471,Damini Padmanabhan,Asst. Professor,PhD,Pharmaceutical Chemistry,ECE,6,2006-10-03,2026-08-14 12:00:00
+FAC_6,INST_0255,Ronith Mallick,Assoc. Professor,M.E.,Business Analytics,AIML,10,2010-11-29,2021-12-31 12:00:00
+FAC_60,INST_0141,Benjamin Yohannan,Asst. Professor,PhD,Power Electronics,CHEM,11,2011-10-06,2024-11-01 12:00:00
+FAC_600,INST_0047,Netra Wason,Professor,M.Sc.,VLSI Design,IT,21,2021-03-16,2022-03-12 12:00:00
+FAC_601,INST_0080,Yug Padmanabhan,Assoc. Professor,PhD,Mechatronics,Pharmacy,23,2023-02-09,2026-07-02 12:00:00
+FAC_602,INST_0331,Lekha Suri,Professor,M.Sc.,Environmental Engineering,AIDS,14,2014-06-18,2026-05-22 12:00:00
+FAC_603,INST_0008,Benjamin Bhargava,Asst. Professor,M.E.,Natural Language Processing,CIVIL,22,2022-06-23,2026-05-28 12:00:00
+FAC_604,INST_0022,Ekalinga Datta,Assoc. Professor,PhD,Human Resource Management,Mathematics,16,2016-10-25,2024-12-15 12:00:00
+FAC_605,INST_0489,Advaith Gade,Professor,M.E.,Natural Language Processing,AIDS,19,2019-02-07,2026-07-29 12:00:00
+FAC_606,INST_0366,Ikshita Bala,Assoc. Professor,M.Sc.,Renewable Energy Systems,MECH,6,2006-11-25,2023-02-06 12:00:00
+FAC_607,INST_0404,Tripti Dhawan,Professor,PhD,Big Data Analytics,Mathematics,18,2018-03-27,2026-07-27 12:00:00
+FAC_608,INST_0146,Nisha Mani,Assoc. Professor,PhD,Computational Fluid Dynamics,AIML,20,2020-05-09,2026-05-23 12:00:00
+FAC_609,INST_0169,Kritika Korpal,Professor,M.Tech,Power Systems,Physics,14,2014-12-23,2026-05-09 12:00:00
+FAC_61,INST_0127,Logan Minhas,Asst. Professor,M.Sc.,Corporate Finance,Physics,14,2014-05-18,2022-10-19 12:00:00
+FAC_610,INST_0310,Ishanvi Murthy,Asst. Professor,M.E.,Natural Language Processing,CHEM,21,2021-10-27,2023-05-15 12:00:00
+FAC_611,INST_0213,Sanya Ravi,Asst. Professor,M.Tech,Marketing Analytics,CSE,15,2015-12-30,2024-06-13 12:00:00
+FAC_612,INST_0331,Pahal Gour,Asst. Professor,M.Tech,Control Systems,CSE,22,2022-07-08,2026-06-18 12:00:00
+FAC_613,INST_0428,Harshil Prakash,Assoc. Professor,M.E.,Cryptography,AIML,5,2005-06-29,2026-06-19 12:00:00
+FAC_614,INST_0409,Harrison Narayan,Professor,M.Sc.,Cybersecurity,IT,10,2010-08-29,2026-07-02 12:00:00
+FAC_615,INST_0382,Ayush Deshmukh,Assoc. Professor,PhD,Marketing Analytics,AIDS,8,2008-09-21,2026-06-16 12:00:00
+FAC_616,INST_0327,Ubika Nazareth,Assoc. Professor,M.Sc.,Computational Fluid Dynamics,CIVIL,19,2019-04-29,2026-07-20 12:00:00
+FAC_617,INST_0325,Triya Vaidya,Professor,M.Tech,Design Engineering,CSE,6,2006-10-12,2026-05-21 12:00:00
+FAC_618,INST_0175,Jason Dhawan,Professor,M.Sc.,VLSI Design,EEE,11,2011-06-09,2023-04-29 12:00:00
+FAC_619,INST_0044,Meghana Dhar,Assoc. Professor,M.E.,Business Analytics,ECE,23,2023-04-22,2021-10-15 12:00:00
+FAC_62,INST_0213,Panini Lad,Assoc. Professor,M.Tech,Natural Language Processing,AIDS,22,2022-10-28,2024-12-31 12:00:00
+FAC_620,INST_0193,Samuel Sethi,Professor,M.E.,Thermal Engineering,CSE,8,2008-11-08,2025-03-13 12:00:00
+FAC_621,INST_0411,Garima Nagy,Asst. Professor,M.Tech,Signal Processing,IT,9,2009-04-20,2026-06-19 12:00:00
+FAC_622,INST_0361,Vincent Korpal,Assoc. Professor,M.E.,Environmental Engineering,EEE,22,2022-11-22,2023-02-08 12:00:00
+FAC_623,INST_0227,Samaksh Apte,Professor,M.E.,Power Systems,Architecture,19,2019-06-23,2026-04-19 12:00:00
+FAC_624,INST_0382,Shaurya Walla,Assoc. Professor,M.Tech,Design Engineering,Pharmacy,20,2020-07-30,2026-07-13 12:00:00
+FAC_625,INST_0382,Dayamai Varma,Professor,M.Tech,Manufacturing Technology,Mathematics,11,2011-01-17,2026-07-25 12:00:00
+FAC_626,INST_0396,Aishani Kibe,Assoc. Professor,M.E.,Machine Learning,Mathematics,5,2005-01-19,2021-12-28 12:00:00
+FAC_627,INST_0028,Pavani Gara,Assoc. Professor,M.Tech,VLSI Design,MECH,20,2020-12-21,2026-06-07 12:00:00
+FAC_628,INST_0065,Eta Nori,Professor,M.Sc.,Biotechnology,Physics,7,2007-11-21,2026-05-14 12:00:00
+FAC_629,INST_0320,Christopher Dutt,Assoc. Professor,M.Tech,Operations Research,Pharmacy,8,2008-12-30,2026-05-29 12:00:00
+FAC_63,INST_0255,Krishna Devan,Assoc. Professor,PhD,Operations Research,MBA,16,2016-10-04,2023-08-22 12:00:00
+FAC_630,INST_0090,Prisha Barman,Assoc. Professor,M.Tech,Thermal Engineering,Architecture,15,2015-02-02,2025-05-19 12:00:00
+FAC_631,INST_0142,Nihal Dewan,Assoc. Professor,M.Tech,Biotechnology,EEE,21,2021-09-22,2025-06-02 12:00:00
+FAC_632,INST_0390,Shaurya Vala,Assoc. Professor,M.Tech,Signal Processing,CIVIL,5,2005-09-22,2021-06-05 12:00:00
+FAC_633,INST_0489,Aadi Bhagat,Asst. Professor,PhD,Operations Research,AIDS,15,2015-12-31,2022-10-02 12:00:00
+FAC_634,INST_0099,Umang Master,Asst. Professor,M.Sc.,Manufacturing Technology,MBA,15,2015-04-26,2026-05-10 12:00:00
+FAC_635,INST_0007,Umang Narain,Asst. Professor,M.Tech,Transportation Engineering,AIDS,5,2005-03-12,2026-06-18 12:00:00
+FAC_636,INST_0377,Zehaan Garg,Asst. Professor,M.Sc.,Environmental Engineering,CIVIL,15,2015-09-09,2026-07-11 12:00:00
+FAC_637,INST_0024,Arin Dar,Asst. Professor,PhD,Power Electronics,CSE,8,2008-10-25,2024-09-04 12:00:00
+FAC_638,INST_0238,Advay Gole,Asst. Professor,M.Sc.,Pharmacology,Physics,4,2004-05-18,2023-02-19 12:00:00
+FAC_639,INST_0476,Manbir Bora,Professor,M.E.,Distributed Systems,Architecture,12,2012-12-13,2026-05-23 12:00:00
+FAC_64,INST_0047,Hritik Chaudhari,Assoc. Professor,M.Tech,Power Systems,Physics,4,2004-09-27,2026-05-30 12:00:00
+FAC_640,INST_0112,Kalpit Tandon,Assoc. Professor,M.Tech,Distributed Systems,AIDS,16,2016-06-22,2026-05-16 12:00:00
+FAC_641,INST_0077,Chakradhar Rajagopalan,Asst. Professor,M.Tech,Natural Language Processing,AIML,4,2004-07-31,2024-12-04 12:00:00
+FAC_642,INST_0303,Tamanna Buch,Professor,M.E.,Power Electronics,EEE,11,2011-04-08,2026-07-14 12:00:00
+FAC_643,INST_0382,Thomas Saran,Professor,PhD,Power Systems,EEE,22,2022-05-14,2022-02-15 12:00:00
+FAC_644,INST_0103,Pranav Kalita,Assoc. Professor,M.Tech,Robotics,AIDS,13,2013-06-04,2026-04-28 12:00:00
+FAC_645,INST_0497,Anita Grover,Assoc. Professor,PhD,Mechatronics,AIDS,17,2017-02-04,2026-05-06 12:00:00
+FAC_646,INST_0146,Faras Ravi,Asst. Professor,M.Tech,Data Mining,MBA,23,2023-10-06,2026-04-18 12:00:00
+FAC_647,INST_0178,Charita Sodhi,Professor,M.E.,Thermal Engineering,Physics,19,2019-10-03,2024-08-26 12:00:00
+FAC_648,INST_0124,Samaksh Grover,Professor,M.Sc.,Distributed Systems,MBA,19,2019-11-26,2026-06-18 12:00:00
+FAC_649,INST_0184,Noah Khanna,Asst. Professor,M.Tech,Cybersecurity,MECH,15,2015-10-02,2021-09-06 12:00:00
+FAC_65,INST_0443,Eshana Bath,Assoc. Professor,PhD,Corporate Finance,IT,12,2012-04-21,2026-05-30 12:00:00
+FAC_650,INST_0273,Jagrati Joshi,Asst. Professor,PhD,Robotics,Physics,14,2014-02-25,2026-07-29 12:00:00
+FAC_651,INST_0085,Udarsh Vasa,Assoc. Professor,M.Tech,VLSI Design,CHEM,14,2014-06-16,2026-06-18 12:00:00
+FAC_652,INST_0173,Hema Lal,Asst. Professor,M.Tech,Cloud Computing,CHEM,6,2006-04-21,2024-09-29 12:00:00
+FAC_653,INST_0336,Widisha Narula,Asst. Professor,M.E.,Supply Chain Management,IT,22,2022-12-31,2024-02-06 12:00:00
+FAC_654,INST_0170,Adya Peri,Asst. Professor,M.Sc.,Cryptography,EEE,23,2023-12-18,2026-06-02 12:00:00
+FAC_655,INST_0014,Reva Bassi,Professor,M.Sc.,Structural Engineering,CSE,10,2010-12-13,2026-06-27 12:00:00
+FAC_656,INST_0145,Omya Pau,Professor,M.E.,Computational Fluid Dynamics,Physics,15,2015-05-04,2026-06-03 12:00:00
+FAC_657,INST_0474,Fariq Babu,Asst. Professor,M.Tech,Business Analytics,CSE,23,2023-06-06,2023-11-18 12:00:00
+FAC_658,INST_0317,Vanya Pai,Asst. Professor,M.E.,Renewable Energy Systems,Mathematics,15,2015-08-14,2024-12-09 12:00:00
+FAC_659,INST_0059,Unnati Raja,Asst. Professor,PhD,Thermal Engineering,Physics,16,2016-12-09,2026-04-27 12:00:00
+FAC_66,INST_0075,Garima Kadakia,Professor,M.E.,Environmental Engineering,Pharmacy,7,2007-05-17,2021-09-08 12:00:00
+FAC_660,INST_0183,Meera Nadig,Assoc. Professor,M.E.,Thermal Engineering,AIDS,23,2023-07-14,2023-02-12 12:00:00
+FAC_661,INST_0052,Warjas Setty,Assoc. Professor,M.Sc.,Supply Chain Management,MECH,13,2013-03-31,2026-07-21 12:00:00
+FAC_662,INST_0118,Warhi Kala,Asst. Professor,M.Tech,Drug Delivery,CHEM,18,2018-01-31,2026-06-18 12:00:00
+FAC_663,INST_0010,Thomas Ratti,Assoc. Professor,M.Tech,Cybersecurity,Physics,4,2004-07-03,2026-06-17 12:00:00
+FAC_664,INST_0010,Anya Nagy,Assoc. Professor,M.Sc.,Business Analytics,Architecture,15,2015-09-11,2026-08-08 12:00:00
+FAC_665,INST_0451,Charan Chaudhari,Professor,M.Tech,Wireless Communications,Mathematics,18,2018-10-18,2023-08-17 12:00:00
+FAC_666,INST_0182,Manan Prabhu,Assoc. Professor,M.E.,Business Analytics,AIML,10,2010-03-30,2021-07-17 12:00:00
+FAC_667,INST_0012,Sai Srinivasan,Assoc. Professor,PhD,Renewable Energy Systems,ECE,21,2021-04-21,2022-09-04 12:00:00
+FAC_668,INST_0159,Tristan Bala,Professor,M.Tech,Big Data Analytics,Architecture,18,2018-12-04,2026-06-19 12:00:00
+FAC_669,INST_0041,Janaki Ramanathan,Professor,M.E.,Geotechnical Engineering,AIDS,21,2021-09-26,2026-06-24 12:00:00
+FAC_67,INST_0382,Hamsini Sampath,Professor,M.E.,Signal Processing,EEE,15,2015-09-06,2022-06-29 12:00:00
+FAC_670,INST_0148,Darsh Madan,Asst. Professor,PhD,Operations Research,AIDS,22,2022-05-18,2026-07-30 12:00:00
+FAC_671,INST_0050,Aditya Raju,Asst. Professor,M.Tech,Manufacturing Technology,AIML,22,2022-05-19,2026-07-19 12:00:00
+FAC_672,INST_0377,Nachiket Dayal,Assoc. Professor,M.Sc.,Power Systems,IT,21,2021-06-04,2024-03-20 12:00:00
+FAC_673,INST_0179,Ubika Tank,Professor,M.Sc.,Embedded Systems,Pharmacy,21,2021-08-03,2026-06-24 12:00:00
+FAC_674,INST_0382,Rajata Pandya,Asst. Professor,M.Sc.,VLSI Design,EEE,9,2009-03-24,2026-06-22 12:00:00
+FAC_675,INST_0326,Ridhi Sachdev,Professor,M.E.,Network Security,ECE,13,2013-08-21,2024-04-25 12:00:00
+FAC_676,INST_0074,Ethan Bansal,Professor,M.Sc.,Mechatronics,AIDS,22,2022-12-30,2021-07-11 12:00:00
+FAC_677,INST_0375,Dalaja Subramaniam,Asst. Professor,M.Tech,Big Data Analytics,Pharmacy,13,2013-08-06,2021-11-19 12:00:00
+FAC_678,INST_0482,Jhalak Hari,Assoc. Professor,M.Tech,Cloud Computing,Architecture,20,2020-04-25,2026-06-17 12:00:00
+FAC_679,INST_0062,Parth Taneja,Assoc. Professor,M.Sc.,Machine Learning,CIVIL,17,2017-01-21,2024-12-11 12:00:00
+FAC_68,INST_0039,Vrishti Aurora,Professor,M.E.,Internet of Things,CIVIL,18,2018-05-14,2022-08-28 12:00:00
+FAC_680,INST_0382,Ojasvi Bal,Asst. Professor,M.Tech,Renewable Energy Systems,CSE,5,2005-04-06,2025-02-20 12:00:00
+FAC_681,INST_0013,Charan Nagar,Asst. Professor,PhD,Cloud Computing,Pharmacy,10,2010-11-03,2026-05-02 12:00:00
+FAC_682,INST_0084,Kavya Keer,Professor,M.Tech,Machine Learning,AIML,14,2014-01-04,2026-05-24 12:00:00
+FAC_683,INST_0449,Yug Lala,Professor,M.Sc.,Robotics,CIVIL,5,2005-11-21,2021-12-30 12:00:00
+FAC_684,INST_0214,Vamakshi Memon,Assoc. Professor,M.E.,Natural Language Processing,MBA,23,2023-04-23,2022-12-27 12:00:00
+FAC_685,INST_0191,Victor Chana,Assoc. Professor,M.Sc.,Transportation Engineering,ECE,16,2016-09-26,2026-05-06 12:00:00
+FAC_686,INST_0115,Noah Iyer,Asst. Professor,M.Tech,Pharmacology,EEE,23,2023-01-02,2023-01-07 12:00:00
+FAC_687,INST_0301,Isha Sawhney,Professor,M.Sc.,Network Security,CHEM,16,2016-10-27,2026-05-13 12:00:00
+FAC_688,INST_0371,Zehaan Chanda,Asst. Professor,M.E.,Renewable Energy Systems,IT,13,2013-04-11,2026-06-21 12:00:00
+FAC_689,INST_0028,Vidhi Solanki,Assoc. Professor,M.E.,Human Resource Management,IT,13,2013-04-29,2025-03-31 12:00:00
+FAC_69,INST_0244,Gavin Banerjee,Assoc. Professor,PhD,Machine Learning,Pharmacy,10,2010-10-16,2022-08-06 12:00:00
+FAC_690,INST_0401,George Peri,Assoc. Professor,M.E.,Internet of Things,Physics,11,2011-05-07,2024-10-03 12:00:00
+FAC_691,INST_0276,Rajeshri Dhingra,Assoc. Professor,M.E.,Machine Learning,AIML,9,2009-04-05,2023-11-16 12:00:00
+FAC_692,INST_0255,Aarini Bains,Professor,PhD,Wireless Communications,ECE,7,2007-11-05,2026-06-02 12:00:00
+FAC_693,INST_0024,Kavya Vora,Asst. Professor,M.Sc.,Signal Processing,MECH,14,2014-05-21,2026-07-25 12:00:00
+FAC_694,INST_0457,Riya Thaker,Asst. Professor,M.Tech,Natural Language Processing,CIVIL,5,2005-11-04,2026-08-05 12:00:00
+FAC_695,INST_0500,Sachi Madan,Asst. Professor,M.Sc.,Big Data Analytics,Pharmacy,23,2023-01-07,2023-10-24 12:00:00
+FAC_696,INST_0103,Libni Chanda,Professor,M.E.,Marketing Analytics,Mathematics,12,2012-01-17,2026-04-27 12:00:00
+FAC_697,INST_0076,Krish Bala,Assoc. Professor,M.Sc.,Robotics,Architecture,10,2010-06-17,2026-06-12 12:00:00
+FAC_698,INST_0193,Wyatt Jha,Assoc. Professor,PhD,Thermal Engineering,ECE,9,2009-05-30,2026-07-31 12:00:00
+FAC_699,INST_0002,Janya Banerjee,Assoc. Professor,M.E.,Drug Delivery,AIML,11,2011-12-02,2026-07-29 12:00:00
+FAC_7,INST_0220,Oni Vig,Assoc. Professor,PhD,Drug Delivery,ECE,22,2022-06-28,2026-04-30 12:00:00
+FAC_70,INST_0281,Arjun Vohra,Assoc. Professor,M.Sc.,Transportation Engineering,EEE,18,2018-08-02,2026-07-25 12:00:00
+FAC_700,INST_0483,Chatura De,Asst. Professor,M.E.,Big Data Analytics,MBA,4,2004-09-22,2023-05-18 12:00:00
+FAC_701,INST_0423,Arjun Mane,Assoc. Professor,M.Tech,Signal Processing,CSE,8,2008-08-16,2022-06-13 12:00:00
+FAC_702,INST_0047,Dalaja Kanda,Assoc. Professor,M.Sc.,Operations Research,MECH,7,2007-06-22,2023-09-09 12:00:00
+FAC_703,INST_0255,Dev Menon,Asst. Professor,M.Sc.,Wireless Communications,Architecture,13,2013-10-12,2026-07-02 12:00:00
+FAC_704,INST_0265,Abhiram Saxena,Professor,M.E.,Structural Engineering,ECE,17,2017-07-03,2026-08-05 12:00:00
+FAC_705,INST_0134,Tara Palla,Professor,M.Tech,Mechatronics,Physics,8,2008-01-19,2026-06-16 12:00:00
+FAC_706,INST_0159,Ekiya Gola,Assoc. Professor,M.Tech,Human Resource Management,CSE,11,2011-12-07,2024-04-26 12:00:00
+FAC_707,INST_0146,Netra Rajagopal,Professor,M.E.,Cryptography,ECE,22,2022-11-14,2025-03-15 12:00:00
+FAC_708,INST_0027,Wridesh Borra,Asst. Professor,M.Sc.,Biotechnology,CHEM,10,2010-08-14,2026-07-09 12:00:00
+FAC_709,INST_0208,Gunbir Vyas,Asst. Professor,PhD,Power Systems,CHEM,10,2010-03-02,2026-07-07 12:00:00
+FAC_71,INST_0146,Triveni Dhillon,Professor,M.Sc.,Data Mining,Mathematics,20,2020-02-24,2026-07-31 12:00:00
+FAC_710,INST_0255,Aarush Divan,Assoc. Professor,M.Tech,Environmental Engineering,MECH,15,2015-07-12,2026-05-17 12:00:00
+FAC_711,INST_0396,Theodore Chacko,Assoc. Professor,M.Tech,Power Systems,CHEM,16,2016-12-20,2023-09-30 12:00:00
+FAC_712,INST_0494,Tristan Sachar,Assoc. Professor,M.Tech,Internet of Things,CHEM,7,2007-07-27,2026-07-28 12:00:00
+FAC_713,INST_0120,Gagan Din,Professor,M.E.,Pharmaceutical Chemistry,CSE,10,2010-07-20,2024-12-08 12:00:00
+FAC_714,INST_0300,Parth Dugar,Assoc. Professor,PhD,Pharmaceutical Chemistry,Architecture,23,2023-07-17,2026-07-31 12:00:00
+FAC_715,INST_0097,Riya Pingle,Asst. Professor,M.E.,Embedded Systems,Mathematics,16,2016-09-03,2026-04-21 12:00:00
+FAC_716,INST_0157,Charles Jaggi,Assoc. Professor,M.Tech,Machine Learning,ECE,14,2014-02-13,2026-05-24 12:00:00
+FAC_717,INST_0160,Yash Vala,Assoc. Professor,PhD,Environmental Engineering,MECH,14,2014-03-20,2026-06-06 12:00:00
+FAC_718,INST_0029,Joshua Boase,Asst. Professor,M.Sc.,Transportation Engineering,CHEM,23,2023-11-21,2026-06-12 12:00:00
+FAC_719,INST_0028,Upkaar Puri,Asst. Professor,M.E.,Cryptography,Mathematics,21,2021-06-11,2026-08-04 12:00:00
+FAC_72,INST_0478,Praneel Kala,Assoc. Professor,M.Sc.,Renewable Energy Systems,Physics,13,2013-04-08,2026-08-13 12:00:00
+FAC_720,INST_0003,Dayita Narasimhan,Asst. Professor,M.Sc.,Embedded Systems,AIML,7,2007-03-25,2026-06-15 12:00:00
+FAC_721,INST_0210,Anirudh Rajagopal,Asst. Professor,PhD,Pharmaceutical Chemistry,MECH,16,2016-09-28,2026-05-18 12:00:00
+FAC_722,INST_0352,George Barad,Professor,M.Tech,Thermal Engineering,Physics,7,2007-09-26,2026-05-22 12:00:00
+FAC_723,INST_0435,Raagini Tandon,Professor,M.Tech,Business Analytics,ECE,12,2012-03-05,2026-07-21 12:00:00
+FAC_724,INST_0427,Bahadurjit Mangat,Assoc. Professor,M.Tech,Renewable Energy Systems,Mathematics,12,2012-03-31,2026-07-16 12:00:00
+FAC_725,INST_0279,Unnati Sodhi,Assoc. Professor,M.E.,Supply Chain Management,Physics,5,2005-03-25,2026-05-27 12:00:00
+FAC_726,INST_0427,Anay Wable,Professor,M.Tech,Geotechnical Engineering,Architecture,6,2006-01-27,2023-12-15 12:00:00
+FAC_727,INST_0294,Balvan Gaba,Asst. Professor,M.E.,Operations Research,EEE,10,2010-10-04,2026-04-26 12:00:00
+FAC_728,INST_0158,Damini Jhaveri,Professor,M.Tech,Power Systems,AIML,13,2013-11-20,2021-12-04 12:00:00
+FAC_729,INST_0495,Advaith Pandey,Asst. Professor,M.E.,Natural Language Processing,ECE,11,2011-01-07,2026-05-24 12:00:00
+FAC_73,INST_0255,Gayathri Chacko,Professor,PhD,Robotics,MECH,7,2007-07-15,2021-11-02 12:00:00
+FAC_730,INST_0180,Oscar Gill,Professor,M.Sc.,Natural Language Processing,MECH,9,2009-07-01,2022-01-12 12:00:00
+FAC_731,INST_0366,Timothy Tara,Asst. Professor,M.E.,Computational Fluid Dynamics,EEE,17,2017-12-22,2026-05-10 12:00:00
+FAC_732,INST_0084,Qasim Koshy,Assoc. Professor,M.E.,Drug Delivery,MBA,15,2015-03-30,2026-07-16 12:00:00
+FAC_733,INST_0016,Chandran Balay,Professor,PhD,Deep Learning,Pharmacy,16,2016-04-09,2023-02-12 12:00:00
+FAC_734,INST_0488,Chandran Balan,Assoc. Professor,M.Sc.,Cryptography,AIML,22,2022-12-17,2026-06-01 12:00:00
+FAC_735,INST_0067,Bhavika Kala,Assoc. Professor,PhD,Human Resource Management,ECE,10,2010-09-23,2026-06-13 12:00:00
+FAC_736,INST_0109,Rachita Purohit,Assoc. Professor,M.Sc.,VLSI Design,AIDS,20,2020-06-08,2026-05-28 12:00:00
+FAC_737,INST_0380,Qasim Bumb,Professor,M.E.,Business Analytics,CIVIL,8,2008-08-05,2026-06-01 12:00:00
+FAC_738,INST_0399,Warjas Narang,Assoc. Professor,PhD,Embedded Systems,CHEM,23,2023-01-19,2025-07-12 12:00:00
+FAC_739,INST_0443,Veer Murty,Assoc. Professor,M.Tech,Embedded Systems,IT,14,2014-05-29,2026-06-07 12:00:00
+FAC_74,INST_0308,Samesh Chad,Asst. Professor,M.E.,VLSI Design,CHEM,9,2009-09-15,2022-03-26 12:00:00
+FAC_740,INST_0375,Tamanna Mukhopadhyay,Professor,PhD,Power Electronics,CHEM,18,2018-04-14,2024-11-12 12:00:00
+FAC_741,INST_0452,Falak Gokhale,Assoc. Professor,M.Tech,Operations Research,CHEM,17,2017-03-05,2022-09-28 12:00:00
+FAC_742,INST_0351,Shravya Dutta,Professor,PhD,Geotechnical Engineering,CSE,23,2023-02-25,2024-07-22 12:00:00
+FAC_743,INST_0255,Amaira Andra,Assoc. Professor,M.Tech,Drug Delivery,Mathematics,8,2008-08-31,2026-06-30 12:00:00
+FAC_744,INST_0255,Bhavika Nanda,Assoc. Professor,M.Sc.,Pharmacology,CIVIL,22,2022-04-23,2026-06-10 12:00:00
+FAC_745,INST_0382,Chatura Dasgupta,Professor,M.Sc.,Geotechnical Engineering,ECE,11,2011-05-20,2026-05-03 12:00:00
+FAC_746,INST_0092,Indrajit Bali,Asst. Professor,M.E.,Operations Research,MECH,12,2012-11-26,2026-05-17 12:00:00
+FAC_747,INST_0488,Gavin Soni,Professor,M.Tech,Renewable Energy Systems,Mathematics,12,2012-10-10,2022-08-06 12:00:00
+FAC_748,INST_0320,Gunbir Misra,Professor,M.Tech,Internet of Things,CSE,18,2018-09-01,2026-06-23 12:00:00
+FAC_749,INST_0291,Jacob Sha,Assoc. Professor,PhD,Control Systems,CIVIL,22,2022-08-20,2026-06-29 12:00:00
+FAC_75,INST_0255,Vansha Mall,Asst. Professor,M.E.,Distributed Systems,MECH,16,2016-01-17,2026-08-06 12:00:00
+FAC_750,INST_0154,Jagat Dutt,Asst. Professor,M.Sc.,Power Electronics,Architecture,11,2011-02-06,2025-02-25 12:00:00
+FAC_751,INST_0478,Falak Jhaveri,Assoc. Professor,M.Sc.,Design Engineering,MECH,13,2013-08-01,2024-06-13 12:00:00
+FAC_752,INST_0146,Dayita Savant,Professor,M.Sc.,Wireless Communications,Pharmacy,6,2006-01-01,2021-06-28 12:00:00
+FAC_753,INST_0051,Vedhika Vora,Asst. Professor,PhD,Control Systems,Physics,9,2009-01-18,2026-04-28 12:00:00
+FAC_754,INST_0377,Pushti Badal,Professor,M.Tech,Drug Delivery,Mathematics,14,2014-07-25,2021-11-07 12:00:00
+FAC_755,INST_0392,Lohit Sarraf,Assoc. Professor,M.Sc.,Deep Learning,Architecture,17,2017-03-07,2026-07-14 12:00:00
+FAC_756,INST_0018,Pooja Shankar,Assoc. Professor,PhD,Power Systems,AIDS,19,2019-05-04,2026-07-03 12:00:00
+FAC_757,INST_0214,Chaitaly Narain,Asst. Professor,M.Sc.,Cybersecurity,Physics,17,2017-07-26,2026-07-19 12:00:00
+FAC_758,INST_0300,Gabriel Sekhon,Professor,M.E.,Thermal Engineering,AIML,21,2021-08-13,2023-11-16 12:00:00
+FAC_759,INST_0486,Caleb Rau,Asst. Professor,M.Sc.,Structural Engineering,EEE,15,2015-12-17,2026-07-24 12:00:00
+FAC_76,INST_0255,Chameli Verma,Asst. Professor,M.E.,Power Systems,MBA,14,2014-10-28,2024-12-23 12:00:00
+FAC_760,INST_0445,Gaurika Kalla,Professor,M.Sc.,Robotics,AIML,10,2010-10-21,2026-05-21 12:00:00
+FAC_761,INST_0292,Nakul Sarma,Asst. Professor,M.Tech,Deep Learning,Physics,13,2013-05-17,2026-06-26 12:00:00
+FAC_762,INST_0216,Ekiya Hayre,Professor,PhD,Cybersecurity,IT,22,2022-07-31,2026-08-03 12:00:00
+FAC_763,INST_0166,Chaaya Dhar,Asst. Professor,M.Tech,Deep Learning,CIVIL,9,2009-09-24,2026-07-23 12:00:00
+FAC_764,INST_0003,Kala Pall,Professor,PhD,VLSI Design,CSE,17,2017-08-08,2026-06-11 12:00:00
+FAC_765,INST_0208,Arunima Sankaran,Asst. Professor,M.Tech,Transportation Engineering,CIVIL,10,2010-12-28,2023-07-23 12:00:00
+FAC_766,INST_0320,Chandani Jayaraman,Assoc. Professor,M.Sc.,Big Data Analytics,Pharmacy,8,2008-01-12,2024-11-06 12:00:00
+FAC_767,INST_0151,Harshil Bhandari,Professor,M.Sc.,Robotics,MBA,14,2014-05-26,2026-04-19 12:00:00
+FAC_768,INST_0189,Hritik Divan,Professor,M.E.,Internet of Things,AIML,12,2012-08-30,2026-07-12 12:00:00
+FAC_769,INST_0179,Varenya Bath,Asst. Professor,PhD,Business Analytics,ECE,22,2022-05-25,2026-05-07 12:00:00
+FAC_77,INST_0255,Jasmit Sundaram,Asst. Professor,M.E.,Internet of Things,EEE,13,2013-08-22,2024-02-06 12:00:00
+FAC_770,INST_0031,Vasana Baria,Professor,M.E.,VLSI Design,CIVIL,13,2013-05-03,2022-05-08 12:00:00
+FAC_771,INST_0369,Janaki Goel,Professor,M.E.,Geotechnical Engineering,Physics,13,2013-01-08,2026-05-26 12:00:00
+FAC_772,INST_0208,Imaran Mangal,Asst. Professor,M.Sc.,Computational Fluid Dynamics,ECE,8,2008-03-30,2024-04-27 12:00:00
+FAC_773,INST_0205,Sathvik Atwal,Assoc. Professor,M.Tech,Machine Learning,Pharmacy,6,2006-01-29,2024-05-29 12:00:00
+FAC_774,INST_0279,Abdul Bhandari,Professor,PhD,Manufacturing Technology,Architecture,18,2018-12-14,2026-04-18 12:00:00
+FAC_775,INST_0084,Wridesh Chandra,Asst. Professor,PhD,Natural Language Processing,Pharmacy,19,2019-10-14,2026-04-19 12:00:00
+FAC_776,INST_0255,Ira Bhandari,Asst. Professor,M.E.,Thermal Engineering,AIML,16,2016-05-03,2026-08-05 12:00:00
+FAC_777,INST_0216,Farhan Banerjee,Assoc. Professor,PhD,Cybersecurity,Physics,20,2020-02-23,2026-05-04 12:00:00
+FAC_778,INST_0160,Rachit Bajwa,Professor,M.Tech,Environmental Engineering,MECH,19,2019-02-19,2024-06-09 12:00:00
+FAC_779,INST_0470,Anita Gill,Professor,M.E.,Pharmaceutical Chemistry,ECE,16,2016-10-08,2021-07-06 12:00:00
+FAC_78,INST_0358,Banjeet Wadhwa,Assoc. Professor,M.Sc.,Natural Language Processing,Pharmacy,15,2015-10-22,2025-03-09 12:00:00
+FAC_780,INST_0406,Laksh Wadhwa,Assoc. Professor,PhD,Operations Research,ECE,6,2006-02-09,2025-01-03 12:00:00
+FAC_781,INST_0130,Zilmil Lala,Asst. Professor,PhD,Power Electronics,CSE,7,2007-03-01,2026-07-23 12:00:00
+FAC_782,INST_0324,Yauvani Bora,Asst. Professor,PhD,Computational Fluid Dynamics,Architecture,14,2014-10-01,2023-04-16 12:00:00
+FAC_783,INST_0176,Gaurangi Loyal,Professor,PhD,Embedded Systems,MECH,16,2016-08-01,2026-07-22 12:00:00
+FAC_784,INST_0065,Dhruv Raman,Assoc. Professor,M.E.,Network Security,CIVIL,14,2014-03-24,2026-08-04 12:00:00
+FAC_785,INST_0009,Chaitanya Narang,Asst. Professor,M.Sc.,Transportation Engineering,MECH,12,2012-12-15,2024-07-25 12:00:00
+FAC_786,INST_0254,Dayita Kashyap,Asst. Professor,PhD,Deep Learning,MBA,22,2022-07-27,2025-05-10 12:00:00
+FAC_787,INST_0448,Rudra Bakshi,Professor,M.Sc.,Pharmacology,MBA,9,2009-07-20,2021-10-05 12:00:00
+FAC_788,INST_0489,Mitesh Bedi,Assoc. Professor,M.E.,Environmental Engineering,Mathematics,15,2015-08-27,2026-07-17 12:00:00
+FAC_789,INST_0328,Hamsini Mane,Assoc. Professor,M.Tech,Operations Research,IT,9,2009-03-11,2026-07-07 12:00:00
+FAC_79,INST_0175,Orinder Devan,Professor,M.Tech,Network Security,Architecture,16,2016-07-15,2024-12-09 12:00:00
+FAC_790,INST_0401,Charita Patla,Professor,PhD,Network Security,Pharmacy,18,2018-05-03,2026-07-11 12:00:00
+FAC_791,INST_0481,Gauri Majumdar,Asst. Professor,M.Sc.,Control Systems,IT,14,2014-06-20,2024-10-23 12:00:00
+FAC_792,INST_0035,Frado Bose,Asst. Professor,M.E.,Power Systems,IT,4,2004-11-13,2023-08-10 12:00:00
+FAC_793,INST_0172,Nachiket Vig,Asst. Professor,M.E.,Pharmacology,MECH,10,2010-09-21,2026-06-28 12:00:00
+FAC_794,INST_0059,Sanya Sharaf,Professor,PhD,Biotechnology,IT,16,2016-10-20,2026-07-28 12:00:00
+FAC_795,INST_0249,Suhani Sampath,Assoc. Professor,M.Sc.,Cloud Computing,Architecture,8,2008-10-25,2026-07-03 12:00:00
+FAC_796,INST_0168,Edhitha Goda,Asst. Professor,M.E.,Thermal Engineering,CHEM,4,2004-05-21,2026-04-20 12:00:00
+FAC_797,INST_0404,Ubika Mital,Asst. Professor,PhD,Cybersecurity,ECE,22,2022-02-18,2026-05-05 12:00:00
+FAC_798,INST_0185,Harrison Ravel,Asst. Professor,PhD,Signal Processing,Architecture,14,2014-12-27,2023-12-29 12:00:00
+FAC_799,INST_0098,Tanmayi Ramachandran,Professor,M.E.,Internet of Things,CHEM,8,2008-12-23,2026-08-07 12:00:00
+FAC_8,INST_0068,Gaurangi Ahuja,Assoc. Professor,PhD,Thermal Engineering,ECE,9,2009-07-16,2022-05-27 12:00:00
+FAC_80,INST_0103,Vedika Seth,Asst. Professor,M.Sc.,VLSI Design,AIML,21,2021-10-06,2026-06-17 12:00:00
+FAC_800,INST_0109,Anita Sant,Asst. Professor,M.Tech,Data Mining,Architecture,19,2019-07-27,2022-07-22 12:00:00
+FAC_801,INST_0230,Wriddhish Parsa,Professor,M.Tech,Data Mining,Mathematics,15,2015-10-23,2023-08-16 12:00:00
+FAC_802,INST_0382,Rachit Modi,Asst. Professor,PhD,Power Electronics,CSE,20,2020-09-18,2026-06-23 12:00:00
+FAC_803,INST_0283,Faris Bawa,Professor,M.Sc.,Geotechnical Engineering,CHEM,14,2014-01-22,2026-07-09 12:00:00
+FAC_804,INST_0123,Xiti Sawhney,Assoc. Professor,M.Tech,Embedded Systems,AIDS,13,2013-11-03,2024-12-16 12:00:00
+FAC_805,INST_0318,Andrew Nayak,Assoc. Professor,M.Tech,Deep Learning,CSE,14,2014-05-06,2026-06-15 12:00:00
+FAC_806,INST_0008,Darpan Chanda,Asst. Professor,M.Tech,Signal Processing,AIDS,20,2020-03-07,2026-06-22 12:00:00
+FAC_807,INST_0084,Gaurangi Mohan,Professor,M.Tech,Control Systems,MECH,23,2023-01-05,2026-07-02 12:00:00
+FAC_808,INST_0185,Yahvi Bawa,Professor,M.Sc.,Power Systems,IT,19,2019-02-15,2026-06-18 12:00:00
+FAC_809,INST_0093,Rachita Banik,Professor,PhD,Human Resource Management,AIDS,11,2011-05-13,2023-02-09 12:00:00
+FAC_81,INST_0011,Falak Contractor,Professor,M.E.,Machine Learning,CIVIL,13,2013-01-21,2024-08-05 12:00:00
+FAC_810,INST_0377,Wriddhish Barad,Asst. Professor,M.E.,Manufacturing Technology,CIVIL,17,2017-07-28,2026-04-25 12:00:00
+FAC_811,INST_0186,Sathvik Gara,Asst. Professor,M.E.,Renewable Energy Systems,Physics,12,2012-02-14,2022-11-14 12:00:00
+FAC_812,INST_0277,Pahal Banik,Asst. Professor,M.Tech,Pharmacology,IT,5,2005-06-26,2025-01-18 12:00:00
+FAC_813,INST_0255,Harrison Ratta,Professor,M.Sc.,Robotics,MBA,5,2005-10-30,2026-08-08 12:00:00
+FAC_814,INST_0153,Janaki Seshadri,Asst. Professor,M.E.,Big Data Analytics,AIDS,21,2021-04-25,2022-11-04 12:00:00
+FAC_815,INST_0257,Indira Balay,Assoc. Professor,M.E.,Deep Learning,MBA,4,2004-02-18,2021-06-04 12:00:00
+FAC_816,INST_0301,Dhruv Bhattacharyya,Professor,M.Tech,Signal Processing,ECE,18,2018-08-14,2022-10-31 12:00:00
+FAC_817,INST_0383,Jagvi Mohan,Asst. Professor,M.Tech,Computational Fluid Dynamics,CHEM,20,2020-12-02,2026-07-23 12:00:00
+FAC_818,INST_0429,Ayush Vyas,Asst. Professor,M.Sc.,Human Resource Management,IT,10,2010-10-17,2023-04-17 12:00:00
+FAC_819,INST_0066,Omaja Narayanan,Asst. Professor,M.Sc.,Thermal Engineering,Architecture,10,2010-06-26,2026-05-02 12:00:00
+FAC_82,INST_0308,Yash Subramaniam,Asst. Professor,M.Tech,Marketing Analytics,Mathematics,13,2013-06-21,2026-08-14 12:00:00
+FAC_820,INST_0208,Aarini Jaggi,Professor,M.Tech,Cybersecurity,ECE,8,2008-11-21,2026-07-22 12:00:00
+FAC_821,INST_0479,Faqid Aurora,Assoc. Professor,M.Sc.,Business Analytics,IT,5,2005-11-28,2026-06-03 12:00:00
+FAC_822,INST_0314,Adweta Chakrabarti,Asst. Professor,PhD,Natural Language Processing,AIML,14,2014-04-29,2022-11-21 12:00:00
+FAC_823,INST_0380,Neha Wali,Professor,M.Tech,Power Systems,AIDS,14,2014-05-17,2023-04-11 12:00:00
+FAC_824,INST_0303,Vedika Subramanian,Assoc. Professor,M.E.,Big Data Analytics,AIML,20,2020-06-29,2023-01-29 12:00:00
+FAC_825,INST_0338,Riya Keer,Assoc. Professor,M.Tech,Marketing Analytics,CIVIL,9,2009-03-13,2024-08-04 12:00:00
+FAC_826,INST_0076,Brijesh Pant,Professor,PhD,Corporate Finance,AIDS,20,2020-12-04,2026-07-04 12:00:00
+FAC_827,INST_0159,Kai Tank,Asst. Professor,M.Tech,Network Security,MECH,6,2006-04-15,2023-01-03 12:00:00
+FAC_828,INST_0330,Tripti Gala,Asst. Professor,M.Tech,Deep Learning,MECH,5,2005-04-14,2026-05-05 12:00:00
+FAC_829,INST_0311,Upkaar Manda,Asst. Professor,PhD,Signal Processing,AIDS,7,2007-08-11,2023-04-23 12:00:00
+FAC_83,INST_0393,Ladli Chaudhuri,Professor,M.E.,Human Resource Management,Mathematics,20,2020-09-21,2026-08-11 12:00:00
+FAC_830,INST_0193,Anay Palla,Professor,PhD,Design Engineering,MECH,7,2007-10-14,2024-11-20 12:00:00
+FAC_831,INST_0063,Harish Hari,Professor,M.E.,Signal Processing,CHEM,15,2015-01-04,2024-06-07 12:00:00
+FAC_832,INST_0212,Madhav Warrior,Professor,PhD,VLSI Design,ECE,5,2005-04-17,2026-07-17 12:00:00
+FAC_833,INST_0444,Amara Sandhu,Assoc. Professor,M.Sc.,Internet of Things,CHEM,20,2020-06-11,2023-11-22 12:00:00
+FAC_834,INST_0255,Chatresh Raman,Asst. Professor,PhD,Embedded Systems,MECH,15,2015-05-24,2026-05-11 12:00:00
+FAC_835,INST_0336,Pranav Balasubramanian,Assoc. Professor,M.Tech,Environmental Engineering,Physics,15,2015-11-18,2021-07-23 12:00:00
+FAC_836,INST_0350,Nathan Oommen,Professor,M.Tech,Machine Learning,Physics,6,2006-11-16,2026-07-06 12:00:00
+FAC_837,INST_0385,Naveen Dar,Professor,M.Tech,Power Electronics,AIML,16,2016-02-26,2026-06-13 12:00:00
+FAC_838,INST_0399,Imaran Dara,Asst. Professor,PhD,Signal Processing,Pharmacy,21,2021-05-10,2026-07-17 12:00:00
+FAC_839,INST_0336,Urishilla Patla,Professor,M.Sc.,Robotics,CIVIL,23,2023-10-06,2021-10-21 12:00:00
+FAC_84,INST_0340,Azaan Narang,Professor,M.E.,Signal Processing,MBA,22,2022-12-13,2022-07-04 12:00:00
+FAC_840,INST_0383,Mitali Bera,Professor,M.Sc.,Operations Research,MECH,18,2018-03-16,2022-11-04 12:00:00
+FAC_841,INST_0418,Ekansh Hayre,Assoc. Professor,M.Tech,Cryptography,Physics,6,2006-04-07,2026-06-28 12:00:00
+FAC_842,INST_0336,Suhani Thakur,Assoc. Professor,M.Tech,Embedded Systems,MBA,6,2006-01-29,2026-08-15 12:00:00
+FAC_843,INST_0012,Warhi Chanda,Asst. Professor,M.Sc.,Renewable Energy Systems,CSE,18,2018-12-15,2026-05-04 12:00:00
+FAC_844,INST_0264,Gunbir Narayanan,Asst. Professor,PhD,Mechatronics,Architecture,5,2005-11-11,2026-07-28 12:00:00
+FAC_845,INST_0220,Avi Mitter,Professor,M.Sc.,Signal Processing,Physics,23,2023-07-28,2026-08-10 12:00:00
+FAC_846,INST_0042,Balvan Hayre,Asst. Professor,M.E.,Thermal Engineering,AIML,7,2007-01-12,2026-04-21 12:00:00
+FAC_847,INST_0258,Bhanumati Mammen,Asst. Professor,M.Tech,Drug Delivery,CIVIL,23,2023-03-05,2026-07-01 12:00:00
+FAC_848,INST_0141,Edhitha Mittal,Professor,M.Sc.,VLSI Design,Mathematics,6,2006-12-29,2026-04-23 12:00:00
+FAC_849,INST_0127,Onveer De,Assoc. Professor,M.Tech,Data Mining,Architecture,23,2023-06-29,2025-03-28 12:00:00
+FAC_85,INST_0215,Ishani Krishnan,Asst. Professor,PhD,Power Systems,Physics,8,2008-11-11,2024-04-26 12:00:00
+FAC_850,INST_0468,Aryan Raval,Asst. Professor,PhD,Big Data Analytics,Pharmacy,19,2019-09-02,2026-08-03 12:00:00
+FAC_851,INST_0507,Lila Sani,Asst. Professor,PhD,Manufacturing Technology,MBA,7,2007-06-17,2023-05-08 12:00:00
+FAC_852,INST_0508,Jagat Baral,Asst. Professor,M.Sc.,Mechatronics,ECE,15,2015-02-19,2024-12-12 12:00:00
+FAC_853,INST_0509,Nitesh Munshi,Asst. Professor,M.Sc.,Deep Learning,CSE,19,2019-06-17,2025-06-14 12:00:00
+FAC_854,INST_0510,Gabriel Chada,Professor,M.Tech,Supply Chain Management,ECE,20,2020-06-11,2022-11-05 12:00:00
+FAC_855,INST_0511,Umang Bal,Asst. Professor,PhD,Marketing Analytics,AIML,8,2008-11-02,2024-10-04 12:00:00
+FAC_856,INST_0512,Shaurya Chowdhury,Asst. Professor,PhD,Marketing Analytics,MECH,13,2013-01-19,2023-05-21 12:00:00
+FAC_857,INST_0513,Joshua Kannan,Professor,M.Sc.,Drug Delivery,ECE,13,2013-03-24,2022-02-01 12:00:00
+FAC_858,INST_0514,Bachittar Kalla,Professor,PhD,Business Analytics,Pharmacy,7,2007-03-06,2023-12-01 12:00:00
+FAC_859,INST_0515,Ekapad Iyengar,Asst. Professor,PhD,Wireless Communications,CSE,18,2018-05-06,2023-04-23 12:00:00
+FAC_86,INST_0393,Nathan Raja,Professor,M.Sc.,Cryptography,Mathematics,8,2008-08-17,2025-03-23 12:00:00
+FAC_860,INST_0516,Raghav Karnik,Professor,M.Sc.,Operations Research,ECE,14,2014-08-17,2023-03-26 12:00:00
+FAC_861,INST_0517,Arya Grewal,Professor,M.E.,Marketing Analytics,ECE,19,2019-08-26,2022-08-26 12:00:00
+FAC_862,INST_0518,Triveni Vaidya,Professor,M.Sc.,Manufacturing Technology,Architecture,12,2012-08-30,2023-07-20 12:00:00
+FAC_863,INST_0519,Aayush Bhatia,Professor,M.E.,Machine Learning,MBA,13,2013-07-20,2021-09-12 12:00:00
+FAC_864,INST_0520,Ayushman Ramanathan,Assoc. Professor,PhD,Wireless Communications,EEE,7,2007-02-13,2023-09-04 12:00:00
+FAC_87,INST_0284,Jalsa Datta,Assoc. Professor,M.Sc.,Pharmaceutical Chemistry,Pharmacy,13,2013-11-01,2026-05-10 12:00:00
+FAC_88,INST_0423,Ansh Dalal,Assoc. Professor,M.Sc.,Internet of Things,EEE,16,2016-12-29,2026-06-15 12:00:00
+FAC_89,INST_0255,Chakradev Varghese,Assoc. Professor,M.E.,Robotics,AIML,7,2007-09-23,2026-07-22 12:00:00
+FAC_9,INST_0307,Dalaja Morar,Professor,M.Tech,Structural Engineering,Pharmacy,12,2012-12-16,2026-06-07 12:00:00
+FAC_90,INST_0255,Yasti Jain,Assoc. Professor,M.Tech,Cryptography,EEE,14,2014-11-17,2024-09-15 12:00:00
+FAC_91,INST_0279,George Cherian,Asst. Professor,M.E.,Thermal Engineering,CIVIL,21,2021-02-16,2026-07-28 12:00:00
+FAC_92,INST_0448,Umang Suresh,Asst. Professor,PhD,Structural Engineering,Architecture,7,2007-01-25,2022-01-20 12:00:00
+FAC_93,INST_0352,Ikshita Bhalla,Professor,M.Tech,Embedded Systems,AIDS,18,2018-07-14,2026-06-20 12:00:00
+FAC_94,INST_0093,Megha Dey,Professor,M.E.,Mechatronics,ECE,7,2007-07-10,2026-05-29 12:00:00
+FAC_95,INST_0382,Lucky Nadig,Assoc. Professor,M.E.,Mechatronics,Architecture,4,2004-03-15,2026-05-26 12:00:00
+FAC_96,INST_0371,Aadi Bail,Assoc. Professor,M.Tech,Thermal Engineering,Pharmacy,9,2009-12-14,2023-11-18 12:00:00
+FAC_97,INST_0358,Falak Sarma,Assoc. Professor,M.Tech,Embedded Systems,AIDS,22,2022-06-22,2024-07-11 12:00:00
+FAC_98,INST_0356,Tejas Bhakta,Assoc. Professor,M.E.,Wireless Communications,Mathematics,5,2005-08-09,2025-02-11 12:00:00
+FAC_99,INST_0328,Chakradev Sridhar,Asst. Professor,PhD,Transportation Engineering,MBA,22,2022-10-24,2026-06-06 12:00:00

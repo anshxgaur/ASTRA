@@ -17,7 +17,6 @@ pipeline/DATA/
 pipeline/REQUIREMENTS/
 pipeline/13_CONFIG/
 pipeline/14_DOCUMENTATION/
-pipeline/12_TESTS/
 __pycache__/
 *.pyc
 *.pyo

@@ -1,7 +1,7 @@
 {
   "name": "Phase 4 data package",
   "generated_by": "export_phase4.py",
-  "run_timestamp": "2026-08-19T01:42:28",
+  "run_timestamp": "2026-09-05T00:32:39",
   "source_database": "aicte_canonical",
   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2 (fastembed)",
   "embedding_dimensions": 384,
@@ -16,5 +16,5 @@
     "data_lineage.csv": 3871,
     "context_document.csv": 3871
   },
-  "elapsed_seconds": 1.9
+  "elapsed_seconds": 1.65
 }

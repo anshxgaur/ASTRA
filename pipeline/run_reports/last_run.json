@@ -1,48 +1,48 @@
 {
-  "run_timestamp": "2026-08-19T01:36:04",
+  "run_timestamp": "2026-09-05T00:26:37",
   "status": "ok",
   "error": "",
-  "duration_seconds": 382.22,
+  "duration_seconds": 360.06,
   "use_real_sources": true,
   "stages": [
     {
       "name": "01 Ingestion",
       "status": "ok",
       "note": "real Phase-1 sources — 8 sources",
-      "seconds": 2.31,
+      "seconds": 0.86,
       "rows": 3859
     },
     {
       "name": "02 Schema Discovery",
       "status": "ok",
-      "seconds": 0.13,
+      "seconds": 0.1,
       "note": "102 fields profiled"
     },
     {
       "name": "03 Schema Mapping",
       "status": "ok",
-      "seconds": 0.05,
+      "seconds": 0.02,
       "rows": 3859,
       "note": "8 sources mapped"
     },
     {
       "name": "04 Standardization",
       "status": "ok",
-      "seconds": 0.07,
+      "seconds": 0.1,
       "rows": 3859,
       "note": "states / booleans / text normalized"
     },
     {
       "name": "05 Normalization",
       "status": "ok",
-      "seconds": 0.22,
+      "seconds": 0.1,
       "rows": 3859,
       "note": "dtypes cast to canonical schema"
     },
     {
       "name": "06 Entity Resolution",
       "status": "ok",
-      "seconds": 5.41,
+      "seconds": 7.09,
       "rows": 3859,
       "note": "3859 records -> 681 master entities"
     },
@@ -55,14 +55,14 @@
     {
       "name": "08 PostgreSQL Load",
       "status": "ok",
-      "seconds": 20.76,
+      "seconds": 15.29,
       "rows": 7742,
       "note": "institution/course/faculty/scholarship/approval/internship + lineage"
     },
     {
       "name": "09 Embeddings",
       "status": "ok",
-      "seconds": 352.97,
+      "seconds": 336.32,
       "rows": 3871,
       "note": "fastembed all-MiniLM-L6-v2 (384-dim)"
     },

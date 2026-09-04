@@ -122,18 +122,27 @@ def _rows_to_dicts(cur) -> list[dict]:
 
 
 def _execute(sql: str, timeout_s: int = 8) -> list[dict]:
-    """Execute on a dedicated connection with a hard statement timeout."""
+    """Execute on a dedicated connection with a hard statement timeout.
+
+    Honors DATABASE_URL first (hosted Postgres: Neon, Supabase, Fly, ...);
+    falls back to the individual POSTGRES_* env vars for local Docker.
+    """
     import os
     import psycopg
 
-    conn = psycopg.connect(
-        host=os.getenv("POSTGRES_HOST", "localhost"),
-        port=os.getenv("POSTGRES_PORT", "5432"),
-        dbname=os.getenv("POSTGRES_DB", "aicte_canonical"),
-        user=os.getenv("POSTGRES_USER", "postgres"),
-        password=os.getenv("POSTGRES_PASSWORD", ""),
-        options=f"-c statement_timeout={timeout_s * 1000}",
-    )
+    options = f"-c statement_timeout={timeout_s * 1000}"
+    url = os.getenv("DATABASE_URL")
+    if url:
+        conn = psycopg.connect(url, options=options)
+    else:
+        conn = psycopg.connect(
+            host=os.getenv("POSTGRES_HOST", "localhost"),
+            port=os.getenv("POSTGRES_PORT", "5432"),
+            dbname=os.getenv("POSTGRES_DB", "aicte_canonical"),
+            user=os.getenv("POSTGRES_USER", "postgres"),
+            password=os.getenv("POSTGRES_PASSWORD", ""),
+            options=options,
+        )
     try:
         with conn.cursor() as cur:
             cur.execute(sql)

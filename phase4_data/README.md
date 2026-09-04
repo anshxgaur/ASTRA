@@ -1,6 +1,6 @@
 # Phase 4 — data package (generated from aicte_canonical)
 
-Generated 2026-08-19T01:42:28 by `export_phase4.py`
+Generated 2026-09-05T00:32:39 by `export_phase4.py`
 from the Phase-3 canonical store (database `aicte_canonical`). Everything needed to build
 the Phase-4 FastAPI hybrid-search API is here — no database access required.
 
