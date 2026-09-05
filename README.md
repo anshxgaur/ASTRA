@@ -283,11 +283,6 @@ curl "https://your-app/search?q=How+many+approved+colleges+in+Uttar+Pradesh"
 > are intended for the hackathon demo. If you expose this publicly, protect
 > them (auth proxy, disable via env) or restrict the service to a VPN.
 
----
-
-## 🤝 Team
-
-Built for Smart India Hackathon 2026
 
 ---
 
